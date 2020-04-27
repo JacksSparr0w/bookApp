@@ -1,0 +1,458 @@
+locale
+=> nrel_main_idtf:
+	[место действий]
+		(* <- lang_ru;; *);;
+
+Baskerville_Hall
+<- locale;
+=> nrel_main_idtf: 
+		[Баскервиль-холл] 
+			(* <-lang_ru;; *);;
+
+Moscow
+<- locale;
+    => nrel_main_idtf: [Москва]
+		(* <- lang_ru;; *);;
+Yalta
+<- locale;
+    => nrel_main_idtf: [Ялта]
+		(* <- lang_ru;; *);;
+country_Russia
+<- locale;
+    => nrel_main_idtf: [Россия]
+		(* <- lang_ru;; *);;
+conutry_Ukraine
+<- locale;
+    => nrel_main_idtf: [Украина]
+		(* <- lang_ru;; *);;
+
+Zhukovo_village
+<- locale;
+    => nrel_main_idtf: [деревня Жуково]
+		(* <- lang_ru;; *);;
+Sevastopol
+<- locale;
+    => nrel_main_idtf: [Севастополь]
+		(* <- lang_ru;; *);;
+
+
+Crimea
+<- locale;
+    => nrel_main_idtf: [Крым]
+		(* <- lang_ru;; *);;
+
+estate_Borisovka
+<- locale;
+    => nrel_main_idtf: [имение Борисовка]
+(* <- lang_ru;; *);;
+
+Caucasus
+<- locale;
+    => nrel_main_idtf: [Кавказ]
+		(* <- lang_ru;; *);;
+
+Black_sea
+<- locale;
+    => nrel_main_idtf: [Черное море]
+		(* <- lang_ru;; *);;
+
+Mironositskoe_village
+<- locale;
+    => nrel_main_idtf: [село Мироносицкое]
+		(* <- lang_ru;; *);;
+
+
+country_Georgia
+<- locale;
+    => nrel_main_idtf: [Грузия]
+		(* <- lang_ru;; *);;
+
+Mtskhet
+<- locale;
+    => nrel_main_idtf: [Мцхет]
+		(* <- lang_ru;; *);;
+
+Voskresensk
+<- locale;
+    => nrel_main_idtf: [Воскресенск]
+		(* <- lang_ru;; *);;
+
+country_Russian_empire
+<- locale;
+    => nrel_main_idtf: [Российская империя]
+		(* <- lang_ru;; *);;
+
+Petersburg  
+<- locale;
+    => nrel_main_idtf: [Петербург]
+		(* <- lang_ru;; *);;
+
+country_Poland  
+<- locale;
+    => nrel_main_idtf: [Польша]
+		(* <- lang_ru;; *);;
+
+Warsaw
+<- locale;
+    => nrel_main_idtf: [Варшава]
+		(* <- lang_ru;; *);;
+
+Pyatigorsk
+<- locale;
+    => nrel_main_idtf: [Пятигорск]
+		(* <- lang_ru;; *);;
+
+country_Germany
+<- locale;
+    => nrel_main_idtf: [Германия]
+		(* <- lang_ru;; *);;
+gorod_N
+<- locale;
+    => nrel_main_idtf: [город N.]
+		(* <- lang_ru;; *);;
+
+	
+Gluhovo
+<- locale;
+    => nrel_main_idtf: [Глухово]
+		(* <- lang_ru;; *);;
+Kiev
+<- locale;
+    => nrel_main_idtf: [Киев]
+		(* <- lang_ru;; *);;
+
+Dikanka
+<- locale;
+    => nrel_main_idtf: [Диканька]
+		(* <- lang_ru;; *);;
+Konotop
+<- locale;
+    => nrel_main_idtf: [Конотоп]
+		(* <- lang_ru;; *);;
+
+Sorochinsky_fair
+<- locale;
+    => nrel_main_idtf: [Сорочинская ярмарка]
+		(* <- lang_ru;; *);;
+
+
+Marino
+<- locale;
+    => nrel_main_idtf: [усадьба Марьино]
+		(* <- lang_ru;; *);;
+Nikolskoe
+<- locale;
+    => nrel_main_idtf: [усадьба Никольское]
+		(* <- lang_ru;; *);;
+
+
+Schukin_yard
+<- locale;
+    => nrel_main_idtf: [Щукин двор]
+		(* <- lang_ru;; *);;
+London
+<- locale;
+    => nrel_main_idtf: [Лондон]
+		(* <- lang_ru;; *);;
+country_England
+<- locale;
+    => nrel_main_idtf: [Англия]
+		(* <- lang_ru;; *);;
+	
+
+country_Belarus
+<- locale;
+    => nrel_main_idtf: [Беларусь]
+		(* <- lang_ru;; *);;
+
+country_Bulgaria
+<- locale;
+    => nrel_main_idtf: [Болгария]
+		(* <- lang_ru;; *);;
+
+
+
+country_Italy
+<- locale;
+    => nrel_main_idtf: [Италия]
+		(* <- lang_ru;; *);;
+
+country_Denmark
+<- locale;
+    => nrel_main_idtf: [Дания]
+		(* <- lang_ru;; *);;
+
+country_USSR
+<- locale;
+    => nrel_main_idtf: [СССР]
+		(* <- lang_ru;; *);;
+
+country_India
+<- locale;
+    => nrel_main_idtf: [Индия]
+		(* <- lang_ru;; *);;
+
+
+country_Spain
+<- locale;
+    => nrel_main_idtf: [Испания]
+		(* <- lang_ru;; *);;
+
+country_China
+<- locale;
+    => nrel_main_idtf: [Китай]
+		(* <- lang_ru;; *);;
+
+
+country_Cuba
+<- locale;
+    => nrel_main_idtf: [Куба]
+		(* <- lang_ru;; *);;
+
+
+country_GDL
+<- locale;
+    => nrel_main_idtf: [ВКЛ]
+		(* <- lang_ru;; *);;
+
+country_Czechia
+<- locale;
+    => nrel_main_idtf: [Чехия]
+		(* <- lang_ru;; *);;
+
+
+
+country_Norway
+<- locale;
+    => nrel_main_idtf: [Норвегия]
+		(* <- lang_ru;; *);;
+
+
+country_Croatia
+<- locale;
+    => nrel_main_idtf: [Хорватия]
+		(* <- lang_ru;; *);;
+
+country_Turkey
+<- locale;
+    => nrel_main_idtf: [Турция]
+		(* <- lang_ru;; *);;
+
+country_Sweden
+<- locale;
+    => nrel_main_idtf: [Швеция]
+		(* <- lang_ru;; *);;
+
+country_Jamaica
+<- locale;
+    => nrel_main_idtf: [Ямайка]
+		(* <- lang_ru;; *);;
+
+
+country_Estonia
+<- locale;
+    => nrel_main_idtf: [Эстония]
+		(* <- lang_ru;; *);;
+
+country_Salvador
+<- locale;
+    => nrel_main_idtf: [Сальвадор]
+		(* <- lang_ru;; *);;
+
+
+country_Venezuela
+<- locale;
+    => nrel_main_idtf: [Венесуэла]
+		(* <- lang_ru;; *);;
+
+
+country_Vatican
+<- locale;
+    => nrel_main_idtf: [Ватикан]
+		(* <- lang_ru;; *);;
+
+Rome
+<- locale;
+    => nrel_main_idtf: [Рим]
+		(* <- lang_ru;; *);;
+
+
+
+country_Iran
+<- locale;
+    => nrel_main_idtf: [Иран]
+		(* <- lang_ru;; *);;
+
+
+country_Monaco
+<- locale;
+    => nrel_main_idtf: [Монако]
+		(* <- lang_ru;; *);;
+
+
+country_Panama
+<- locale;
+    => nrel_main_idtf: [Панама]
+		(* <- lang_ru;; *);;
+
+
+
+country_Syria
+<- locale;
+    => nrel_main_idtf: [Сирия]
+		(* <- lang_ru;; *);;
+
+
+country_Afghanistan
+<- locale;
+    => nrel_main_idtf: [Афганистан]
+		(* <- lang_ru;; *);;
+
+
+Minsk
+<- locale;
+    => nrel_main_idtf: [Минск]
+		(* <- lang_ru;; *);;
+
+Mogilev
+<- locale;
+    => nrel_main_idtf: [Могилев]
+		(* <- lang_ru;; *);;
+
+Gomel
+<- locale;
+    => nrel_main_idtf: [Гомель]
+		(* <- lang_ru;; *);;
+
+
+Vitebsk
+<- locale;
+    => nrel_main_idtf: [Витебск]
+		(* <- lang_ru;; *);;
+
+Brest
+<- locale;
+    => nrel_main_idtf: [Брест]
+		(* <- lang_ru;; *);;
+
+Grodno
+<- locale;
+    => nrel_main_idtf: [Гродно]
+		(* <- lang_ru;; *);;
+
+Berlin
+<- locale;
+    => nrel_main_idtf: [Берлин]
+		(* <- lang_ru;; *);;
+
+Havana
+<- locale;
+    => nrel_main_idtf: [Гавана]
+		(* <- lang_ru;; *);;
+
+
+Amsterdam
+<- locale;
+    => nrel_main_idtf: [Амстердам]
+		(* <- lang_ru;; *);;
+
+
+country_Netherlands
+<- locale;
+    => nrel_main_idtf: [Нидерланды]
+		(* <- lang_ru;; *);;
+
+Paris
+<- locale;
+    => nrel_main_idtf: [Париж]
+		(* <- lang_ru;; *);;
+
+
+Yekaterinburg
+<- locale;
+    => nrel_main_idtf: [Екатеринбург]
+		(* <- lang_ru;; *);;
+
+Nizhny_Novgorod
+<- locale;
+    => nrel_main_idtf: [Нижний Новгород]
+		(* <- lang_ru;; *);;
+
+Kazan
+<- locale;
+    => nrel_main_idtf: [Казань]
+		(* <- lang_ru;; *);;
+
+
+Beijing
+<- locale;
+    => nrel_main_idtf: [Пекин]
+		(* <- lang_ru;; *);;
+
+Sofia
+<- locale;
+    => nrel_main_idtf: [София]
+		(* <- lang_ru;; *);;
+
+
+Ryazan
+<- locale;
+    => nrel_main_idtf: [Рязань]
+		(* <- lang_ru;; *);;
+
+
+Tokyo
+<- locale;
+    => nrel_main_idtf: [Токио]
+		(* <- lang_ru;; *);;
+
+Caracas
+<- locale;
+    => nrel_main_idtf: [Каракас]
+		(* <- lang_ru;; *);;
+
+
+Oslo
+<- locale;
+    => nrel_main_idtf: [Осло]
+		(* <- lang_ru;; *);;
+
+Zagreb
+<- locale;
+    => nrel_main_idtf: [Загреб]
+		(* <- lang_ru;; *);;
+
+
+Venice
+<- locale;
+    => nrel_main_idtf: [Венеция]
+		(* <- lang_ru;; *);;
+
+Rio_de_Janeiro
+<- locale;
+    => nrel_main_idtf: [Рио-Де-Жанейро]
+		(* <- lang_ru;; *);;
+
+
+Vienna
+<- locale;
+    => nrel_main_idtf: [Вена]
+		(* <- lang_ru;; *);;
+
+
+country_Austria
+<- locale;
+    => nrel_main_idtf: [Австрия]
+		(* <- lang_ru;; *);;
+
+Siberia
+<- locale;
+    => nrel_main_idtf: [Сибирь]
+		(* <- lang_ru;; *);;
+
+
+Omaha
+<- locale;
+    => nrel_main_idtf: [Омаха]
+		(* <- lang_ru;; *);;
+

@@ -1,0 +1,5 @@
+book_search_by_author_view
+=> nrel_main_idtf: 
+	[Список литературных эпох] (* <-lang_ru;; *) ;
+	[Literaty era] (* <-lang_en;; *) ;
+ <- ui_external_languages;;

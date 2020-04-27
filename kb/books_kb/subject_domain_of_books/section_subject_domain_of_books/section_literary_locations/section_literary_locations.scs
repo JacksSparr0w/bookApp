@@ -1,0 +1,99 @@
+section_literary_locations
+	=> nrel_main_idtf:
+		[Раздел. Литературные локации]
+			(* <- lang_ru;; *);;
+	
+section_literary_locations =  [*^"file://section_literary_locations.scsi"*];;
+
+section_literary_locations
+	-> rrel_key_sc_element:	
+		literary_location;
+		planet_Earth;
+		continent_Europe;
+		continent_Asia;
+		continent_Africa;
+		continent_North_America;
+		continent_South_America;
+		continent_Antarctica;
+		country_Russia;
+		Moscow;
+		St._Petersburg;
+		country_Great_Britain;
+		London;
+		country_USA;
+		New_York;
+		Los_Angeles;
+		country_Canada;
+		Ottawa;
+		Toronto;
+		country_Germany;
+		country_Brazil;
+		country_Ireland;
+		country_France;
+		country_South_Africa;
+		country_Columbia;
+		country_Mexico;
+		country_Austria_Hungary;
+		country_Greece;
+		country_Ukraine;
+		country_Japan;
+		country_England;
+		country_Scotland;
+		country_Belarus;
+		country_Wales;
+		Rome;
+		Minsk;
+		Mogilev;
+		Gomel;
+		Brest;
+		Vitebsk;
+		Grodno;
+		Beijing;
+		Havana;
+		Amsterdam;
+
+		Paris;
+		Yekaterinburg;
+		Nizhny_Novgorod;
+		Kazan;
+		Berlin;
+		Sofia;
+		Ryazan;
+		Tokyo;
+		Caracas;
+		Oslo;
+
+		Zagreb;
+		Venice;
+		Rio_de_Janeiro;
+		Vienna;
+		country_Austria;
+		Siberia;
+		Omaha;
+		country_Netherlands;
+		country_Denmark;
+		country_India;
+		country_USSR;
+		country_GDL;
+		country_Czechia;
+
+		country_Panama;
+		country_Syria;
+		country_Afghanistan;
+		country_Monaco;
+		country_Iran;
+		country_Vatican;
+		country_Venezuela;
+		country_Salvador;
+		country_Estonia;
+		country_Jamaica;
+
+		country_Sweden;
+		country_Turkey;
+		country_Croatia;
+		country_Norway;
+		country_Cuba;
+		country_China;
+		country_Spain;
+		country_Italy;
+		country_Bulgaria;;

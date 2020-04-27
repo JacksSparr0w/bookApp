@@ -1,0 +1,26 @@
+section_literature_of_the_modernism
+	=> nrel_main_idtf:
+		[Раздел. Литература эпохи Модернизма]
+		(* <- lang_ru;; *);
+	
+	<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: "file://content/content_htmls/section_literature_of_the_modernism.html" (* <-lang_ru;; *);;
+			*);
+	-> rrel_key_sc_element:
+		book_Lady_with_a_dog;
+		book_The_Duel;
+		book_The_man_in_The_Case;
+		book_Vanka;
+		book_Peasants;
+		book_ward_no6;
+		book_The_Woman_kingdom;
+		book_Death_of_the_Poet;
+		book_The_Novies;
+		book_The_Black_Monk;
+		book_all_quiet_on_the_Western_Front;
+		book_The_Hound_of_the_Baskervilles;
+		book_children_of_vault;
+		book_idiot;;
+

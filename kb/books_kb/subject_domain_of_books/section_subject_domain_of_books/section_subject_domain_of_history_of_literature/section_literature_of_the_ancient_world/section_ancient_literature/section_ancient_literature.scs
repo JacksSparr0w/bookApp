@@ -1,0 +1,10 @@
+section_ancient_literature
+=> nrel_main_idtf:
+	[Раздел. Античная литература]
+	(* <- lang_ru;; *);
+	
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_ancient_literature.html" (* <-lang_ru;; *);;
+		*);;

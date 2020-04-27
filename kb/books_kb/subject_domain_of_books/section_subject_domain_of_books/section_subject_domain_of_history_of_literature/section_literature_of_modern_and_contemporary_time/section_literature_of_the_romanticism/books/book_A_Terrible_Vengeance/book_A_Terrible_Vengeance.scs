@@ -1,0 +1,179 @@
+book_A_Terrible_Vengeance
+ => nrel_main_idtf: 
+        ["Страшная месть"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_tale;
+=> nrel_author:
+    person_Gogol_Nikolai_Vasilievich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1831;;
+
+book_A_Terrible_Vengeance
+=> nrel_location:
+    .book_A_Terrible_Vengeance_location
+    (*
+        -> Kiev;;
+        -> country_Ukraine;;
+        -> Gluhovo;;
+    *);;
+
+
+// ПЕРСОНАЖИ
+book_A_Terrible_Vengeance
+<= nrel_characters:
+    .book_A_Terrible_Vengeance_characters
+    (*
+        -> rrel_main_character:
+            char_Burulbash;
+            char_Katerina;
+            char_otetc_koldun;;
+    *);;
+
+
+char_Burulbash
+        => nrel_main_idtf: 
+            [Данило Бурульбаш] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Данило Бурульбаш)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Burulbash.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Katerina
+        => nrel_main_idtf: 
+            [Катерина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Катерина)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Katerina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_otetc_koldun
+        => nrel_main_idtf: 
+            [Отец-колдун] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Отец-колдун)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_otetc_koldun.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_A_Terrible_Vengeance =>nrel_plot:
+    .book_A_Terrible_Vengeance_plot
+    (*
+      => nrel_main_idtf: [Сюжет. Страшная месть] 
+                (* <-lang_ru;; *);;
+        -> .book_A_Terrible_Vengeance_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Ссора Данило и тестя] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_A_Terrible_Vengeance_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_discomfort;;
+                     <= nrel_main_participants: ... 
+                    (*
+                        -> char_Burulbash;
+                          char_Katerina;
+                          char_otetc_koldun;;
+                    *);; 
+                     => nrel_plot_sequence:
+                                .book_A_Terrible_Vengeance_event_2;;                      
+            *);;
+
+        -> .book_A_Terrible_Vengeance_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Раскрытие колдуна] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_A_Terrible_Vengeance_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit ;;
+                     <= nrel_main_participants: ... 
+                    (*
+                        -> char_Burulbash;
+                            char_Katerina;
+                             char_otetc_koldun;;
+                    *);; 
+                    => nrel_plot_sequence:
+                                .book_A_Terrible_Vengeance_event_3;;                      
+            *);;
+
+
+        -> .book_A_Terrible_Vengeance_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Нападение ляхов] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_A_Terrible_Vengeance_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death ;;
+                     <= nrel_main_participants: ... 
+                    (*
+                        -> char_Burulbash;
+                            char_Katerina;
+                             char_otetc_koldun;;
+                    *);; 
+                    => nrel_plot_sequence:
+                                .book_A_Terrible_Vengeance_event_4;;                      
+            *);;
+
+        -> .book_A_Terrible_Vengeance_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Песнь старца] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_A_Terrible_Vengeance_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finality ;;
+                     <= nrel_main_participants: ... 
+                    (*
+                        -> char_Burulbash;
+                            char_Katerina;
+                             char_otetc_koldun;;
+                    *);; 
+                            
+            *);;
+        
+    *);;
+

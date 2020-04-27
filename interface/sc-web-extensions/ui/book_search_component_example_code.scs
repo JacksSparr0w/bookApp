@@ -1,0 +1,4 @@
+booksearch_view 
+<- ui_external_languages;
+=> nrel_main_idtf: 
+	[Поиск книг по персонажам] (* <- lang_ru;;*);;

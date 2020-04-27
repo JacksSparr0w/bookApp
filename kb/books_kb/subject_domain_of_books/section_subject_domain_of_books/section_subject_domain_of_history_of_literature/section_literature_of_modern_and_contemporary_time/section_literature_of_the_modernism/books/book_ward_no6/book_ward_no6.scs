@@ -1,0 +1,277 @@
+book_ward_no6
+=> nrel_main_idtf: 
+        ["Палата №6"]
+            (* <- lang_ru;; *);
+<- genre_tale;
+<- book;
+=> nrel_author:
+    person_Chehov_Anton_Pavlovich;
+=> nrel_language:
+    lang_ru;
+=> nrel_publication_date:
+    year_1892;;
+
+
+book_ward_no6
+=> nrel_location:
+    .book_ward_no6_location
+    (*
+        -> Moscow;;
+        -> Warsaw;;
+        -> country_Poland;;
+        -> Petersburg;;
+        -> country_Russian_empire;;
+    *);;
+
+
+// ПЕРСОНАЖИ
+book_ward_no6
+<= nrel_characters:
+    .book_ward_no6_characters
+    (*
+        -> rrel_main_character:
+            char_Andrey_Ragin;
+            char_Ivan_Gromov;
+            char_Hobotov;
+            char_Mih_Averiyanich;;
+        ->  char_Sergeich;
+            char_Nikita;
+            char_Lazarich;
+            char_Moyseyka;
+            char_Darushka;;
+    *);;
+
+char_Andrey_Ragin
+        => nrel_main_idtf: 
+            [Андрей Ефимыч Рагин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Андрей Ефимыч Рагин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Andrey_Ragin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;    
+
+ char_Ivan_Gromov
+        => nrel_main_idtf: 
+            [Иван Громов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иван Громов)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Ivan_Gromov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;    
+        
+char_Hobotov
+        => nrel_main_idtf: 
+            [Евгений Хоботов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Евгений Хоботов)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Hobotov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;    
+
+char_Mih_Averiyanich
+        => nrel_main_idtf: 
+            [Михаил Аверьяныч] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Михаил Аверьяныч)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mih_Averiyanich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);; 
+
+char_Sergeich
+        => nrel_main_idtf: 
+            [Михаил Аверьяныч] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Михаил Аверьяныч)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sergeich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);; 
+
+char_Nikita
+        => nrel_main_idtf: 
+            [Никита] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Никита)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Nikita.html" (* <-lang_ru;; *);;
+                    *);;
+            *);; 
+
+char_Lazarich
+        => nrel_main_idtf: 
+            [Семён Лазарич] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Семён Лазарич)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Lazarich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);; 
+
+char_Moyseyka
+        => nrel_main_idtf: 
+            [Мойсейка] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мойсейка)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Moyseyka.html" (* <-lang_ru;; *);;
+                    *);;
+            *);; 
+
+char_Darushka
+        => nrel_main_idtf: 
+            [Дарьюшка] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- fmeale_character;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Дарьюшка)](* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Darushka.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;       
+
+book_ward_no6 => nrel_plot:
+    .book_ward_no6
+    (*
+      => nrel_main_idtf: [Сюжет. Палата №6] 
+                (* <-lang_ru;; *);;
+        -> .book_ward_no6_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Знакомство и описание больных] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_ward_no6_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Moyseyka;
+                           char_Ivan_Gromov;;
+                    *);;   
+                    <- event_acquaintance;;
+                    => nrel_plot_sequence:
+                                .book_ward_no6_event_2;;                    
+            *);;
+
+        -> .book_ward_no6_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Преображение Рагина] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_ward_no6_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_memories;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Andrey_Ragin;
+                           char_Mih_Averiyanich;;
+
+                    *);;  
+                    => nrel_plot_sequence:
+                                .book_ward_no6_event_3;;                     
+            *);;
+        -> .book_ward_no6_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Стычка с конкурентом] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_ward_no6_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Andrey_Ragin;
+                            char_Mih_Averiyanich;
+                            char_Nikita;
+                           char_Darushka;;
+                    *);;                  
+                    <- event_finality;;
+                    <- event_mischief;;    
+            *);;
+    *);;

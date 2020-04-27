@@ -1,0 +1,69 @@
+section_literary_work
+=> nrel_main_idtf:
+	[Раздел. Литературные произведения]
+		(* <- lang_ru;; *);;
+section_literary_work =  [*^"file://section_literary_work.scsi"*];;
+
+section_literary_work
+-> rrel_key_sc_element:
+		fiction;
+                fiction_idea;
+                hero;
+                imagery;
+                literary_work;
+                lit_person;
+                magic_realism;
+                minimalism;
+                person;
+                realistic_motivation;
+                nrel_character;
+                composite_motivation;
+                culmination;
+                epilog;
+                evolution;
+                fiction_motivation;
+                fiction_structure;
+                motive;
+                node;
+                payoff;
+                prologue;
+                motivation;
+                nrel_plot;
+                nrel_conflict;
+                topic;
+                act_fiction;
+                technoculture_and_hyperreality;
+                nrel_plot_sequence;
+                nrel_participants;
+                nrel_intertextuality;
+                point_of_view;
+                adjourned_element;
+                art_detail;
+                prototype;
+                frame;
+                parenthesis;
+                digression;
+                poiumena;
+                fabulation;
+                paranoia;
+                maximalism;
+                pastiche;
+                irony;
+                metaphrase;
+                temporal_distortion;
+                artistic_event;
+                artistic_space;
+                art_time;
+                episode;
+                epigraph;
+                artistic_text;
+                nrel_literary_form;
+                literary_form;
+                nrel_fable;
+                nrel_thematics;
+                contents;
+                literary_reception;
+                portrait;
+                scenery;
+                context_of_literary_work;
+                composition;;

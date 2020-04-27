@@ -1,0 +1,329 @@
+book_garnet_bracelet
+    => nrel_main_idtf:
+        ["Гранатовый браслет"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_narrative;
+
+    => nrel_author:
+        person_Aleksandr_Ivanovich_Kuprin;
+    <= nrel_original_language:
+    	lang_ru;
+    => nrel_publication_date:
+        year_1910;;
+
+book_garnet_bracelet
+    <= nrel_characters:
+        .book_garnet_bracelet_characters
+        (*
+            -> rrel_main_character:
+                    char_Vera_Sheina;
+                    char_Zheltkov;
+                    char_Vasily_Shein;;
+            -> char_Yakov_Mikhailovich_Anosov;
+               char_Anna_Friesse;
+               char_Nikolay_Mirza_Bulat_Tuganovsky;
+               char_Jenny_Reuters;;
+        *);;    
+
+char_Vera_Sheina
+        => nrel_main_idtf: 
+            [Вера Шеина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Вера Шеина)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Vera_Sheina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Zheltkov
+        => nrel_main_idtf: 
+            [Желтков] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Желтков)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Zheltkov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+        
+char_Vasily_Shein
+        => nrel_main_idtf: 
+            [Василий Шеин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Василий Шеин)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Vasily_Shein.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;   
+
+char_Yakov_Mikhailovich_Anosov
+        => nrel_main_idtf: 
+            [Яков Михайлович Аносов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Яков Михайлович Аносов)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Yakov_Mikhailovich_Anosov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Anna_Friesse
+        => nrel_main_idtf: 
+            [Анна Фриессе] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Анна Фриессе)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Anna_Friesse.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_Nikolay_Mirza_Bulat_Tuganovsky
+        => nrel_main_idtf: 
+            [Николай Мирза-Булат-Тугановский] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Николай Мирза-Булат-Тугановский)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Nikolay_Mirza_Bulat_Tuganovsky.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_Jenny_Reuters 
+        => nrel_main_idtf: 
+            [Женни Рейтер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Женни Рейтер)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Jenny_Reuters.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_garnet_bracelet => nrel_plot:.book_garnet_bracelet_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Гранатовый браслет"] (* <-lang_ru;; *);;
+        -> .book_garnet_bracelet_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Приход осени] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_garnet_bracelet_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Vera_Sheina;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_garnet_bracelet_event_2;;      
+            *);;
+
+        -> .book_garnet_bracelet_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Вера и Анна] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_garnet_bracelet_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Anna_Friesse;
+                           char_Vera_Sheina;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_garnet_bracelet_event_3;;      
+            *);;    
+
+        -> .book_garnet_bracelet_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Подарок Вере] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_garnet_bracelet_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_present;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Anna_Friesse;
+                           char_Vera_Sheina;;
+                            
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_garnet_bracelet_event_4;;      
+            *);;
+
+        -> .book_garnet_bracelet_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Прибыл Аносов] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_garnet_bracelet_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_meeting;; 
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Anna_Friesse;
+                           char_Vera_Sheina;
+                           char_Yakov_Mikhailovich_Anosov;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_garnet_bracelet_event_5;;      
+            *);;  
+
+        -> .book_garnet_bracelet_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Гранатовый браслет] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_garnet_bracelet_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_ball;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nikolay_Mirza_Bulat_Tuganovsky;
+                           char_Vera_Sheina;
+                           char_Vasily_Shein;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_garnet_bracelet_event_6;;      
+            *);; 
+
+        -> .book_garnet_bracelet_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Влюбленный телеграфист] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_garnet_bracelet_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Vasily_Shein;
+                           char_Vera_Sheina;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_garnet_bracelet_event_7;;                  
+            *);;
+
+            -> .book_garnet_bracelet_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Предложение прочитать письмо мужу] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_garnet_bracelet_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_request;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Anna_Friesse;
+                           char_Vera_Sheina;
+                           char_Yakov_Mikhailovich_Anosov;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_garnet_bracelet_event_8;;                  
+            *);;
+
+            -> .book_garnet_bracelet_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Признание генералу] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_garnet_bracelet_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_revelation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Anna_Friesse;
+                           char_Vera_Sheina;
+                           char_Yakov_Mikhailovich_Anosov;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_garnet_bracelet_event_9;;                  
+            *);;
+
+            -> .book_garnet_bracelet_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Решение вернуть браслет] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_garnet_bracelet_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_request;;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Vasily_Shein;
+                           char_Vera_Sheina;
+                           char_Nikolay_Mirza_Bulat_Tuganovsky;;
+                    *);;                 
+            *);;
+    *);;

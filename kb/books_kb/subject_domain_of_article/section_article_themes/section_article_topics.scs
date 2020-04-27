@@ -1,0 +1,10 @@
+section_article_topics
+	=> nrel_main_idtf:
+		[Раздел. Темы статей]
+			(* <- lang_ru;; *);;
+	
+section_article_topics =  [*^"file://section_article_topics.scsi"*];;
+
+section_literary_events
+	-> rrel_key_sc_element:
+        nrel_topic;;

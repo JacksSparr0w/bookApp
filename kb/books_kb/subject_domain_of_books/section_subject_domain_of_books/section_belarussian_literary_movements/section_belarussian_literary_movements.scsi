@@ -1,0 +1,201 @@
+belarussian_literary_movement
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Белорусское литературное направление] (* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+		    => nrel_main_idtf: [Опр.(белорусское литературное направление)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/belarussian_literary_movement.html" (* <-lang_ru;; *);;
+				*);;
+			<= using_constants:
+				...
+				(*
+					-> literary_work;
+						writer;;
+				*);;
+		*);;
+
+
+
+nrel_main_features
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [основные черты*] (* <-lang_ru;; *);
+	=> nrel_idtf: [отличительные черты*] (* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+		    => nrel_main_idtf: [Опр.(белорусское литературное направление)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/belarussian_literary_movement.html" (* <-lang_ru;; *);;
+				*);;
+			<= using_constants:
+				...
+				(*
+					-> literary_work;
+						writer;;
+				*);;
+		*);
+
+	=> nrel_second_domain: belarussian_literary_movement;
+	=> nrel_first_domain: 
+		..first_domain_of_nrel_main_features
+		(*
+			<- set;;
+			<= nrel_boolean: literary_reception;;
+		*);
+	=>nrel_definitional_domain: 
+		...
+		(*
+			<= nrel_combination:
+				...
+				(*
+					-> literary_work;;
+					-> ..set_lit_person;;
+				*);;
+		*);
+
+	<- quasybinary_relation;
+	<- oriented_relation;;	
+
+
+belarussian_literary_movement -> old_bel_literature;;
+
+old_bel_literature
+	=> nrel_main_idtf:
+		[Древняя белорусская литература] (* <-lang_ru;; *);;
+
+old_bel_literature
+	<- rrel_key_sc_element:
+		...
+		(*
+			=> nrel_main_idtf:[время начала];;
+			<- explanation;;
+		    => nrel_main_idtf: [Поясн.(Древняя белорусская литература)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/old_bel_literature.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+temporary_entity -> old_bel_literature;;
+old_bel_literature 
+	<- ...
+		(*
+			=> nrel_main_idtf:[время конца];;
+			<- exact_value;;
+			<- begin;;
+			=> nrel_main_idtf: [XI век] (* <- lang_ru;; *);;
+		*);
+	<- ...
+		(*
+			<- exact_value;;
+			<- completion;;
+			=> nrel_main_idtf: [конец XVII векa] (* <- lang_ru;; *);;
+		*);;
+
+old_bel_literature <= nrel_main_features: 
+	...
+	(*
+		
+		-> literary_typification;;
+		-> historicism;;
+	*);;
+
+	
+
+belarussian_literary_movement -> new_bel_literature;;
+
+new_bel_literature
+	=> nrel_main_idtf:
+		[Новая белорусская литература] (* <-lang_ru;; *);;
+
+new_bel_literature
+	<- rrel_key_sc_element:
+		...
+		(*
+			=> nrel_main_idtf:[время начала];;
+			<- explanation;;
+		    => nrel_main_idtf: [Поясн.(Новая белорусская литература)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/new_bel_literature.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+temporary_entity -> new_bel_literature;;
+new_bel_literature 
+	<- ...
+		(*
+			=> nrel_main_idtf:[время конца];;
+			<- exact_value;;
+			<- begin;;
+			=> nrel_main_idtf: [конец XIX векa] (* <- lang_ru;; *);;
+		*);
+	<- ...
+		(*
+			<- exact_value;;
+			<- completion;;
+			=> nrel_main_idtf: [первая половина XVIII векa] (* <- lang_ru;; *);;
+		*);;
+
+new_bel_literature	 <= nrel_main_features: 
+	...
+	(*
+		-> stream_of_consciousness;;
+	*);;
+
+
+
+belarussian_literary_movement -> newest_bel_literature;;
+
+newest_bel_literature
+	=> nrel_main_idtf:
+		[Новейшая белорусская литература] (* <-lang_ru;; *);;
+
+newest_bel_literature
+	<- rrel_key_sc_element:
+		...
+		(*
+			=> nrel_main_idtf:[время начала];;
+			<- explanation;;
+		    => nrel_main_idtf: [Поясн.(Новейшая белорусская литература)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/newest_bel_literature.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+temporary_entity -> newest_bel_literature;;
+newest_bel_literature 
+	<- ...
+		(*
+			=> nrel_main_idtf:[время конца];;
+			<- exact_value;;
+			<- begin;;
+			=> nrel_main_idtf: [начало XХ века] (* <- lang_ru;; *);;
+
+		*);
+	<- ...
+		(*
+			<- exact_value;;
+			<- completion;;
+			=> nrel_main_idtf: [нынешнее время] (* <- lang_ru;; *);;
+		*);;
+
+newest_bel_literature <= nrel_main_features: 
+	...
+	(*
+		-> unity_of_man_and_nature;;
+	*);;

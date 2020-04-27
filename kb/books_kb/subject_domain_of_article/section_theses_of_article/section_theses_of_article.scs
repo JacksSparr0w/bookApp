@@ -1,0 +1,15 @@
+section_theses_of_article
+	=> nrel_main_idtf:
+		[Раздел. Тезисы статей]
+			(* <- lang_ru;; *);;
+	
+section_theses_of_article =  [*^"file://section_theses_of_article.scsi"*];;
+
+section_theses_of_article	
+    -> rrel_key_sc_element:	
+        nrel_theses;
+        rrel_introduction;
+        rrel_main_idea;
+        rrel_evidence;
+        rrel_comparison;
+        rrel_conclusion;; 

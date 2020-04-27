@@ -1,0 +1,1123 @@
+//Мастер и Маргарита, М. А. Булгаков
+
+book_The_Master_and_Margarita
+    => nrel_main_idtf:
+        ["Мастер и Маргарита"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+    <- genre_speculative_fiction;
+
+    => nrel_author:
+        person_Bulgakov_Mikhail_Afanasyevich;
+    <= nrel_original_language:
+        lang_ru;
+    => nrel_publication_date:
+        year_1966;;
+
+book_The_Master_and_Margarita
+    <= nrel_characters:
+        .book_The_Master_and_Margarita
+        (*
+            -> rrel_main_character:
+                    char_The_Master;
+                    char_Margarita;
+                    char_Woland;
+                    char_Ivan_Nikolayevich_Bezdomny;;
+            -> char_Mikhail_Alexandrovich_Berlioz;
+               char_Grigory_Danilovich_Rimsky;
+               char_Ivan_Savelyevich_Varenukha;
+               char_Natasha;
+               char_Nikanor_Ivanovich_Bosoy;
+               char_Behemoth;
+               char_Korovyev;
+               char_Azazello;
+               char_Hella;
+               char_Pontius_Pilate;
+               char_Yeshua_Ha_Notsri;
+               char_Aphranius;
+               char_Niza;
+               char_Levi_Matvei;
+               char_Caiaphas;
+               char_Judas_Iscariot;
+               char_Stephan_Bogdanovich_Likhodeyev;;
+        *);;   
+
+book_The_Master_and_Margarita
+=> nrel_location:
+    .book_The_Master_and_Margarita_location
+    (*
+        -> Yalta;;
+        -> Moscow;;
+	   -> Kiev;;
+	   -> country_Russia;;
+    *);; 
+
+char_The_Master
+        => nrel_main_idtf: 
+            [Мастер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мастер)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_The_Master.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Margarita
+        => nrel_main_idtf: 
+            [Маргарита] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Маргарита)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Margarita.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Woland
+        => nrel_main_idtf: 
+            [Воланд] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Воланд)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Woland.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Ivan_Nikolayevich_Bezdomny
+        => nrel_main_idtf: 
+            [Иван Николаевич Бездомный] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иван Николаевич Бездомный)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/сhar_Ivan_Nikolayevich_Bezdomny.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Mikhail_Alexandrovich_Berlioz
+        => nrel_main_idtf: 
+            [Михаил Александрович Берлиоз] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Михаил Александрович Берлиоз)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mikhail_Alexandrovich_Berlioz.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Grigory_Danilovich_Rimsky
+        => nrel_main_idtf: 
+            [Григорий Данилович Римский] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Григорий Данилович Римский)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Grigory_Danilovich_Rimsky.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_Ivan_Savelyevich_Varenukha
+        => nrel_main_idtf: 
+            [Иван Савельевич Варенуха] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иван Савельевич Варенуха)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Ivan_Savelyevich_Varenukha.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Natasha
+        => nrel_main_idtf: 
+            [Наташа] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Наташа)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Natasha.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Nikanor_Ivanovich_Bosoy
+        => nrel_main_idtf: 
+            [Никанор Иванович Босой] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Никанор Иванович Босой)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/сhar_Nikanor_Ivanovich_Bosoy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Behemoth
+        => nrel_main_idtf: 
+            [Бегемот] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Бегемот)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Behemoth.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Korovyev
+        => nrel_main_idtf: 
+            [Коровьев-Фагот] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Коровьев-Фагот)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Korovyev.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Azazello
+        => nrel_main_idtf: 
+            [Азазелло] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Азазелло)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Azazello.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Hella
+        => nrel_main_idtf: 
+            [Гелла] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гелла)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Hella.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Pontius_Pilate
+        => nrel_main_idtf: 
+            [Понтий Пилат] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Понтий Пилат)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Pontius_Pilate.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Yeshua_Ha_Notsri
+        => nrel_main_idtf: 
+            [Иешуа Га-Ноцри] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иешуа Га-Ноцри)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Yeshua_Ha_Notsri.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Aphranius
+        => nrel_main_idtf: 
+            [Афраний] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Афраний)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Aphranius.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Niza
+        => nrel_main_idtf: 
+            [Низа] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Низа)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Niza.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Levi_Matvei
+        => nrel_main_idtf: 
+            [Левий Матвей] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Левий Матвей)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Levi_Matvei.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Caiaphas
+        => nrel_main_idtf: 
+            [Первосвященник Каифа] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Первосвященник Каифа)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Caiaphas.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Judas_Iscariot
+        => nrel_main_idtf: 
+            [Иуда из Кириафа] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иуда из Кириафа)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Judas_Iscariot.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Stephan_Bogdanovich_Likhodeyev
+        => nrel_main_idtf: 
+            [Степан Богданович Лиходеев] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Степан Богданович Лиходеев)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/сhar_Stephan_Bogdanovich_Likhodeyev.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_The_Master_and_Margarita => nrel_plot:.book_The_Master_and_Margarita_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Мастер и Маригарита"] (* <-lang_ru;; *);;
+        -> key_sc_element: book_The_Master_and_Margarita;;
+        -> .book_The_Master_and_Margarita_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Никогда не разговаривайте с неизвестными] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_dispute;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Mikhail_Alexandrovich_Berlioz;
+                           char_Ivan_Nikolayevich_Bezdomny;
+                           char_Pontius_Pilate;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_2;;      
+            *);;
+
+        -> .book_The_Master_and_Margarita_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Понтий Пилат] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_2.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_court;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Pontius_Pilate;
+                           char_Yeshua_Ha_Notsri;
+                           char_Judas_Iscariot;
+                           char_Caiaphas;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_3;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Седьмое доказательство] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_3.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Mikhail_Alexandrovich_Berlioz;
+                           char_Woland;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_4;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Погоня] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_4.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Mikhail_Alexandrovich_Berlioz;
+                           char_Ivan_Nikolayevich_Bezdomny;
+                           char_Woland;
+                           char_Korovyev;
+                           char_Behemoth;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_5;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Было дело в Грибоедове] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_5.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_fight;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Mikhail_Alexandrovich_Berlioz;
+                           char_Ivan_Nikolayevich_Bezdomny;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_6;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Шизофрения, как и было сказано] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_6.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_go_nut;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Ivan_Nikolayevich_Bezdomny;
+                           char_Mikhail_Alexandrovich_Berlioz;
+                           char_Pontius_Pilate;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_7;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Нехорошая квартирка] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_7.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_witchcraft;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Stephan_Bogdanovich_Likhodeyev;
+                           char_Mikhail_Alexandrovich_Berlioz;
+                           char_Woland;
+                           char_Korovyev;
+                           char_Behemoth;
+                           char_Azazello;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_8;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Поединок между профессором и поэтом] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_8.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Ivan_Nikolayevich_Bezdomny;
+                           char_Mikhail_Alexandrovich_Berlioz;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_9;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Коровьевские штуки] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_9.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nikanor_Ivanovich_Bosoy;
+                           char_Mikhail_Alexandrovich_Berlioz;
+                           char_Korovyev;
+                           char_Woland;
+                           char_Stephan_Bogdanovich_Likhodeyev;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_10;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_10
+            (*
+                => nrel_main_idtf: [Событие №10. Вести из Ялты] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_10.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_chase;;
+                    <- event_attack;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Grigory_Danilovich_Rimsky;
+                           char_Ivan_Savelyevich_Varenukha;
+                           char_Stephan_Bogdanovich_Likhodeyev;
+                           char_Behemoth;
+                           char_Azazello;
+                           char_Hella;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_11;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_11
+            (*
+                => nrel_main_idtf: [Событие №11. Раздвоение Ивана] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_11.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Ivan_Nikolayevich_Bezdomny;
+                           char_Mikhail_Alexandrovich_Berlioz;
+                           char_Pontius_Pilate;
+                           char_The_Master;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_12;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_12
+            (*
+                => nrel_main_idtf: [Событие №12. Черная магия и ее разоблачение] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_12.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_concert;;
+                    <- event_performance;;
+                    <- event_exposure;;
+                    <- event_scandal;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Grigory_Danilovich_Rimsky;
+                           char_Ivan_Savelyevich_Varenukha;
+                           char_Woland;
+                           char_Behemoth;
+                           char_Korovyev;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_13;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_13
+            (*
+                => nrel_main_idtf: [Событие №13. Явление героя] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_13.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Ivan_Nikolayevich_Bezdomny;
+                           char_Pontius_Pilate;
+                           char_The_Master;
+                           char_Margarita;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_14;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_14
+            (*
+                => nrel_main_idtf: [Событие №14. Слава петуху!] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_14.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_attempted_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Grigory_Danilovich_Rimsky;
+                           char_Korovyev;
+                           char_Ivan_Savelyevich_Varenukha;
+                           char_Stephan_Bogdanovich_Likhodeyev;
+                           char_Hella;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_15;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_15
+            (*
+                => nrel_main_idtf: [Событие №15. Сон Никанора Ивановича] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_15.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_sleep;;
+                    <= nrel_participants:... 
+                    (*
+                        ->char_Nikanor_Ivanovich_Bosoy;
+                           char_Ivan_Nikolayevich_Bezdomny;
+                           char_Pontius_Pilate;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_16;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_16
+            (*
+                => nrel_main_idtf: [Событие №16. Казнь] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_16.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_execution;;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Yeshua_Ha_Notsri;
+                           char_Levi_Matvei;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_17;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_17
+            (*
+                => nrel_main_idtf: [Событие №17. Беспокойный день] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_17.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Grigory_Danilovich_Rimsky;
+                           char_Woland;
+                           char_Behemoth;
+                           char_Korovyev;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_18;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_18
+            (*
+                => nrel_main_idtf: [Событие №18. Неудачливые визитеры] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_18.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Mikhail_Alexandrovich_Berlioz;
+                           char_Korovyev;
+                           char_Behemoth;
+                           char_Azazello;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_19;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_19
+            (*
+                => nrel_main_idtf: [Событие №19. Маргарита] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_19.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_The_Master;
+                           char_Margarita;
+                           char_Mikhail_Alexandrovich_Berlioz;
+                           char_Woland;
+                           char_Azazello;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_20;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_20
+            (*
+                => nrel_main_idtf: [Событие №20. Крем Азазелло] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_20.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_witchcraft;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Margarita;
+                           char_Natasha;
+                           char_Azazello;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_21;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_21
+            (*
+                => nrel_main_idtf: [Событие №21. Полет] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_21.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_revenge;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Margarita;
+                           char_Natasha;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_22;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_22
+            (*
+                => nrel_main_idtf: [Событие №22. При свечах] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_22.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Korovyev;
+                           char_Margarita;
+                           char_Woland;
+                           char_Behemoth;
+                           char_Hella;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_23;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_23
+            (*
+                => nrel_main_idtf: [Событие №23. Великий бал у сатаны] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_23.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_ball;;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Margarita;
+                           char_Korovyev;
+                           char_Woland;
+                           char_Azazello;
+                           char_Mikhail_Alexandrovich_Berlioz;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_24;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_24
+            (*
+                => nrel_main_idtf: [Событие №24. Извлечение мастера] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_24.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Margarita;
+                           char_Woland;
+                           char_The_Master;
+                           char_Pontius_Pilate;
+                           char_Natasha;
+                           char_Behemoth;
+                           char_Ivan_Savelyevich_Varenukha;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_25;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_25
+            (*
+                => nrel_main_idtf: [Событие №25. Как прокуратор пытался спасти Иуду] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_25.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_attempted_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Aphranius;
+                           char_Yeshua_Ha_Notsri;
+                           char_Pontius_Pilate;
+                           char_Judas_Iscariot;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_26;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_26
+            (*
+                => nrel_main_idtf: [Событие №26. Погребение] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_26.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Pontius_Pilate;
+                           char_Aphranius;
+                           char_Niza;
+                           char_Judas_Iscariot;
+                           char_Caiaphas;
+                           char_Levi_Matvei;
+                           char_Yeshua_Ha_Notsri;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_27;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_27
+            (*
+                => nrel_main_idtf: [Событие №27. Конец квартиры №50] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_27.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_fire;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Woland;
+                           char_Behemoth;
+                           char_Korovyev;
+                           char_Azazello;
+                           char_Hella;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_28;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_28
+            (*
+                => nrel_main_idtf: [Событие №28. Последние похождения Коровьева и Бегемота] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_28.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_fire;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Korovyev;
+                           char_Behemoth;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_29;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_29
+            (*
+                => nrel_main_idtf: [Событие №29. Судьба мастера и Маргариты определена] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_29.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Woland;
+                           char_Azazello;
+                           char_Levi_Matvei;
+                           char_Yeshua_Ha_Notsri;
+                           char_The_Master;
+                           char_Margarita;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_30;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_30
+            (*
+                => nrel_main_idtf: [Событие №30. Пора! Пора!] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_30.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Azazello;
+                           char_The_Master;
+                           char_Margarita;
+                           char_Woland;
+                           char_Ivan_Nikolayevich_Bezdomny;
+                           char_Pontius_Pilate;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_31;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_31
+            (*
+                => nrel_main_idtf: [Событие №31. На Воробьевых горах] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_31.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Azazello;
+                           char_Margarita;
+                           char_Woland;
+                           char_Behemoth;
+                           char_Korovyev;
+                           char_The_Master;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_32;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_32
+            (*
+                => nrel_main_idtf: [Событие №32. Прощание и вечный приют] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_32.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Korovyev;
+                           char_Azazello;
+                           char_Behemoth;
+                           char_Margarita;
+                           char_The_Master;
+                           char_Woland;
+                           char_Yeshua_Ha_Notsri;
+                           char_Pontius_Pilate;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_The_Master_and_Margarita_event_33;;      
+            *);;    
+
+        -> .book_The_Master_and_Margarita_event_33
+            (*
+                => nrel_main_idtf: [Событие №33. Эпилог] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_The_Master_and_Margarita_event_33.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_sleep;;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_The_Master;
+                           char_Margarita;
+                           char_Woland;
+                           char_Grigory_Danilovich_Rimsky;
+                           char_Ivan_Savelyevich_Varenukha;
+                           char_Ivan_Nikolayevich_Bezdomny;
+                           char_Pontius_Pilate;
+                           char_Yeshua_Ha_Notsri;; 
+                    *);;             
+            *);;
+    *);;

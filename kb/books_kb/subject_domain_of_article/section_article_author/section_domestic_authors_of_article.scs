@@ -1,0 +1,8 @@
+section_domestic_authors_of_article
+=> nrel_main_idtf:
+	[Раздел. Авторы русских статей.]
+		(* <- lang_ru;; *);
+->rrel_key_sc_element:
+    person_Maria_Lavrentieva;;
+
+section_domestic_authors_of_article = [*^"file://section_domestic_authors_of_article.scsi"*];;

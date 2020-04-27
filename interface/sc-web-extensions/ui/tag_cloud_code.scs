@@ -1,0 +1,5 @@
+tag_cloud_code
+=> nrel_main_idtf: 
+	[Облако тегов] (* <-lang_ru;; *) ;
+	[Tag cloud] (* <-lang_en;; *) ;
+ <- ui_external_languages;;

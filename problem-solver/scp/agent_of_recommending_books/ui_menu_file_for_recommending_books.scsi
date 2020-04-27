@@ -1,0 +1,21 @@
+ui_menu_file_for_recommending_books
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Рекомендовать книги]
+			(* <- lang_ru;; *);
+		[Recommend books]
+			(* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_recommending_books _-> ._question_recommending_books_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;
+			*);;
+		._question_recommending_books_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос книжных рекомендаций: $ui_arg_1] 
+			(* <- lang_ru;; *);
+		[Request to recommend books: $ui_arg_1]
+			(* <- lang_en;; *);;

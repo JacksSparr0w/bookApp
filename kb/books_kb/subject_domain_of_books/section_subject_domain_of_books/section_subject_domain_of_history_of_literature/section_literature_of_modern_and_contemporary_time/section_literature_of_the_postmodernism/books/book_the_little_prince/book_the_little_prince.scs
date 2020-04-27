@@ -1,0 +1,461 @@
+book_the_little_prince
+    => nrel_main_idtf:
+        ["Маленький принц"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+    <- genre_speculative_fiction;
+
+    => nrel_author:
+        person_Antoine_de_Saint_Exupery;
+    <= nrel_original_language:
+    	lang_french;
+    => nrel_publication_date:
+        year_1943;;
+
+book_the_little_prince
+    <= nrel_characters:
+        .book_the_little_prince_characters
+        (*
+            -> rrel_main_character:
+                    char_pilot;
+                    char_little_prince;;
+            -> char_rose;
+               char_king;
+               char_fox;
+               char_ambitious_man;
+               char_drunkard;
+               char_businessman;
+               char_lamplighter;
+               char_geographer;
+               char_snake;;
+        *);;    
+
+char_pilot
+        => nrel_main_idtf: 
+            [Пилот] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Пилот)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_pilot.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_little_prince
+        => nrel_main_idtf: 
+            [Маленький принц] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Маленький принц)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_little_prince.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+        
+char_rose
+        => nrel_main_idtf: 
+            [Роза] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Роза)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_rose.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;   
+
+char_king
+        => nrel_main_idtf: 
+            [Король] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Король)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_king.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_ambitious_man
+        => nrel_main_idtf: 
+            [Честолюбец] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Честолюбец)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_ambitious_man.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_drunkard
+        => nrel_main_idtf: 
+            [Пьяница] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Пьяница)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_drunkard.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_businessman 
+        => nrel_main_idtf: 
+            [Деловой человек] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Деловой человек)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_businessman.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_lamplighter 
+        => nrel_main_idtf: 
+            [Фонарщик] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Фонарщик)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_lamplighter.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_geographer
+        => nrel_main_idtf: 
+            [Географ] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Географ)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_geographer.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_snake
+        => nrel_main_idtf: 
+            [Змея] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Змея)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_snake.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_fox
+        => nrel_main_idtf: 
+            [Лис] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Лис)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_fox.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_the_little_prince => nrel_plot:.book_the_little_prince_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Маленький принц"] (* <-lang_ru;; *);;
+        -> .book_the_little_prince_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Детство рассказчика] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_pilot;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_2;;      
+            *);;
+
+        -> .book_the_little_prince_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Знакомство рассказчика и Маленького принца] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_pilot;
+                           char_little_prince;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_3;;      
+            *);;    
+
+        -> .book_the_little_prince_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Жизнь Маленького принца на своей планете] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_prince;;
+                            
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_4;;      
+            *);;
+
+        -> .book_the_little_prince_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Маленький принц и роза] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;; 
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_prince;
+                           char_rose;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_5;;      
+            *);;  
+
+        -> .book_the_little_prince_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Маленький Принц и первая планета] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_prince;
+                           char_king;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_6;;      
+            *);; 
+
+        -> .book_the_little_prince_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Маленький Принц и вторая планета] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_prince;
+                           char_ambitious_man;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_7;;                  
+            *);;
+
+            -> .book_the_little_prince_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Маленький Принц и третья планета] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_prince;
+                           char_drunkard;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_8;;                  
+            *);;
+
+            -> .book_the_little_prince_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Маленький Принц и четвертая планета] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_prince;
+                           char_businessman;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_9;;                  
+            *);;
+
+            -> .book_the_little_prince_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Маленький Принц и пятая планета] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_prince;
+                           char_lamplighter;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_10;;                  
+            *);;
+
+            -> .book_the_little_prince_event_10
+            (*
+                => nrel_main_idtf: [Событие №10. Маленький Принц и шестая планета] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_10.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_prince;
+                           char_geographer;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_11;;                  
+            *);;
+
+            -> .book_the_little_prince_event_11
+            (*
+                => nrel_main_idtf: [Событие №11. Маленький Принц и седьмая планета] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_11.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_prince;
+                           char_snake;
+                           char_fox;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_the_little_prince_event_12;;                 
+            *);;
+
+            -> .book_the_little_prince_event_12
+            (*
+                => nrel_main_idtf: [Событие №12. Маленький Принц возвращается домой] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_little_prince_event_12.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_prince;
+                           char_pilot;;
+                    *);;                 
+            *);;
+    *);;

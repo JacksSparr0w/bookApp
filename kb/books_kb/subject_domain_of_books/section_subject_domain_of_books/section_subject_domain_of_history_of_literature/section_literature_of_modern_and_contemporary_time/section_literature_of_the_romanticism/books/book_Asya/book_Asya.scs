@@ -1,0 +1,139 @@
+book_Asya
+ => nrel_main_idtf: 
+        ["Ася"]
+            (* <- lang_ru;; *);
+    =>nrel_systems_idtf:
+        [book_Asya];
+<- genre_tale;
+=> nrel_author:
+    person_Turgenev_Ivan_Sergeevich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1857;;
+
+book_Asya
+=> nrel_location:
+    .book_Asya_location
+    (*
+        -> gorod_N;;
+        -> country_Germany;;
+    *);;
+
+
+
+
+// ПЕРСОНАЖИ
+book_Asya
+=> nrel_characters:
+    .book_Asya_characters
+    (*
+        -> rrel_main_character:
+            char_Asya;
+            char_Gagin;
+            char_N_N;;
+                  
+    *);;
+
+char_N_N
+        => nrel_main_idtf: 
+            [Н.Н.] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Н.Н.)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_N_N.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Gagin
+        => nrel_main_idtf: 
+            [Гагин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гагин)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Gagin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+char_Asya
+        => nrel_main_idtf: 
+            [Ася] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ася)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Asya.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_Asya=> nrel_plot:
+        .book_Asya
+    (*
+      => nrel_main_idtf: [Сюжет. Муму] 
+                (* <-lang_ru;; *);;
+        -> key_sc_element: book_Asya;;
+        -> .book_Asya_event_1
+            (*
+                => nrel_main_idtf: [Событие №1] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Asya_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_memories;;
+                     <= nrel_main_participants: ... 
+                    (*
+                        -> char_Asya;
+                            char_Gagin;
+                             char_N_N;;
+                    *);; 
+                     => nrel_plot_sequence:
+                                .book_Asya_event_2;;                      
+            *);;
+        -> .book_Asya_event_2
+                     (*
+                => nrel_main_idtf: [Событие №2] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Asya_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                     <= nrel_main_participants: ... 
+                    (*
+                        -> char_Asya;
+                          char_Gagin;
+                          char_N_N;;
+                    *);; 
+                    <-event_finality;;   
+            *);;
+
+    *);;
+

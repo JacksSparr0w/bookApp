@@ -1,0 +1,15 @@
+format_book_search_by_events
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf: 
+	[формат UI-компонента поиска книг by events (json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[format of UI-component of book search (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;

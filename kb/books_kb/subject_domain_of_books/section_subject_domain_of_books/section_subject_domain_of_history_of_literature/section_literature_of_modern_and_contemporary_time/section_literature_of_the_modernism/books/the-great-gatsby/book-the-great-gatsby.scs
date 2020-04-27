@@ -1,0 +1,353 @@
+//Великий Гэтсби, Ф. С. Фицжеральд
+
+book_the_great_gatsby
+    => nrel_main_idtf:
+        ["Великий Гэтсби"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+
+    => nrel_author:
+        person_Francis_Scott_Fitzgerald;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1925;;
+
+book_the_great_gatsby
+    <= nrel_characters:
+        .book_the_great_gatsby
+        (*
+            -> rrel_main_character:
+                    char_Nick_Carraway;;
+            -> char_Jay_Gatsby;
+               char_Tom_Buchanan;
+               char_Daisy_Buchanan;
+               char_Jordan_Baker;
+               char_George_Wilson;
+               char_Myrtle_Wilson;;
+        *);;  
+
+book_the_great_gatsby
+=> nrel_location:
+    .book_the_great_gatsby_location
+    (*
+        -> continent_North_America;;
+        -> New_York;;
+    *);; 
+ 
+
+char_Nick_Carraway
+        => nrel_main_idtf: 
+            [Ник Каррауэй] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ник Каррауэй)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Nick_Carraway.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Jay_Gatsby
+        => nrel_main_idtf: 
+            [Джей Гэтсби] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джей Гэтсби)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Jay_Gatsby.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+ 
+char_Tom_Buchanan
+        => nrel_main_idtf: 
+            [Томас «Том» Бьюкенен] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Томас «Том» Бьюкенен)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Tom_Buchanan.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Daisy_Buchanan
+        => nrel_main_idtf: 
+            [Дэйзи Бьюкенен] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Дэйзи Бьюкенен)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Daisy_Buchanan.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Jordan_Baker
+        => nrel_main_idtf: 
+            [Джордан Бейкер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джордан Бейкер)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Jordan_Baker.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_George_Wilson
+        => nrel_main_idtf: 
+            [Джордж Уилсон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джордж Уилсон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_George_Wilson.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Myrtle_Wilson
+        => nrel_main_idtf: 
+            [Миртл Уилсон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Миртл Уилсон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Myrtle_Wilson.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_the_great_gatsby => nrel_plot:.book_the_great_gatsby_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Великий Гэтсби"] (* <-lang_ru;; *);;
+        -> key_sc_element: book_the_great_gatsby;;
+        -> .book_the_great_gatsby_event_1
+            (*
+                => nrel_main_idtf: [Событие №1.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_great_gatsby_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nick_Carraway;
+                           char_Jay_Gatsby;
+                           char_Jordan_Baker;
+                           char_Tom_Buchanan;
+                           char_Daisy_Buchanan;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_great_gatsby_event_2;;      
+            *);;
+
+        -> .book_the_great_gatsby_event_2
+            (*
+                => nrel_main_idtf: [Событие №2.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_the_great_gatsby_event_2.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nick_Carraway;
+                           char_George_Wilson;
+                           char_Tom_Buchanan;
+                           char_Myrtle_Wilson;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_great_gatsby_event_3;;      
+            *);;    
+
+        -> .book_the_great_gatsby_event_3
+            (*
+                => nrel_main_idtf: [Событие №3.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_great_gatsby_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_ball;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nick_Carraway;
+                           char_Jordan_Baker;
+                           char_Jay_Gatsby;;  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_great_gatsby_event_4;;      
+            *);;
+
+        -> .book_the_great_gatsby_event_4
+            (*
+                => nrel_main_idtf: [Событие №4.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_great_gatsby_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_memories;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nick_Carraway;
+                           char_Jay_Gatsby;
+                           char_Daisy_Buchanan;
+                           char_Tom_Buchanan;;  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_great_gatsby_event_5;;      
+            *);;
+
+        -> .book_the_great_gatsby_event_5
+            (*
+                => nrel_main_idtf: [Событие №5.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_great_gatsby_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nick_Carraway;
+                           char_Jay_Gatsby;
+                           char_Daisy_Buchanan;;  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_great_gatsby_event_6;;      
+            *);;
+
+        -> .book_the_great_gatsby_event_6
+            (*
+                => nrel_main_idtf: [Событие №6.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_great_gatsby_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nick_Carraway;
+                           char_Jay_Gatsby;
+                           char_Tom_Buchanan;;  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_great_gatsby_event_7;;      
+            *);;
+   
+        -> .book_the_great_gatsby_event_7
+            (*
+                => nrel_main_idtf: [Событие №7.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_great_gatsby_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_scandal;;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nick_Carraway;
+                           char_Jay_Gatsby;
+                           char_Daisy_Buchanan;
+                           char_Jordan_Baker;
+                           char_Myrtle_Wilson;
+                           char_Tom_Buchanan;;  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_great_gatsby_event_8;;      
+            *);;
+
+        -> .book_the_great_gatsby_event_8
+            (*
+                => nrel_main_idtf: [Событие №8.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_great_gatsby_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death;;
+                    <- event_revenge;;
+                    <- event_attempted_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nick_Carraway;
+                           char_Jay_Gatsby;
+                           char_George_Wilson;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_great_gatsby_event_9;;      
+            *);;
+
+        -> .book_the_great_gatsby_event_9
+            (*
+                => nrel_main_idtf: [Событие №9.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_great_gatsby_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_funeral;;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Nick_Carraway;
+                           char_Jay_Gatsby;
+                           char_Daisy_Buchanan;
+                           char_Jordan_Baker;
+                           char_Tom_Buchanan;; 
+                    *);;             
+            *);;
+    *);;

@@ -1,0 +1,179 @@
+agent_proc_search_the_largest_year_of_journalism_article
+=>nrel_main_idtf:
+    [агентная scp-программа поиска] (*<-lang_ru;;*);
+    [agent scp-program of search] (*<-lang_en;;*);
+    <- agent_scp_program;;
+
+scp_program -> agent_proc_search_the_largest_year_of_journalism_article (*
+    ->rrel_params: .agent_proc_search_operation_params (*
+    -> rrel_1: rrel_in: _event;;
+    -> rrel_2: rrel_in: _input_arc;;
+    *);;
+
+-> rrel_operators: .agent_proc_search_the_largest_year_of_journalism_article_operator_set (*
+    ->rrel_init: .agent_proc_search_the_largest_year_of_journalism_article_operator1 (*
+        <- searchElStr3;;
+        -> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+        -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+        -> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+        => nrel_goto: .agent_proc_search_the_largest_year_of_journalism_article_operator2;;
+    *);;
+
+    -> .agent_proc_search_the_largest_year_of_journalism_article_operator2 (*
+        <- searchElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_const: question_search_the_largest_year_of_journalism_article;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+        => nrel_then: .agent_proc_gen_answer;;
+        => nrel_else: .agent_proc_search_the_largest_year_of_journalism_article_operator_return;;
+    *);;
+
+    -> .agent_proc_gen_answer (*
+        <- genEl;;
+        -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+        =>nrel_goto: .agent_proc_search_the_largest_year_of_journalism_article_operator5;;
+    *);;
+
+
+   -> .agent_proc_search_the_largest_year_of_journalism_article_operator5 (*
+       <- call;;
+       -> rrel_1: rrel_fixed: rrel_scp_const: proc_search_the_largest_year_of_journalism_article;;
+       -> rrel_2: rrel_fixed: rrel_scp_const: .. 
+       (*
+            -> rrel_1: rrel_assign: rrel_scp_var: _year;;
+       *);;
+       -> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+       => nrel_goto: .agent_proc_search_the_largest_year_of_journalism_article_operator7;;
+   *);;
+
+   -> .agent_proc_search_the_largest_year_of_journalism_article_operator7 (*
+       <- waitReturn;;
+       -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+       => nrel_goto: .agent_proc_compare_year_and_min_year;;
+   *);;
+
+    -> .agent_proc_compare_year_and_min_year (*
+        <- ifEq;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _year;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+        => nrel_then: .agent_proc_gen_bad_answer;; 
+        => nrel_else: .agent_proc_gen_norm_answer;; 
+    *);;
+
+    -> .agent_proc_gen_bad_answer (*
+        <- genEl;;
+        -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _bad_answer;;
+
+        =>nrel_goto: .agent_proc_print_message_in_year;;
+    *);;
+
+    -> .agent_proc_print_message_in_year (*
+        <- contAssign;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _year;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: [Sorry! There are no journalism articles.];;
+
+        => nrel_goto: .agent_proc_add_in_bad_answer_message;; 
+    *);;
+
+    -> .agent_proc_add_in_bad_answer_message (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _bad_answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _year;;
+
+        => nrel_goto: .agent_proc_add_bad_in_answer1;;
+    *);;
+
+    -> .agent_proc_add_bad_in_answer1 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _bad_answer;;
+
+        => nrel_goto: .agent_proc_add_bad_in_answer2;;
+    *);;
+
+    -> .agent_proc_add_bad_in_answer2 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+        -> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+
+        => nrel_goto: .agent_proc_add_bad_in_answer3;;
+    *);;
+
+    -> .agent_proc_add_bad_in_answer3 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc6;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _year;;
+
+        => nrel_goto: .agent_proc_search_the_largest_year_of_journalism_article_operator_gen_answer;;
+    *);;
+
+    -> .agent_proc_gen_norm_answer (*
+        <- genEl;;
+        -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _norm_answer;;
+
+        =>nrel_goto: .agent_proc_add_in_norm_answer;;
+    *);;
+
+    -> .agent_proc_add_in_norm_answer (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _norm_answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc7;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _year;;
+
+        => nrel_goto: .agent_proc_add_in_answer1;;
+    *);;
+
+    -> .agent_proc_add_in_answer1 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc8;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _norm_answer;;
+
+        => nrel_goto: .agent_proc_add_in_answer2;;
+    *);;
+
+    -> .agent_proc_add_in_answer2 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc9;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _arc7;;
+
+        => nrel_goto: .agent_proc_add_in_answer3;;
+    *);;
+
+    -> .agent_proc_add_in_answer3 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc10;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _year;;
+
+        => nrel_goto: .agent_proc_search_the_largest_year_of_journalism_article_operator_gen_answer;;
+    *);;
+
+   -> .agent_proc_search_the_largest_year_of_journalism_article_operator_gen_answer (*
+       <- genElStr5;;
+       -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+       -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+       -> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+       -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+       -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+       => nrel_goto: .agent_proc_search_the_largest_year_of_journalism_article_operator_return;;
+   *);;
+
+
+   -> .agent_proc_search_the_largest_year_of_journalism_article_operator_return (*
+       <- return;;
+   *);;
+*);;
+*);;

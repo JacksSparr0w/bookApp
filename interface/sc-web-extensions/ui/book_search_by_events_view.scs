@@ -1,0 +1,5 @@
+book_search_by_events_view 
+<- ui_external_languages;
+=> nrel_main_idtf: 
+	[Поиск книг по событиям]
+		(* <- lang_ru;; *);;

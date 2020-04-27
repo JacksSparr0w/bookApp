@@ -1,0 +1,124 @@
+book_Mumu
+ => nrel_main_idtf: 
+        ["Муму"]
+            (* <- lang_ru;; *);
+    =>nrel_systems_idtf:
+        [book_Mumu];
+<- genre_tale;
+=> nrel_author:
+    person_Turgenev_Ivan_Sergeevich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1852;;
+
+book_Mumu
+=> nrel_location:
+    .book_Mumu_location
+    (*
+        -> country_Russian_empire;;
+        -> Moscow;;
+
+    *);;
+
+// ПЕРСОНАЖИ
+book_Mumu
+=> nrel_characters:
+    .book_Mumu_characters
+    (*
+        -> rrel_main_character:
+            char_Gerasim;
+            char_Tanya;
+            char_Kapiton;;
+                  
+    *);;
+
+char_Gerasim
+        => nrel_main_idtf: 
+            [Герасим] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Герасим)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Gerasim.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Kapiton
+        => nrel_main_idtf: 
+            [Капитон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Капито)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Kapiton.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+char_Tanya
+        => nrel_main_idtf: 
+            [Татьяна] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Татьяна)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Tanya.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_Mumu=> nrel_plot:
+        .book_Mumu
+    (*
+      => nrel_main_idtf: [Сюжет. Муму] 
+                (* <-lang_ru;; *);;
+        -> key_sc_element: book_Mumu;;
+        -> .book_Mumu_event_1
+            (*
+                => nrel_main_idtf: [Событие №1] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Mumu_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                     => nrel_plot_sequence:
+                                .book_Mumu_event_2;;                      
+            *);;
+        -> .book_Mumu_event_2
+                     (*
+                => nrel_main_idtf: [Событие №2] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Mumu_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <-event_finality;;   
+            *);;
+
+    *);;
+

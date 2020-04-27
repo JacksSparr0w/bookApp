@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/bookSearchByEvents-common.js",
+        "src/bookSearchByEvents-paintPanel.js"
+    ],
+
+    "component": "src/bookSearchByEvents-component.js",
+
+    "target": "static/components/js/bookSearchByEvents/bookSearchByEvents.js"
+}

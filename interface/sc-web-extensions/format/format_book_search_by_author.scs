@@ -1,0 +1,15 @@
+format_book_search_by_author
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf: 
+	[формат компонента ПИ поиск по литературных эпохам (json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[format of UI component search by literary era (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;

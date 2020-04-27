@@ -1,0 +1,155 @@
+//Дама с собачкой, чехов
+book_Lady_with_a_dog
+=> nrel_main_idtf: 
+        ["Дама с собачкой"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_tale;
+=> nrel_author:
+    person_Chehov_Anton_Pavlovich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1898;;
+
+book_Lady_with_a_dog
+=> nrel_location:
+    .book_Lady_with_a_dog_location
+    (*
+        -> Moscow;;
+        -> Yalta;;
+        -> country_Russia;;
+        -> country_Ukraine;;
+    *);;
+
+
+// ПЕРСОНАЖИ
+book_Lady_with_a_dog
+<= nrel_characters:
+    .book_Lady_with_a_dog_characters
+    (*
+        -> rrel_main_character:
+            char_Gurov;
+            char_Diderec;;
+    *);;
+
+char_Gurov
+        => nrel_main_idtf: 
+            [Дмитрий Гуров] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Дмитрий Гуров)] (* <-lang_ru;; *);;
+             <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Gurov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+char_Diderec
+        => nrel_main_idtf: 
+            [Фон Дидериц Анна Сергеевна] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Фон Дидериц Анна Сергеевна)] (* <-lang_ru;; *);;
+             <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Diderec.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_Lady_with_a_dog => nrel_plot:
+    .book_Lady_with_a_dog_plot
+    (*
+      => nrel_main_idtf: [Сюжет. "Дама с собачкой"] 
+                (* <-lang_ru;; *);;
+        -> .book_Lady_with_a_dog_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Знакомство Гурова и Анны] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Lady_with_a_dog_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Gurov;
+                           char_Diderec;;
+                    *);;   
+                    => nrel_plot_sequence:
+                                .book_Lady_with_a_dog_event_2;;                   
+            *);;
+
+        -> .book_Lady_with_a_dog_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Расставание Гурова и Анны] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Lady_with_a_dog_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Gurov;
+                           char_Diderec;;
+                    *);;
+                    => nrel_plot_sequence:
+                                .book_Lady_with_a_dog_event_3;;       *);;
+
+        -> .book_Lady_with_a_dog_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Гуров ищет Анну] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Lady_with_a_dog_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_breakup;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Gurov;
+                           char_Diderec;;
+                    *);;             
+                    => nrel_plot_sequence:
+                                .book_Lady_with_a_dog_event_4;;           
+            *);;
+
+        -> .book_Lady_with_a_dog_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Тайные встречи] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Lady_with_a_dog_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    <- event_love;;
+                    <- event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Gurov;
+                           char_Diderec;;
+                    *);;                      
+            *);;
+
+    *);;
+
+

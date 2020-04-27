@@ -1,0 +1,375 @@
+book_Wuthering_Heights
+    => nrel_main_idtf:
+        ["Грозовой перевал"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+
+    => nrel_author:
+        person_Emily_Jane_Bronte;
+    <= nrel_original_language:
+    	lang_en;
+    => nrel_publication_date:
+        year_1847;;
+
+book_Wuthering_Heights
+    <= nrel_characters:
+        .book_Wuthering_Heights_characters
+        (*
+            -> rrel_main_character:
+                    char_Heathcliff;
+                    char_Katherine_Earnshaw;
+                    char_Edgar_Linton;;
+            -> char_Isabella_Linton;
+               char_Hindley_Earnshaw;
+               char_Ellen_Dean;
+               char_Linton_Heathcliff;
+               char_Katie_Linton;
+               char_Gerton_Earnshaw;
+               char_Mr_Lockwood;;
+        *);;    
+
+char_Heathcliff
+        => nrel_main_idtf: 
+            [Хитклиф] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хитклиф)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Heathcliff.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Katherine_Earnshaw
+        => nrel_main_idtf: 
+            [Кэтрин Эрншо] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кэтрин Эрншо)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Katherine_Earnshaw.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+        
+char_Edgar_Linton
+        => nrel_main_idtf: 
+            [Эдгар Линтон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Эдгар Линтон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Edgar_Linton.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;   
+
+char_Isabella_Linton
+        => nrel_main_idtf: 
+            [Изабелла Линтон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Изабелла Линтон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Isabella_Linton.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Hindley_Earnshaw
+        => nrel_main_idtf: 
+            [Хиндли Эрншо] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хиндли Эрншо)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Hindley_Earnshaw.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Ellen_Dean
+        => nrel_main_idtf: 
+            [Эллен Дин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Эллен Дин)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Ellen_Dean.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Linton_Heathcliff
+        => nrel_main_idtf: 
+            [Линтон Хитклиф] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Линтон Хитклиф)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Linton_Heathcliff.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Katie_Linton
+        => nrel_main_idtf: 
+            [Кэти Линтон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кэти Линтон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Katie_Linton.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Gerton_Earnshaw
+        => nrel_main_idtf: 
+            [Гэртон Эрншо] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гэртон Эрншо)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Gerton_Earnshaw.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Mr_Lockwood
+        => nrel_main_idtf: 
+            [Мистер Локвуд] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мистер Локвуд)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mr_Lockwood.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_Wuthering_Heights => nrel_plot:.book_Wuthering_Heights_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Мертвые души"] (* <-lang_ru;; *);;
+        -> .book_dead_souls_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Приезд к Хитклифу] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Wuthering_Heights_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_moving;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Mr_Lockwood;
+                        char_Heathcliff;
+                        char_Gerton_Earnshaw;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Wuthering_Heights_event_2;;      
+            *);;
+
+        -> .book_Wuthering_Heights_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Знакомство двух семейств – Эрншо и Линтонов] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Wuthering_Heights_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Heathcliff;
+                        char_Katherine_Earnshaw;
+                        char_Edgar_Linton;
+                        char_Isabella_Linton;
+                        char_Hindley_Earnshaw;
+                        char_Ellen_Dean;
+                        char_Mr_Lockwood;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Wuthering_Heights_event_3;;      
+            *);;    
+
+            -> .book_Wuthering_Heights_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Свадьба Кэти и Эдгара] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Wuthering_Heights_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_wedding;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Heathcliff;
+                        char_Katherine_Earnshaw;
+                        char_Edgar_Linton;
+                        char_Gerton_Earnshaw;
+                        char_Hindley_Earnshaw;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_Wuthering_Heights_event_4;;                 
+            *);;
+
+            -> .book_Wuthering_Heights_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Свадьба Изабеллы и Хитклифа] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Wuthering_Heights_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_wedding;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Heathcliff;
+                        char_Katherine_Earnshaw;
+                        char_Edgar_Linton;
+                        char_Isabella_Linton;
+                        char_Hindley_Earnshaw;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Wuthering_Heights_event_5;;                       
+            *);;
+
+            -> .book_Wuthering_Heights_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Смерть Кэтрин и Хиндли] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Wuthering_Heights_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Heathcliff;
+                        char_Katherine_Earnshaw;
+                        char_Edgar_Linton;
+                        char_Isabella_Linton;
+                        char_Hindley_Earnshaw;
+                        char_Ellen_Dean;
+                        char_Linton_Heathcliff;
+                        char_Katie_Linton;
+                        char_Gerton_Earnshaw;;
+                    *);;   
+                    => nrel_plot_sequence: 
+                        .book_Wuthering_Heights_event_6;;                    
+            *);;
+
+            -> .book_Wuthering_Heights_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Уезд мистера Локвуда] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Wuthering_Heights_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_moving;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Heathcliff;
+                        char_Edgar_Linton;
+                        char_Isabella_Linton;
+                        char_Hindley_Earnshaw;
+                        char_Ellen_Dean;
+                        char_Linton_Heathcliff;
+                        char_Katie_Linton;
+                        char_Gerton_Earnshaw;
+                        char_Mr_Lockwood;;
+                    *);;   
+                    => nrel_plot_sequence: 
+                        .book_Wuthering_Heights_event_7;;                    
+            *);;
+
+            -> .book_Wuthering_Heights_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Смерть Хитклифа] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Wuthering_Heights_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death_of_the_protagonist;;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Heathcliff;
+                        char_Katherine_Earnshaw;
+                        char_Katie_Linton;
+                        char_Gerton_Earnshaw;
+                        char_Mr_Lockwood;;
+                    *);;                        
+            *);;
+    *);;

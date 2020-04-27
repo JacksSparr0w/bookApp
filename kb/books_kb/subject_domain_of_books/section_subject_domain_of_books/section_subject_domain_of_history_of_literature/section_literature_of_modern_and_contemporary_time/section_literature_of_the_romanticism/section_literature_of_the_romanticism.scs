@@ -1,0 +1,27 @@
+section_literature_of_the_romanticism
+	=> nrel_main_idtf:
+		[Раздел. Литература эпохи Романтизма]
+		(* <- lang_ru;; *);
+	
+	<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: "file://content/content_htmls/section_literature_of_the_romanticism.html" (* <-lang_ru;; *);;
+			*);
+	-> rrel_key_sc_element:
+		book_A_hero_of_our_time;
+		book_Demon;
+		book_Evenings_on_a_Farm_Near_Dikanka;
+		book_lost_literacy;
+		book_The_overcoat;
+		book_Viy;
+		book_Fathers_and_Sons;
+		book_Asya;
+		book_A_Terrible_Vengeance;
+		book_Home_of_the_Gentry;
+		book_Mumu;
+		book_The_Government_Inspector;
+		book_The_Portrait;
+		book_dead_souls;
+		book_Wuthering_Heights;;
+

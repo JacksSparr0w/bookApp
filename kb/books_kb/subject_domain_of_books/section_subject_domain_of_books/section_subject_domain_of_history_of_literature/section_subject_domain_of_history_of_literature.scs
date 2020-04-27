@@ -1,0 +1,25 @@
+section_subject_domain_of_history_of_literature
+	=> nrel_main_idtf:
+		[Раздел. Предметная область Истории литературы]
+			(* <- lang_ru;; *);
+	
+	<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: "file://content/content_htmls/section_subject_domain_of_history_of_literature.html" (* <-lang_ru;; *);;
+			*);
+	
+	<= nrel_section_decomposition:
+		{
+			section_literature_of_the_ancient_world
+			(*
+			=> nrel_section_base_order: 
+				section_literature_of_the_middle_ages;;
+			*);
+			section_literature_of_the_middle_ages
+			(*
+			=> nrel_section_base_order: 
+				section_literature_of_modern_and_contemporary_times;;
+			*);
+			section_literature_of_modern_and_contemporary_times
+		};;

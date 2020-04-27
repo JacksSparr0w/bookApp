@@ -1,0 +1,17 @@
+ui_menu_file_for_finding_journalism_article_by_the_smallest_year
+	<- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_journalism_article_by_the_smallest_year => nrel_main_idtf: [Найти минимальный год издания публицистической статьи] (* <- lang_ru;; *);;
+ui_menu_file_for_finding_journalism_article_by_the_smallest_year => nrel_main_idtf: [Find the smallest year of journalism article] (* <- lang_en;; *);;
+	
+ui_menu_file_for_finding_journalism_article_by_the_smallest_year => ui_nrel_command_template:
+	[*
+		question_search_the_smallest_year_of_journalism_article _-> ._question_search_the_smallest_year_of_journalism_article_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_search_the_smallest_year_of_journalism_article_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_journalism_article_by_the_smallest_year => ui_nrel_command_lang_template: [Найти минимальный год издания публицистической статьи] (* <- lang_ru;; *);;
+ui_menu_file_for_finding_journalism_article_by_the_smallest_year => ui_nrel_command_lang_template: [Find the smallest year of journalism article] (* <- lang_en;; *);;

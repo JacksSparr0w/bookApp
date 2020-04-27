@@ -1,0 +1,149 @@
+section_literary_events
+	=> nrel_main_idtf:
+		[Раздел. Литературные события]
+			(* <- lang_ru;; *);;
+	
+section_literary_events =  [*^"file://section_literary_events.scsi"*];;
+
+section_literary_events
+	-> rrel_key_sc_element:	
+		literary_event;
+		event_death;
+		event_murder;
+		event_suicide;
+		event_love;
+		event_deceit;
+		event_attempted_murder;
+		event_death_of_the_protagonist;
+		event_acquaintance;
+		event_mischief;
+		event_breakup;
+		event_medical_action;
+		event_operation;
+		event_medical_examination;
+		event_finality;
+		event_holiday;
+		event_memories;
+		event_cash_award;
+		event_comparison;
+		event_duel;
+		event_fair;
+		event_wedding;
+		event_battle;
+		event_arrival_of_guests;
+		event_discomfort;
+		event_amputation;
+		event_funeral;
+		event_military_service;
+		event_demobilization;
+		event_violence;
+		event_war;
+		event_defeat;
+		event_victory;
+		event_gas_attack;
+		event_truce;
+		event_fainting;
+		event_forgiveness;
+		event_moving;
+		event_seduction;
+		event_snooping;
+		event_hallucination;
+		event_investigation;
+		event_theft;
+		event_intelligence_service;
+		event_pregnancy;
+
+		event_date;
+		event_labour;
+		event_divorce;
+		event_disease;
+		event_ball;
+		event_dispute;
+		event_witchcraft;
+		event_court;
+		event_fight;
+		event_chase;
+		event_go_nut;
+		event_bribe;
+		event_arrest;
+		event_wanted;
+		event_attack;
+		event_performance;
+		event_concert;
+		event_exposure;
+		event_scandal;
+		event_sleep;
+		event_execution;
+		event_fire;
+		event_escape;
+		event_journey;
+		event_rescue;
+		event_danger;
+		event_unexpected;
+		event_match;
+		event_mobilization;
+		event_revenge;
+
+		event_interview;
+		event_meeting_with_a_ghost;
+		event_telepathy;
+		event_give_a_gift;
+		event_scare;
+		event_help;
+		event_social_help;
+		event_failure;
+		event_party;
+		event_military_help;
+
+ 		event_first_aid;
+		event_humanitarian_aid;
+		event_nightmare;
+		event_apology;
+		event_be_late;
+		event_suffocation;
+		event_explosion;
+		event_disturbance;
+		event_fishing;
+		event_return;
+
+ 		event_scramble;
+		event_exam;
+		event_journey;
+		event_go_to_sea;
+		event_coronation;
+		event_baptism;
+		event_disaster;
+		event_earthquake;
+		event_tsunami;
+		event_avalanche;
+
+ 		event_flood;
+		event_tornado;
+		event_abortion;
+		event_terrorist_attack;
+		event_the_death_penalty;
+		event_quartering;
+		event_drowning;
+		event_passion;
+		event_quarrel;
+		event_bullfight;
+
+ 		event_corrida;
+		event_telegram;
+		event_hanging;
+		event_animal_training;
+		event_concert;
+		event_attachment;
+		event_hike;
+
+		event_deal;
+		event_marriage_proposal;
+		event_doubt;
+		event_revelation;
+		event_joke;
+		event_meeting;
+		event_swap;
+		event_epileptic_seizure;
+		event_walk;
+		event_present;
+		event_request;;

@@ -1,0 +1,191 @@
+book_The_Woman_kingdom
+       => nrel_main_idtf: 
+        ["Бабье царство"]
+            (* <- lang_ru;; *);
+    =>nrel_systems_idtf:
+        [book_The_Woman_kingdom];
+<- genre_tale;
+=> nrel_author:
+    person_Chehov_Anton_Pavlovich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1894;;
+
+book_The_Woman_kingdom
+<= nrel_characters:
+    .book_The_Woman_kingdom_characters
+    (*
+        -> rrel_main_character:
+            char_Akimovna;
+            char_Chalikov;
+            char_Pimenov;
+            char_Lisevich;;
+    *);;
+
+book_The_Woman_kingdom
+=> nrel_location:
+    .book_The_Woman_kingdom_location
+    (*
+        -> Voskresensk;;
+        -> country_Russian_empire;;
+    *);;
+
+char_Akimovna
+        => nrel_main_idtf: 
+            [Анна Акимовна] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Анна Акимовна)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Akimovna.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Chalikov
+        => nrel_main_idtf: 
+            [Чаликов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Чаликов)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Chalikov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Pimenov
+        => nrel_main_idtf: 
+            [Пименов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Пименов)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Pimenov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Lisevich
+        => nrel_main_idtf: 
+            [Виктор Николаич Лысевич] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Виктор Николаич Лысевич)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Lisevich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_The_Woman_kingdom => nrel_plot:
+    .book_The_Woman_kingdom_plot
+    (*
+      => nrel_main_idtf: [Сюжет. "Бабье царство"] 
+                (* <-lang_ru;; *);;
+        -> key_sc_element: book_The_Woman_kingdom;;
+        -> .book_The_Woman_kingdom_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Накануне] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Woman_kingdom_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_memories;;
+                    <- event_cash_award ;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Akimovna;
+                           char_Chalikov;
+                           char_Pimenov;;
+                    *);;        
+                    => nrel_plot_sequence:                
+                                .book_The_Woman_kingdom_event_2;;       
+            *);;
+
+        -> .book_The_Woman_kingdom_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Утро] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Woman_kingdom_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrival_of_guests;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Akimovna;
+                           char_Pimenov;;
+                    *);;  
+                    => nrel_plot_sequence:
+                                .book_The_Woman_kingdom_event_3;;  
+            *);;      
+
+        -> .book_The_Woman_kingdom_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. День] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Woman_kingdom_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrival_of_guests;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Akimovna;
+                           char_Lisevich;;
+                    *);;  
+                    => nrel_plot_sequence:
+                                .book_The_Woman_kingdom_event_4;;  
+            *);;    
+
+        -> .book_The_Woman_kingdom_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Вечер] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Woman_kingdom_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_memories;;
+                    <- event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Akimovna;;
+                    *);;  
+            *);; 
+    *);;

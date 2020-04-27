@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/similar-books-common.js",
+        "src/similar-books-painter.js"
+    ],
+
+    "component": "src/similar-books-component.js",
+
+    "target": "static/components/js/similar_books/similar_books.js"
+}

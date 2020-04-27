@@ -1,0 +1,276 @@
+
+country_Russia
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [Россия](*<-lang_ru;;*);;
+
+country_USA 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [США](*<-lang_ru;;*);;
+
+country_Germany 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Германия](*<-lang_ru;;*);;
+
+country_Brazil
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Бразилия](*<-lang_ru;;*);;
+
+country_Ireland 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Ирландия](*<-lang_ru;;*);;
+
+country_France
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Франция](*<-lang_ru;;*);;
+
+country_South_Africa 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Южная Африка](*<-lang_ru;;*);;
+
+country_Great_Britain
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Великобритания](*<-lang_ru;;*);;
+
+country_Columbia
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Колумбия](*<-lang_ru;;*);;
+
+country_Mexico
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Мексика](*<-lang_ru;;*);;
+
+country_Austria_Hungary
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Австро-Венгрия](*<-lang_ru;;*);;
+
+country_Greece
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Греция](*<-lang_ru;;*);;
+
+country_Ukraine
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Украина](*<-lang_ru;;*);;
+
+country_Japan
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Япония](*<-lang_ru;;*);;
+
+genre_epistle 
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [эпистол](*<-lang_ru;;*);;
+
+
+lang_by
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Белорусский язык](*<-lang_ru;;*);;
+
+lang_pl
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Польский язык](*<-lang_ru;;*);;
+
+lang_sw
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Шведский язык](*<-lang_ru;;*);;
+
+lang_dn
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Датский язык](*<-lang_ru;;*);;
+
+lang_fr
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Французский язык](*<-lang_ru;;*);;
+
+lang_de
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Немецкий язык](*<-lang_ru;;*);;
+
+lang_fr
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Французский язык](*<-lang_ru;;*);;
+
+lang_por
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Португальский язык](*<-lang_ru;;*);;
+
+lang_sp
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Испанский язык](*<-lang_ru;;*);;
+
+lang_jp
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Японский язык](*<-lang_ru;;*);;
+
+lang_tr
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Турецкий язык](*<-lang_ru;;*);;
+
+lang_german 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Немецкий язык](*<-lang_ru;;*);;
+
+lang_french 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Французский язык](*<-lang_ru;;*);;
+
+genre_essay 
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [эссе](*<-lang_ru;;*);;
+
+genre_narration 
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [рассказ](*<-lang_ru;;*);;
+
+genre_autobiography 
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [автобиография](*<-lang_ru;;*);;
+
+genre_short_novel 
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [повесть](*<-lang_ru;;*);;
+
+writer 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [писатель](*<-lang_ru;;*);;
+
+male 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [мужчина](*<-lang_ru;;*);;
+
+female 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [женщина](*<-lang_ru;;*);;
+
+person 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [человек](*<-lang_ru;;*);;
+
+video_sequence
+<- sc_node_not_relation;
+=> nrel_main_idtf: [кино](*<-lang_ru;;*);;
+
+nrel_place_of_birth 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [место рождения*](*<-lang_ru;;*);;
+
+nrel_place_of_death
+<- sc_node_not_relation;
+=> nrel_main_idtf: [место смерти*](*<-lang_ru;;*);;
+
+nrel_date_of_birth
+<- sc_node_not_relation;
+=> nrel_main_idtf: [дата рождения*](*<-lang_ru;;*);;
+
+nrel_date_of_death 
+<- sc_node_not_relation;
+=> nrel_main_idtf: [дата смерти*](*<-lang_ru;;*);;
+
+mouse
+<- sc_node_not_relation;
+=> nrel_main_idtf: [мышь](*<- lang_ru;;*);;
+
+
+
+poet
+<- sc_node_not_relation;
+=> nrel_main_idtf: [поэт] (*<- lang_ru;;*);;
+
+genre_novel
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [роман] (*<- lang_ru;;*);;
+
+genre_fairy_tale
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [сказка] (*<- lang_ru;;*);;
+
+genre_prose
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [проза] (*<- lang_ru;;*);;
+
+genre_narrative
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [рассказ] (*<- lang_ru;;*);;
+
+play
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [пьеса] (*<- lang_ru;;*);;
+
+genre_tale
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [повесть] (*<- lang_ru;;*);;
+
+genre_historical_novel
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [исторический роман] (*<- lang_ru;;*);;
+
+poetry
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [поэзия] (*<- lang_ru;;*);;
+
+detective
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [детектив] (*<- lang_ru;;*);;
+
+short_story
+<- sc_node_not_relation;
+<- genre;
+=> nrel_main_idtf: [новелла] (*<- lang_ru;;*);;
+
+event_treachery
+<- sc_node_not_relation;
+<- literary_event;
+=> nrel_main_idtf: [предательство] (*<- lang_ru;;*);;
+
+individualization_in_literature
+<- sc_node_not_relation;
+=> nrel_main_idtf: [индивидуализация] (*<- lang_ru;;*);;
+
+unity_of_man_and_nature
+<- sc_node_not_relation;
+=> nrel_main_idtf: [единение человека и природы] (*<- lang_ru;;*);;
+
+stream_of_consciousness
+<- sc_node_not_relation;
+=> nrel_main_idtf: [поток сознания] (*<- lang_ru;;*);;
+
+literary_typification
+<- sc_node_not_relation;
+=> nrel_main_idtf: [литературная типификация] (*<- lang_ru;;*);;
+
+historicism
+<- sc_node_not_relation;
+=> nrel_main_idtf: [историзм] (*<- lang_ru;;*);;
+
+hierarchy_of_genres
+<- sc_node_not_relation;
+=> nrel_main_idtf: [иерархия жанров] (*<- lang_ru;;*);;
+
+division_of_heroes
+<- sc_node_not_relation;
+=> nrel_main_idtf: [деление героев] (*<- lang_ru;;*);;
+
+classical_unities
+<- sc_node_not_relation;
+=> nrel_main_idtf: [классические единства] (*<- lang_ru;;*);;
+
+authenticity
+<- sc_node_not_relation;
+=> nrel_main_idtf: [подлинность] (*<- lang_ru;;*);;
+
+locale
+=> nrel_main_idtf:
+	[место действий]
+		(* <- lang_ru;; *);;

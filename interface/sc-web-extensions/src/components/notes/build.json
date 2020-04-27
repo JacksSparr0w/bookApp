@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/note-common.js",
+        "src/note-paintPanel.js"
+    ],
+
+    "component": "src/note-component.js",
+
+    "target": "static/components/js/note/note.js"
+}

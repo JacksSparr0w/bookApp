@@ -1,0 +1,931 @@
+book_Fathers_and_Sons
+ => nrel_main_idtf: 
+        ["Отцы и дети"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_novel;
+=> nrel_author:
+    person_Turgenev_Ivan_Sergeevich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1860;;
+
+book_Fathers_and_Sons
+=> nrel_location:
+    .book_Fathers_and_Sons_location
+    (*
+        -> country_Russian_empire;;
+        -> Marino;;
+        -> Nikolskoe;;
+    *);;
+
+
+
+// ПЕРСНАЖИ
+book_Fathers_and_Sons
+<= nrel_characters:
+    .book_Fathers_and_Sons_characters
+    (*
+        -> rrel_main_character:
+            char_Evgeniy_Bazarov;
+            char_Vasiliy_Bazarov;
+            char_Nikolay_Kirsanov;
+            char_Pavel_Kirsanov;
+            char_Arkadiy_Kirsanov;
+            char_Arina_Vlasevna;
+            char_Anna_Odintsova;
+            char_Katerina_Lokteva;;
+        ->  char_Viktor_Sitnikov;
+            char_Avdotya;
+            char_Fenechka;
+            char_Dunasha;
+            char_Petr;
+            char_Knyagina;
+            char_Matvey_Kolyazin;
+            char_Sergey_Loktev;
+            char_Avdotya_Stepanovna;
+            char_Timofeiich;;       
+    *);;
+
+char_Evgeniy_Bazarov
+        => nrel_main_idtf: 
+            [Евгений Базаров] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Евгений Базаров)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Evgeniy_Bazarov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Vasiliy_Bazarov
+        => nrel_main_idtf: 
+            [Василий Базаров] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Василий Базаров)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Vasiliy_Bazarov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Nikolay_Kirsanov
+        => nrel_main_idtf: 
+            [Николай Кирсанов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Николай Кирсанов)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Nikolay_Kirsanov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Pavel_Kirsanov
+        => nrel_main_idtf: 
+            [Павел Кирсанов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Павел Кирсанов)] (* <-lang_ru;; *);;
+        <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Pavel_Kirsanov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Arkadiy_Kirsanov
+        => nrel_main_idtf: 
+            [Аркадий Кирсанов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Аркадий Кирсанов)] (* <-lang_ru;; *);;
+        <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Arkadiy_Kirsanov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Arina_Vlasevna
+        => nrel_main_idtf: 
+            [Арина Власьевна] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Анна Власьевна)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Arina_Vlasevna.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Anna_Odintsova
+        => nrel_main_idtf: 
+            [Анна Одинцова] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Анна Одинцова)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Anna_Odintsova.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Katerina_Lokteva
+        => nrel_main_idtf: 
+            [Катерина Локтева] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Катерина Локтева)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Katerina_Lokteva.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Viktor_Sitnikov
+        => nrel_main_idtf: 
+            [Виктор Ситников] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Виктор Ситников)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Viktor_Sitnikov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Avdotya
+        => nrel_main_idtf: 
+            [Авдотья] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Авдотья)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Avdotya.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Fenechka
+        => nrel_main_idtf: 
+            [Фенечка] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Фенечка)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Fenechka.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Dunasha
+        => nrel_main_idtf: 
+            [Дуняша] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Дуняша)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Dunasha.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Petr
+        => nrel_main_idtf: 
+            [Петр] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Петр)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Petr.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Knyagina
+        => nrel_main_idtf: 
+            [Княгиня] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Княгиня)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Knyagina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Matvey_Kolyazin
+        => nrel_main_idtf: 
+            [Матвей Колязин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Матвей Колязин)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Matvey_Kolyazin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Sergey_Loktev
+        => nrel_main_idtf: 
+            [Сергей Локтев] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сергей Локтев)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sergey_Loktev.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Avdotya_Stepanovna
+        => nrel_main_idtf: 
+            [Авдотья Степановна] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Авдотья Степановна)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Avdotya_Stepanovna.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Timofeiich
+        => nrel_main_idtf: 
+            [Тимофеич] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Тимофеич)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Timofeiich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_Fathers_and_Sons => nrel_plot: 
+    .book_Fathers_and_Sons_plot
+    (*
+      => nrel_main_idtf: [Сюжет. "Отцы и дети"] 
+                (* <-lang_ru;; *);;
+        -> .book_Fathers_and_Sons_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Глава 1] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrival_of_guests;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Nikolay_Kirsanov;
+                           char_Arkadiy_Kirsanov;;
+                    *);;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_2;;                      
+            *);;
+         -> .book_Fathers_and_Sons_event_2
+                     (*
+                => nrel_main_idtf: [Событие №2. Глава 2] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Arkadiy_Kirsanov;
+                           char_Evgeniy_Bazarov;;
+
+                    *);;
+                    <- event_acquaintance;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_3;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_3
+                     (*
+                => nrel_main_idtf: [Событие №3. Глава 3] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Arkadiy_Kirsanov;
+                            char_Fenechka;;
+                    *);;
+                    <- event_discomfort;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_4;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_4
+                     (*
+                => nrel_main_idtf: [Событие №4. Глава 4] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Evgeniy_Bazarov;
+                           char_Nikolay_Kirsanov;
+                           char_Pavel_Kirsanov;
+                          char_Arkadiy_Kirsanov;;
+                    *);;
+                    <- event_arrival_of_guests;;
+                    <- event_acquaintance;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_5;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_5
+                     (*
+                => nrel_main_idtf: [Событие №5. Глава 5] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Nikolay_Kirsanov;
+                            char_Fenechka;
+                            char_Arkadiy_Kirsanov;;
+                    *);;
+                     <- event_acquaintance;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_6;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_6
+                     (*
+                => nrel_main_idtf: [Событие №6. Глава 6] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_discomfort;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Evgeniy_Bazarov;
+                             char_Pavel_Kirsanov;
+                             char_Nikolay_Kirsanov;
+                             char_Arkadiy_Kirsanov;;
+                    *);;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_7;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_7
+                     (*
+                => nrel_main_idtf: [Событие №7. Глава 7] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Pavel_Kirsanov;
+                            char_Nikolay_Kirsanov;;
+
+                    *);;
+                    <-event_love;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_8;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_8
+                     (*
+                => nrel_main_idtf: [Событие №8. Глава 8] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Nikolay_Kirsanov;
+                           char_Fenechka;;
+                    *);;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_9;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_9
+                     (*
+                => nrel_main_idtf: [Событие №9. Глава 9] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Evgeniy_Bazarov;
+                           char_Vasiliy_Bazarov;
+                           char_Arkadiy_Kirsanov;;
+
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_deceit;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_10;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_10
+                     (*
+                => nrel_main_idtf: [Событие №10. Глава 10] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_10.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Evgeniy_Bazarov;
+                           char_Vasiliy_Bazarov;
+                           char_Arkadiy_Kirsanov;
+                           char_Pavel_Kirsanov;;
+                    *);;
+                    <- event_discomfort;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_11;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_11
+                     (*
+                => nrel_main_idtf: [Событие №11. Глава 11] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_11.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Nikolay_Kirsanov;
+                            char_Pavel_Kirsanov;;
+                    *);;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_12;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_12
+                     (*
+                => nrel_main_idtf: [Событие №12. Глава 12] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_12.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Matvey_Kolyazin;;
+                    *);;
+                    <- event_arrival_of_guests;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_13;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_13
+                     (*
+                => nrel_main_idtf: [Событие №13. Глава 13] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_13.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Avdotya;
+                            char_Anna_Odintsova;;
+                    *);;
+                    <- event_discomfort;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_14;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_14
+                     (*
+                => nrel_main_idtf: [Событие №14. Глава 14] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_14.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Anna_Odintsova;
+                           char_Evgeniy_Bazarov;;
+                    *);;
+                    <- event_acquaintance;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_15;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_15
+                     (*
+                => nrel_main_idtf: [Событие №15. Глава 15] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_15.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Anna_Odintsova;
+                           char_Evgeniy_Bazarov;
+                           char_Arkadiy_Kirsanov;;
+
+                    *);;
+                    <- event_death;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_16;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_16
+                     (*
+                => nrel_main_idtf: [Событие №16. Глава 16] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_16.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Arkadiy_Kirsanov;
+                           char_Katerina_Lokteva;
+                           char_Evgeniy_Bazarov;;
+                    *);;
+                     <- event_acquaintance;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_17;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_17
+                     (*
+                => nrel_main_idtf: [Событие №17. Глава 17] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_17.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Anna_Odintsova;
+                           char_Evgeniy_Bazarov;;
+                    *);;
+                    <- event_love;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_18;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_18
+                     (*
+                => nrel_main_idtf: [Событие №18. Глава 18] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_18.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Evgeniy_Bazarov;
+                            char_Anna_Odintsova;;
+                    *);;
+                    <- event_love;;
+                    <- event_breakup;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_19;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_19
+                     (*
+                => nrel_main_idtf: [Событие №19. Глава 19] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_19.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Evgeniy_Bazarov;
+                           char_Arkadiy_Kirsanov;
+                           char_Anna_Odintsova;;
+                    *);;
+                    <- event_breakup;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_20;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_20
+                     (*
+                => nrel_main_idtf: [Событие №20. Глава 20] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_20.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Evgeniy_Bazarov;;
+                    *);;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_21;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_21
+                     (*
+                => nrel_main_idtf: [Событие №21. Глава 21] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_21.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Evgeniy_Bazarov;;
+                    *);;
+                     <- event_quarrel;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_22;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_22
+                     (*
+                => nrel_main_idtf: [Событие №22. Глава 22] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_22.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Nikolay_Kirsanov;
+                           char_Pavel_Kirsanov;
+                           char_Arkadiy_Kirsanov;
+                           char_Anna_Odintsova;;
+                    *);;
+                    <- event_discomfort;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_23;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_23
+                     (*
+                => nrel_main_idtf: [Событие №23. Глава 23] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_23.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        ->  char_Pavel_Kirsanov;
+                            char_Fenechka;;
+                    *);;
+                     <- event_love;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_24;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_24
+                     (*
+                => nrel_main_idtf: [Событие №24. Глава 24] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_24.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Pavel_Kirsanov;
+                           char_Evgeniy_Bazarov;
+                           char_Arkadiy_Kirsanov;
+                           char_Anna_Odintsova;
+                           char_Katerina_Lokteva;;
+
+                    *);;
+                    <- event_love;;
+                    <- event_duel;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_25;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_25
+                     (*
+                => nrel_main_idtf: [Событие №25. Глава 25] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_25.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Katerina_Lokteva;
+                           char_Arkadiy_Kirsanov;
+                           char_Anna_Odintsova;;
+                    *);;
+                    <- event_love;;
+                    <- event_breakup;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_26;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_26
+                     (*
+                => nrel_main_idtf: [Событие №26. Глава 26] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_26.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Arkadiy_Kirsanov;
+                           char_Evgeniy_Bazarov;;
+                    *);;
+                    <- event_wedding;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_27;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_27
+                     (*
+                => nrel_main_idtf: [Событие №27. Глава 27] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_27.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Evgeniy_Bazarov;
+                           char_Anna_Odintsova;;
+
+                    *);;
+                    <- event_love;;
+                    <- event_death;;
+                     => nrel_plot_sequence:
+                                .book_Fathers_and_Sons_event_28;;                     
+            *);;
+        -> .book_Fathers_and_Sons_event_28
+                     (*
+                => nrel_main_idtf: [Событие №28. Глава 28] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Fathers_and_Sons_event_28.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_wedding;;
+                    <- event_love;;
+                    <-event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Katerina_Lokteva;
+                           char_Pavel_Kirsanov;
+                           char_Fenechka;
+                           char_Nikolay_Kirsanov;;
+                    *);;
+                                         
+            *);;
+
+    *);;
+

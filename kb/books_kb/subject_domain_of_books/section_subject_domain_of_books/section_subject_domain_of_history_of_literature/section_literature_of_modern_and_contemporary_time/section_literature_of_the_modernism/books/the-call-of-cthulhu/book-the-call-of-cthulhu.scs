@@ -1,0 +1,243 @@
+//Зов Ктулху, Г.Ф.Лавкрафт
+
+book_the_call_of_cthulhu
+    => nrel_main_idtf:
+        ["Зов Ктулху"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_horror;
+    <- genre_fantasy;
+    <- genre_speculative_fiction;
+    <- genre_thriller;
+
+    => nrel_author:
+        person_Howard_Phillips_Lovecraft;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1928;;
+
+book_the_call_of_cthulhu
+    <= nrel_characters:
+        .book_the_call_of_cthulhu
+        (*
+            -> rrel_main_character:
+                    char_Francis_Wayland_Thurston;;
+            -> char_George_Gammell_Angell;
+               char_Henry_Anthony_Wilcox;
+               char_John_Raymond_Legrasse;
+               char_Castro;
+               char_Gustav_Johansen;
+               char_Cthulhu;;
+        *);;    
+
+char_Francis_Wayland_Thurston
+        => nrel_main_idtf: 
+            [Френсис Тёрстон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Френсис Тёрстон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Francis_Wayland_Thurston.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_George_Gammell_Angell
+        => nrel_main_idtf: 
+            [Джордж Гэммел Энджелл] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джордж Гэммел Энджелл)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_George_Gammell_Angell.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+        
+char_Henry_Anthony_Wilcox
+        => nrel_main_idtf: 
+            [Генри Энтони Уилкокс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Генри Энтони Уилкокс)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Henry_Anthony_Wilcox.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;   
+
+char_John_Raymond_Legrasse
+        => nrel_main_idtf: 
+            [Джон Леграсс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джон Леграсс)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_John_Raymond_Legrasse.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Castro
+        => nrel_main_idtf: 
+            [Кастро] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кастро)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Castro.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;            
+
+char_Gustav_Johansen
+        => nrel_main_idtf: 
+            [Густаф Йохансен] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Густаф Йохансен)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Gustav_Johansen.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Cthulhu
+        => nrel_main_idtf: 
+            [Ктулху] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- fiction_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ктулху)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Cthulhu.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;            
+
+book_the_call_of_cthulhu => nrel_plot:.book_the_call_of_cthulhu_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Зов Ктулху"] (* <-lang_ru;; *);;
+        -> key_sc_element: book_the_call_of_cthulhu;;
+        -> .book_the_call_of_cthulhu_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Ужас, воплощённый в глине] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_call_of_cthulhu_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_hallucination;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Wayland_Thurston;
+                           char_George_Gammell_Angell;
+                           char_Henry_Anthony_Wilcox;
+                           char_Cthulhu;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_call_of_cthulhu_event_2;;      
+            *);;
+
+        -> .book_the_call_of_cthulhu_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Рассказ полицейского инспектора Леграсса] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...                    (* 
+                        -> "file://content/content_htmls/events/book_the_call_of_cthulhu_event_2.html" (* <-lang_ru;; *);;
+
+                    *);;
+                    <- event_memories;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Wayland_Thurston;
+                           char_John_Raymond_Legrasse;
+                           char_Castro;
+                           char_Cthulhu;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_call_of_cthulhu_event_3;;      
+            *);;    
+
+        -> .book_the_call_of_cthulhu_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Безумие, вышедшее из моря] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_call_of_cthulhu_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_investigation;;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Wayland_Thurston;
+                           char_Gustav_Johansen;;  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_call_of_cthulhu_event_4;;      
+            *);;
+
+        -> .book_the_call_of_cthulhu_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Финал] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_call_of_cthulhu_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Wayland_Thurston;
+                           char_Cthulhu;;
+                    *);;             
+            *);;
+    *);;

@@ -1,0 +1,151 @@
+scp_program -> proc_find_books_by_location (*
+	
+	-> rrel_params: ... (*
+		-> rrel_1: rrel_in: _input_locations;;
+		-> rrel_2: rrel_in: _result;;
+	*);;
+
+	-> rrel_operators: ... (*
+		// создаем множество всех книг
+		-> rrel_init: ..proc_find_book_by_location_1
+		(*
+			<- genEl;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _all_books;;
+
+            => nrel_goto: ..proc_find_book_by_location_2;;
+		*);;
+		// ищем книги, принаддежащих к классу Книга и добавляем их в множество всех книг
+		-> ..proc_find_book_by_location_2
+		(*
+			<- searchSetStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: book;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _current_book;;
+		
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _all_books;;
+			
+			=> nrel_then: ..proc_find_book_by_location_3;;		
+		 	=> nrel_else: ..proc_find_book_by_location_12;;
+
+		*);;
+
+		// находим книгу во множестве всех книг
+		-> ..proc_find_book_by_location_3
+		(*
+			<- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _all_books;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_2;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _book;;
+
+            => nrel_then: ..proc_find_book_by_location_4;;		
+		 	=> nrel_else: ..proc_find_book_by_location_12;;
+		*);;
+		// удаляем дугу принадлежности
+		-> ..proc_find_book_by_location_4
+		(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_2;;
+
+			=> nrel_goto: ..proc_find_book_by_location_5;; 
+		*);;
+		// находим все локации книги
+		-> ..proc_find_book_by_location_5
+		(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _book;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc_2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _cur_book_locations;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc_4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_location;;
+
+			=> nrel_then: ..proc_find_book_by_location_6;;		
+		 	=> nrel_else: ..proc_find_book_by_location_3;;
+		*);;
+		// генерируем множество непосещенных локаций
+		-> ..proc_find_book_by_location_6
+		(*
+			<- genEl;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _unvisited_locations;;
+
+            => nrel_goto: ..proc_find_book_by_location_7;;
+		*);;
+		// добавляем в это множество локации-аргументы поиска
+		-> ..proc_find_book_by_location_7
+		(*
+			<- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _input_locations;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_2;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _location;;
+
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: _unvisited_locations;;
+
+            => nrel_then: ..proc_find_book_by_location_8;;		
+		 	=> nrel_else: ..proc_find_book_by_location_12;;
+		*);;
+		// ищем одну локации из исходных локаций
+		-> ..proc_find_book_by_location_8
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _unvisited_locations;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_2;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _unvisited_location;;
+
+            => nrel_then: ..proc_find_book_by_location_9;;		
+		 	=> nrel_else: ..proc_find_book_by_location_3;;
+		*);;
+		// удаляем дугу принадлежности
+		-> ..proc_find_book_by_location_9
+		(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_2;;
+
+			=> nrel_goto: ..proc_find_book_by_location_10;; 
+		*);;
+		// проверяем есть ли данная локация в проверяемой книге
+		-> ..proc_find_book_by_location_10
+		(*
+			<- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _cur_book_locations;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_2;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _unvisited_location;;
+
+            => nrel_then: ..proc_find_book_by_location_11;;		
+		 	=> nrel_else: ..proc_find_book_by_location_8;;
+		*);;
+		// если есть, то создаем связь между книгой и ответом
+		-> ..proc_find_book_by_location_11
+		(*
+			<- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_2;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _book;;
+
+            => nrel_goto: ..proc_find_book_by_location_3;;
+		*);;
+
+		-> ..proc_find_book_by_location_12 (*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+
+			=> nrel_goto: ..proc_find_book_by_location_return;;
+		
+		*);;
+
+		-> ..proc_find_book_by_location_return
+		(*
+			<- return;;
+		*);;
+	*);;
+*);;

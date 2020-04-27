@@ -1,0 +1,255 @@
+nrel_theses
+    <-sc_node_norole_relation;
+    => nrel_main_idtf: 
+ 	    [тезис*]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (тезис*)] (* <- lang_ru;; *);; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Тезис* - отношение между <b><sc_element sys_idtf="article">статьей</b></sc_element> и кратко сформулированной основной мыслью <b><sc_element sys_idtf="article">статьи</b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(статья, тезис*)] (* <- lang_ru;; *);;
+            => nrel_using_constants: {
+        	    article
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [В каждой <b><sc_element sys_idtf="article">статье</b></sc_element> есть хотя бы одино отношение тезис*.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+    <- quasybinary_relation;
+    <= nrel_first_domain:
+        article;
+    <= nrel_second_domain:
+        ..second_domain_of_nrel_theses
+		(*
+			<- set;;
+			<= nrel_boolean: theses_of_article;;
+		*);
+	=>nrel_definitional_domain: 
+		...
+		(*
+			<= nrel_combination:
+				...
+				(*
+					-> article;;
+					-> ..set_theses_of_article;;
+				*);;
+		*);
+    => nrel_inclusion: 
+        oriented_relation;
+        nonbinary_relation;;
+
+
+sc_node_role_relation -> rrel_introduction;;
+rrel_introduction 
+	=> nrel_main_idtf:
+		[введение'] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		.definition_of_rrel_introduction
+		(* 
+			<- definition;;
+			=> nrel_main_idtf:
+				[Опр.(введение')]
+					(* <- lang_ru;;	*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: 
+                        [fwgfgfsfd](*<-lang_ru;; => nrel_format: format_html;;*);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(* 
+					->	set;
+						lit_person;
+						relation;
+						literary_work;;
+				*);;
+		*);
+	<= nrel_first_domain:
+        article;
+    <= nrel_second_domain:
+        ..second_domain_of_rrel_introduction
+		(*
+			<- set;;
+			<= nrel_boolean: theses_of_article;;
+            <= nrel_definitional_domain: rrel_introduction;;
+		*);
+	<- role_relation;;
+
+
+sc_node_role_relation -> rrel_main_idea;;
+rrel_main_idea 
+	=> nrel_main_idtf:
+		[главная идея'] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		.definition_of_rrel_main_idea
+		(* 
+			<- definition;;
+			=> nrel_main_idtf:
+				[Опр.(главная идея')]
+					(* <- lang_ru;;	*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: 
+                        [fwgfgfsfd](*<-lang_ru;; => nrel_format: format_html;;*);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(* 
+					->	set;
+						lit_person;
+						relation;
+						literary_work;;
+				*);;
+		*);
+	<= nrel_first_domain:
+        article;
+    <= nrel_second_domain:
+        ..second_domain_of_rrel_main_idea
+		(*
+			<- set;;
+			<= nrel_boolean: theses_of_article;;
+            <= nrel_definitional_domain: rrel_main_idea;;
+		*);
+	<- role_relation;;
+
+
+
+sc_node_role_relation -> rrel_evidence;;
+rrel_evidence 
+	=> nrel_main_idtf:
+		[доказательство'] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		.definition_of_rrel_evidence
+		(* 
+			<- definition;;
+			=> nrel_main_idtf:
+				[Опр.(доказательство')]
+					(* <- lang_ru;;	*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: 
+                        [fwgfgfsfd](*<-lang_ru;; => nrel_format: format_html;;*);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(* 
+					->	set;
+						lit_person;
+						relation;
+						literary_work;;
+				*);;
+		*);
+	<= nrel_first_domain:
+        article;
+    <= nrel_second_domain:
+        ..second_domain_of_rrel_evidence
+		(*
+			<- set;;
+			<= nrel_boolean: theses_of_article;;
+            <= nrel_definitional_domain: rrel_evidence;;
+		*);
+	<- role_relation;;
+
+
+sc_node_role_relation -> rrel_comparison;;
+rrel_comparison 
+	=> nrel_main_idtf:
+		[сравнение'] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		.definition_of_rrel_comparison
+		(* 
+			<- definition;;
+			=> nrel_main_idtf:
+				[Опр.(сравнение')]
+					(* <- lang_ru;;	*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: 
+                        [fwgfgfsfd](*<-lang_ru;; => nrel_format: format_html;;*);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(* 
+					->	set;
+						lit_person;
+						relation;
+						literary_work;;
+				*);;
+		*);
+	<= nrel_first_domain:
+        article;
+    <= nrel_second_domain:
+        ..second_domain_of_rrel_comparison
+		(*
+			<- set;;
+			<= nrel_boolean: theses_of_article;;
+            <= nrel_definitional_domain: rrel_comparison;;
+		*);
+	<- role_relation;;
+
+
+sc_node_role_relation -> rrel_conclusion;;
+rrel_conclusion 
+	=> nrel_main_idtf:
+		[вывод'] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		.definition_of_rrel_conclusion
+		(* 
+			<- definition;;
+			=> nrel_main_idtf:
+				[Опр.(вывод')]
+					(* <- lang_ru;;	*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: 
+                        [fwgfgfsfd](*<-lang_ru;; => nrel_format: format_html;;*);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(* 
+					->	set;
+						lit_person;
+						relation;
+						literary_work;;
+				*);;
+		*);
+	<= nrel_first_domain:
+        article;
+    <= nrel_second_domain:
+        ..second_domain_of_rrel_conclusion
+		(*
+			<- set;;
+			<= nrel_boolean: theses_of_article;;
+            <= nrel_definitional_domain: rrel_conclusion;;
+		*);
+	<- role_relation;;

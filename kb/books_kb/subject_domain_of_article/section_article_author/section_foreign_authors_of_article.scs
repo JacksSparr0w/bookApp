@@ -1,0 +1,10 @@
+section_foreign_authors_of_article
+=> nrel_main_idtf:
+	[Раздел. Авторов зарубежные статей.]
+		(* <- lang_ru;; *);;
+
+section_foreign_authors_of_article = [*^"file://section_foreign_authors_of_article.scsi"*];;
+
+section_foreign_authors_of_article
+->rrel_key_sc_element:
+	person_Ken_Davies;;

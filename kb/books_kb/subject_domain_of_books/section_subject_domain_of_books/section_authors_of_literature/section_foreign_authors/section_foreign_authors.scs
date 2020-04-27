@@ -1,0 +1,65 @@
+section_foreign_authors
+=> nrel_main_idtf:
+	[Раздел. Зарубежные писатели.]
+		(* <- lang_ru;; *);
+->rrel_key_sc_element:
+	person_Stephen_Edwin_King;
+	person_Erich_Maria_Remarque;
+	person_Ray_Douglas_Bradbury;
+	person_Oscar_Wilde;
+	person_John_Tolkien;
+	person_Arthur_Conan_Doyle;
+	person_Francis_Scott_Fitzgerald;
+	person_Ernest_Hemingway;	
+	person_George_Orwell;
+	person_Daniel_Kiz;
+	person_Chuck_Palahniuk;
+	person_Jane_Austen;
+	person_Joan_Rowling;
+	person_Emily_Jane_Bronte;
+
+	person_Antoine_de_Saint_Exupery;
+	person_Paulo_Coelho;
+	person_Agatha_Christie;
+	person_Harper_Lee;
+	person_Neil_Gaiman;
+	person_Gabriel_Garcia_Marquez;
+	person_Haruki_Murakami;
+	person_Dan_Brown;
+	person_Patrick_Suskind;
+	person_John_Robert_Fowles;
+	person_Aldous_Huxley;
+	person_Margaret_Mitchell;
+	person_Jules_Verne;
+	person_Mark_Twain;
+	person_Franz_Kafka;
+	person_Theodore_Dreiser;
+	person_O_Henry;
+	person_Charles_Bukowski;
+	person_Albert_Camus;
+	person_Jean_Paul_Sartre;
+	person_Alexandre_Dumas;
+	person_Honore_de_Balzac;
+	person_Charles_Dickens;
+	person_Walter_Scott;
+	person_George_Gordon_Byron;
+	person_Victor_Hugo;
+	person_Jerome_David_Salinger;
+
+	person_Irvine_Welsh;
+	person_James_Joyce;
+	person_Jack_London;
+	person_Stanislaw_Lem;
+	person_Lewis_Carroll;
+	person_Astrid_Lindgren;
+	person_William_Shakespeare;
+	person_Howard_Phillips_Lovecraft;
+	person_Miguel_de_Cervantes_Saavedra;
+	person_Edgar_Allan_Poe;
+	person_Herbert_George_Wells;
+	person_Voltaire;
+	person_Virginia_Woolf;
+	person_Hans_Christian_Andersen;
+	person_Joseph_Rudyard_Kipling;;
+
+section_foreign_authors = [*^"file://section_foreign_authors.scsi"*];;

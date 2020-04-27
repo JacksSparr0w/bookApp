@@ -1,0 +1,31 @@
+subject_domain_of_article
+=> nrel_main_idtf:
+	[Предметная область статей]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition:
+	{
+	section_article
+		(*
+			=> nrel_section_base_order: 
+				section_theses_of_article;;
+		*);
+	section_theses_of_article 
+		(*
+			=> nrel_section_base_order:
+				section_domestic_authors_of_article;;
+		*);
+	section_domestic_authors_of_article 
+		(*
+			=> nrel_section_base_order:
+				section_foreign_authors_of_article;;
+		*);
+	section_foreign_authors_of_article
+		(*
+			=> nrel_section_base_order:
+				section_article_topics;;
+		*);
+	section_article_topics 
+	};;

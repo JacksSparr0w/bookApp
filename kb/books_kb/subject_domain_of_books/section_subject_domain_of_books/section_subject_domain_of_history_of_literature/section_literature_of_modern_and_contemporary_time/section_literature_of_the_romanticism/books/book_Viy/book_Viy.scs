@@ -1,0 +1,235 @@
+//Вий, повесть Гоголя
+book_Viy 
+    => nrel_main_idtf: 
+        ["Вий"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_tale;
+    => nrel_author:
+        person_Gogol_Nikolai_Vasilievich;
+    => nrel_languages_of_work:
+        lang_ru;
+    => nrel_publication_date:
+        year_1835;;
+    
+book_Viy
+<= nrel_characters:
+    .book_Viy_characters
+    (*
+        -> rrel_main_character:
+           char_Homa_Brut;
+           char_Pannochka;
+           char_Viy;;
+        -> char_Bogoslov_Halyava;
+           char_Tiberiy_Gorobec;;
+    *);;
+
+book_Viy
+=> nrel_location:
+    .book_Viy_location
+    (*
+        -> country_Russian_empire;;
+        -> Kiev;;
+    *);;
+    
+char_Homa_Brut
+        => nrel_main_idtf: 
+            [Хома Брут] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хома Брут)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Homa_Brut.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Pannochka
+        => nrel_main_idtf: 
+            [Панночка] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Панночка)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Pannochka.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Viy
+        => nrel_main_idtf: 
+            [Вий] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Вий)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Viy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+ char_Bogoslov_Halyava
+        => nrel_main_idtf: 
+            [Богослов Халява] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Богослов Халява)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Bogoslov_Halyava.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_Tiberiy_Gorobec
+        => nrel_main_idtf: 
+            [Тиберий Горобец] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Тиберий Горобец)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Tiberiy_Gorobec.html" (* <-lang_ru;; *);;
+                    *);;
+        *);;
+
+book_Viy => nrel_plot:
+        .book_Viy_plot
+(*
+      => nrel_main_idtf: [Сюжет. "Вий"] 
+                (* <-lang_ru;; *);;
+        -> .book_Viy_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Каникулы] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Viy_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_holiday;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Bogoslov_Halyava;
+                           char_Homa_Brut;
+                           char_Tiberiy_Gorobec;;
+                    *);;  
+                    => nrel_plot_sequence:
+                                .book_Viy_event_2;;                    
+            *);;
+
+        -> .book_Viy_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Ночлег] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Viy_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    <- event_attempted_murder;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> rrel_victim: char_Homa_Brut;;
+                        -> rrel_killer: char_Pannochka;;
+                    *);;          
+                    => nrel_plot_sequence:
+                                .book_Viy_event_3;;                                
+            *);;
+
+        -> .book_Viy_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Смерть Панночки] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Viy_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death_of_the_protagonist;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Homa_Brut;
+                           char_Pannochka;;
+                    *);;      
+                    => nrel_plot_sequence:
+                                .book_Viy_event_4;;                                  
+            *);;
+
+        -> .book_Viy_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Нечесть] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Viy_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_attempted_murder;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> rrel_victim: char_Homa_Brut;;
+                        -> rrel_killer: char_Pannochka;;
+                    *);;   
+                    => nrel_plot_sequence:
+                                .book_Viy_event_5;;                   
+            *);;
+            
+
+        -> .book_Viy_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Напуганный профессор] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Viy_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                     <- event_death_of_the_protagonist;;
+                     <- event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Bogoslov_Halyava;
+                           char_Homa_Brut;
+                           char_Viy;
+                           char_Tiberiy_Gorobec;;
+                    *);;                      
+            *);;
+    *);;

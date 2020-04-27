@@ -1,0 +1,26 @@
+ui_menu_na_books
+<- ui_user_command_class_noatom;
+=> nrel_main_idtf:
+	[Команды для поиска книг]
+		(* <- lang_ru;; *);
+	[Book search commands]
+		(* <- lang_en;; *);
+
+<= nrel_ui_commands_decomposition:
+	{
+		ui_menu_find_books_by_location;
+		ui_menu_search_book_by_template;
+		ui_menu_search_book_by_characters;
+ui_menu_file_for_installation_avarage_rating_of_the_book;
+        ui_menu_file_for_finding_similar_books;
+		ui_menu_file_for_recommending_books;
+		ui_menu_file_for_agent_of_define_age_limit;
+        ui_menu_search_the_smallest_year_of_book;
+		ui_menu_search_the_largest_year_of_book;
+		ui_menu_file_for_finding_book_by_event;
+		ui_menu_file_for_finding_books_by_events_classification;
+		ui_menu_file_for_finding_the_best_work_of_the_author;
+		ui_menu_file_for_finding_book_by_rating;
+		ui_menu_file_for_finding_journalism_article_by_the_largest_year;
+		ui_menu_file_for_finding_journalism_article_by_the_smallest_year
+	};;

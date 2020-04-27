@@ -1,0 +1,44 @@
+sc_node_norole_relation -> nrel_original_language;;
+nrel_original_language 
+	=> nrel_main_idtf:
+		[язык оригинала*] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		.definition_of_nrel_original_language
+		(* 
+			<- definition;;
+			=> nrel_main_idtf:
+				[Опр.(язык оригинала*)]
+					(* <- lang_ru;;	*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://content/content_htmls/nrel_original_language.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(* 
+					->	languages;
+						literary_work;;
+				*);;
+		*);
+
+	=>nrel_first_domain: literary_work;
+	=>nrel_second_domain: languages;
+	=>nrel_definitional_domain: 
+		...
+		(*
+			<= nrel_combination:
+				...
+				(*
+					-> literary_work;;
+					-> languages;;
+				*);;
+		*);
+
+	<- binary_relation;
+	<- oriented_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;
+	<- antireflexive_relation;;

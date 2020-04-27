@@ -1,0 +1,470 @@
+
+
+
+
+
+sc_node_not_relation -> editor;;
+
+editor => nrel_main_idtf:
+        [редактор](*<-lang_ru;;*);;
+
+Definition_editor
+    => nrel_main_idtf:
+        [Опр.(редактор)]  (* <- lang_ru;; *);;
+
+editor <- rrel_key_sc_element: Definition_editor
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//editor.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> artistic_text;;
+        -> publication;;
+        -> writer;;
+		*);;
+	*);;
+
+sc_node_not_relation -> fabulist;;
+
+fabulist => nrel_main_idtf:
+        [баснописец](*<-lang_ru;;*);;
+
+Definition_fabulist
+    => nrel_main_idtf:
+        [Опр.(баснописец)]  (* <- lang_ru;; *);;
+
+fabulist <- rrel_key_sc_element: Definition_fabulist
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//fabulist.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> writer;;
+		*);;
+	*);;
+
+sc_node_not_relation -> journalist;;
+
+journalist => nrel_main_idtf:
+        [журналист](*<-lang_ru;;*);;
+
+Definition_journalist
+    => nrel_main_idtf:
+        [Опр.(журналист)]  (* <- lang_ru;; *);;
+
+journalist <- rrel_key_sc_element: Definition_journalist
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//journalist.html";;	
+		*);;
+	<= nrel_using_constants:...
+        	(*
+            	-> person;;
+        	*);;
+	*);;
+
+sc_node_not_relation -> literary_critic;;
+
+literary_critic => nrel_main_idtf:
+        [литературный критик](*<-lang_ru;;*);;
+
+Definition_literary_critic
+    => nrel_main_idtf:
+        [Опр.(литературный критик)]  (* <- lang_ru;; *);;
+
+literary_critic <- rrel_key_sc_element: Definition_literary_critic
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//literary_critic.html";;	
+		*);;
+	<= nrel_using_constants:...
+        (*
+            -> person;;
+        *);;
+	*);;
+
+literary_critic <- rrel_key_sc_element: ...
+(*
+    => nrel_main_idtf:[Утв.(литературный критик, литературное произведение)] (* <- lang_ru;;*);;
+    <- statement;;
+    <- statement_of_common_type;;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example: "file://htmls//literary_critic_statment.html";;
+        
+    -> rrel_key_sc_element:...
+    (*
+        -> literary_work;;
+    *);;
+    *);;
+*);;
+
+sc_node_not_relation -> playwright;;
+
+playwright => nrel_main_idtf:
+        [драматург](*<-lang_ru;;*);;
+
+Definition_playwright
+    => nrel_main_idtf:
+        [Опр.(драматург)]  (* <- lang_ru;; *);;
+
+playwright <- rrel_key_sc_element: Definition_playwright
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//playwright.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> writer;;
+		*);;
+	*);;
+
+sc_node_not_relation -> proofreader;;
+
+proofreader => nrel_main_idtf:
+        [корректор](*<-lang_ru;;*);;
+
+Definition_proofreader
+    => nrel_main_idtf:
+        [Опр.(корректор)]  (* <- lang_ru;; *);;
+
+proofreader <- rrel_key_sc_element: Definition_proofreader
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//proofreader.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> artistic_text;;
+		*);;
+	*);;
+
+sc_node_not_relation -> war_correspondent;;
+
+war_correspondent => nrel_main_idtf:
+        [военный корреспондент](*<-lang_ru;;*);;
+
+war_correspondent => nrel_idtf:
+        [военкор](*<-lang_ru;;*);;
+
+Definition_war_correspondent
+    => nrel_main_idtf:
+        [Опр.(военный корреспондент)]  (* <- lang_ru;; *);;
+
+war_correspondent <- rrel_key_sc_element: Definition_war_correspondent
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//war_correspondent.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> journalist;;
+		*);;
+	*);;
+
+
+
+
+
+
+//
+
+
+philosopher
+
+<- person;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [философ] (* <- lang_ru;; *);
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(философ)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/philosopher1.html";;
+        *);;
+    *);;
+philosopher
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(философ)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_defining_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/philosopher2.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> person;;
+        *);;
+    *);;
+
+prosaist
+
+<- person;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [прозаик] (* <- lang_ru;; *);;
+
+prosaist
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(прозаик)] (* <- lang_ru ;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/prosaist.html" (* <- lang_ru;;*);;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> writer;;
+            -> prose;;
+        *);;
+    *);;
+
+publicist
+
+<- person;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [публицист] (* <- lang_ru;; *);;
+
+publicist
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(публицист,журналист)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_defining_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publicist1.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> journalist;;
+        *);;
+    *);
+    ...
+    (*
+        => nrel_main_idtf:[Утв.(публицист, писатель)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_defining_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publicist2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> writer;;
+        *);;
+    *);;
+
+    statement_of_defining_type
+    <= nrel_main_idtf: [утверждение определяющего типа] (* <- lang_ru;;*);;
+
+
+screenwriter
+
+<- person;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [сценарист] (* <- lang_ru;; *);;
+
+screenwriter
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(сценарист)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/screenwriter1.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> author;;
+            -> scenario;;
+        *);;
+    *);;
+screenwriter
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(сценарист,сюжет*)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/screenwriter2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> nrel_plot;;
+        *);;
+    *);;
+
+statement_of_common_type
+=>nrel_main_idtf:[утверждение общего вида] (* <- lang_ru;;*);;
+
+translator
+
+<- person;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [переводчик] (* <- lang_ru;; *);;
+
+translator
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(переводчик)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/translator.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> language;;
+        *);;
+    *);;
+
+nrel_author
+
+<- person;
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[ автор* ] (* <-lang_ru;; *);
+
+<- binary_relation;
+<- oriented_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: person;
+=> nrel_second_domain:literary_work;;
+
+nrel_author
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf: [Опр.(автор*)] (* <- lang_ru ;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls//nrel_author.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> literary_work;;
+            -> fiction;;
+        *);;
+    *);;
+
+nrel_publisher
+
+<- person;
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[ издатель* ] (* <-lang_ru;; *);
+
+<- binary_relation;
+<- oriented_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+
+=> nrel_first_domain: organization;
+=> nrel_second_domain: periodical;;
+
+nrel_publisher
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf: [Опр.(издатель*)] (* <- lang_ru ;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls//nrel_publisher.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> book;;
+        *);;
+    *);;
+
+    organization
+    <= nrel_main_idtf: [организация] (*<- lang_ru;;*);;
+    periodical
+    <= nrel_main_idtf: [периодическое издание] (*<-lang_ru;;*);;
+
+specialist_in_literature
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [литературовед] (* <- lang_ru;; *);;
+
+specialist_in_literature
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(литературовед)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/specialist_in_literature1.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> literary_work;;
+            -> review;;
+            -> genre_article;;
+        *);;
+    *);;
+specialist_in_literature
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(литературовед, художественное произведение)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/specialist_in_literature2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> fiction;;
+        *);;
+    *);;
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+section_literature_of_the_postmodernism
+	=> nrel_main_idtf:
+		[Раздел. Литература эпохи Постмодернизма]
+		(* <- lang_ru;; *);
+	
+	<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: "file://content/content_htmls/section_literature_of_the_postmodernism.html" (* <-lang_ru;; *);;
+			*);
+
+	-> rrel_key_sc_element:
+		book_sobachye_syerdtsye;
+		book_fahrenheit_451;
+		book_flowers_for_Algernon;
+		book_the_little_prince;
+		book_garnet_bracelet;;

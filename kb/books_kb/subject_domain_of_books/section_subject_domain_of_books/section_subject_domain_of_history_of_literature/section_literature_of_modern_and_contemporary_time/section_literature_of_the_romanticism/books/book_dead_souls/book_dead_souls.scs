@@ -1,0 +1,328 @@
+book_dead_souls
+    => nrel_main_idtf:
+        ["Мертвые души"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+
+    => nrel_author:
+        person_Gogol_Nikolai_Vasilievich;
+    <= nrel_original_language:
+    	lang_ru;
+    => nrel_publication_date:
+        year_1842;;
+
+book_dead_souls
+    <= nrel_characters:
+        .book_dead_souls_characters
+        (*
+            -> rrel_main_character:
+                    char_Pavel_Ivanovich_Chichikov;;
+            -> char_Manilov;
+               char_Korobochka;
+               char_Sobakevich;
+               char_Nozdrev;
+               char_Plushkin;
+               char_Selifan;;
+        *);;    
+
+char_Pavel_Ivanovich_Chichikov
+        => nrel_main_idtf: 
+            [Павел Иванович Чичиков] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Павел Иванович Чичиков)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Pavel_Ivanovich_Chichikov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Korobochka
+        => nrel_main_idtf: 
+            [Коробочка] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Коробочка)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Korobochka.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+        
+char_Manilov
+        => nrel_main_idtf: 
+            [Манилов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- background_character;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Манилов)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Manilov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;   
+
+char_Sobakevich
+        => nrel_main_idtf: 
+            [Собакевич] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Собакевич)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sobakevich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Nozdrev
+        => nrel_main_idtf: 
+            [Ноздрёв] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ноздрёв)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Nozdrev.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Plushkin
+        => nrel_main_idtf: 
+            [Плюшкин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Плюшкин)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Plushkin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Selifan
+        => nrel_main_idtf: 
+            [Селифан] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Селифан)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Selifan.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_dead_souls => nrel_plot:.book_dead_souls_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Мертвые души"] (* <-lang_ru;; *);;
+        -> .book_dead_souls_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Приезд в город NN] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_dead_souls_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Manilov;
+                        char_Pavel_Ivanovich_Chichikov;
+                        char_Sobakevich;
+                        char_Selifan;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_dead_souls_event_2;;      
+            *);;
+
+        -> .book_dead_souls_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Сделка с Маниловом] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_dead_souls_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deal;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Manilov;
+                        char_Pavel_Ivanovich_Chichikov;
+                        char_Sobakevich;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_dead_souls_event_3;;      
+            *);;    
+
+            -> .book_dead_souls_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Знакомство с Коробочкой] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_dead_souls_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Pavel_Ivanovich_Chichikov;
+                        char_Sobakevich;
+                        char_Selifan;
+                        char_Korobochka;
+                        char_Manilov;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_dead_souls_event_4;;                 
+            *);;
+
+            -> .book_dead_souls_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Знакомство с Ноздрёвым] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_dead_souls_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Pavel_Ivanovich_Chichikov;
+                        char_Nozdrev;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_dead_souls_event_5;;                       
+            *);;
+
+            -> .book_dead_souls_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Сделка с Собакевичем] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_dead_souls_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deal;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Sobakevich;
+                        char_Pavel_Ivanovich_Chichikov;
+                        char_Plushkin;;
+                    *);;   
+                    => nrel_plot_sequence: 
+                        .book_dead_souls_event_6;;                    
+            *);;
+
+            -> .book_dead_souls_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Сделка с Плюшкиным] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_dead_souls_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deal;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Pavel_Ivanovich_Chichikov;
+                            char_Plushkin;;
+                    *);;   
+                    => nrel_plot_sequence: 
+                        .book_dead_souls_event_7;;                    
+            *);;
+
+            -> .book_dead_souls_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Дочь Губернаторши] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_dead_souls_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Pavel_Ivanovich_Chichikov;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_dead_souls_event_8;;                        
+            *);;
+
+            -> .book_dead_souls_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Идея скупать мёртвых] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_dead_souls_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_memories;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Pavel_Ivanovich_Chichikov;;
+                    *);;   
+                    => nrel_plot_sequence: 
+                        .book_dead_souls_event_9;;                      
+            *);;
+
+            -> .book_dead_souls_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Чичиков уезжает из города] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_dead_souls_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_moving;;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Pavel_Ivanovich_Chichikov;;
+                    *);;                         
+            *);;
+    *);;

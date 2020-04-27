@@ -1,0 +1,22 @@
+sc_node_role_relation -> rrel_event_class_el;;
+rrel_event_class_el 
+	=> nrel_main_idtf:
+		[класс события'] 
+			(* <-lang_ru;; *);
+	<- role_relation;;
+
+sc_node_role_relation -> rrel_person_role;;
+rrel_person_role 
+	=> nrel_main_idtf:
+		[роль персонажа'] 
+			(* <-lang_ru;; *);
+	
+	<- role_relation;;
+
+sc_node_role_relation -> rrel_person_sex;;
+rrel_person_sex 
+	=> nrel_main_idtf:
+		[пол персонажа'] 
+			(* <-lang_ru;; *);
+	
+	<- role_relation;;

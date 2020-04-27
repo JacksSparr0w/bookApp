@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/tag-cloud-common.js",
+        "src/tag-cloud-painter.js"
+    ],
+
+    "component": "src/tag-cloud-component.js",
+
+    "target": "static/components/js/tag_cloud/tag_cloud.js"
+}

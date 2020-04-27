@@ -1,0 +1,11 @@
+section_article
+	=> nrel_main_idtf:
+		[Раздел. Статьи]
+			(* <- lang_ru;; *);;
+	
+section_article =  [*^"file://section_article.scsi"*];;
+
+section_article
+	-> rrel_key_sc_element:	
+        article;
+        journalism_article;;

@@ -1,0 +1,13 @@
+section_literature_of_the_critical_realism
+	=> nrel_main_idtf:
+		[Раздел. Литература эпохи Критического реализма]
+		(* <- lang_ru;; *);
+	
+	<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: "file://content/content_htmls/section_literature_of_the_critical_realism.html" (* <-lang_ru;; *);;
+			*);
+
+	-> rrel_key_sc_element:
+		book_picture_of_Dorian_Gray;;

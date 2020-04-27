@@ -1,0 +1,51 @@
+article_new_digital_color_model
+	=> nrel_main_idtf:
+        ["Новая модель цифрового цвета"]
+            (* <- lang_ru;; *); 
+    <- journalism_article;
+    => nrel_author:
+        person_Ken_Davies;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1999;;
+
+article_new_digital_color_model
+    => nrel_topic: ...
+        (*  
+            <= nrel_sc_text_translation: 
+                ...
+                (*
+                    ->[COLORCUBE - это трехмерная модель, с помощью которой можно изучать или преподавать теорию цифрового цвета.](* <- lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);;
+
+
+article_new_digital_color_model
+    => nrel_theses: ...
+        (*
+            -> rrel_introduction: ... 
+                (*
+                    <= nrel_sc_text_translation: ...
+                        (*
+                            ->[Цифровые камеры, цветные принтеры и сканеры становятся все больше дешевеют и таким образом, становятся доступными для все большего числа пользователей. Вместе с этой революцией в использовании цвета появилась и необходимость понять, что же такое цифровой цвет и разобраться в его особенностях.](* <- lang_ru;; => nrel_format: format_html;; *);;
+                        *);;
+                *);;
+            -> rrel_main_idea: ... 
+                (*
+                    <= nrel_sc_text_translation: ...
+                        (*
+                            ->[Компания Spittin' Image Software представляет новое простейшее изобретение, предназначенное для того, чтобы объяснить людям принципы работы цифрового цвета. Это изобретение недавно было запатентовано в США под названием COLORCUBE.](* <- lang_ru;; => nrel_format: format_html;; *);;
+                        *);;  
+                *);;
+            -> rrel_conclusion: ...
+                (*
+                    <= nrel_sc_text_translation: ... 
+                        (*
+                            ->[По мере того, как системы работы с цифровым цветом становятся все менее дорогими, и число их растет, увеличивается и спрос на эффективное обучение пользователей работе с этими продуктами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+                        *);;
+                *);;
+        *);;
+
+
+

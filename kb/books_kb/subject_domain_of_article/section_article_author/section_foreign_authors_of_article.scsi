@@ -1,0 +1,38 @@
+person_Ken_Davies
+    <- person;
+    <- male;
+    <- journalist;
+
+    => nrel_main_idtf:
+        [Кен Дейвис]
+            (* <- lang_ru;; *);
+  
+
+    => nrel_date_of_birth:
+        date_22_12_1925
+            (*
+                => nrel_main_idtf:
+                    [22 декабря 1925 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britain;
+
+    => nrel_date_of_death:
+        date_24_12_2017
+            (*
+                => nrel_main_idtf:
+                    [24 декабря 2017 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britain;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);;
+
+   

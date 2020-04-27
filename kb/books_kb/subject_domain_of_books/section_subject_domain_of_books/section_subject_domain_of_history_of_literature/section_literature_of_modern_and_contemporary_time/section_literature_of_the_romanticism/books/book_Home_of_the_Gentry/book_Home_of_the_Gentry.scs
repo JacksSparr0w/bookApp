@@ -1,0 +1,258 @@
+book_Home_of_the_Gentry
+ => nrel_main_idtf: 
+        ["Дворянское гнездо"]
+            (* <- lang_ru;; *);
+    =>nrel_systems_idtf:
+        [book_Home_of_the_Gentry];
+<- genre_novel;
+=> nrel_author:
+    person_Turgenev_Ivan_Sergeevich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1859;;
+
+book_Home_of_the_Gentry
+=> nrel_location:
+    .book_Home_of_the_Gentry_location
+    (*
+        -> Moscow;;
+	-> country_Russian_empire;;
+    *);;
+
+// ПЕРСОНАЖИ
+book_Home_of_the_Gentry
+=> nrel_characters:
+    .book_Home_of_the_Gentry_characters
+    (*
+        -> rrel_main_character:
+            char_Lavretskiy;
+            char_IPetrovich;
+            char_Glafira_Petrovna;
+            char_Petr_Andreich;;
+        ->  char_Sergey_Gedeonovskiy;
+            char_Mariya_Kalitina;
+            char_Marfa_Pestova;
+            char_VPanshin;
+            char_Varvara_Korobina;;
+                  
+    *);;
+
+char_Lavretskiy
+        => nrel_main_idtf: 
+            [Фёдор Иванович Лаврецкий] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Фёдор Иванович Лаврецкий)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Lavretskiy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_IPetrovich
+        => nrel_main_idtf: 
+            [Иван Петрович] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иван Петрович)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_IPetrovich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Glafira_Petrovna
+        => nrel_main_idtf: 
+            [Глафира Петровна] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Глафира Петровна)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Glafira_Petrovna.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Petr_Andreich
+        => nrel_main_idtf: 
+            [Пётр Андреевич] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Пётр Андреевич)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Petr_Andreich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Sergey_Gedeonovskiy
+        => nrel_main_idtf: 
+            [Гедеоновский Сергей Петрович] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гедеоновский Сергей Петрович)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sergey_Gedeonovskiy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_VPanshin
+        => nrel_main_idtf: 
+            [Владимир Николаевич Паншин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Владимир Николаевич Паншин)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_VPanshin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Mariya_Kalitina
+        => nrel_main_idtf: 
+            [Мария Дмитриевна Калитина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мария Дмитриевна Калитина)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mariya_Kalitina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Marfa_Pestova
+        => nrel_main_idtf: 
+            [Марфа Тимофеевна Пестова] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Марфа Тимофеевна Пестова)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Marfa_Pestova.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Varvara_Korobina
+        => nrel_main_idtf: 
+            [Варвара Павловна Коробьина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Варвара Павловна Коробьина)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Varvara_Korobina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_Home_of_the_Gentry=> nrel_plot:
+        .book_Home_of_the_Gentry
+    (*
+      => nrel_main_idtf: [Сюжет. Муму] 
+                (* <-lang_ru;; *);;
+        -> key_sc_element: book_Home_of_the_Gentry;;
+        -> .book_Home_of_the_Gentry_event_1
+            (*
+                => nrel_main_idtf: [Событие №1] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Home_of_the_Gentry_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_memories;;
+                    <- event_love;;
+                     <= nrel_main_participants: ... 
+                    (*
+                        -> char_Asya;
+                            char_Gagin;
+                             char_N_N;;
+                    *);; 
+                     => nrel_plot_sequence:
+                                .book_Home_of_the_Gentry_event_2;;                      
+            *);;
+        -> .book_Home_of_the_Gentry_event_2
+                     (*
+                => nrel_main_idtf: [Событие №2] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Home_of_the_Gentry_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                     <= nrel_main_participants: ... 
+                    (*
+                        -> char_Asya;
+                          char_Gagin;
+                          char_N_N;;
+                    *);; 
+                    <- event_love;;
+                    <-event_finality;;   
+            *);;
+
+    *);;
+

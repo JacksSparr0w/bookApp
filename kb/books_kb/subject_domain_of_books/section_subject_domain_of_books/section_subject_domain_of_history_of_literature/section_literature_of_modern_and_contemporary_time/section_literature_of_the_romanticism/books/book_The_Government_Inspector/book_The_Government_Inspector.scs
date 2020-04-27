@@ -1,0 +1,335 @@
+book_The_Government_Inspector
+ => nrel_main_idtf: 
+        ["Ревизор"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_comedy;
+=> nrel_author:
+    person_Gogol_Nikolai_Vasilievich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1835;;
+
+book_The_Government_Inspector
+=> nrel_location:
+    .book_The_Government_Inspector_location
+    (*
+        -> country_Russian_empire;;
+    *);;
+
+// ПЕРСОНАЖИ
+book_The_Government_Inspector
+<= nrel_characters:
+    .book_The_Government_Inspector_characters
+    (*
+        -> rrel_main_character:
+            char_Dmuhanovskiy;
+            char_Anna_Andreevna;
+            char_Mariya_Antonovna;
+            char_Luka_Hlopov;;
+        ->  char_Tyapkin;
+            char_Artemiy_Zemlyanika;
+            char_Shpekin;
+            char_Hlestakov;
+            char_Gibner;
+            char_Abdulin;;
+    *);;
+
+
+char_Dmuhanovskiy
+        => nrel_main_idtf: 
+            [Антон Антонович Сквозник-Дмухановский] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Антон Антонович Сквозник-Дмухановский)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Dmuhanovskiy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Anna_Andreevna
+        => nrel_main_idtf: 
+            [Анна Андреевна] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Анна Андреевна)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Anna_Andreevna.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Mariya_Antonovna
+        => nrel_main_idtf: 
+            [Марья Антоновна] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Марья Антоновна)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mariya_Antonovna.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Luka_Hlopov
+        => nrel_main_idtf: 
+            [Лука Лукич Хлопов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Лука Лукич Хлопов)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Luka_Hlopov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Tyapkin
+        => nrel_main_idtf: 
+            [Аммос Фёдорович Ляпкин-Тяпкин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Аммос Фёдорович Ляпкин-Тяпкин)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Tyapkin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Artemiy_Zemlyanika
+        => nrel_main_idtf: 
+            [Артемий Филиппович Земляника] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Артемий Филиппович Земляника)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Artemiy_Zemlyanika.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Shpekin
+        => nrel_main_idtf: 
+            [Иван Кузьмич Шпекин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иван Кузьмич Шпекин)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Shpekin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Hlestakov
+        => nrel_main_idtf: 
+            [Иван Александрович Хлестаков] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иван Александрович Хлестаков)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Hlestakov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Gibner
+        => nrel_main_idtf: 
+            [Христиан Иванович Гибнер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Христиан Иванович Гибнер)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Gibner.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Abdulin
+        => nrel_main_idtf: 
+            [Абдулин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа()] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Abdulin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_The_Government_Inspector => nrel_plot:
+    .book_The_Government_Inspector_plot
+    (*
+      => nrel_main_idtf: [Сюжет. Ревизор ] 
+                (* <-lang_ru;; *);;
+        -> .book_The_Government_Inspector_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Новость о прибытии ревизора] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Government_Inspector_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Dmuhanovskiy;
+                           char_Hlestakov;;                  
+                    *);;  
+                    <- event_arrival_of_guests;;
+                     => nrel_plot_sequence:
+                                .book_The_Government_Inspector_event_2;;                      
+            *);;
+
+        -> .book_The_Government_Inspector_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Хлестаков притворяется ревизором] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Government_Inspector_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Dmuhanovskiy;
+                           char_Hlestakov;;                  
+                    *);; 
+                    <- event_deceit ;;
+                    => nrel_plot_sequence:
+                                .book_The_Government_Inspector_event_3;;                      
+            *);;
+
+        -> .book_The_Government_Inspector_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Хлестаков в гостях у городничего] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Government_Inspector_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Dmuhanovskiy;
+                           char_Anna_Andreevna;
+                           char_Mariya_Antonovna;
+                           char_Hlestakov;;                  
+                    *);; 
+                    <- event_deceit;;
+                    => nrel_plot_sequence:
+                                .book_The_Government_Inspector_event_4;;                      
+            *);;
+
+        -> .book_The_Government_Inspector_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Взятки] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Government_Inspector_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Dmuhanovskiy;
+                           char_Anna_Andreevna;
+                           char_Mariya_Antonovna;
+                           char_Hlestakov;;                  
+                    *);; 
+                    <- event_deceit ;;
+                    <- event_mischief;;
+                    => nrel_plot_sequence:
+                                .book_The_Government_Inspector_event_5;;                      
+            *);;
+
+        -> .book_The_Government_Inspector_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Раскрытие Хлестакова] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Government_Inspector_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Dmuhanovskiy;
+                           char_Anna_Andreevna;
+                           char_Mariya_Antonovna;
+                           char_Hlestakov;;                  
+                    *);; 
+                     <- event_deceit ;;
+                    <- event_finality ;;           
+            *);;
+     *);;

@@ -1,0 +1,69 @@
+article
+    <-sc_node_not_relation;
+    => nrel_main_idtf:
+          [статья]
+            (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (статья)] (* <- lang_ru;; *);;
+            => nrel_using_constants: {
+                nrel_author
+             };; 
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Статья - это сочинение небольшого размера, в котором <b><sc_element sys_idtf="nrel_author">автор</b></sc_element> ставит задачу проанализировать общественные ситуации, процессы, явления, прежде всего с точки зрения закономерностей, лежащих в их основе.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(читатель, статья)] (* <- lang_ru;; *);;
+            => nrel_using_constants: {
+                reader
+            };; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Цель <b><sc_element sys_idtf="article">статьи</b></sc_element> — довести до сознания <b><sc_element sys_idtf="reader">читателя</b></sc_element> определённые факты, положения, суждения либо чьё-либо мнение о них.] (*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+journalism_article
+    <-article;
+    => nrel_main_idtf:
+          [публицистическая статья]
+            (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (публицистическая статья)] (* <- lang_ru;; *);;
+            => nrel_using_constants: {
+                nrel_author
+             };; 
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Публицистическая статья - это публицистическое сочинение небольшого размера, в котором <b><sc_element sys_idtf="nrel_author">автор</b></sc_element> ставит задачу проанализировать общественные ситуации, процессы, явления, прежде всего с точки зрения закономерностей, лежащих в их основе.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(читатель, публицистическая статья)] (* <- lang_ru;; *);;
+            => nrel_using_constants: {
+                reader;
+                magazine;
+                newspaper
+            };; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Публикуются в средствах массовой информации, таких как <b><sc_element sys_idtf="magazine">журнал</b></sc_element>, <b><sc_element sys_idtf="newspaper">газета</b></sc_element>.] (*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;

@@ -1,0 +1,315 @@
+book_all_quiet_on_the_Western_Front 
+    => nrel_main_idtf:
+        ["На Западном фронте без перемен"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+    => nrel_author:
+        person_Erich_Maria_Remarque;
+    <= nrel_original_language:
+        lang_du;
+    => nrel_publication_date:
+        year_1929;;
+
+
+book_all_quiet_on_the_Western_Front
+    <= nrel_characters:
+        .book_all_quiet_on_the_Western_Front_characters
+        (*
+            -> rrel_main_character:
+            		char_Paul_Baumer;
+                    char_Albert_Kropp;
+                    char_Haie_Westhus;
+                    char_Friedrich_Muller;
+                    char_Stanislaus_Kat_Katczinsky;
+                    char_Tjaden;;
+            -> char_Kantorek;
+               char_Himmelstoss;
+               char_Franz_Kemmerich;
+               char_Joseph_Behm;;
+        *);;
+
+char_Paul_Baumer
+        => nrel_main_idtf: 
+            [Пауль Боймер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Пауль Боймер)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Paul_Baumer.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Albert_Kropp
+        => nrel_main_idtf: 
+            [Альберт Кропп] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Альберт Кропп)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Albert_Kropp.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Haie_Westhus
+        => nrel_main_idtf: 
+            [Хайе Вестхус] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хайе Вестхус)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Haie_Westhus.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Friedrich_Muller
+        => nrel_main_idtf: 
+            [Фредерик Мюллер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Фредерик Мюллер)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Friedrich_Muller.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Stanislaus_Kat_Katczinsky
+        => nrel_main_idtf: 
+            [Станислав Катчинский (Кат)] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Станислав Катчинский (Кат))] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Stanislaus_Kat_Katczinsky.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Tjaden
+        => nrel_main_idtf: 
+            [Тьяден] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Тьяден)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Tjaden.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;                                    
+
+char_Kantorek
+        => nrel_main_idtf: 
+            [Канторек] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Канторек)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Kantorek.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Himmelstoss
+        => nrel_main_idtf: 
+            [Химмельштос] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Химмельштос)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Himmelstoss.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Franz_Kemmerich
+        => nrel_main_idtf: 
+            [Франц Кеммерих] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Франц Кеммерих)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Franz_Kemmerich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;   
+            
+char_Joseph_Behm
+        => nrel_main_idtf: 
+            [Иозеф Бем] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иозеф Бем)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Joseph_Behm.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;                     
+
+
+book_all_quiet_on_the_Western_Front => nrel_plot: 
+    .book_all_quiet_on_the_Western_Front_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "На Западном фронте без перемен"] (* <-lang_ru;; *);;
+        -> .book_all_quiet_on_the_Western_Front_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Война] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Paul_Baumer;
+                            char_Albert_Kropp;
+                            char_Friedrich_Muller;
+                            char_Kantorek;
+                            char_Franz_Kemmerich;
+                            char_Joseph_Behm;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_all_quiet_on_the_Western_Front_event_2;;      
+            *);;
+
+        -> .book_all_quiet_on_the_Western_Front_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Фронт] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_gas_attack;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Paul_Baumer;
+                            char_Albert_Kropp;
+                            char_Stanislaus_Kat_Katczinsky;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_all_quiet_on_the_Western_Front_event_3;;      
+            *);;
+
+        -> .book_all_quiet_on_the_Western_Front_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Сражение] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_battle;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Paul_Baumer;
+                            char_Himmelstoss;;
+
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_all_quiet_on_the_Western_Front_event_4;;      
+            *);;    
+
+        -> .book_all_quiet_on_the_Western_Front_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Отпуск] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_holiday;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Paul_Baumer;
+                            char_Kantorek;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_all_quiet_on_the_Western_Front_event_5;;      
+            *);;  
+
+        -> .book_all_quiet_on_the_Western_Front_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. На Западном фронте без перемен] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death_of_the_protagonist;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Paul_Baumer;
+                            char_Albert_Kropp;
+                            char_Friedrich_Muller;
+                            char_Stanislaus_Kat_Katczinsky;
+                            char_Tjaden;
+                            char_Kantorek;;
+
+                    *);;             
+            *);;     
+    *);;

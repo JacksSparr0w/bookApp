@@ -1,0 +1,20 @@
+book_Harry_Potter_and_the_Prisoner_of_Azkaban
+    => nrel_main_idtf:
+        ["Гарри Поттер и Узник Азкабана"]
+            (* <- lang_ru;; *);
+    <- concept_book;
+    => nrel_author:
+        person_Joan_Rowling;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1999;;
+book_Harry_Potter_and_the_Prisoner_of_Azkaban
+    <= nrel_characters:
+        .book_Harry_Potter_and_the_Prisoner_of_Azkaban_characters
+        (*
+            -> rrel_main_character:
+                    char_Harry_Potter;
+                    char_Hermione_Jean_Granger;
+                    char_Ronald_Bilius_Weasley;;
+        *);;

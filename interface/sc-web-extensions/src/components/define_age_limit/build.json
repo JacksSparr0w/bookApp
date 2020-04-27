@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/defineAgeLimit-common.js",
+        "src/defineAgeLimit-paintPanel.js"
+    ],
+
+    "component": "src/defineAgeLimit-component.js",
+
+    "target": "static/components/js/defineAgeLimit/defineAgeLimit.js"
+}

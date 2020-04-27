@@ -1,0 +1,44 @@
+section_literature_of_modern_and_contemporary_times
+	=> nrel_main_idtf:
+		[Раздел. Литература Нового и Новейшего времени]
+		(* <- lang_ru;; *);
+	
+	<= nrel_section_decomposition:
+		{
+			section_literature_of_the_renaissance
+			(*
+			=> nrel_section_base_order: 
+				section_literature_of_the_classicism;;
+			*);
+			section_literature_of_the_classicism
+			(*
+			=> nrel_section_base_order: 
+				section_literature_of_the_enlightenment;;
+			*);
+			section_literature_of_the_enlightenment
+			(*
+			=> nrel_section_base_order: 
+				section_literature_of_the_romanticism;;
+			*);
+			section_literature_of_the_romanticism
+			(*
+			=> nrel_section_base_order: 
+				section_literature_of_the_critical_realism;;
+			*);
+			section_literature_of_the_critical_realism
+			(*
+			=> nrel_section_base_order: 
+				section_literature_of_the_modernism;;
+			*);
+			section_literature_of_the_modernism
+			(*
+			=> nrel_section_base_order: 
+				section_literature_of_the_postmodernism;;
+			*);
+			section_literature_of_the_postmodernism
+			(*
+			=> nrel_section_base_order: 
+				section_golden_age_of_russian_literature;;
+			*);
+			section_golden_age_of_russian_literature
+		};;

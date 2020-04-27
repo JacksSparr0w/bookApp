@@ -1,0 +1,15 @@
+person_Maria_Lavrentieva
+    <- person;
+    <- female;
+    <- journalist;
+    
+   => nrel_main_idtf:
+            [Мария Лаврентьева]  (* <- lang_ru;;*);
+   
+    => nrel_place_of_birth:
+            country_Russia;
+
+    <= nrel_languages_of_work:...
+    (*
+        -> lang_ru;;
+    *);;

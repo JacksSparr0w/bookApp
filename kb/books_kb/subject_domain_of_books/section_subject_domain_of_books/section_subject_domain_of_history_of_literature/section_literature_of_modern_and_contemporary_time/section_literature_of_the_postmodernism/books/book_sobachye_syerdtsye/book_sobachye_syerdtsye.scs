@@ -1,0 +1,257 @@
+book_sobachye_syerdtsye
+    => nrel_main_idtf:
+        ["Собачье сердце"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_tale;
+    => nrel_author:
+        person_Bulgakov_Mikhail_Afanasyevich;
+    <= nrel_original_language:
+        lang_ru;
+    => nrel_publication_date:
+        year_1987;;
+
+
+book_sobachye_syerdtsye
+    <= nrel_characters:
+        .book_sobachye_syerdtsye_characters
+        (*
+            -> rrel_main_character:
+                    char_Sharik;
+                    char_Polygraph_Polygraphovich_Sharikov;
+                    char_Philip_Philipovich_Preobrazhensky;;
+            -> char_Ivan_Arnoldovich_Bormental;
+               char_Zinaida_Prokofyevna_Bunina;
+               char_Klim_Grigorievich_Chugunkin;
+               char_dvornik_Fedor;;
+        *);;
+
+char_Sharik
+        => nrel_main_idtf: 
+            [Шарик] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- dog;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Шарик)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sharik.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Polygraph_Polygraphovich_Sharikov
+    => nrel_main_idtf: 
+            [Полиграф Полиграфович Шариков]
+                (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Полиграф Полиграфович Шариков)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Polygraph_Polygraphovich_Sharikov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_Philip_Philipovich_Preobrazhensky
+        => nrel_main_idtf: 
+            [Филипп Филиппович Преображенский] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Филипп Филиппович Преображенский)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Philip_Philipovich_Preobrazhensky.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Ivan_Arnoldovich_Bormental
+        => nrel_main_idtf: 
+            [Иван Арнольдович Борменталь] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иван Арнольдович Борменталь)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Ivan_Arnoldovich_Bormental.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Zinaida_Prokofyevna_Bunina
+        => nrel_main_idtf: 
+            [Зинаида Прокофьевна Бунина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Зинаида Прокофьевна Бунина)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Zinaida_Prokofyevna_Bunina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Klim_Grigorievich_Chugunkin
+        => nrel_main_idtf: 
+            [Клим Григорьевич Чугункин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Клим Григорьевич Чугункин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Klim_Grigorievich_Chugunkin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_dvornik_Fedor
+        => nrel_main_idtf: 
+            [дворник Фёдор] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(дворник Фёдор)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_dvornik_Fedor.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_sobachye_syerdtsye => nrel_plot: 
+    .book_sobachye_syerdtsye_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Собачье сердце"] (* <-lang_ru;; *);;
+        -> .book_sobachye_syerdtsye_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Профессор Преображенский проводит операцию] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_sobachye_syerdtsye_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_operation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Sharik;
+                           char_Philip_Philipovich_Preobrazhensky;
+                           char_Zinaida_Prokofyevna_Bunina;
+                           char_Klim_Grigorievich_Chugunkin;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_sobachye_syerdtsye_event_2;;      
+            *);;
+
+        -> .book_sobachye_syerdtsye_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Проказы Шарикова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_sobachye_syerdtsye_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_mischief;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Sharik;
+                           char_Philip_Philipovich_Preobrazhensky;
+                           char_Ivan_Arnoldovich_Bormental;
+                           char_dvornik_Fedor;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_sobachye_syerdtsye_event_3;;      
+            *);;
+
+        -> .book_sobachye_syerdtsye_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Обманы Шарикова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_sobachye_syerdtsye_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Sharik;
+                           char_Philip_Philipovich_Preobrazhensky;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_sobachye_syerdtsye_event_4;;      
+            *);;    
+
+        -> .book_sobachye_syerdtsye_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Покушение Шарикова на профессора] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_sobachye_syerdtsye_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_attempted_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Sharik;
+                           char_Philip_Philipovich_Preobrazhensky;
+                           char_Ivan_Arnoldovich_Bormental;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_sobachye_syerdtsye_event_5;;      
+            *);;  
+
+        -> .book_sobachye_syerdtsye_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Шарикова превращают обратно в собаку] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_sobachye_syerdtsye_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finaly;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Sharik;
+                           char_Philip_Philipovich_Preobrazhensky;
+                           char_Ivan_Arnoldovich_Bormental;;
+                    *);;           
+            *);; 
+    *);;

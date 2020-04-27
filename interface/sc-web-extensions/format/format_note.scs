@@ -1,0 +1,15 @@
+format_notes
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf: 
+	[формат UI-компонента заметок(json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[format of notes UI-component (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;

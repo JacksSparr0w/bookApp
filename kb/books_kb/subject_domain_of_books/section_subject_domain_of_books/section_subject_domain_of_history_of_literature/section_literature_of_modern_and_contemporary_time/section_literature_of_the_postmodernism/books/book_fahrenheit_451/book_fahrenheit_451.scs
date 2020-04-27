@@ -1,0 +1,222 @@
+book_fahrenheit_451
+    => nrel_main_idtf:
+        ["451 градус по Фаренгейту"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+    <- genre_science_fiction;
+    <- genre_dystopia;
+    <- genre_speculative_fiction;
+
+    => nrel_author:
+        person_Ray_Douglas_Bradbury;
+    <= nrel_original_language:
+    	lang_en;
+    => nrel_publication_date:
+        year_1953;;
+
+
+book_fahrenheit_451
+=> nrel_location:
+.book_fahrenheit_451
+(*
+-> country_USA;;
+*);;
+
+book_fahrenheit_451
+    <= nrel_characters:
+        .book_fahrenheit_451_characters
+        (*
+            -> rrel_main_character:
+                    char_Guy_Montag;;
+            -> char_Clarisse_McClellan;
+               char_Mildred_Montag;
+               char_Faber;;
+        *);;    
+
+char_Guy_Montag
+        => nrel_main_idtf: 
+            [Гай Монтэг] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гай Монтэг)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Guy_Montag.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Clarisse_McClellan
+        => nrel_main_idtf: 
+            [Кларисса Маклеллан] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кларисса Маклеллан)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Clarisse_McClellan.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+        
+char_Mildred_Montag
+        => nrel_main_idtf: 
+            [Милдред Монтэг] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Милдред Монтэг)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mildred_Montag.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;   
+
+char_Faber
+        => nrel_main_idtf: 
+            [Фабер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Фабер)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Faber.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_fahrenheit_451 => nrel_plot:.book_fahrenheit_451_events
+    (*
+        => nrel_main_idtf: [Сюжет. "451 градус по Фаренгейту"] (* <-lang_ru;; *);;
+        -> key_sc_element: book_fahrenheit_451;;
+        -> .book_fahrenheit_451_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Гая и Клариссы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_fahrenheit_451_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Guy_Montag;
+                           char_Clarisse_McClellan;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_fahrenheit_451_event_2;;      
+            *);;
+
+        -> .book_fahrenheit_451_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Исчезновение и смерть Клариссы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_fahrenheit_451_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Guy_Montag;
+                           char_Clarisse_McClellan;
+                           char_Mildred_Montag;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_fahrenheit_451_event_3;;      
+            *);;    
+
+        -> .book_fahrenheit_451_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Воспоминание о Фабере] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_fahrenheit_451_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Guy_Montag;
+                            char_Faber;;  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_fahrenheit_451_event_4;;      
+            *);;
+
+        -> .book_fahrenheit_451_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Предательство Милдред] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_fahrenheit_451_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_treachery;; 
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Guy_Montag;
+                           char_Mildred_Montag;
+                           char_Faber;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_fahrenheit_451_event_5;;      
+            *);;  
+
+        -> .book_fahrenheit_451_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Начало войны] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_fahrenheit_451_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_war;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Guy_Montag;
+                        char_Faber;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_fahrenheit_451_event_6;;      
+            *);; 
+
+        -> .book_fahrenheit_451_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Финал] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_fahrenheit_451_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Guy_Montag;;
+                    *);;             
+            *);;
+    *);;

@@ -1,0 +1,36 @@
+ui_menu_search_the_smallest_year_of_book
+<- ui_user_command_class_atom;
+   ui_user_command_class_view_kb;;
+
+ui_menu_search_the_smallest_year_of_book
+=> nrel_main_idtf: 
+	[Какой минимальный год публикации книг?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Поиск самого маленького года.] 
+	(* <- lang_ru;; *);;
+
+ui_menu_search_the_smallest_year_of_book
+=> nrel_main_idtf:
+	[Which year is the smallest?] 
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Search the smallest year.] 
+	(* <- lang_en;; *);;
+
+ui_menu_search_the_smallest_year_of_book => ui_nrel_command_template:
+	[*
+		question_search_the_smallest_year_of_book _-> ._question_search_the_smallest_year_of_book_instance 
+		(*
+		_-> book;;
+		*);;
+		._question_search_the_smallest_year_of_book_instance _<- question;;
+	*];;
+
+ui_menu_search_the_smallest_year_of_book
+=> ui_nrel_command_lang_template:
+	[Какой минимальный год публикации книг?]
+	(* <- lang_ru;; *);
+=> ui_nrel_command_lang_template:
+	[Which year is the smallest?]
+	(* <- lang_en;; *);;

@@ -1,0 +1,10 @@
+section_literature_of_the_classicism
+	=> nrel_main_idtf:
+		[Раздел. Литература эпохи Классицизма]
+		(* <- lang_ru;; *);
+	
+	<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: "file://content/content_htmls/section_literature_of_the_classicism.html" (* <-lang_ru;; *);;
+			*);;

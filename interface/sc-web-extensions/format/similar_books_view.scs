@@ -1,0 +1,5 @@
+similar_books_view
+=> nrel_main_idtf: 
+	[Схожие книги] (* <-lang_ru;; *) ;
+	[Similar books] (* <-lang_en;; *) ;
+ <- ui_external_languages;;

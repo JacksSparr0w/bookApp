@@ -1,0 +1,965 @@
+book_idiot
+    => nrel_main_idtf:
+        ["Идиот"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+
+    => nrel_author:
+        person_Dostoevsky_Fyodor_Mikhailovich;
+    <= nrel_original_language:
+    	lang_ru;
+    => nrel_publication_date:
+        year_1868;;
+
+book_idiot
+    <= nrel_characters:
+        .book_idiot_characters
+        (*
+            -> rrel_main_character:
+                    char_Myshkin;
+                    char_Rogozhin;
+                    char_Nastasya_Filippovna;;
+            -> char_Alexandra_Yepanchina;
+               char_Adelaide_Epanchina;
+               char_Aglaya_Yepanchina;
+               char_Ivan_Yepanchin;
+               char_Lizaveta_Epanchina;
+               char_Ardalion_Ivolgin;
+               char_Nina_Ivolgina;
+               char_Gavrila_Ivolgin;
+               char_Varvara_Ptitsyna;
+               char_Nikolai_Ivolgin;
+               char_Ferdyshchenko;
+               char_Afanasy_Totsky;
+               char_Lebedev;
+               char_Hippolyt;;  
+        *);;    
+
+char_Myshkin
+        => nrel_main_idtf: 
+            [Лев Николаевич Мышкин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Лев Николаевич Мышкин)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Myshkin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Rogozhin
+        => nrel_main_idtf: 
+            [Парфен Семенович Рогожин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Парфен Семенович Рогожин)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Rogozhin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+        
+char_Nastasya_Filippovna
+        => nrel_main_idtf: 
+            [Настасья Филипповна Барашкова] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Настасья Филипповна Барашкова)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Nastasya_Filippovna.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;   
+
+char_Alexandra_Yepanchina
+        => nrel_main_idtf: 
+            [Александра Ивановна Епанчина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Александра Ивановна Епанчина)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Alexandra_Yepanchina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Adelaide_Epanchina
+        => nrel_main_idtf: 
+            [Аделаида Ивановна Епанчина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Аделаида Ивановна Епанчина)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Adelaide_Epanchina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Aglaya_Yepanchina
+        => nrel_main_idtf: 
+            [Аглая Ивановна Епанчина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Аглая Ивановна Епанчина)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Aglaya_Yepanchina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Ivan_Yepanchin
+        => nrel_main_idtf: 
+            [Иван Федорович Епанчин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Иван Федорович Епанчин)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Ivan_Yepanchin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Lizaveta_Epanchina
+        => nrel_main_idtf: 
+            [Лизавета Прокофьевна Епанчина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Лизавета Прокофьевна Епанчина)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Lizaveta_Epanchina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Ardalion_Ivolgin
+        => nrel_main_idtf: 
+            [Ардалион Александрович Иволгин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ардалион Александрович Иволгин)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Ardalion_Ivolgin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Nina_Ivolgina
+        => nrel_main_idtf: 
+            [Нина Александровна Иволгина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Нина Александровна Иволгина)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Nina_Ivolgina.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Gavrila_Ivolgin
+        => nrel_main_idtf: 
+            [Гаврила Ардалионыч Иволгин (Ганя)] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гаврила Ардалионыч Иволгин (Ганя))] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Gavrila_Ivolgin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Varvara_Ptitsyna
+        => nrel_main_idtf: 
+            [Варвара Ардалионовна Птицына] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Варвара Ардалионовна Птицына)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Varvara_Ptitsyna.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Nikolai_Ivolgin
+        => nrel_main_idtf: 
+            [Николай Ардалионыч Иволгин (Коля)] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Николай Ардалионыч Иволгин (Коля))] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Nikolai_Ivolgin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Ferdyshchenko
+        => nrel_main_idtf: 
+            [Фердыщенко] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Фердыщенко)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Ferdyshchenko.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Afanasy_Totsky
+        => nrel_main_idtf: 
+            [Афанасий Иванович Тоцкий] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Афанасий Иванович Тоцкий)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Afanasy_Totsky.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Lebedev
+        => nrel_main_idtf: 
+            [Лебедев] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Лебедев)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Lebedev.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Hippolyt
+        => nrel_main_idtf: 
+            [Ипполит] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ипполит)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Hippolyt.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_idiot => nrel_plot:.book_idiot_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Идиот"] (* <-lang_ru;; *);;
+        -> .book_idiot_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Встреча в вагоне поезда] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rogozhin;
+                        char_Myshkin;
+                        char_Lebedev;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_2;;      
+            *);;
+
+        -> .book_idiot_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. В передней Епанчиных] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Myshkin;
+                        char_Gavrila_Ivolgin;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_3;;      
+            *);;    
+
+            -> .book_idiot_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Портрет Настасьи Филипповны] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Myshkin;
+                        char_Ivan_Yepanchin;
+                        char_Gavrila_Ivolgin;
+                        char_Nastasya_Filippovna;
+                        char_Rogozhin;;
+                    *);; 
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_4;;                 
+            *);;
+
+            -> .book_idiot_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Сватовство Троцкого к Александре] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_marriage_proposal;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Alexandra_Yepanchina;
+                        char_Afanasy_Totsky;
+                        char_Gavrila_Ivolgin;
+                        char_Nastasya_Filippovna;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_5;;                       
+            *);;
+
+            -> .book_idiot_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Знакомство князя с семейством Епанчиных] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Ivan_Yepanchin;
+                        char_Myshkin;
+                        char_Aglaya_Yepanchina;
+                        char_Nastasya_Filippovna;;
+                    *);;   
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_6;;                    
+            *);;
+
+            -> .book_idiot_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Знакомство с генералом Иволгиным] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Ardalion_Ivolgin;
+                            char_Ferdyshchenko;
+                            char_Myshkin;
+                            char_Nastasya_Filippovna;;
+                    *);;   
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_7;;                    
+            *);;
+
+            -> .book_idiot_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Неожиданое прибытие Настасьи Филипповны] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Gavrila_Ivolgin;
+                            char_Nastasya_Filippovna;
+                            char_Ardalion_Ivolgin;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_8;;                      
+            *);;
+
+            -> .book_idiot_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Появление Рогожина в доме у Гани] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Rogozhin;
+                            char_Lebedev;
+                            char_Gavrila_Ivolgin;
+                            char_Nastasya_Filippovna;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_9;;                    
+            *);;
+
+            -> .book_idiot_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Сомнение, что Настасья Филипповна выйдет за Ганю] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_doubt;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Gavrila_Ivolgin;
+                            char_Myshkin;
+                            char_Nastasya_Filippovna;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_10;;                    
+            *);;
+
+            -> .book_idiot_event_10
+            (*
+                => nrel_main_idtf: [Событие №10. Бал у Настасьи Филипповны] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_10.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_ball;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                            char_Nastasya_Filippovna;
+                            char_Afanasy_Totsky;
+                            char_Ivan_Yepanchin;
+                            char_Gavrila_Ivolgin;
+                            char_Ferdyshchenko;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_11;;                    
+            *);;
+
+            -> .book_idiot_event_11
+            (*
+                => nrel_main_idtf: [Событие №11. Самые дурные поступки] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_11.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_revelation;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Ferdyshchenko;
+                            char_Ivan_Yepanchin;
+                            char_Afanasy_Totsky;
+                            char_Nastasya_Filippovna;
+                            char_Gavrila_Ivolgin;
+                            char_Myshkin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_12;;                    
+            *);;
+
+            -> .book_idiot_event_12
+            (*
+                => nrel_main_idtf: [Событие №12. Шутка Настасьи Филипповны] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_12.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_joke;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Rogozhin;
+                            char_Nastasya_Filippovna;
+                            char_Gavrila_Ivolgin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_13;;                    
+            *);;
+
+            -> .book_idiot_event_13
+            (*
+                => nrel_main_idtf: [Событие №13. Деньги в огне] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_13.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_fainting;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Rogozhin;
+                            char_Nastasya_Filippovna;
+                            char_Gavrila_Ivolgin;
+                            char_Myshkin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_14;;                    
+            *);;
+
+            -> .book_idiot_event_14
+            (*
+                => nrel_main_idtf: [Событие №14. Побег из-под венца] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_14.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_escape;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                            char_Nastasya_Filippovna;
+                            char_Rogozhin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_15;;                    
+            *);;
+
+            -> .book_idiot_event_15
+            (*
+                => nrel_main_idtf: [Событие №15. Объяснение князя перед Рогожиным] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_15.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_meeting;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                            char_Nastasya_Filippovna;
+                            char_Rogozhin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_16;;                    
+            *);;
+
+            -> .book_idiot_event_16
+            (*
+                => nrel_main_idtf: [Событие №16. Обмен крестами] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_16.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_swap;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                            char_Rogozhin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_17;;                    
+            *);;
+
+            -> .book_idiot_event_17
+            (*
+                => nrel_main_idtf: [Событие №17. Эпилептический припадок князя] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_17.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_epileptic_seizure;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                            char_Rogozhin;
+                            char_Lebedev;
+                            char_Nikolai_Ivolgin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_18;;                    
+            *);;
+
+            -> .book_idiot_event_18
+            (*
+                => nrel_main_idtf: [Событие №18. «Сын Павлищева»] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_18.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_meeting;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                            char_Nikolai_Ivolgin;
+                            char_Lebedev;
+                            char_Gavrila_Ivolgin;
+                            char_Varvara_Ptitsyn;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_19;;                    
+            *);;
+
+            -> .book_idiot_event_19
+            (*
+                => nrel_main_idtf: [Событие №19. Ганя в сношениях с Аглаей] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_19.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_meeting;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Gavrila_Ivolgin;
+                            char_Nastasya_Filippovna;
+                            char_Lizaveta_Epanchina;
+                            char_Aglaya_Yepanchina;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_20;;                    
+            *);;
+
+            -> .book_idiot_event_20
+            (*
+                => nrel_main_idtf: [Событие №20. Мышкин о убийцах] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_20.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_meeting;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_21;;                    
+            *);;
+
+            -> .book_idiot_event_21
+            (*
+                => nrel_main_idtf: [Событие №21. Прогулка князя и Рогожина] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_21.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_walk;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                            char_Nastasya_Filippovna;
+                            char_Rogozhin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_22;;                    
+            *);;
+
+            -> .book_idiot_event_22
+            (*
+                => nrel_main_idtf: [Событие №22. Свидание князя и Аглаи] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_22.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_date;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Aglaya_Yepanchina;
+                            char_Myshkin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_23;;                    
+            *);;
+
+            -> .book_idiot_event_23
+            (*
+                => nrel_main_idtf: [Событие №23. Вопрос о счастье] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_23.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_meeting;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                            char_Rogozhin;
+                            char_Nastasya_Filippovna;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_24;;                    
+            *);;
+
+            -> .book_idiot_event_24
+            (*
+                => nrel_main_idtf: [Событие №24. Сердечный приступ генерала Иволгина] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_24.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_meeting;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                            char_Ardalion_Ivolgin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_25;;                    
+            *);;
+
+            -> .book_idiot_event_25
+            (*
+                => nrel_main_idtf: [Событие №25. Отношения князя и Аглаи] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_25.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_marriage_proposal;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                            char_Aglaya_Yepanchina;
+                            char_Lizaveta_Epanchina;
+                            char_Ivan_Yepanchin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_26;;                    
+            *);;
+
+            -> .book_idiot_event_26
+            (*
+                => nrel_main_idtf: [Событие №26. Эпилептический припадок в доме Епанчиных] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_26.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_epileptic_seizure;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_27;;                    
+            *);;
+
+            -> .book_idiot_event_27
+            (*
+                => nrel_main_idtf: [Событие №27. Встреча Настасьи Филипповны и Аглаи] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_27.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_meeting;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                        char_Hippolyt;
+                        char_Nastasya_Filippovna;
+                        char_Aglaya_Yepanchina;
+                        char_Rogozhin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_28;;                    
+            *);;
+
+            -> .book_idiot_event_28
+            (*
+                => nrel_main_idtf: [Событие №28. Уезд семьи Епанчиных из Павловска] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_28.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_moving;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                        char_Nastasya_Filippovna;
+                        char_Aglaya_Yepanchina;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_29;;                    
+            *);;
+
+            -> .book_idiot_event_29
+            (*
+                => nrel_main_idtf: [Событие №29. Смерть генерала Иволгина] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_29.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                        char_Nastasya_Filippovna;
+                        char_Aglaya_Yepanchina;
+                        char_Ardalion_Ivolgin;
+                        char_Hippolyt;
+                        char_Rogozhin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_30;;                    
+            *);;
+
+            -> .book_idiot_event_30
+            (*
+                => nrel_main_idtf: [Событие №30. Убийство Настасьи Филипповны] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_30.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death_of_the_protagonist;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                        char_Nastasya_Filippovna;
+                        char_Rogozhin;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_idiot_event_31;;                    
+            *);;
+
+            -> .book_idiot_event_31
+            (*
+                => nrel_main_idtf: [Событие №31. Дальнейшая жизнь Рогожина, Мышкина и Аглаи] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_idiot_event_31.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finality;;
+                    <- event_wedding;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Myshkin;
+                        char_Aglaya_Yepanchina;
+                        char_Rogozhin;;
+                    *);;                    
+            *);;
+    *);;

@@ -1,0 +1,200 @@
+book_flowers_for_Algernon
+    => nrel_main_idtf:
+        ["Цветы для Элджернона"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+    <- genre_science_fiction;
+    => nrel_author:
+        person_Daniel_Kiz;
+    <= nrel_original_language:
+    	lang_en;
+    => nrel_publication_date:
+        year_1966;;
+
+book_flowers_for_Algernon
+=> nrel_location:
+.book_flowers_for_Algernon
+(*
+-> country_USA;;
+*);;
+
+book_flowers_for_Algernon
+    <= nrel_characters:
+        .book_flowers_for_Algernon_characters
+        (*
+            -> rrel_main_character:
+                    char_Charlie_Gordon;;
+            -> char_Alice_Kinnian;
+               char_Algernon;;
+        *);;    
+
+char_Charlie_Gordon
+        => nrel_main_idtf: 
+            [Чарли Гордон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Чарли Гордон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Charlie_Gordon.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Alice_Kinnian
+        => nrel_main_idtf: 
+            [Алиса Кинниан] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Алиса Кинниан)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Alice_Kinnian.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+        
+char_Algernon
+        => nrel_main_idtf: 
+            [Элджернон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- mouse;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Элджернон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Algernon.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;        
+
+book_flowers_for_Algernon => nrel_plot:.book_flowers_for_Algernon_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Цветы для Элджернона"] (* <-lang_ru;; *);;
+        -> key_sc_element: book_flowers_for_Algernon;;
+        -> .book_flowers_for_Algernon_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Знакомство главных персонажей] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_flowers_for_Algernon_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Charlie_Gordon;
+                           char_Alice_Kinnian;
+                           char_Algernon;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_flowers_for_Algernon_event_2;;      
+            *);;
+
+        -> .book_flowers_for_Algernon_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Операция Чарли] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_flowers_for_Algernon_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_operation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Charlie_Gordon;
+                           char_Alice_Kinnian;
+                           char_Algernon;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_flowers_for_Algernon_event_3;;      
+            *);;    
+
+        -> .book_flowers_for_Algernon_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Любовь Чарли и Алисы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_flowers_for_Algernon_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Charlie_Gordon;
+                           char_Alice_Kinnian;;   
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_flowers_for_Algernon_event_4;;      
+            *);;
+
+        -> .book_flowers_for_Algernon_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Смерть Элджернона] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_flowers_for_Algernon_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Charlie_Gordon;
+                           char_Algernon;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_flowers_for_Algernon_event_5;;      
+            *);;  
+
+        -> .book_flowers_for_Algernon_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Расставание Чарли и Алисы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_flowers_for_Algernon_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_breakup;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Charlie_Gordon;
+                           char_Alice_Kinnian;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_flowers_for_Algernon_event_6;;      
+            *);; 
+
+        -> .book_flowers_for_Algernon_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Финал] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_flowers_for_Algernon_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Charlie_Gordon;
+                           char_Alice_Kinnian;
+                           char_Algernon;;
+                    *);;             
+            *);;
+    *);;

@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/bookSearch-common.js",
+        "src/bookSearch-paintPanel.js"
+    ],
+
+    "component": "src/bookSearch-component.js",
+
+    "target": "static/components/js/bookSearch/bookSearch.js"
+}

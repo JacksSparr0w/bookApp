@@ -1,0 +1,14 @@
+section_role_of_lit_person
+	=> nrel_main_idtf:
+		[Раздел. Литературных персонажей]
+			(* <- lang_ru;; *);;
+	
+section_role_of_lit_person =  [*^"file://section_role_of_lit_person.scsi"*];;
+
+section_role_of_lit_person	-> rrel_key_sc_element:	
+		rrel_killer;
+		rrel_main_character;
+		rrel_victim;
+		rrel_doctor;
+		rrel_patient;
+		nrel_characters;;

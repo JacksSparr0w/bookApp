@@ -1,0 +1,301 @@
+book_A_hero_of_our_time
+=> nrel_main_idtf: 
+        ["Герой нашего времени"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_novel;
+=> nrel_author:
+    person_Lermontov_Mikhail_Yuryevich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1840;;
+
+
+book_A_hero_of_our_time
+<= nrel_characters:
+    .book_A_hero_of_our_time_characters
+    (*
+        -> rrel_main_character:
+            char_Pechorin;
+            char_Maksimich;
+            char_Bela;;
+        -> char_Grushnickiy;
+           char_Doctor_verner;
+           char_Vera;
+           char_Meri;
+           char_Azamat;;
+    *);;
+
+book_A_hero_of_our_time
+=> nrel_location:
+    .book_A_hero_of_our_time_location
+    (*
+        -> Caucasus;;
+        -> Pyatigorsk;;
+        -> country_Russian_empire;;      
+    *);;
+
+
+
+char_Pechorin
+        => nrel_main_idtf: 
+            [Печорин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Печорин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Pechorin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;   
+
+char_Maksimich
+        => nrel_main_idtf: 
+            [Максим Максимыч] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Максим Максимыч)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Maksimich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);; 
+
+char_Grushnickiy
+        => nrel_main_idtf: 
+            [Грушницкий] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Грушницкий)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Grushnickiy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);; 
+
+char_Vera
+        => nrel_main_idtf: 
+            [Вера] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Вера)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Vera.html" (* <-lang_ru;; *);;
+                    *);;
+    *);; 
+
+char_Doctor_verner
+        => nrel_main_idtf: 
+            [Доктор Вернер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Доктор Вернер)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Doctor_verner.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Bela
+        => nrel_main_idtf: 
+            [Бэла] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Бела)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Bela.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Azamat
+        => nrel_main_idtf: 
+            [Азамат] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+         <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Азамат)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Azamat.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Meri
+        => nrel_main_idtf: 
+            [Княжна Мэри] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Княжна Мэри)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Meri.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_A_hero_of_our_time => nrel_plot: 
+    .book_A_hero_of_our_time_plot
+    (*
+      => nrel_main_idtf: [Сюжет. "Герой нашего времени"] 
+                (* <-lang_ru;; *);;
+        -> .book_A_hero_of_our_time_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Бэла] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_A_hero_of_our_time_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Maksimich;
+                           char_Pechorin;
+                           char_Bela;
+                           char_Azamat;;
+                    *);;         
+                    => nrel_plot_sequence:
+                            .book_A_hero_of_our_time_event_2;;
+
+            *);;
+
+        -> .book_A_hero_of_our_time_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Максим Максимович] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_A_hero_of_our_time_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Maksimich;
+                           char_Pechorin;;
+                    *);;                  
+                    => nrel_plot_sequence:
+                            .book_A_hero_of_our_time_event_3;;    
+            *);;
+
+        -> .book_A_hero_of_our_time_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Тамань] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_A_hero_of_our_time_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <- event_attempted_murder;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Pechorin;;
+                    *);;        
+                    => nrel_plot_sequence:
+                            .book_A_hero_of_our_time_event_4;;
+            *);;
+
+        -> .book_A_hero_of_our_time_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Княжна Мери] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_A_hero_of_our_time_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_duel;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Grushnickiy;
+                           char_Meri;
+                           char_Pechorin;
+                           char_Doctor_verner;;                        
+                    *);;  
+                    => nrel_plot_sequence:
+                            .book_A_hero_of_our_time_event_5;;                    
+            *);;
+
+        -> .book_A_hero_of_our_time_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Фаталист] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_A_hero_of_our_time_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_duel;;
+                    <- event_death;;
+                    <- event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Pechorin;
+                           char_Maksimich;;
+                    *);;                      
+            *);;
+
+    *);;
+
+

@@ -1,0 +1,107 @@
+scp_program -> proc_search_the_largest_year_of_journalism_article (*
+	-> rrel_params: ...(*
+		-> rrel_1: rrel_out: _year;;
+	*);;
+
+	-> rrel_operators: ... (*
+
+		// инициализация _year значением
+		-> rrel_init: ..proc_gen_max_year (*
+			<- contAssign;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _max_year;; 
+				-> rrel_2: rrel_fixed: rrel_scp_const: [0];; 
+			
+				=> nrel_goto: ..proc_find_constraction_of_journalism_article;;	
+		*);;
+
+		// находим конструкцию из публицистических статей
+		-> ..proc_find_constraction_of_journalism_article (*
+			<- searchSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: journalism_article;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;; // ребро, соединяющее множество публицистических статей с самими статьями
+				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _some_journalism_article;; // одна из вершин
+
+				-> rrel_set_3: rrel_assign: rrel_scp_var: _set_journalism_articles;;
+			=> nrel_then: ..proc_get_journalism_article_from_set;; //  достаем публицистическую статью из множества
+		 	=> nrel_else: ..proc_year_cont_max_year;; //  завершаем программу
+		*);;
+
+		// достаем публицистическую статью из множества
+		-> ..proc_get_journalism_article_from_set (*
+			<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _set_journalism_articles;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _current_journalism_article;;
+
+			=> nrel_then: ..proc_delete_current_journalism_article_from_set_journalism_articles;; // находим конструкцию с публицистической статьей и годом издания
+		 	=> nrel_else: ..proc_year_cont_max_year;; 
+		*);;
+
+		// удаление текущей книги из множества
+		-> ..proc_delete_current_journalism_article_from_set_journalism_articles (*
+			<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc2;;
+
+			=> nrel_goto: ..proc_find_constraction_with_journalism_article_and_year;;
+			*);;
+
+
+		// находим конструкцию с публицистической статьёй и годом издания
+		 -> ..proc_find_constraction_with_journalism_article_and_year (* 
+			<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _current_journalism_article;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _current_year;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_publication_date;;
+	
+			=> nrel_then: ..proc_get_const_from_year;;
+			=> nrel_else: ..proc_get_journalism_article_from_set;;
+		 *);;
+
+		// достаем из  _current_year дату
+		-> ..proc_get_const_from_year (*
+			<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _current_year;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _date;;
+
+			=> nrel_then: ..proc_compare_year_and_current_year;;
+			=> nrel_else: ..proc_get_journalism_article_from_set;;
+		*);;
+
+
+		// сравниваем _year и найденный год 
+		-> ..proc_compare_year_and_current_year (*
+			<- ifGr;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _max_year;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _date;;
+	
+			=> nrel_then: ..proc_get_journalism_article_from_set;; // если _max_year больше _date
+			=> nrel_else: ..proc_year_bigger_date;; // идем к следующей книге
+		*);;
+
+
+		// Присваиваем _year значение _current_year
+		-> ..proc_year_bigger_date (*
+			<- contAssign;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _max_year;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _date;;
+
+			=> nrel_goto: ..proc_get_journalism_article_from_set;; // идем к следующей публицистической статье
+		*);;
+
+		-> ..proc_year_cont_max_year (*
+			<- contAssign;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _year;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _max_year;;
+
+			=> nrel_goto: ..proc_cycle_return;; // идем к следующей публицистической статье
+		*);;
+		//выводим результат
+		-> ..proc_cycle_return (*
+				<- return;;
+			*);;
+
+	*);;
+*);;

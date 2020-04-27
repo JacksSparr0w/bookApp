@@ -1,0 +1,28 @@
+ui_menu_file_for_finding_books_by_events_classification
+	<- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_books_by_events_classification => nrel_main_idtf: 
+	[Команда поиска книг по описанию событий] 
+		(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_books_by_events_classification => nrel_main_idtf: 
+	[Request of finding books by events classification] 
+		(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_books_by_events_classification => ui_nrel_command_template:
+	[*
+		question_of_finding_books_by_events_classification _-> ._question_of_finding_books_by_events_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_of_finding_books_by_events_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_books_by_events_classification => ui_nrel_command_lang_template: 
+	[Команда поиска книг по описанию событий: $ui_arg_1] 
+		(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_books_by_events_classification => ui_nrel_command_lang_template: 
+	[Request of finding books by events classification: $ui_arg_1] 
+	 	(*<- lang_en;; *);;
+

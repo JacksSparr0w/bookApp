@@ -1,0 +1,2266 @@
+person_Arthur_Conan_Doyle
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Артур Конан Дойл]
+            (* <- lang_ru;; *);
+  
+
+    => nrel_date_of_birth:
+        date_22_05_1859
+            (*
+                => nrel_main_idtf:
+                    [22 мая 1859 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britain;
+
+    => nrel_date_of_death:
+        date_07_07_1930
+            (*
+                => nrel_main_idtf:
+                    [7 июля 1930 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britain;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_detective;;
+            -> concept_fantasy;;
+            -> concept_science_fiction;;
+            -> concept_historical_novel;;
+        *);;
+
+
+person_Chuck_Palahniuk
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Чак Паланик]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_21_02_1962
+            (*
+                => nrel_main_idtf:
+                    [21 февраля 1962 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_horror;;
+            -> genre_satire;;
+        *);;
+
+
+person_Ernest_Hemingway
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Эрнест Хемингуэй]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_21_07_1899
+            (*
+                => nrel_main_idtf:
+                    [21 июля 1899 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_date_of_death:
+        date_02_07_1961
+            (*
+                => nrel_main_idtf:
+                    [2 июля 1961 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_USA;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_autobiography;;
+            -> concept_novel;;
+            -> concept_short_novel;;
+            -> concept_docudrama;;
+        *);;
+
+
+person_Francis_Scott_Fitzgerald
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Фрэнсис Скотт Фицджеральд]
+            (* <- lang_ru;; *);
+
+
+    => nrel_date_of_birth:
+        date_24_09_1896
+            (*
+                => nrel_main_idtf:
+                    [24 сентября 1896 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_date_of_death:
+        date_21_12_1940
+            (*
+                => nrel_main_idtf:
+                    [21 декабря 1940 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_USA;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_drama;;
+            -> concept_novel;;
+            -> concept_narration;;
+        *);;
+
+person_George_Orwell
+    => nrel_main_idtf:
+        [Джордж Оруэлл]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_25_06_1903
+            (*
+                => nrel_main_idtf:
+                    [25 июня 1903 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britain;
+
+    => nrel_date_of_death:
+        date_02_07_1950
+            (*
+                => nrel_main_idtf:
+                    [21 января 1950 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britain;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_journalism;;
+            -> concept_prose;;
+            -> concept_critic;;
+            -> concept_antiutopia;;
+        *);;
+
+person_Jane_Austen
+    => nrel_main_idtf:
+        [Джейн Остин]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_09_08_1927
+            (*
+                => nrel_main_idtf:
+                    [16 декабря 1775 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britain;
+
+    => nrel_date_of_death:
+        date_15_06_2014
+            (*
+                => nrel_main_idtf:
+                    [18 июля 1817) года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britain;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_romantic_novel;;
+
+        *);;
+
+
+person_Joan_Rowling
+    <- person;
+    <- female;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Джоан Роулинг]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_31_07_1965
+            (*
+                => nrel_main_idtf:
+                    [31 июля 1965 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britain;
+
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_criminal_novel;;
+            -> concept_fantasy;;
+            -> concept_tragicomedy;;
+        *);;
+
+ 
+
+person_John_Tolkien 
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Джон Рональд Руэл Толкин]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Джон Толкин]
+            (* <- lang_ru;; *);
+    
+    => nrel_date_of_birth:
+        date_03_01_1892
+            (*
+                => nrel_main_idtf:
+                    [3 января 1892 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_South_Africa;
+
+    => nrel_date_of_death:
+        date_02_09_1973
+            (*
+                => nrel_main_idtf:
+                    [2 сентября 1973 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britain;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_fantasy;;
+            -> concept_poetry;;
+        *);;
+
+
+person_Oscar_Wilde
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Оскар Уайльд]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [С.З.З]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Себастьян Мельмот]
+            (* <- lang_ru;; *);
+
+    => nrel_date_of_birth:
+        date_16_10_1854
+            (*
+                => nrel_main_idtf:
+                    [16 октября 1854 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Ireland;
+
+    => nrel_date_of_death:
+        date_30_11_1900
+            (*
+                => nrel_main_idtf:
+                    [30 ноября 1900 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_France;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+            -> lang_fr;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_essay;;
+            -> concept_military;;
+            -> concept_psychological;;
+            -> concept_comedy;;
+            -> concept_tragedy;;
+            -> concept_drama;;
+            -> concept_fairy_tale;;
+            -> concept_novel;;
+            -> concept_poem;;
+            -> concept_narration;;
+        *);;
+
+
+person_Ray_Douglas_Bradbury
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Рэй Дуглас Брэдбери]
+            (* <- lang_ru;; *);
+
+
+    => nrel_date_of_birth:
+        date_22_08_1920
+            (*
+                => nrel_main_idtf:
+                    [22 августа 1920 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_date_of_death:
+        date_05_06_2012
+            (*
+                => nrel_main_idtf:
+                    [5 июня 2012 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_USA;
+    
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+    <= nrel_genres: ...
+        (*
+            -> concept_horror;;
+            -> concept_science_fiction;;
+            -> concept_fantasy;;
+            -> concept_psychological;;
+        *);;
+
+
+person_Stephen_Edwin_King
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Стивен Эдвин Кинг]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Ричард Бахман]
+            (* <- lang_ru;; *);
+        [Джон Свифен]
+            (* <- lang_ru;; *);
+
+    => nrel_date_of_birth:
+        date_21_09_1947
+            (*
+                => nrel_main_idtf:
+                    [21 сентября 1947 года]
+                        (* <- lang_ru;; *);;
+            *);
+    => nrel_place_of_birth:
+        country_USA;
+    
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+    <= nrel_genres: ...
+        (*
+            -> concept_thriller;;
+            -> concept_horror;;
+            -> concept_science_fiction;;
+            -> concept_epistle;;
+            -> concept_detective;;
+            -> concept_fantasy;;
+            -> concept_postapokalipsis;;
+            -> concept_gotic;;
+        *);;
+
+
+person_Daniel_Kiz
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Дэниел Киз]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_09_08_1927
+            (*
+                => nrel_main_idtf:
+                    [9 августа 1927 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_date_of_death:
+        date_15_06_2014
+            (*
+                => nrel_main_idtf:
+                    [15 июня 2014 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_USA;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_science_fiction;;
+        *);;
+
+
+person_Erich_Maria_Remarque
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Эрих Мария Ремарк]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Эрих Пауль Ремарк]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_22_06_1898
+            (*
+                => nrel_main_idtf:
+                    [22 июня 1898 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Germany;
+
+    => nrel_date_of_death:
+        date_25_09_1970
+            (*
+                => nrel_main_idtf:
+                    [25 сентября 1970 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Switzerland;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_german;;
+        *);
+    <= nrel_genres: ...
+        (*
+            -> concept_essay;;
+            -> concept_military;;
+            -> concept_psychological;;
+        *);;
+
+person_Antoine_de_Saint_Exupery
+    <- person;
+    <- male;
+    <- writer;
+    <- journalist;
+
+    => nrel_main_idtf:
+            [Антуан де Сент-Экзюпери] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_29_06_1900
+            (*
+                => nrel_main_idtf:
+                [29 июня 1900](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_France;
+    => nrel_date_of_death:
+            date_31_07_1944
+            (*
+                => nrel_main_idtf:
+                [31 июля 1944](* <- lang_ru;;*);;
+            *);
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> genre_fairy_tale;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_fr;;
+    *);;
+  
+person_Jerome_David_Salinger
+    <- person;
+    <- male;
+    <- writer;
+
+    => nrel_main_idtf:
+            [Сэлинджер Дэвид Джером] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_01_01_1919
+            (*
+                => nrel_main_idtf:
+                [1 января 1919](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+    => nrel_date_of_death:
+            date_27_01_2010
+            (*
+                => nrel_main_idtf:
+                [27 января 2010](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Paulo_Coelho
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- poet;
+
+    => nrel_main_idtf:
+            [Пауло Коэльо] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_24_08_1947
+            (*
+                => nrel_main_idtf:
+                [24 августа 1947](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Brazil;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_por;;
+    *);;
+
+person_Tolkien_John_Ronald_Reuel
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- poet;
+    <- translator;
+
+    => nrel_main_idtf:
+            [Толкин Джон Рональд Руэл] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_3_01_1982
+            (*
+                => nrel_main_idtf:
+                [3 января 1892](* <- lang_ru;;*);;
+            *);
+
+    => nrel_date_of_death:
+            date_2_09_1973
+            (*
+                => nrel_main_idtf:
+                [2 сентября 1973](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Great_Britain;
+
+    <= nrel_genre_work:...
+    (*
+        -> literary_criticism;;
+        -> poetry;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Agatha_Christie
+    <- person;
+    <- female;
+    <- writer;
+    <- prosaist;
+    <- playwright;
+
+
+    => nrel_main_idtf:
+            [Агата Кристи] (* <- lang_ru;;*);
+    => nrel_idtf:
+            [Агата Мэри Кларисса Миллер] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_15_09_1890
+            (*
+                => nrel_main_idtf:
+                [15 сентября 1890](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Great_Britain;
+    => nrel_date_of_death:
+            date_12_01_1976
+            (*
+                => nrel_main_idtf:
+                [12 января 1976](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Great_Britain;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> detective;;
+        -> genre_novel;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Harper_Lee
+    <- person;
+    <- female;
+    <- writer;
+    <- prosaist;
+
+    => nrel_main_idtf:
+            [Харпер Ли] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_28_04_1926
+            (*
+                => nrel_main_idtf:
+                [28 апреля 1926](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+    => nrel_date_of_death:
+            date_19_02_2016
+            (*
+                => nrel_main_idtf:
+                [19 февраля 2016](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> genre_novel;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+    person_Neil_Gaiman
+    <- person;
+    <- male;
+    <- writer;
+    <- screenwriter;
+
+    => nrel_main_idtf:
+            [Нил Ричард Гейман] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_10_11_1960
+            (*
+                => nrel_main_idtf:
+                [10 ноября 1960](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Great_Britain;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_speculative_fiction;;
+        -> genre_novel;;
+        -> genre_fantasy;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+    person_Gabriel_Garcia_Marquez
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- journalist;
+    <- nrel_publisher;
+
+    => nrel_main_idtf:
+            [Габриэль Гарсия Маркес] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_6_03_1927
+            (*
+                => nrel_main_idtf:
+                [6 марта 1927](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Columbia;
+    => nrel_date_of_death:
+            date_17_04_2014
+            (*
+                => nrel_main_idtf:
+                [17 апреля 2014](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Mexico;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> genre_novel;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_sp;;
+    *);;
+
+    person_Haruki_Murakami
+    <- person;
+    <- male;
+    <- writer;
+    <- essayist;
+    <- translator;
+
+    => nrel_main_idtf:
+            [Мураками Харуки] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_12_01_1949
+            (*
+                => nrel_main_idtf:
+                [12 января 1949](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Japan;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_essay;;
+        -> genre_novel;;
+        -> genre_prose;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_jp;;
+    *);;
+
+person_Dan_Brown   
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- journalist;
+
+    => nrel_main_idtf:
+            [Дэн Браун] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_22_06_1964
+            (*
+                => nrel_main_idtf:
+                [22 июня 1964](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+
+    <= nrel_genre_work:...
+    (*
+        -> detective;;
+        -> genre_thriller;;
+        -> genre_speculative_fiction;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Patrick_Suskind  
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- screenwriter;
+
+    => nrel_main_idtf:
+            [Патрик Зюскинд] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_26_03_1949
+            (*
+                => nrel_main_idtf:
+                [26 марта 1949](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Germany;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> short_story;;
+        -> play;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_german;;
+    *);;
+
+person_John_Robert_Fowles
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+
+    => nrel_main_idtf:
+            [Джон Роберт Фаулз] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_31_03_1926
+            (*
+                => nrel_main_idtf:
+                [31 марта 1926](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Great_Britain;
+    => nrel_date_of_death:
+            date_5_11_2005
+            (*
+                => nrel_main_idtf:
+                [5 ноября 2005](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Great_Britain;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Aldous_Huxley   
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+
+    => nrel_main_idtf:
+            [Олдос Леонард Хаксли] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_26_07_1894
+            (*
+                => nrel_main_idtf:
+                [26 июля 1894](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Great_Britain;
+    => nrel_date_of_death:
+            date_22_11_1963
+            (*
+                => nrel_main_idtf:
+                [22 ноября 1963](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> genre_novel;;
+        -> genre_essay;;
+
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Margaret_Mitchell
+    <- person;
+    <- female;
+    <- writer;
+    <- prosaist;
+    <- journalist;
+
+    => nrel_main_idtf:
+            [Маргарет Митчелл] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_8_11_1900
+            (*
+                => nrel_main_idtf:
+                [8 ноября 1900](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+    => nrel_date_of_death:
+            date_16_08_1949
+            (*
+                => nrel_main_idtf:
+                [16 августа 1949](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> genre_romantic_prose;;
+        -> genre_novel;;
+
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Jules_Verne
+    <- person;
+    <- male;
+    <- writer;
+    <- playwright;
+
+    => nrel_main_idtf:
+            [Жюль Верн] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_8_11_1828
+            (*
+                => nrel_main_idtf:
+                [8 февраля 1828](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_France;
+    => nrel_date_of_death:
+            date_24_03_1905
+            (*
+                => nrel_main_idtf:
+                [24 марта 1905](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_France;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_science_fiction;;
+
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_fr;;
+    *);;
+
+person_Mark_Twain
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- journalist;
+    <- publicist;
+
+    => nrel_main_idtf:
+            [Марк Твен] (* <- lang_ru;;*);
+    => nrel_idtf:
+            [Сэмюэл Лэнгхорн Клеменс] (* <- lang_ru;;*);     
+    => nrel_idtf:
+            [сьер Луи де Конт] (* <- lang_ru;;*);        
+    => nrel_idtf:
+            [Томас Джефферсон Снодграсс] (* <- lang_ru;;*);                           
+    => nrel_date_of_birth:
+            date_30_11_1835
+            (*
+                => nrel_main_idtf:
+                [30 ноября 1835](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+    => nrel_date_of_death:
+            date_21_04_1910
+            (*
+                => nrel_main_idtf:
+                [21 апреля 1910](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> journalism;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;    
+
+person_Franz_Kafka
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    
+    => nrel_main_idtf:
+            [Франц Кафка] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_3_07_1883
+            (*
+                => nrel_main_idtf:
+                [3 июля 1883](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Austria_Hungary;
+    => nrel_date_of_death:
+            date_3_06_1924
+            (*
+                => nrel_main_idtf:
+                [3 июня 1924 ](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Austria_Hungary;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> genre_novel;;
+        -> journalism;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_german;;
+        ->lang_tr;;
+    *);;    
+
+person_Theodore_Dreiser
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- publicist;
+    <- essayist;
+    
+    => nrel_main_idtf:
+            [Теодор Драйзер] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_27_08_1871
+            (*
+                => nrel_main_idtf:
+                [27 августа 1871](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+    => nrel_date_of_death:
+            date_28_12_1945
+            (*
+                => nrel_main_idtf:
+                [28 декабря 1945](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> genre_narrative;;
+        -> journalism;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;    
+
+person_Albert_Camus
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- playwright;
+    <- essayist;
+    
+    => nrel_main_idtf:
+            [Альберт Камус] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_7_11_1913
+            (*
+                => nrel_main_idtf:
+                [7 ноября 1913](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_France;
+    => nrel_date_of_death:
+            date_4_01_1960
+            (*
+                => nrel_main_idtf:
+                [4 января 1960](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_France;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> genre_essay;;
+     *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_fr;;
+    *);; 
+
+person_O_Henry
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    
+    => nrel_main_idtf:
+            [О.Генри] (* <- lang_ru;;*);
+     => nrel_idtf:
+            [Уильям Сидни Портер] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_11_09_1862
+            (*
+                => nrel_main_idtf:
+                [11 сентября 1862](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+    => nrel_date_of_death:
+            date_5_06_1910
+            (*
+                => nrel_main_idtf:
+                [5 июня 1910](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> genre_novella;;
+     *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Charles_Bukowski
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- poet;
+    <- journalist;
+    
+    => nrel_main_idtf:
+            [Чарльз Буковски] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_16_08_1920
+            (*
+                => nrel_main_idtf:
+                [16 августа 1920](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Germany;
+    => nrel_date_of_death:
+            date_9_03_1994
+            (*
+                => nrel_main_idtf:
+                [9 марта 1994](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> genre_novel;;
+        -> genre_narrative;;
+     *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Jean_Paul_Sartre
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- philosopher;
+    
+    => nrel_main_idtf:
+            [Жан-Поль Сартр] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_21_06_1905
+            (*
+                => nrel_main_idtf:
+                [21 июня 1905](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_France;
+    => nrel_date_of_death:
+            date_15_04_1980
+            (*
+                => nrel_main_idtf:
+                [15 апреля 1980](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_France;
+        
+    <= nrel_genre_work:...
+    (*
+        -> play;;
+        -> genre_novella;;
+     *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_fr;;
+    *);;
+
+person_Alexandre_Dumas
+    <- person;
+    <- male;
+    <- writer;
+    <- journalist;
+    <- prosaist;
+    <- playwright;
+    
+    => nrel_main_idtf:
+            [Александр Дюма] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_24_07_1802
+            (*
+                => nrel_main_idtf:
+                [24 июля 1802](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_France;
+    => nrel_date_of_death:
+            date_5_12_1870
+            (*
+                => nrel_main_idtf:
+                [5 декабря 1870](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_France;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_fr;;
+    *);;
+    
+person_Honore_de_Balzac
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    
+    => nrel_main_idtf:
+            [Оноре де Бальзак] (* <- lang_ru;;*);
+     
+    => nrel_idtf:
+            [Бальзак] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_20_05_1799
+            (*
+                => nrel_main_idtf:
+                [20 мая 1799](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_France;
+    => nrel_date_of_death:
+            date_18_08_1850
+            (*
+                => nrel_main_idtf:
+                [18 августа 1850](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_France;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> genre_tale;;
+        -> genre_narrative;;        
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_fr;;
+    *);;
+
+person_Charles_Dickens
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    
+    => nrel_main_idtf:
+            [Чарльз Диккенс] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_7_02_1812
+            (*
+                => nrel_main_idtf:
+                [7 февраля 1812](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Great_Britain;
+    => nrel_date_of_death:
+            date_9_06_1870
+            (*
+                => nrel_main_idtf:
+                [9 июня 1870](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Great_Britain;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+       
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Walter_Scott
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- poet;
+    <- translator;
+    
+    => nrel_main_idtf:
+            [Вальтер Скотт] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_15_08_1771
+            (*
+                => nrel_main_idtf:
+                [15 августа 1771](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Great_Britain;
+    => nrel_date_of_death:
+            date_21_09_1832
+            (*
+                => nrel_main_idtf:
+                [21 сентября 1832](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Great_Britain;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> genre_prose;;
+        -> genre_historical_novel;;
+               
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_George_Gordon_Byron
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    
+    => nrel_main_idtf:
+            [Джордж Гордон Байрон] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_22_01_1788
+            (*
+                => nrel_main_idtf:
+                [22 января 1788](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Great_Britain;
+    => nrel_date_of_death:
+            date_19_04_1824
+            (*
+                => nrel_main_idtf:
+                [19 апреля 1824](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Greece;
+        
+    <= nrel_genre_work:...
+    (*
+        -> poem;;
+                      
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Victor_Hugo
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- playwright;
+    <- essayist;
+    
+    => nrel_main_idtf:
+            [Виктор Гюго] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_26_02_1802
+            (*
+                => nrel_main_idtf:
+                [26 февраля 1802](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_France;
+    => nrel_date_of_death:
+            date_22_05_1885
+            (*
+                => nrel_main_idtf:
+                [22 мая 1885](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_France;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> poetry;;
+        -> play;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_fr;;
+    *);;
+
+person_Irvine_Welsh
+    <- person;
+    <- male;
+    <- writer;
+    <- playwright;
+    <- prosaist;
+    
+    => nrel_main_idtf:
+            [Ирвин Уэлш] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_27_09_1958
+            (*
+                => nrel_main_idtf:
+                [27 сентября 1958](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Scotland;
+            
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> poetry;;
+        -> play;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_James_Joyce
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- literary_critic;
+    <- journalist;
+    
+    => nrel_main_idtf:
+        [Джеймс Огастин Алоишес Джойс]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Джеймс Джойс]
+            (* <- lang_ru;; *);
+    
+    => nrel_date_of_birth:
+            date_2_02_1882
+            (*
+                => nrel_main_idtf:
+                [2 февраля 1882](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Ireland;
+    => nrel_date_of_death:
+            date_13_01_1941
+            (*
+                => nrel_main_idtf:
+                [13 января 1941](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Switzerland;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> genre_narrative;;
+        -> poetry;;
+	-> journalism;;
+	-> genre_short_novel;;
+         
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Jack_London
+    <- person;
+    <- male;
+    <- writer;
+    <- journalist;
+    <- war_correspondent;
+    <- essayist;
+         
+    => nrel_main_idtf:
+        [Джон Гриффит Чейни]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Джек Лондон]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_12_01_1876
+            (*
+                => nrel_main_idtf:
+                [12 января 1876](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+    => nrel_date_of_death:
+            date_22_11_1916
+            (*
+                => nrel_main_idtf:
+                [22 ноября 1916](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Mexico;
+        
+    <= nrel_genre_work:...
+    (*
+	-> genre_novel;;
+	-> genre_narrative;;
+                      
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Stanislaw_Lem
+    <- person;
+    <- male;
+    <- writer;
+    <- philosopher;
+    <- essayist;
+    <- literary_critic;
+    
+    => nrel_main_idtf:
+            [Станислав Лем] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_12_09_1921
+            (*
+                => nrel_main_idtf:
+                [12 сентября 1921](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Poland;
+    => nrel_date_of_death:
+            date_27_03_2006
+            (*
+                => nrel_main_idtf:
+                [26 марта 2006](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Poland;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_science_fiction;;
+	-> genre_novel;;
+	-> genre_dystopia;;
+                      
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_pl;;
+    *);;
+
+person_Lewis_Carroll
+    <- person;
+    <- male;
+    <- writer;
+    <- philosopher;
+    <- prosaist;
+    <- poet;
+    
+    => nrel_main_idtf:
+        [Чарльз Латуидж Доджсон]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Льюис Кэрролл]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_27_01_1832
+            (*
+                => nrel_main_idtf:
+                [27 января 1832](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Great_Britain;
+    => nrel_date_of_death:
+            date_14_01_1898
+            (*
+                => nrel_main_idtf:
+                [14 января 1898](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Great_Britain;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_fantasy;;
+	-> genre_novel;;
+	-> genre_fairy_tale;;
+	-> poetry;;
+                      
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Astrid_Lindgren
+    <- person;
+    <- female;
+    <- writer;
+    <- screenwriter;
+    
+    => nrel_main_idtf:
+        [Астрид Анна Эмилия Эрикссон]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Астрид Линдгрен]
+            (* <- lang_ru;; *);  
+    => nrel_date_of_birth:
+            date_14_11_1907
+            (*
+                => nrel_main_idtf:
+                [14 ноября 1907](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Sweden;
+    => nrel_date_of_death:
+            date_28_01_2002
+            (*
+                => nrel_main_idtf:
+                [28 января 2002](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Sweden;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_narrative;;
+        -> genre_speculative_fiction;;
+        -> scenario;;
+	-> illustration;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_sw;;
+    *);;
+
+person_William_Shakespeare
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- playwright;
+    
+    => nrel_main_idtf:
+        [Уильям Шекспир]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_26_04_1564
+            (*
+                => nrel_main_idtf:
+                [26 апреля 1564](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_England;
+    => nrel_date_of_death:
+            date_23_04_1616
+            (*
+                => nrel_main_idtf:
+                [23 апреля 1616](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_England;
+        
+    <= nrel_genre_work:...
+    (*
+        -> poetry;;
+	-> play;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Howard_Phillips_Lovecraft
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- editor;
+    
+    => nrel_main_idtf:
+        [Говард Филлипс Лавкрафт]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_20_08_1890
+            (*
+                => nrel_main_idtf:
+                [20 августа 1890](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+    => nrel_date_of_death:
+            date_15_03_1937
+            (*
+                => nrel_main_idtf:
+                [15 марта 1937](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+	-> genre_narrative;;
+	-> genre_horror;;
+	-> genre_gotic;;
+	-> short_story;;
+	-> genre_science_fiction;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Miguel_de_Cervantes_Saavedra
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- playwright;
+    
+    => nrel_main_idtf:
+        [Мигель де Сервантес Сааведра]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_29_09_1547
+            (*
+                => nrel_main_idtf:
+                [29 сентября 1547](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Spain;
+    => nrel_date_of_death:
+            date_22_04_1616
+            (*
+                => nrel_main_idtf:
+                [22  апреля 1616](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Spain;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+	-> genre_narrative;;
+	-> genre_comedy;;
+	-> concept_tragedy;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_sp;;
+    *);;
+
+person_Edgar_Allan_Poe 
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- editor;
+    <- literary_critic;
+    <- essayist;
+    <- playwright;
+    
+    => nrel_main_idtf:
+        [Эдгар Аллан По]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_19_01_1809
+            (*
+                => nrel_main_idtf:
+                [19 января 1809](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+    => nrel_date_of_death:
+            date_7_10_1849
+            (*
+                => nrel_main_idtf:
+                [7 октября 1849](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+        
+    <= nrel_genre_work:...
+    (*
+        -> detective;;
+	-> genre_narrative;;
+	-> genre_gotic;;
+	-> genre_speculative_fiction;;
+	-> genre_horror;;
+	-> satire;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Herbert_George_Wells
+    <- person;
+    <- male;
+    <- writer;
+    <- publicist;
+    <- journalist;
+    
+    => nrel_main_idtf:
+        [Герберт Джордж Уэллс]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_21_09_1866
+            (*
+                => nrel_main_idtf:
+                [21 сентября 1866](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_England;
+    => nrel_date_of_death:
+            date_13_08_1946
+            (*
+                => nrel_main_idtf:
+                [13 августа 1946](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_England;
+        
+    <= nrel_genre_work:...
+    (*
+	-> genre_military;;
+	-> genre_science_fiction;;
+	-> genre_autobiography;;
+	-> genre_biography;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Voltaire
+    <- person;
+    <- male;
+    <- writer;
+    <- publicist;
+    <- philosopher;
+    <- poet;
+    <- prosaist;
+    
+    => nrel_main_idtf:
+        [Франсуа-Мари Аруэ]
+            (* <- lang_ru;; *); 
+    => nrel_idtf:
+            [Вольтер] (* <- lang_ru;;*);
+
+    => nrel_date_of_birth:
+            date_21_11_1694
+            (*
+                => nrel_main_idtf:
+                [21 ноября 1694](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_France;
+    => nrel_date_of_death:
+            date_30_05_1778
+            (*
+                => nrel_main_idtf:
+                [30 мая 1778](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_France;
+        
+    <= nrel_genre_work:...
+    (*
+	-> satire;;
+	-> poetry;;
+	-> play;;
+	-> scientific_work;;
+	-> genre_novel;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_fr;;
+    *);;
+
+person_Virginia_Woolf
+    <- person;
+    <- female;
+    <- writer;
+    <- literary_critic;
+    <- essayist;
+    <- poet;
+    <- publicist;
+    <- translator;
+    
+    => nrel_main_idtf:
+        [Аделина Вирджиния Стивен]
+            (* <- lang_ru;; *); 
+    => nrel_idtf:
+            [Вирджиния Вулф] (* <- lang_ru;;*);
+
+    => nrel_date_of_birth:
+            date_25_01_1882
+            (*
+                => nrel_main_idtf:
+                [25 января 1882](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_England;
+    => nrel_date_of_death:
+            date_28_03_1941
+            (*
+                => nrel_main_idtf:
+                [28 марта 1941](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_England;
+        
+    <= nrel_genre_work:...
+    (*
+
+	-> genre_prose;;
+	-> genre_novel;;
+	-> genre_drama;;
+	-> genre_biography;;
+	-> genre_autobiography;;
+
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Hans_Christian_Andersen
+    <- person;
+    <- male;
+    <- writer;
+    <- playwright;
+    <- poet;
+    <- prosaist;
+    
+    => nrel_main_idtf:
+        [Ханс Кристиан Андерсен]
+            (* <- lang_ru;; *); 
+
+    => nrel_date_of_birth:
+            date_2_04_1805
+            (*
+                => nrel_main_idtf:
+                [2 апреля 1805](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Danmark;
+    => nrel_date_of_death:
+            date_4_08_1875
+            (*
+                => nrel_main_idtf:
+                [4 августа 1875](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Denmark;
+        
+    <= nrel_genre_work:...
+    (*
+
+	-> genre_prose;;
+	-> genre_narrative;;
+	-> genre_tale;;
+	-> genre_adventure;;
+	-> genre_fairy_tale;;
+	-> play;;
+	-> genre_poem;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_dn;;
+    *);;
+
+person_Joseph_Rudyard_Kipling
+    <- person;
+    <- male;
+    <- writer;
+    <- journalist;
+    <- poet;
+    <- prosaist;
+    
+    => nrel_main_idtf:
+        [Джозеф Редьярд Киплинг]
+            (* <- lang_ru;; *); 
+
+    => nrel_date_of_birth:
+            date_30_12_1865
+            (*
+                => nrel_main_idtf:
+                [30 декабря 1865](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_India;
+    => nrel_date_of_death:
+            date_4_08_1875
+            (*
+                => nrel_main_idtf:
+                [18 января 1936](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_England;
+        
+    <= nrel_genre_work:...
+    (*
+
+	-> genre_novel;;
+	-> genre_tale;;
+	-> genre_adventure;;
+	-> genre_science_fiction;;
+	-> genre_fairy_tale;;
+	-> poetry;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Emily_Jane_Bronte
+    <- person;
+    <- female;
+    <- writer;
+    <- prosaist;
+    <- poet;
+
+    => nrel_main_idtf:
+            [Эмили Джейн Бронте] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_30_07_1818
+            (*
+                => nrel_main_idtf:
+                [30 июля 1818](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Great_Britain;
+    => nrel_date_of_death:
+            date_19_12_1848
+            (*
+                => nrel_main_idtf:
+                [19 декабря 1848](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Great_Britain;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> poetry;;
+    *);
+    <= nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+
+

@@ -1,0 +1,37 @@
+ui_menu_search_book_by_template
+<- ui_user_command_class_atom;
+   ui_user_command_class_view_kb;
+   ui_one_argument_command_class;;
+
+ui_menu_search_book_by_template 
+=> nrel_main_idtf: 
+	[Какие книги соответствуют данному запросу?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Поиск всех книг по заданному шаблону] 
+	(* <- lang_ru;; *);;
+
+ui_menu_search_book_by_template 
+=> nrel_main_idtf:
+	[Which books fit the given template?] 
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Search for all books by the given template] 
+	(* <- lang_en;; *);;
+
+ui_menu_search_book_by_template => ui_nrel_command_template:
+	[*
+		question_search_book_by_template _-> ._question_search_book_by_template_instance
+			(*
+				_-> ui_arg_1;;				
+			*);;
+		._question_search_book_by_template_instance _<- question;;
+	*];;
+
+ui_menu_search_book_by_template
+=> ui_nrel_command_lang_template:
+	[Какие книги удовлетворяют запросу $ui_arg_1]
+	(* <- lang_ru;; *);
+=> ui_nrel_command_lang_template:
+	[Which books fit the template $ui_arg_1]
+	(* <- lang_en;; *);;

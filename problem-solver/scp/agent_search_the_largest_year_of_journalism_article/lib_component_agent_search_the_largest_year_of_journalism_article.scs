@@ -1,0 +1,30 @@
+lib_component_agent_search_the_largest_year_of_journalism_article
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска максимального года издания публицистической статьи]
+		(* <- lang_ru;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_search_the_largest_year_of_journalism_article; 
+
+<- key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Задачей sc-агента поиска максимального года издания публицистической статьи является поиск максимального года издания публицистической статьи, находящихся в базе.];;
+		*);;
+	*);;
+
+question_search_the_largest_year_of_journalism_article
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[действие. найти максимальный год]
+		(* <- lang_ru;; *);
+	[action. find the largest year]
+		(* <- lang_en;;	*);;

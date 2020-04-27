@@ -1,0 +1,13 @@
+{
+     "sources": [
+        
+        "src/book_search_unified_common.js",
+        "src/book_search_unified_paintPanel.js",
+        "src/book_search_module_general_info.js",
+        "src/book_search_module_characters.js"
+    ],
+
+    "component": "src/book_search_unified_component.js",
+
+    "target": "static/components/js/book_search_unified/book_search_unified.js"
+}

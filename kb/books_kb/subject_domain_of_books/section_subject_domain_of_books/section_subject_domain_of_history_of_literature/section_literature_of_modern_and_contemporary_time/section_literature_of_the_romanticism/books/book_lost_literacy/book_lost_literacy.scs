@@ -1,0 +1,167 @@
+//Пропавшая грамота ,гоголь
+book_lost_literacy
+=> nrel_main_idtf: 
+        ["Пропавшая грамота"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_tale;
+=> nrel_author:
+    person_Gogol_Nikolai_Vasilievich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1829;;
+
+book_lost_literacy
+<= nrel_characters:
+    .book_lost_literacy_characters
+    (*
+        -> rrel_main_character:
+            char_ded;
+            char_kozak;;
+        ->  char_zaporozhec;
+            char_shinkar;;
+    *);;
+
+book_lost_literacy
+=> nrel_location:
+    .book_lost_literacy_location
+    (*
+        -> country_Russian_empire;;
+    *);;
+
+char_ded
+         => nrel_main_idtf: 
+            [Дед] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;;
+
+char_kozak
+        => nrel_main_idtf: 
+            [Козак] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;;
+    
+char_zaporozhec
+        => nrel_main_idtf: 
+            [Запорожец] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;;
+
+char_shinkar
+        => nrel_main_idtf: 
+            [Шинкарь] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;;
+
+book_lost_literacy => nrel_plot:
+    .book_lost_literacy_plot
+    (*
+      => nrel_main_idtf: [Сюжет. "Пропавшая грамота"] 
+                (* <-lang_ru;; *);;
+        -> .book_lost_literacy_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Истори дьяка] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_lost_literacy_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_mischief;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_kozak;
+                           char_zaporozhec;;
+                    *);;  
+                    => nrel_plot_sequence:                          
+                          .book_lost_literacy_event_2;;                    
+            *);;
+
+        -> .book_lost_literacy_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Разговор с шинкарем] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_lost_literacy_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_ded;;
+                    *);;             
+                    => nrel_plot_sequence:                          
+                          .book_lost_literacy_event_3;;          
+            *);;
+
+        -> .book_lost_literacy_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Знакомство с нежитью] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_lost_literacy_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    <- event_mischief;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_ded;
+                           char_kozak;;
+                    *);;    
+                    => nrel_plot_sequence:                          
+                          .book_lost_literacy_event_4;;                   
+            *);;
+
+        -> .book_lost_literacy_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Игра в карты с ведьмой] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_lost_literacy_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    <= nrel_main_participants: ... 
+                    (*
+                         -> char_ded;
+                            char_zaporozhec;
+                            char_kozak;;                 
+                    *);;         
+                    => nrel_plot_sequence:                          
+                          .book_lost_literacy_event_5;;              
+            *);;
+        -> .book_lost_literacy_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Возвращение] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_lost_literacy_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_mischief;;
+                    <- event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                         -> char_ded;
+                            char_zaporozhec;
+                            char_kozak;;                 
+                    *);;                      
+            *);;
+
+    *);;
+

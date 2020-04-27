@@ -1,0 +1,243 @@
+book_picture_of_Dorian_Gray 
+    => nrel_main_idtf:
+        ["Портрет Дориана Грея"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+    => nrel_author:
+        person_Oscar_Wilde;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1890;;
+
+
+book_picture_of_Dorian_Gray
+    <= nrel_characters:
+        .book_picture_of_Dorian_Gray_characters
+        (*
+            -> rrel_main_character:
+                    char_Dorian_Gray;
+                    char_Basil_Hallward;
+                    char_Lord_Henry;;
+            -> char_Sibyl_Vane;
+               char_James_Vane;;
+        *);;
+
+book_picture_of_Dorian_Gray
+=> nrel_location:
+    .book_picture_of_Dorian_Gray_location
+    (*
+        -> London;;
+        -> country_England;;
+    *);;
+
+
+char_Dorian_Gray
+        => nrel_main_idtf: 
+            [Дориан Грей] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Дориан Грей)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Dorian_Gray.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Basil_Hallward
+        => nrel_main_idtf: 
+            [Бэзил Холлуорд] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Бэзил Холлуорд)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Basil_Hallward.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Lord_Henry
+        => nrel_main_idtf: 
+            [Лорд Генри Уоттон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Лорд Генри Уоттон)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Lord_Henry.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Sibyl_Vane
+        => nrel_main_idtf: 
+            [Сибила Вэйн] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сибила Вэйн)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sibyl_Vane.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_James_Vane
+        => nrel_main_idtf: 
+            [Джеймс Вэйн] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джеймс Вэйн)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_James_Vane.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_picture_of_Dorian_Gray => nrel_plot: 
+    .book_picture_of_Dorian_Gray_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Портрет Дориана Грея"] (* <-lang_ru;; *);;
+        -> .book_picture_of_Dorian_Gray_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Знакомство главных персонажей] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_picture_of_Dorian_Gray_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Dorian_Gray;
+                           char_Basil_Hallward;
+                           char_Lord_Henry;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_picture_of_Dorian_Gray_event_2;;      
+            *);;
+
+        -> .book_picture_of_Dorian_Gray_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Любовь Дориана и Сибилы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_picture_of_Dorian_Gray_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Dorian_Gray;
+                           char_Sibyl_Vane;
+                           char_James_Vane;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_picture_of_Dorian_Gray_event_3;;      
+            *);;
+
+        -> .book_picture_of_Dorian_Gray_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Расставание Дориана и Сибилы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_picture_of_Dorian_Gray_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_breakup;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Dorian_Gray;
+                           char_Basil_Hallward;
+                           char_Lord_Henry;
+                           char_Sibyl_Vane;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_picture_of_Dorian_Gray_event_4;;      
+            *);;    
+
+        -> .book_picture_of_Dorian_Gray_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Самоубийство Сибилы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_picture_of_Dorian_Gray_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_suicide;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Dorian_Gray;
+                           char_Basil_Hallward;
+                           char_Lord_Henry;
+                           char_Sibyl_Vane;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_picture_of_Dorian_Gray_event_5;;      
+            *);;  
+
+        -> .book_picture_of_Dorian_Gray_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Убийство Бэзила] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_picture_of_Dorian_Gray_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> rrel_killer: char_Dorian_Gray;;
+                        -> rrel_victim: char_Basil_Hallward;;
+                    *);;         
+                => nrel_plot_sequence: 
+                    .book_picture_of_Dorian_Gray_event_6;;      
+            *);; 
+
+        -> .book_picture_of_Dorian_Gray_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Смерть Дориана Грея] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_picture_of_Dorian_Gray_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death_of_the_protagonist;;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Dorian_Gray;
+                           char_James_Vane;;
+                    *);;             
+            *);;     
+    *);;

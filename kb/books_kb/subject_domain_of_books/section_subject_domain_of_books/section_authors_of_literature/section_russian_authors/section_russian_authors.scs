@@ -1,0 +1,51 @@
+section_russian_authors
+=> nrel_main_idtf:
+	[Раздел. Писатели русской литературы.]
+		(* <- lang_ru;; *);
+->rrel_key_sc_element:
+	person_Pushkin_Aleksandr_Sergeevich;
+	person_Turgenev_Ivan_Sergeevich;
+	person_Tolstoy_Lev_Nikolaevich;
+	person_Gogol_Nikolai_Vasilievich;
+	person_Chehov_Anton_Pavlovich;
+	person_Lermontov_Mikhail_Yuryevich;
+	person_Maxim_Gorky;
+	person_Astafyev_Viktor_Petrovich;
+	person_Platonov_Andrey;
+	person_Yesenin_Sergei_Alexandrovich;
+	person_Nabokov_Vladimir_Vladimirovich;
+	person_Nekrasov_Nikolay_Alexeyevich;
+	person_Aleksandr_Ivanovich_Kuprin;
+	person_Ostrovsky_Alexander_Nikolayevich;
+	person_Bulgakov_Mikhail_Afanasyevich;
+	person_Chukovsky_Korney_Ivanovich;
+	person_Paustovsky_Konstantin_Georgiyevich;
+	person_Pasternak_Boris_Leonidovich;
+	person_Bunin_Ivan_Alekseevich;
+	person_Akhmatova_Anna;
+	person_Goncharov_Ivan_Aleksandrovich;
+	person_Mayakovsky_Vladimir_Vladimirovich;
+	person_Karamzin_Nikolay_Mikhailovich;
+	person_Saltykov_Shchedrin_Mikhail_Yevgrafovich;
+	person_Sholokhov_Mikhail_Aleksandrovich;
+	person_Solzhenitsyn_Aleksandr_Isayevich;
+
+	person_Korolenko_Vladimir_Galaktionovich;
+	person_Leskov_Nikolai;
+	person_Bryusov_Valery;
+	person_Fet_Afanasy;
+	person_Tyutchev_Fyodor_Ivanovich;
+	person_Kuzmin_Mikhail_Sergeyevich;
+	person_Herzen_Aleksandr_Ivanovich;
+	person_Krylov_Ivan_Andreyevich;
+
+	person_Dostoevsky_Fyodor_Mikhailovich;
+	person_Blok_Alexander_Alexandrovich;
+	person_Tsvetaeva_Marina_Ivanovna;
+	person_Gippius_Zinaida_Nikolayevna;
+	person_Griboyedov_Alexander_Sergeyevich;
+	person_Mandelstam_Osip_Emilyevich;
+	person_Mamin_Sibiryak_Dmitry_Narkisovich;;
+
+
+section_russian_authors = [*^"file://section_russian_authors.scsi"*];;

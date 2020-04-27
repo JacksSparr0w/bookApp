@@ -1,0 +1,88 @@
+//Ванька, чехов
+book_Vanka
+=> nrel_main_idtf: 
+        ["Ванька"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_tale;
+=> nrel_author:
+    person_Chehov_Anton_Pavlovich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1890;;
+
+book_Vanka
+<= nrel_characters:
+    .book_Vanka_characters
+    (*
+        -> rrel_main_character:
+            char_Vanka_Zhukov;;
+    *);;
+
+book_Vanka
+=> nrel_location:
+    .book_Vanka_location
+    (*
+        -> country_Russian_empire;;
+    *);;
+
+char_Vanka_Zhukov
+        => nrel_main_idtf: 
+            [Ванька Жуков] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ванька Жуков)] (* <-lang_ru;; *);;
+             <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Vanka_Zhukov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_Vanka => nrel_plot:
+        .book_Vanka_plot 
+    (*
+      => nrel_main_idtf: [Сюжет. "Ванька"] 
+                (* <-lang_ru;; *);;
+        -> .book_Vanka_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Воспоминания Ваньки] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Vanka_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_memories ;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Vanka_Zhukov;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_Vanka_event_2;;                  
+            *);;
+
+        -> .book_Vanka_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Ванька отправляет письмо] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Vanka_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_memories;;
+                    <- event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Vanka_Zhukov;;                    *);;                      
+            *);;
+
+    *);;

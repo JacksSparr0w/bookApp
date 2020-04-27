@@ -1,0 +1,293 @@
+book_The_Black_Monk
+       => nrel_main_idtf: 
+        ["Чёрный монах"]
+            (* <- lang_ru;; *);
+    =>nrel_systems_idtf:
+        [book_The_Black_Monk];
+<- genre_tale;
+=> nrel_author:
+    person_Chehov_Anton_Pavlovich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1893;;
+
+book_The_Black_Monk
+<= nrel_characters:
+    .book_The_Black_Monk_characters
+    (*
+        -> rrel_main_character:
+            char_Kovrigin;
+            char_Egor_Pesotckiy;
+            char_Tanya_Pesotckaya;
+            char_Monah;;
+    *);;
+
+book_The_Black_Monk
+=> nrel_location:
+    .book_The_Black_Monk_location
+    (*
+        -> estate_Borisovka;;
+        -> Crimea;;
+        -> country_Ukraine;;
+        -> Sevastopol;;
+    *);;
+    
+
+char_Kovrigin
+        => nrel_main_idtf: 
+            [Андрей Ковригин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Андрей Ковригин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Kovrigin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Egor_Pesotckiy
+        => nrel_main_idtf: 
+            [Егор Песоцкий] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Егор Песоцкий)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Egor_Pesotckiy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Monah
+        => nrel_main_idtf: 
+            [Чёрный монах] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Черный монах)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Monah.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Tanya_Pesotckaya
+        => nrel_main_idtf: 
+            [Таня Песоцкая] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Таня Песоцкая)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Tanya_Pesotckaya.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_The_Black_Monk => nrel_plot:
+    .book_The_Black_Monk_plot
+    (*
+      => nrel_main_idtf: [Сюжет. "Чёрных монах"] 
+                (* <-lang_ru;; *);;
+        -> .book_The_Black_Monk_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Глава 1] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Black_Monk_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_holiday;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Kovrigin;
+                           char_Egor_Pesotckiy;
+                           char_Tanya_Pesotckaya;;
+                    *);;        
+                    => nrel_plot_sequence:                
+                                .book_The_Black_Monk_event_2;;       
+            *);;
+
+        -> .book_The_Black_Monk_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Глава 2] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Black_Monk_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_mischief;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Kovrigin;
+                           char_Tanya_Pesotckaya;
+                           char_Monah;;
+                    *);;  
+                    => nrel_plot_sequence:                
+                                .book_The_Black_Monk_event_3;;
+            *);;
+
+        -> .book_The_Black_Monk_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Глава 3] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Black_Monk_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_discomfort;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Kovrigin;
+                           char_Tanya_Pesotckaya;;
+                    *);;  
+                    => nrel_plot_sequence:                
+                                .book_The_Black_Monk_event_4;;
+            *);;
+
+            -> .book_The_Black_Monk_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Глава 4] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Black_Monk_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_discomfort;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Kovrigin;
+                           char_Tanya_Pesotckaya;
+                           char_Egor_Pesotckiy;;
+                    *);;  
+                    => nrel_plot_sequence:                
+                                .book_The_Black_Monk_event_5;;
+            *);;
+
+            -> .book_The_Black_Monk_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Глава 5] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Black_Monk_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_wedding;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Kovrigin;
+                           char_Tanya_Pesotckaya;;
+                    *);;  
+                    => nrel_plot_sequence:                
+                                .book_The_Black_Monk_event_6;;
+            *);;
+
+            -> .book_The_Black_Monk_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Глава 6] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Black_Monk_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_wedding;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Kovrigin;
+                           char_Tanya_Pesotckaya;;
+                    *);;  
+                    => nrel_plot_sequence:                
+                                .book_The_Black_Monk_event_7;;
+            *);;
+
+            -> .book_The_Black_Monk_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Глава 7] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Black_Monk_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Kovrigin;
+                           char_Tanya_Pesotckaya;
+                           char_Monah;;
+                    *);;  
+                    => nrel_plot_sequence:                
+                                .book_The_Black_Monk_event_8;;
+            *);;
+
+            -> .book_The_Black_Monk_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Глава 8] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Black_Monk_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_breakup;;
+                    <- event_discomfort;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Kovrigin;
+                           char_Tanya_Pesotckaya;;
+                    *);;  
+                    => nrel_plot_sequence:                
+                                .book_The_Black_Monk_event_9;;
+            *);;
+        
+            -> .book_The_Black_Monk_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Глава 9] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Black_Monk_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death_of_the_protagonist;;
+                    <- event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Kovrigin;
+                           char_Tanya_Pesotckaya;
+                           char_Monah;;
+                    *);;  
+                    
+            *);;
+    *);;

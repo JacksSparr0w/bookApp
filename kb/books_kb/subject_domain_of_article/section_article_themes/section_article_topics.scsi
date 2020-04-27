@@ -1,0 +1,40 @@
+nrel_topic
+    <-sc_node_norole_relation;
+    => nrel_main_idtf: 
+ 	    [тема*]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (тема*)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+        	    article
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Тема - предмет, основное содержание рассуждения, изложения, разговора, <b><sc_element sys_idtf="article">статьи</b></sc_element>, произведения и т. п.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(тема*)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [По сути, <b><sc_element sys_idtf="nrel_topic">тема</b></sc_element> является отправной точкой создания любого произведения](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+    <- quasybinary_relation;
+    <= nrel_first_domain:
+        article;
+    <= nrel_second_domain:
+        set;
+    => nrel_inclusion: 
+        oriented_relation;;
+

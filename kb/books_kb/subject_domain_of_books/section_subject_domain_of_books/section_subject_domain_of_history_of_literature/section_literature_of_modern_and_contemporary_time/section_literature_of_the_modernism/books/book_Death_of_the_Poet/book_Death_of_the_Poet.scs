@@ -1,0 +1,74 @@
+book_Death_of_the_Poet
+=> nrel_main_idtf: 
+        ["Смерть поэта"]
+            (* <- lang_ru;; *);
+    =>nrel_systems_idtf:
+        [book_Death_of_the_Poet];
+<- genre_poem;
+=> nrel_author:
+    person_Lermontov_Mikhail_Yuryevich;
+=> nrel_language:
+    lang_ru;
+=> nrel_publication_date:
+    year_1837;;
+
+
+book_Death_of_the_Poet
+=> nrel_location:
+.book_Death_of_the_Poet
+(*
+-> Petesburg;;
+-> country_Russian_empire;;
+*);;
+
+book_Death_of_the_Poet
+<= nrel_characters:
+    .book_Death_of_the_Poet_characters
+    (*
+        -> rrel_main_character:
+            char_Pushkin;;
+    *);;
+
+char_Pushkin
+        => nrel_main_idtf: 
+            [Пушкин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Пушкин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Pushkin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;       
+
+book_Death_of_the_Poet => nrel_plot:
+      .book_Death_of_the_Poet 
+    (*
+      => nrel_main_idtf: [Сюжет. Смерть поэта] 
+                (* <-lang_ru;; *);;
+        -> key_sc_element: book_Death_of_the_Poet;;
+        -> .book_Death_of_the_Poet_event_1
+            (*
+                => nrel_main_idtf: [Анализ] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Death_of_the_Poet_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_duel;;
+                    <- event_finality;;  
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> rrel_victim: char_Pushkin;;
+                    *);;      
+            *);;        
+    *);;
+

@@ -1,0 +1,12 @@
+section_belarussian_literary_movements
+	=> nrel_main_idtf:
+		[Раздел. Белорусское литературное направление]
+			(* <- lang_ru;; *);;
+
+	 section_belarussian_literary_movements =  [*^"file://section_belarussian_literary_movements.scsi"*];;
+
+section_belarussian_literary_movements
+	-> rrel_key_sc_element:	
+			old_bel_literature;
+			new_bel_literature;
+			newest_bel_literature;;

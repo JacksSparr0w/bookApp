@@ -1,0 +1,365 @@
+book_Hearts_of_Three
+    => nrel_main_idtf:
+        ["Сердца трёх"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+    <- genre_romantic_prose;
+    => nrel_author:
+        person_Jack_London;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1920;;
+
+
+book_Hearts_of_Three
+    <= nrel_characters:
+        .book_Hearts_of_Three_characters
+        (*
+            -> rrel_main_character:
+                    char_Francis_Morgan;
+                    char_Henry_Morgan;
+                    char_Leoncia;;
+            -> char_Alvares_Torres;
+               char_Thomas_Rigan;
+               char_Enrico_Solano;
+               char_Queen;;
+        *);;
+
+char_Francis_Morgan
+        => nrel_main_idtf: 
+            [Фрэнсис Морган] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Фрэнсис Морган)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Francis_Morgan.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Henry_Morgan
+    => nrel_main_idtf: 
+            [Генри Морган]
+                (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Генри Морган)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Henry_Morgan.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_Leoncia
+        => nrel_main_idtf: 
+            [Леонсия] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Леонсия)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Leoncia.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Alvares_Torres
+        => nrel_main_idtf: 
+            [Альварес Торрес] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Альварес Торрес)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Alvares_Torres.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Thomas_Rigan
+        => nrel_main_idtf: 
+            [Томас Риган] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Томас Риган)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Thomas_Rigan.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Enrico_Solano
+        => nrel_main_idtf: 
+            [Энрико Солано] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Энрико Солано)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Enrico_Solano.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Queen
+        => nrel_main_idtf: 
+            [Королева] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Королева)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Queen.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_Hearts_of_Three => nrel_plot: 
+    .book_Hearts_of_Three_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Сердца трёх"] (* <-lang_ru;; *);;
+        -> .book_Hearts_of_Three_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Френсис Морган узнаёт про клад] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Hearts_of_Three_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_unexpected;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Morgan;
+                           char_Thomas_Rigan;
+                           char_Alvares_Torres;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Hearts_of_Three_event_2;;      
+            *);;
+
+        -> .book_Hearts_of_Three_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Знакомство Френсиса с Генри Морганом и Леонсией] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Hearts_of_Three_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Morgan;
+                           char_Leoncia;
+                           char_Henry_Morgan;
+                           char_Enrico_Solano;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Hearts_of_Three_event_3;;      
+            *);;
+
+        -> .book_Hearts_of_Three_3
+            (*
+                => nrel_main_idtf: [Событие №3. Интриги Альвареса Торреса] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Hearts_of_Three_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_escape;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Morgan;
+                           char_Henry_Morgan;
+                           char_Leoncia;
+                           char_Alvares_Torres;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Hearts_of_Three_event_4;;      
+            *);;    
+
+        -> .book_Hearts_of_Three_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Поиск сокровищ майя] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Hearts_of_Three_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_danger;;
+                    <- event_journey;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Morgan;
+                           char_Alvares_Torres;
+                           char_Henry_Morgan;
+                           char_Leoncia;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Hearts_of_Three_event_5;;      
+            *);;  
+
+        -> .book_Hearts_of_Three_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Встреча с королевой] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Hearts_of_Three_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_wedding;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Morgan;
+                           char_Henry_Morgan;
+                           char_Leoncia;
+                           char_Alvares_Torres;
+                           char_Queen;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Hearts_of_Three_event_6;;           
+            *);;
+
+
+        -> .book_Hearts_of_Three_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Побег из Долины Затерянных Душ] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Hearts_of_Three_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_escape;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Morgan;
+                           char_Henry_Morgan;
+                           char_Leoncia;
+                           char_Queen;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Hearts_of_Three_event_7;;           
+            *);;
+
+        -> .book_Hearts_of_Three_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Королева узнает правду] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Hearts_of_Three_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_breakup;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Morgan;
+                           char_Leoncia;
+                           char_Queen;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Hearts_of_Three_event_8;;           
+            *);;
+
+
+        -> .book_Hearts_of_Three_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Раскрытие секретов семьи Солано] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Hearts_of_Three_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_unexpected;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Henry_Morgan;
+                           char_Leoncia;
+                           char_Enrico_Solano;
+                           char_Alvares_Torres;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Hearts_of_Three_event_9;;           
+            *);;
+
+        -> .book_Hearts_of_Three_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Последнее сражение за сокровища] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Hearts_of_Three_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Morgan; 
+                           char_Henry_Morgan;
+                           char_Leoncia;
+                           char_Queen;
+                           char_Alvares_Torres;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Hearts_of_Three_event_10;;           
+            *);; 
+
+        -> .book_Hearts_of_Three_event_10
+            (*
+                => nrel_main_idtf: [Событие №10. Спасение Френсиса от банкротства] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Hearts_of_Three_event_10.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_rescue;;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Francis_Morgan; 
+                           char_Henry_Morgan;
+                           char_Leoncia;
+                           char_Thomas_Rigan;;
+                    *);;
+            *);;        
+    *);;

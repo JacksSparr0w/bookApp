@@ -1,0 +1,124 @@
+agent_find_set_of_books_by_author
+=> nrel_main_idtf:
+	[агентная scp-программа нахождения множества авторов по литературной эпохе] (* <- lang_ru;; *);
+	[agent scp-program of finding set of authors by lirerary era] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_find_set_of_books_by_author (*
+	-> rrel_params: .agent_find_set_of_books_by_author_params (*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+	*);;
+
+	-> rrel_operators: .agent_find_set_of_books_by_author_operator_set (*
+
+		->rrel_init: .agent_find_set_of_books_by_author_operator_1 
+		(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+	
+			=> nrel_goto: .agent_find_set_of_books_by_author_operator_2;;
+		*);;
+
+		-> .agent_find_set_of_books_by_author_operator_2 
+		(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_scp_find_set_of_books_by_author;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_find_set_of_books_by_author_operator_3;;
+			=> nrel_else: .agent_find_set_of_books_by_author_return;;
+		*);;
+
+		-> .agent_find_set_of_books_by_author_operator_3 
+		(*
+			<- searchSetStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _input_params;;
+
+            ->rrel_set_3: rrel_assign: rrel_scp_var: _param_set;;
+			=> nrel_then: .test1;;
+			=> nrel_else: .agent_find_set_of_books_by_author_return;;
+		*);;
+
+		-> .test1 (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [check1];;
+			=> nrel_goto: .agent_find_set_of_books_by_author_operator_4;;
+
+		*);;
+
+		-> .agent_find_set_of_books_by_author_operator_4 (*
+            <- searchElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _param_set;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _outline_1;;
+
+            => nrel_then: .test2;;       
+            => nrel_else: .agent_find_set_of_books_by_author_return;;  
+        *);;
+
+        -> .test2 (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [check2];;
+			=> nrel_goto: .agent_find_set_of_books_by_author_operator_5;;
+
+		*);;
+		
+		-> .agent_find_set_of_books_by_author_operator_5
+		(*
+			<- genEl;;
+			
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_find_set_of_books_by_author_operator_6;;
+		*);;
+
+
+		-> .agent_find_set_of_books_by_author_operator_6
+		(*
+			<- call;;
+			
+		        -> rrel_1: rrel_fixed: rrel_scp_const: proc_find_set_of_books_by_author;;
+		        -> rrel_2: rrel_fixed: rrel_scp_const: ...
+				(*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _outline_1;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+		        -> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_find_set_of_books_by_author_operator_7;;
+		*);;
+
+		-> .agent_find_set_of_books_by_author_operator_7 
+		(*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_find_set_of_books_by_author_operator_8;;
+		*);;	
+		
+		-> .agent_find_set_of_books_by_author_operator_8
+		(*
+			<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=>nrel_goto: .agent_find_set_of_books_by_author_return;;
+		*);; 
+
+		-> .agent_find_set_of_books_by_author_return
+		(*
+			<- return;;
+		*);;
+	*);;
+*);;

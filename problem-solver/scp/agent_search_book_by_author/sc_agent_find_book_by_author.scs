@@ -1,0 +1,51 @@
+sc_agent_find_set_of_books_by_author
+=> nrel_main_idtf:
+	[sc-агент нахождения множества авторов по литературной эпохе] (* <- lang_ru;; *);
+<- abstract_sc_agent;
+=> nrel_primary_initiation_condition: (sc_event_add_output_arc => question_initiated);
+=> nrel_initiation_condition_and_result: (..sc_agent_find_set_of_books_by_author_initiation_condition => ..sc_agent_find_set_of_books_by_author_result);
+<= nrel_sc_agent_key_sc_elements: 
+	{
+		question_initiated;
+		question;
+		question_scp_find_set_of_books_by_author
+	};
+<- key_sc_element:
+	..sc_agent_find_set_of_books_by_author_behavior
+	(*
+	<- sc_description_of_sc_agent_behavior;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Задачей sc-агента является поиск множества авторов по литературной эпохе];;
+		*);;
+	*);
+
+=> nrel_inclusion: ...
+	(*
+		<- platform_independent_abstract_sc_agent;;
+		<= nrel_sc_agent_program: 
+		{
+			agent_find_set_of_books_by_author;
+			proc_find_set_of_books_by_author
+		};;
+		-> sc_agent_find_set_of_books_by_author_scp (* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_find_set_of_books_by_author_initiation_condition
+= [*
+	question_scp_find_set_of_books_by_author _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_find_set_of_books_by_author_result
+= [*
+	question_scp_find_set_of_books_by_author _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;                   

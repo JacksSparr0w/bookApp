@@ -1,0 +1,169 @@
+//Шинель, повесть Гоголя
+book_The_overcoat
+=> nrel_main_idtf: 
+        ["Шинель"]
+            (* <- lang_ru;; *);
+<-book;
+<- genre_tale;
+=> nrel_author:
+    person_Gogol_Nikolai_Vasilievich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1843;;
+
+book_The_overcoat
+=> nrel_location:
+    .book_The_overcoat_location
+    (*
+        -> country_Russian_empire;;
+        -> Petersburg;;
+    *);;
+
+// ПЕРСОНАЖИ
+book_The_overcoat
+<= nrel_characters:
+    .book_The_overcoat_characters
+    (*
+        -> rrel_main_character:
+            char_Bashmachkin;
+            char_Petrovich;
+            char_Znachitelnoe_litso;;
+    *);;
+
+char_Bashmachkin
+        => nrel_main_idtf: 
+            [Башмачкин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Башмачкин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Bashmachkin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Petrovich
+        => nrel_main_idtf: 
+            [Петрович] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Петрович)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Petrovich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);; 
+
+char_Znachitelnoe_litso
+        => nrel_main_idtf: 
+            [Значительное лицо] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Значительное лицо)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Znachitelnoe_litso.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_The_overcoat=> nrel_plot: 
+        .book_The_overcoat_plot
+    (*
+      => nrel_main_idtf: [Сюжет. "Шинель"] 
+                (* <-lang_ru;; *);;
+        -> key_sc_element: book_The_overcoat;;
+        -> .book_The_overcoat_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Часть 1] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_overcoat_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_mischief;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Bashmachkin;;
+                    *);;   
+                     => nrel_plot_sequence:
+                                    .book_The_overcoat_event_2;;
+            *);;
+
+        -> .book_The_overcoat_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Часть 2] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_overcoat_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Bashmachkin;;
+                    *);; 
+                    => nrel_plot_sequence:
+                                    .book_The_overcoat_event_3;;                     
+            *);;
+
+        -> .book_The_overcoat_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Часть 3]
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_overcoat_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Bashmachkin;
+                           char_Petrovich;;
+                    *);; 
+                    => nrel_plot_sequence:
+                                    .book_The_overcoat_event_4;;                     
+            *);;
+
+        -> .book_The_overcoat_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Часть 4] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_The_overcoat_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_cash_award;;
+                    <- event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Pechorin;
+                           char_Znachitelnoe_litso;
+                           char_Petrovich;;                       
+                    *);;                      
+            *);;
+    *);;
+

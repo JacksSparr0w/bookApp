@@ -1,0 +1,210 @@
+//Вечера на хуторе, гоголь
+book_Evenings_on_a_Farm_Near_Dikanka
+ => nrel_main_idtf: 
+        ["Вечера на хуторе близ диканьки"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_tale;
+=> nrel_author:
+    person_Gogol_Nikolai_Vasilievich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1843;;
+
+book_Evenings_on_a_Farm_Near_Dikanka
+=> nrel_location:
+    .book_Evenings_on_a_Farm_Near_Dikanka_location
+    (*
+        -> Sorochinsky_fair;;
+        -> country_Russian_empire;;
+        -> country_Ukraine;;
+        -> Konotop;;
+        -> Dikanka;;
+        -> Petersburg;;
+    *);;
+
+
+
+// ПЕРСОНАЖИ
+book_Evenings_on_a_Farm_Near_Dikanka
+<= nrel_characters:
+    .book_Evenings_on_a_Farm_Near_Dikanka_characters
+    (*
+        -> rrel_main_character:
+            char_Vakula;;
+        ->  char_Oksana;
+            char_kazak_Chub;;
+    *);;
+
+
+char_Vakula
+        => nrel_main_idtf: 
+            [Вакула] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Вакула)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Vakula.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Oksana
+        => nrel_main_idtf: 
+            [Оксана] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Оксана)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Oksana.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_kazak_Chub
+        => nrel_main_idtf: 
+            [Казак Чуб] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Казак Чуб)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_kazak_Chub.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_Evenings_on_a_Farm_Near_Dikanka =>nrel_plot:
+    .book_Evenings_on_a_Farm_Near_Dikanka_plot
+    (*
+      => nrel_main_idtf: [Сюжет. Вечера на хуторе близ диканьки] 
+                (* <-lang_ru;; *);;
+        -> .book_Evenings_on_a_Farm_Near_Dikanka_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Сорочинская ярмарка] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Evenings_on_a_Farm_Near_Dikanka_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_fair;;
+                    => nrel_plot_sequence:
+                                .book_Evenings_on_a_Farm_Near_Dikanka_event_2;;                      
+            *);;
+
+        -> .book_Evenings_on_a_Farm_Near_Dikanka_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Вечер накануне ивана купала. Быль, рассказанная дьячком ***ской церкви] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Evenings_on_a_Farm_Near_Dikanka_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance ;;
+                    => nrel_plot_sequence:
+                                .book_Evenings_on_a_Farm_Near_Dikanka_event_3;;                      
+            *);;
+
+        -> .book_Evenings_on_a_Farm_Near_Dikanka_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Майская ночь, или утопленница] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Evenings_on_a_Farm_Near_Dikanka_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;    
+                     => nrel_plot_sequence:
+                                .book_Evenings_on_a_Farm_Near_Dikanka_event_4;;              
+            *);;
+
+        -> .book_Evenings_on_a_Farm_Near_Dikanka_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Ночь перед рождеством] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Evenings_on_a_Farm_Near_Dikanka_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <- event_wedding;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Vakula;
+                           char_Oksana;
+                           char_kazak_Chub;;
+                    *);;              
+                     => nrel_plot_sequence:
+                                .book_Evenings_on_a_Farm_Near_Dikanka_event_5;;          
+            *);;
+            
+
+        -> .book_Evenings_on_a_Farm_Near_Dikanka_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Страшная месть] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Evenings_on_a_Farm_Near_Dikanka_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_wedding;; 
+                    <- event_murder;;
+                    <- event_death;;
+                    => nrel_plot_sequence:
+                                .book_Evenings_on_a_Farm_Near_Dikanka_event_6;;                
+            *);;
+
+            -> .book_Evenings_on_a_Farm_Near_Dikanka_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Иван Федорович Шпонька и его тетушка] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Evenings_on_a_Farm_Near_Dikanka_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    => nrel_plot_sequence:
+                                .book_Evenings_on_a_Farm_Near_Dikanka_event_7;;                    
+            *);;
+            
+
+        -> .book_Evenings_on_a_Farm_Near_Dikanka_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Заколдованное место. Быль, рассказанная дьячком ***ской церкви] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Evenings_on_a_Farm_Near_Dikanka_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finality;;                 
+            *);;
+    *);;
+

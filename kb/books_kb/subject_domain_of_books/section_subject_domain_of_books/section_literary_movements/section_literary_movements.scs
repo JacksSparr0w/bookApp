@@ -1,0 +1,18 @@
+section_literary_movements
+	=> nrel_main_idtf:
+		[Раздел. Литературные направления]
+			(* <- lang_ru;; *);;
+
+	 section_literary_movements =  [*^"file://section_literary_movements.scsi"*];;
+
+section_literary_movements
+	-> rrel_key_sc_element:	
+		literary_movement;
+		nrel_main_features;
+		sentimentalism_in_literature;
+		romanticism_in_literature;
+		modernism_in_literature;
+		critical_realism_in_literature;
+		classicism_in_literature;
+		realism_in_literature;
+		postmodernism_in_literature;;

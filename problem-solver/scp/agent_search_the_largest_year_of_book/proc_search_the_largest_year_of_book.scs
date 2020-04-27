@@ -1,0 +1,107 @@
+scp_program -> proc_search_the_largest_year_of_book (*
+	-> rrel_params: ...(*
+		-> rrel_1: rrel_out: _year;;
+	*);;
+
+	-> rrel_operators: ... (*
+
+		// инициализация _year значением
+		-> rrel_init: ..proc_gen_max_year (*
+			<- contAssign;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _max_year;; 
+				-> rrel_2: rrel_fixed: rrel_scp_const: [0];; 
+			
+				=> nrel_goto: ..proc_find_constraction_of_book;;	
+		*);;
+
+		// находим конструкцию из книг
+		-> ..proc_find_constraction_of_book (*
+			<- searchSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: book;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;; // ребро, соединяющее множество книг с самими книгами
+				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _some_book;; // одна из вершин
+
+				-> rrel_set_3: rrel_assign: rrel_scp_var: _set_books;;
+			=> nrel_then: ..proc_get_book_from_set;; //  достаем книгу из множества
+		 	=> nrel_else: ..proc_year_cont_max_year;; //  завершаем программу
+		*);;
+
+		// достаем книгу из множества
+		-> ..proc_get_book_from_set (*
+			<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _set_books;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _current_book;;
+
+			=> nrel_then: ..proc_delete_current_book_from_set_books;; // находим конструкцию с книгой и годом издания
+		 	=> nrel_else: ..proc_year_cont_max_year;; 
+		*);;
+
+		// удаление текущей книги из множества
+		-> ..proc_delete_current_book_from_set_books (*
+			<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc2;;
+
+			=> nrel_goto: ..proc_find_constraction_with_book_and_year;;
+			*);;
+
+
+		// находим конструкцию с книгой и годом издания
+		 -> ..proc_find_constraction_with_book_and_year (* 
+			<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _current_book;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _current_year;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_publication_date;;
+	
+			=> nrel_then: ..proc_get_const_from_year;;
+			=> nrel_else: ..proc_get_book_from_set;;
+		 *);;
+
+		// достаем из  _current_year дату
+		-> ..proc_get_const_from_year (*
+			<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _current_year;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _date;;
+
+			=> nrel_then: ..proc_compare_year_and_current_year;;
+			=> nrel_else: ..proc_get_book_from_set;;
+		*);;
+
+
+		// сравниваем _year и найденный год 
+		-> ..proc_compare_year_and_current_year (*
+			<- ifGr;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _max_year;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _date;;
+	
+			=> nrel_then: ..proc_get_book_from_set;; // если _max_year больше _date
+			=> nrel_else: ..proc_year_bigger_date;; // идем к следующей книге
+		*);;
+
+
+		// Присваиваем _year значение _current_year
+		-> ..proc_year_bigger_date (*
+			<- contAssign;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _max_year;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _date;;
+
+			=> nrel_goto: ..proc_get_book_from_set;; // идем к следующей книге
+		*);;
+
+		-> ..proc_year_cont_max_year (*
+			<- contAssign;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _year;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _max_year;;
+
+			=> nrel_goto: ..proc_cycle_return;; // идем к следующей книге
+		*);;
+		//выводим результат
+		-> ..proc_cycle_return (*
+				<- return;;
+			*);;
+
+	*);;
+*);;

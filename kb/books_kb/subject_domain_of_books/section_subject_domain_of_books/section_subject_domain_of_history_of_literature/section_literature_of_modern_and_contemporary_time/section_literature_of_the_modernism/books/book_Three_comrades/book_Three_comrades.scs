@@ -1,0 +1,309 @@
+book_Three_comrades
+    => nrel_main_idtf:
+        ["Три товарища"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+    <- genre_romantic_prose;
+    => nrel_author:
+        person_Erich_Maria_Remarque;
+    <= nrel_original_language:
+        lang_de;
+    => nrel_publication_date:
+        year_1936;;
+
+
+book_Three_comrades
+    <= nrel_characters:
+        .book_Three_comrades_characters
+        (*
+            -> rrel_main_character:
+                    char_Robert_Locamp;
+                    char_Otto_Kester;
+                    char_Gottfried_Lenz;
+                    char_Patricia_Holman;;
+            -> char_Alfons;
+               char_Valentin_Gauser;
+               char_Fred;
+               char_Professor_Jaffe;;
+        *);;
+
+char_Robert_Locamp
+        => nrel_main_idtf: 
+            [Роберт Локамп (Робби)] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Роберт Локамп (Робби))] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Robert_Locamp.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Otto_Kester
+    => nrel_main_idtf: 
+            [Отто Кестер]
+                (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Отто Кестер)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Otto_Kester.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Gottfried_Lenz
+        => nrel_main_idtf: 
+            [Готтфрид Ленц] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Готтфрид Ленц)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Gottfried_Lenz.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Patricia_Holman
+        => nrel_main_idtf: 
+            [Патриция Хольман (Пат)] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Патриция Хольман (Пат))] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Patricia_Holman.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Alfons
+        => nrel_main_idtf: 
+            [Альфонс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Альфонс)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Alfons.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Valentin_Gauser
+        => nrel_main_idtf: 
+            [Валентин Гаузер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Валентин Гаузер)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Valentin_Gauser.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Fred
+        => nrel_main_idtf: 
+            [Фред] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Фред)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Fred.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Professor_Jaffe
+        => nrel_main_idtf: 
+            [Профессор Жаффе] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Профессор Жаффе)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Professor_Jaffe.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+
+
+
+book_Three_comrades => nrel_plot: 
+    .book_Three_comrades_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Три товарища"] (* <-lang_ru;; *);;
+        -> .book_Three_comrades_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Празднование дня рождения Роберта Локампа] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Three_comrades_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_arrival_of_guests;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robert_Locamp;
+                           char_Otto_Kester;
+                           char_Gottfried_Lenz;
+                           char_Patricia_Holman;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Three_comrades_event_2;;      
+            *);;
+
+        -> .book_Three_comrades_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Первое свидание Роберта и Патриции] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Three_comrades_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_date;;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robert_Locamp;
+                           char_Patricia_Holman;
+                           char_Fred;
+                           char_Valentin_Gauser;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Three_comrades_event_3;;      
+            *);;
+
+        -> .book_Three_comrades_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Победа в гонке] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Three_comrades_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_victory;;
+                    <- event_love;;
+                    <- event_arrival_of_guests;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Alfons;
+                           char_Patricia_Holman;
+                           char_Robert_Locamp;
+                           char_Otto_Kester;
+                           char_Gottfried_Lenz;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Three_comrades_event_4;;      
+            *);;
+
+        -> .book_Three_comrades_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Болезнь Пат] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Three_comrades_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_holiday;;
+                    <- event_disease;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robert_Locamp;
+                           char_Patricia_Holman;
+                           char_Professor_Jaffe;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Three_comrades_event_5;;      
+            *);;
+
+
+        -> .book_Three_comrades_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Убийство Ленца] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Three_comrades_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_murder;;
+                    <- event_revenge;;
+                    <- event_death_of_the_protagonist;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robert_Locamp;
+                           char_Otto_Kester;
+                           char_Gottfried_Lenz;
+                           char_Alfons;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Three_comrades_event_6;;      
+            *);;
+
+        -> .book_Three_comrades_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Смерть Пат] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Three_comrades_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death_of_the_protagonist;;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robert_Locamp;
+                           char_Patricia_Holman;
+                           char_Otto_Kester;;
+                    *);;
+            *);;
+    *);;

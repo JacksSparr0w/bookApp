@@ -1,0 +1,17 @@
+ui_menu_file_for_finding_book_by_event 
+	<- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_book_by_event => nrel_main_idtf: [Найти книги по заданным событиям] (* <- lang_ru;; *);;
+ui_menu_file_for_finding_book_by_event => nrel_main_idtf: [Find books by events] (* <- lang_en;; *);;
+	
+ui_menu_file_for_finding_book_by_event => ui_nrel_command_template:
+	[*
+		action_of_finding_book_by_event _-> ._action_of_finding_book_by_event_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_of_finding_book_by_event_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_book_by_event => ui_nrel_command_lang_template: [Найти книги по $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_file_for_finding_book_by_event => ui_nrel_command_lang_template: [Find books by $ui_arg_1] (* <- lang_en;; *);;

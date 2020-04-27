@@ -1,0 +1,30 @@
+section_domestic_authors
+=> nrel_main_idtf:
+	[Раздел. Писатели белорусской литературы.]
+		(* <- lang_ru;; *);
+->rrel_key_sc_element:
+	person_Yanka_Kupala;
+	person_Yakub_Kolas;
+	person_Maksim_Tank;
+	person_Maksim_Bogdanovich;
+	person_Ryhor_Baradulin;
+	person_Vincent_Dunin_Marcinkievich;
+	person_Uladzimir_Karatkievich;
+	person_Vasil_Bykov;
+	person_Maksim_Harecki;
+	person_Ivan_Melezh;
+	person_Tetka;
+	person_Ales_Adamovich;
+	person_Svetlana_Alexievich;
+	person_Janka_Maur;
+	person_Ivan_Shamiakin;
+	person_Kandrat_Krapiva;
+	person_Francishak_Bahushevich;
+	person_Francisk_Skorina;
+	person_Yan_Chechot;
+	person_Adam_Mitskevich;
+	person_Ales_Garun;
+	person_Yanka_Zhurba;
+	person_Andrei_Zazulya;;
+
+section_domestic_authors = [*^"file://section_domestic_authors.scsi"*];;

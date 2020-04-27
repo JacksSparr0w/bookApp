@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/search_by_author_common.js",
+        "src/search_by_author_painter.js"
+    ],
+
+    "component": "src/search_by_author_component.js",
+
+    "target": "static/components/js/by_author/by_author.js"
+}

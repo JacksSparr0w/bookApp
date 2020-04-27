@@ -1,0 +1,72 @@
+subject_domain_of_theory_of_literature
+=> nrel_main_idtf:
+	[Предметная область Теории литературы]
+		(* <- lang_ru;; *);
+
+
+<- not_enough_formed_structure;
+<= nrel_section_decomposition:
+	{
+	section_subject_domain_of_literary_genres;
+	section_literary_work
+	};;
+
+subject_domain_of_theory_of_literature =  [*^"file://section_theory_of_literature.scsi"*];;
+
+subject_domain_of_theory_of_literature
+-> rrel_key_sc_element: 
+	nrel_languages_of_work;
+	nrel_literary_award;
+	literary_award;
+	scenario;
+	nrel_genre_work;
+	genre_biography;
+	essayist;
+	futurism;
+	genre_article;
+	genre_dystopia;
+	genre_feuilleton;
+	genre_miniature;
+	genre_speculative_fiction;
+	literary_criticism;
+	magazine;
+	newspaper;
+	review;
+	censorship;
+	publication;
+	samizdat;
+	live_publication;
+	nrel_circulation;
+	nrel_library_reference;
+	nrel_quote;
+	publishing_house;
+	scientific_work;
+	religious_text;
+	nrel_languages_of_work;
+	nrel_literary_award;
+	literary_award;
+	nrel_style_of_author;
+	reader;
+	nrel_screen_version;
+	genre_horror;
+	genre_play;
+	genre_docudrama;
+	genre_romantic_prose;
+	genre_fantasy;
+	genre_thriller;
+	genre_gotic;
+	genre_postapokalipsis;
+	genre_science_fiction;
+	genre_military;
+	genre_criminal_prose;;
+
+
+
+	
+
+
+
+
+
+
+

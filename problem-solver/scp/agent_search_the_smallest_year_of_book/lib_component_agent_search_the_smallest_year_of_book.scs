@@ -1,0 +1,30 @@
+lib_component_agent_search_the_smallest_year_of_book
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска минимального года издания]
+		(* <- lang_ru;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_search_the_smallest_year_of_book; 
+
+<- key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Задачей sc-агента поиска минимального года издания является поиск минимального года издания книг, находящихся в базе.];;
+		*);;
+	*);;
+
+question_search_the_smallest_year_of_book
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[действие. найти минимальный год]
+		(* <- lang_ru;; *);
+	[action. find the smallest year]
+		(* <- lang_en;;	*);;
