@@ -7,7 +7,7 @@ concept_note <- concept;
 		<=nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example: "file://htmls//concept_note.html";;	
+			-> rrel_example: "file://htmls/concept_note.html";;	
 			*);;
 		<= nrel_using_constants:...
 			(*
@@ -26,7 +26,7 @@ concept_bookmark <- concept;
 		<=nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example: "file://htmls//concept_bookmark.html";;	
+			-> rrel_example: "file://htmls/concept_bookmark.html";;	
 			*);;
 		<= nrel_using_constants:...
 			(*
@@ -43,7 +43,7 @@ concept_booklist <- concept;
 		<=nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example: "file://htmls//concept_booklist.html";;	
+			-> rrel_example: "file://htmls/concept_booklist.html";;	
 			*);;
 		<= nrel_using_constants:...
 			(*
@@ -59,7 +59,7 @@ concept_recommended_booklist <- concept;
 		<=nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example: "file://htmls//concept_recommended_booklist.html";;	
+			-> rrel_example: "file://htmls/concept_recommended_booklist.html";;	
 			*);;
 		<= nrel_using_constants:...
 			(*
@@ -77,7 +77,7 @@ concept_wish_list <- concept;
 		<=nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example: "file://htmls//concept_wish_list.html";;	
+			-> rrel_example: "file://htmls/concept_wish_list.html";;	
 			*);;
 		<= nrel_using_constants:...
 			(*
@@ -104,7 +104,7 @@ nrel_book
 		<=nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example: "file://htmls//nrel_book.html";;	
+			-> rrel_example: "file://htmls/nrel_book.html";;	
 			*);;
 		<= nrel_using_constants:...
 			(*
@@ -129,7 +129,7 @@ nrel_time_to_read
 		<=nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example: "file://htmls//nrel_time_to_read.html";;	
+			-> rrel_example: "file://htmls/nrel_time_to_read.html";;	
 			*);;
 		<= nrel_using_constants:...
 			(*
@@ -147,7 +147,7 @@ rrel_page
 		<=nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example: "file://htmls//rrel_page.html";;	
+			-> rrel_example: "file://htmls/rrel_page.html";;	
 			*);;
 	*);;
 
@@ -163,7 +163,7 @@ rrel_charpter
 		<=nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example: "file://htmls//rrel_charpter.html";;	
+			-> rrel_example: "file://htmls/rrel_charpter.html";;	
 			*);;
 	*);;
 

@@ -17,7 +17,7 @@ stage()
 }
 
 base_path=src
-sc_web_path=../../sc-web/client
+sc_web_path=../../ostis/sc-web/client
 sc_web_static_path=$sc_web_path/static
 
 stage "Build component"
@@ -74,7 +74,7 @@ append_js $sc_web_path/templates/components.html components/js/bookSearchByEvent
 
 
 
-cd ../../sc-web/scripts
+cd ../../ostis/sc-web/scripts
 ./install_deps_ubuntu.sh
 ./prepare_js.sh
 python build_components.py -i -a
