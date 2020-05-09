@@ -1,0 +1,35 @@
+lib_component_agent_of_finding_books_by_events_classification
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент поиска книг по событиям]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of finding books by events]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- non_atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_finding_books_by_events; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					"file://htmls/Agent_Of_Finding_Books_By_Events.html"
+						(* <- lang_ru;; *);; 
+			*);;
+	*);;
+
+sc_node_not_relation -> question_of_finding_books_by_events_classification;;
+
+question_of_finding_books_by_events_classification => nrel_main_idtf:
+	[действие. найти все книги содержащие выбранные события]
+		(*<- lang_ru;;*);;
+question_of_finding_books_by_events_classification => nrel_main_idtf:
+	[action. search all books which have chosed events]
+		(* <- lang_en;; *);;

@@ -1,0 +1,24 @@
+lib_component_agent_of_recommending_books
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент рекомендации книг]
+		(* <- lang_ru;; *);
+	[Library component. sc-agent of recommending books]
+		(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_for_recommending_books; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_recommending_books;;
+
+question_recommending_books
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[действие. рекомендовать книги]
+	(* <- lang_ru;; *);
+	[action. to recommend books]
+	(* <- lang_en;; *);;

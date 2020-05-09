@@ -1,0 +1,6 @@
+sc_text_of_agent_of_finding_book_by_event
+-> rrel_key_sc_element:
+	agent_of_finding_book_by_event;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_of_finding_book_by_event = [*^"file://agent_of_finding_book_by_event.scsi"*];;

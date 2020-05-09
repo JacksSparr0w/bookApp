@@ -1,0 +1,20 @@
+ui_menu_file_for_installation_avarage_rating_of_the_book
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какая средняя оценка книги?] (* <- lang_ru;; *);
+		[What avarage rating of the book?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_installation_avarage_rating_of_the_book _-> ._question_installation_avarage_rating_of_the_book_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_installation_avarage_rating_of_the_book_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения средней оценки книги: $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[Request of installation avarage rating of the book: $ui_arg_1] 
+		(* <- lang_en;; *);;
+

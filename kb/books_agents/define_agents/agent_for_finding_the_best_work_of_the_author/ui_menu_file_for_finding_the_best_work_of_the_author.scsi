@@ -1,0 +1,19 @@
+ui_menu_file_for_finding_the_best_work_of_the_author <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_two_argument_command_class;;
+
+ui_menu_file_for_finding_the_best_work_of_the_author => nrel_main_idtf: [Найти лучшую работу автора в заданном жанре] (* <- lang_ru;; *);;
+ui_menu_file_for_finding_the_best_work_of_the_author => nrel_main_idtf: [Find the best work of the author in a given genre] (* <- lang_en;; *);;
+	
+ui_menu_file_for_finding_the_best_work_of_the_author => ui_nrel_command_template:
+	[*
+		question_finding_the_best_work_of_the_author _-> ._question_finding_the_best_work_of_the_author_instance
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;	
+			*);;
+		._question_finding_the_best_work_of_the_author_instance _<- question;;
+	*];;
+ui_menu_file_for_finding_the_best_work_of_the_author => ui_nrel_command_lang_template:
+		[Какая лучшая работа $ui_arg_1 в жанре $ui_arg_2] 
+		(* <- lang_ru;; *);
+		[What the best work of $ui_arg_1 in a genre $ui_arg_2]
+                (* <- lang_en;; *);;

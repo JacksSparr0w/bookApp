@@ -1,0 +1,16 @@
+ui_menu_file_for_agent_of_define_age_limit <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_agent_of_define_age_limit => nrel_main_idtf: [Определить возрастное ограничение] (* <- lang_ru;; *);;
+ui_menu_file_for_agent_of_define_age_limit => nrel_main_idtf: [Define age limit] (* <- lang_en;; *);;
+	
+ui_menu_file_for_agent_of_define_age_limit => ui_nrel_command_template:
+	[*
+		action_of_define_age_limit _-> ._action_of_define_age_limit_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_of_define_age_limit_instance _<- question;;
+	*];;
+
+ui_menu_file_for_agent_of_define_age_limit => ui_nrel_command_lang_template: [Определить возрастное ограничение $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_file_for_agent_of_define_age_limit => ui_nrel_command_lang_template: [Define age limit $ui_arg_1] (* <- lang_en;; *);;

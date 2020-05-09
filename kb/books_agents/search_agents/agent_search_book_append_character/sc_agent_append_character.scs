@@ -1,0 +1,49 @@
+sc_agent_append_character_to_pattern
+=> nrel_main_idtf:
+	[sc-агент добавления персонажа в шаблон поиска]
+		(* <- lang_ru;; *);
+	[sc-agent of appending character to search pattern]
+		(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+=> nrel_primary_initiation_condition:
+	(sc_event_add_output_arc => question_initiated);
+=> nrel_initiation_condition_and_result:
+	(..sc_agent_append_character_to_pattern_initiation_condition => ..sc_agent_append_character_to_pattern_result);
+<= nrel_sc_agent_key_sc_elements: 
+	{
+		question_initiated;
+		question;
+		question_append_character_to_pattern
+	};
+=> nrel_inclusion: 
+	.c_realization_of_append_character_to_pattern
+	(*
+		<- platform_dependent_abstract_sc_agent;;
+
+		<= nrel_sc_agent_program: 
+		{
+			[owner=ostis-books; repo=sc-machine; path= sc-kpm/search-books/search_book_append_character.cpp; syntax=cpp] (* => nrel_format: format_github_source_link;; *);
+			[owner=ostis-books; repo=sc-machine; path= sc-kpm/search-books/search_book_append_character.h; syntax=cpp] (* => nrel_format: format_github_source_link;; *)
+		};;
+
+		-> sc_agent_append_character_to_pattern_agent_c
+			(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_append_character_to_pattern_initiation_condition
+= [*
+	question_append_character_to_pattern _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_append_character_to_pattern_result
+= [*
+	question_append_character_to_pattern _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;

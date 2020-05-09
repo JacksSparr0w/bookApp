@@ -1,0 +1,39 @@
+book_search_pattern
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [шаблон поиска книг]
+        (* <- lang_ru;; *);
+    [book search pattern]
+        (* <- lang_en;; *);;
+
+book_search_pattern
+<- rrel_key_sc_element:
+    .book_search_pattern_definition
+    (*
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content/book_search_pattern_definition.html"
+                    (*
+                        => nrel_format:
+                            format_html;;
+                    *);;
+            *);;
+    *);
+
+    .book_search_pattern_typical_instance
+    (*
+        <- description_of_a_typical_instance;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content/book_search_pattern_typical_instance.png"
+                    (*
+                        => nrel_format:
+                            format_png;;
+                    *);;
+            *);;
+    *);;

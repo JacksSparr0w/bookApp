@@ -1,0 +1,50 @@
+sc_agent_for_installation_avarage_rating_of_the_book
+=> nrel_main_idtf:
+	[sc-агент установки средней оценки книги] 
+	(* <- lang_ru;; *);
+	[sc-agent of installation avarage rating of the book] 
+	(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_for_installation_avarage_rating_of_the_book_condition => ..sc_agent_for_installation_avarage_rating_of_the_book_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	question_installation_avarage_rating_of_the_book
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_for_installation_avarage_rating_of_the_book
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_for_installation_avarage_rating_of_the_book	
+		};;
+	-> sc_agent_for_installation_avarage_rating_of_the_book_scp   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_for_installation_avarage_rating_of_the_book_condition
+= [*
+	question_installation_avarage_rating_of_the_book _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_for_installation_avarage_rating_of_the_book_result
+= [*
+	question_installation_avarage_rating_of_the_book _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;

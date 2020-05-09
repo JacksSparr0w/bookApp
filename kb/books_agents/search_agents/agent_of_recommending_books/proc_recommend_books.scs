@@ -1,0 +1,156 @@
+scp_program -> proc_recommend_books
+(*
+    -> rrel_params: ...
+    (*
+        -> rrel_1: rrel_in: _author;;
+        -> rrel_2: rrel_in: _recommended_books;;
+    *);;
+
+    -> rrel_operators: ...
+    (*
+    	
+        -> rrel_init: .proc_recommend_books_operator_print_start
+        (*
+            <- printNl;;
+
+            -> rrel_1: rrel_scp_const: [Начало. Процедура нахождения книжных рекомендаций];;
+
+            => nrel_goto: .proc_recommend_books_operator_find_book_author_gen;;
+        *);;
+
+        -> .proc_recommend_books_operator_find_book_author_gen
+        (*
+            <- genEl;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _author_books;;
+
+            => nrel_goto: .proc_recommend_books_operator_find_author_all_books;;
+        *);;
+
+
+		-> .proc_recommend_books_operator_find_author_all_books
+		(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_find_books_of_author;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+			(*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _author;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _author_books;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _proc_find_author_books_descriptor;;
+
+			=> nrel_goto: .proc_recommend_books_operator_find_author_all_books_wait;;
+		*);;
+
+		-> .proc_recommend_books_operator_find_author_all_books_wait
+		(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_find_author_books_descriptor;;
+
+			=> nrel_goto: .proc_recommend_books_operator_author_books_set;;
+		*);;
+
+        //Добавление всех книг автора в рекомендации
+
+
+        // Перебор найденных книг автора     
+
+        -> .proc_recommend_books_operator_author_books_set
+        (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _author_books;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _temp_arc_book_in_authors;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _book;;
+
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: _recommended_books;;
+
+	        => nrel_then: .proc_recommend_books_operator_author_books_found;;
+
+            => nrel_else: .proc_recommend_books_operator_print_end;;
+        *);;
+
+         -> .proc_recommend_books_operator_author_books_found
+        (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _author_books;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _temp_arc_book_in_authors;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _book;;
+
+	        => nrel_then: .proc_recommend_books_operator_remove_the_book_2;;
+
+            => nrel_else: .proc_recommend_books_operator_print_end;;
+        *);;
+
+
+
+        -> .proc_recommend_books_operator_remove_the_book_2
+        (*
+            <- eraseEl;;
+
+           -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _temp_arc_book_in_authors;;
+
+            => nrel_goto: .proc_recommend_books_operator_loop_to_find_similar_books;;
+        *);;
+
+         -> .proc_recommend_books_operator_loop_to_find_similar_books
+		(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_find_similar_books;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+			(*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _book;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _author_books;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: _recommended_books;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _proc_find_similar_books_descriptor;;
+
+			=> nrel_goto: .proc_recommend_books_operator_find_author_all_books_wait;;
+		*);;
+
+		-> .proc_recommend_books_operator_find_author_all_books_wait
+		(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_find_similar_books_descriptor;;
+
+			=> nrel_goto: .proc_recommend_books_operator_find_author_all_books_sync;;
+		*);;
+        -> .proc_recommend_books_operator_find_author_all_books_sync
+		(*
+			<- syncronize;;
+			=> nrel_goto: .proc_recommend_books_operator_author_books_found;;
+		*);;
+
+
+        
+///////////////////////////////////////////////////////////////////////////////////
+    //Формирование ответа
+
+        -> .proc_recommend_books_operator_print_end
+        (*
+            <- printNl;;
+
+            -> rrel_1: rrel_scp_const: [Конец обработки. Процедура поиска книжных рекомендаций];;
+
+            => nrel_goto: .proc_recommend_books_operator_print_result;;
+        *);;
+        -> .proc_recommend_books_operator_print_result
+        (*
+            <- printEl;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _recommended_books;;
+
+            => nrel_goto: .proc_recommend_books_operator_return;;
+        *);;
+        
+    	-> .proc_recommend_books_operator_return
+    	(*
+    		<- return;;
+    	*);;
+    *);;
+*);;

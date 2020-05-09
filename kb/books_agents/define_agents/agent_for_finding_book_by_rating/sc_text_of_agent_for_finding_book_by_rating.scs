@@ -1,0 +1,6 @@
+sc_text_of_agent_for_finding_book_by_rating
+-> rrel_key_sc_element:
+	agent_for_finding_book_by_rating;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_for_finding_book_by_rating = [*^"file://agent_for_finding_book_by_rating.scsi"*];;

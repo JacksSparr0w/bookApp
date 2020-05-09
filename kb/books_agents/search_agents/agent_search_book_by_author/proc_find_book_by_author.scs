@@ -1,0 +1,87 @@
+scp_program -> proc_find_set_of_books_by_author (*
+	
+	-> rrel_params: ... (*
+		-> rrel_1: rrel_in: _period;;
+		-> rrel_2: rrel_in: _result;;
+	*);;
+
+	-> rrel_operators: ... (*
+
+		->rrel_init: ..proc_find_authors_by_period_1
+		(*
+			<- genEl;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _books;;
+
+            => nrel_goto: ..proc_find_authors_by_period_2;;
+		*);;
+
+		-> ..proc_find_authors_by_period_2
+		(*
+			<- searchSetStr5;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _period;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _book;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
+		
+			->rrel_set_3: rrel_fixed: rrel_scp_var: _books;;
+			
+			=> nrel_then: ..proc_find_authors_by_period_3;;		
+		 	=> nrel_else: ..proc_find_authors_by_period_7;;
+
+		*);;
+
+		-> ..proc_find_authors_by_period_3
+		(*
+			<- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _books;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_2;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _book;;
+
+            => nrel_then: ..proc_find_authors_by_period_4;;		
+		 	=> nrel_else: ..proc_find_authors_by_period_7;;
+		*);;
+
+		-> ..proc_find_authors_by_period_4
+		(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_2;;
+
+			=> nrel_goto: ..proc_find_authors_by_period_5;; 
+		*);;
+
+		-> ..proc_find_authors_by_period_5
+		(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _book;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc_2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _author;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc_4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_author;;
+
+			=> nrel_then: ..proc_find_authors_by_period_6;;		
+		 	=> nrel_else: ..proc_find_authors_by_period_3;;
+		*);;
+
+		-> ..proc_find_authors_by_period_6
+		(*
+			<- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_2;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _author;;
+
+            => nrel_goto: ..proc_find_authors_by_period_3;;
+		*);;
+
+		-> ..proc_find_authors_by_period_7
+		(*
+			<- return;;
+		*);;
+	*);;
+*);;

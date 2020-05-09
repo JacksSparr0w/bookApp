@@ -1,0 +1,30 @@
+lib_component_agent_append_character_to_pattern
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент добавления персонажа в шаблон поиска]
+		(* <- lang_ru;; *);
+
+<- library_of_platform_dependent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+-> rrel_key_sc_element: 
+	.c_realization_of_append_character_to_pattern;
+
+<- key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Задачей sc-агента добавления персонажа в шаблон поиска является добавление в заданный шаблон поиска книги сведений об одном из её персонажей: его имени, пола, роли и др.];;
+		*);;
+	*);;
+
+question_append_character_to_pattern
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[действие. добавить персонажа в шаблон поиска]
+		(* <- lang_ru;; *);
+	[action. append character to search pattern]
+		(* <- lang_en;;	*);;

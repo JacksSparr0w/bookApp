@@ -1,0 +1,414 @@
+agent_of_finding_book_by_event
+=> nrel_main_idtf: 
+	[агентная scp-программа поиска книг по событиям](* <- lang_ru;;*);
+	[agent scp-program of finding books by events](* <- lang_ru;;*);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_finding_book_by_event
+	(*
+	-> rrel_params: .agent_of_finding_book_by_event_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_book_by_event_operators
+		(*
+		-> rrel_init: .agent_of_finding_book_by_event_operator1A
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+				=> nrel_goto: .agent_of_finding_book_by_event_operator1B;;
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator1B
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_const: action_of_finding_book_by_event;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator1C;;
+				=> nrel_else: .agent_of_finding_book_by_event_operator_return;;
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator1C
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator2A;;
+				=> nrel_else: .agent_of_finding_book_by_event_operator_return;;
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator2A	
+			(*
+				<- genEl;;
+
+				-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _result_set_of_books;;
+
+				=> nrel_goto: .agent_of_finding_book_by_event_operator2B;;
+			*);;
+
+
+		->	.agent_of_finding_book_by_event_operator2B
+			(*
+				<- searchSetStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_const: book;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _unknown_book;;
+
+				-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _unchecked_books;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator3A;; 
+				=> nrel_else: .agent_of_finding_book_by_event_operator_return;;
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator3A
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _unchecked_books;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_to_current_book;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _current_book;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator4_0;; 
+				=> nrel_else: .agent_of_finding_book_by_event_gen_answer1;;
+			*);;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
+//-------------------------------ПОИСК НУЖНЫХ СОБЫТИЙ В ВЫРАННОЙ КНИГЕ--------------------------------------------
+
+		-> .agent_of_finding_book_by_event_operator4_0
+			(*
+				<- searchSetStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _event_from_param;;
+
+				-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _needed_events;;
+				
+				=> nrel_goto: .agent_of_finding_book_by_event_operator4_1;;
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator4_1
+			(*
+				<- searchElStr5;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _current_book;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _plot_of_current_book;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_plot;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator4_2;; 
+				=> nrel_else: .agent_of_finding_book_by_event_operator5A;;
+			*);;
+
+
+		-> .agent_of_finding_book_by_event_operator4_2
+			(*
+				<- searchSetStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _plot_of_current_book;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _unknown_event;;
+
+				-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _unchecked_events;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator4_3;; 
+				=> nrel_else: .agent_of_finding_book_by_event_operator5A;;
+			*);;
+			
+		-> .agent_of_finding_book_by_event_operator4_3
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _unchecked_events;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_to_current_event;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _current_event;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator4_4;; 
+				=> nrel_else: .agent_of_finding_book_by_event_operator5A;;
+			*);;
+			
+		-> .agent_of_finding_book_by_event_operator4_4
+			(*
+				<- searchSetStr3;;
+
+				-> rrel_1: rrel_assign: rrel_scp_var: _info;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _current_event;;
+
+				-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_set: _current_event_info;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator4_5;; 
+				=> nrel_else: .agent_of_finding_book_by_event_operator4_9;;
+			*);;
+
+		
+		-> .agent_of_finding_book_by_event_operator4_5
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _current_event_info;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_event_info;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _event_class;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator4_6;; 
+				=> nrel_else: .agent_of_finding_book_by_event_operator4_3;;
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator4_6
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _current_event_info;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_event_info;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _plot_of_current_book;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator4_7;; 
+				=> nrel_else: .agent_of_finding_book_by_event_operator4_8;;
+			*);;
+		
+		-> .agent_of_finding_book_by_event_operator4_7
+			(*
+				<- eraseEl;;
+
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_event_info;;
+
+				=> nrel_goto: .agent_of_finding_book_by_event_operator4_5;;
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator4_8
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _needed_events;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_to_needed_events;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _event_class;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator4_8_1;; 
+				=> nrel_else: .agent_of_finding_book_by_event_operator4_9;;
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator4_8_1
+			(*
+				<- eraseEl;;
+
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_to_needed_events;;
+
+				=> nrel_goto: .agent_of_finding_book_by_event_operator4_8_2;;
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator4_8_2
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _needed_events;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _is_have_event;;
+
+				=> nrel_then: .agent_of_finding_book_by_event_operator4_9;; 
+				=> nrel_else: .agent_of_finding_book_by_event_operator4_10;;
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator4_9
+			(*
+				<- eraseEl;;
+
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_to_current_event;;
+
+				=> nrel_goto: .agent_of_finding_book_by_event_operator4_3;;
+			*);;
+
+
+		-> .agent_of_finding_book_by_event_operator4_10
+			(*
+				<- genElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _result_set_of_books;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _current_book;;
+
+				=> nrel_goto: .agent_of_finding_book_by_event_operator5A;;
+			*);;
+
+
+//-------------------------------КОНЕЦ ПОИСКА НУЖНЫХ СОБЫТИЙ В ВЫРАННОЙ КНИГЕ-------------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		-> .agent_of_finding_book_by_event_operator5A
+			(*
+				<- eraseEl;;
+
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_to_current_book;;
+
+				=> nrel_goto: .agent_of_finding_book_by_event_operator3A;;
+			*);;
+
+
+
+//---------------------------------------ФОРМИРОВАНИЕ ОТВЕТА----------------------------------------
+
+
+        -> .agent_of_finding_book_by_event_gen_answer1
+        	(*
+           	 	<- genEl;;
+
+           	    -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+           	 	=> nrel_goto: .agent_of_finding_book_by_event_gen_answer2;;
+        *);;
+
+		 -> .agent_of_finding_book_by_event_gen_answer2
+        	(*
+             	<- searchElStr3;;
+
+            	-> rrel_1: rrel_fixed: rrel_scp_var: _result_set_of_books;;
+           		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            	-> rrel_3: rrel_assign: rrel_scp_var: _result_elem;;
+
+            	=> nrel_then: .agent_of_finding_book_by_event_operator_elements_books_found;;
+            	=> nrel_else: .agent_of_finding_book_by_event_operator_books_not_found;;
+        *);;
+
+        -> .agent_of_finding_book_by_event_operator_books_not_found
+        (*
+             <- genEl;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _books_not_found_message;;
+
+            => nrel_goto: .agent_of_finding_book_by_event_operator_books_not_found_1;;
+        *);;
+
+        -> .agent_of_finding_book_by_event_operator_books_not_found_1
+        (*
+             <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _books_not_found_message;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: [Книги с заданными событиями не найдены];;
+
+            => nrel_goto: .agent_of_finding_book_by_event_operator_books_not_found_2;;
+        *);;
+
+        -> .agent_of_finding_book_by_event_operator_books_not_found_2
+        (*
+             <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _books_not_found_message;;
+
+            => nrel_goto: .agent_of_finding_book_by_event_operator_books_not_found_3;;
+        *);;
+
+        -> .agent_of_finding_book_by_event_operator_books_not_found_3
+        (*
+             <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _books_not_found_message;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+            => nrel_goto: .agent_of_finding_book_by_event_form_answer;;
+        *);;        	 
+
+        -> .agent_of_finding_book_by_event_operator_elements_books_found
+        (*
+             <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _result_set_of_books;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _have_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            => nrel_goto: .agent_of_finding_book_by_event_operator_add_to_answer;;
+        *);;
+
+       
+        -> .agent_of_finding_book_by_event_operator_add_to_answer
+        (*
+             <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            => nrel_goto: .agent_of_finding_book_by_event_operator_add_to_answer_0;;
+        *);;
+        
+       -> .agent_of_finding_book_by_event_operator_add_to_answer_0
+        (*
+             <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _result_set_of_books;;
+
+            => nrel_goto: .agent_of_finding_book_by_event_operator_add_to_answer_12;;
+        *);;
+        
+        
+        -> .agent_of_finding_book_by_event_operator_add_to_answer_12
+        (*
+             <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _result_set_of_books;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _similarity_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+            => nrel_then: .agent_of_finding_book_by_event_operator_add_to_answer_35;;
+            => nrel_else: .agent_of_finding_book_by_event_operator_return;;
+        *);;
+
+        -> .agent_of_finding_book_by_event_operator_add_to_answer_35   
+        (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _result_set_of_books;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _book_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _result_elem;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+            => nrel_goto: .agent_of_finding_book_by_event_form_answer;;
+        *);;
+
+		-> .agent_of_finding_book_by_event_form_answer			
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_finding_book_by_event_operator_return;;   
+			*);;
+
+		-> .agent_of_finding_book_by_event_operator_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;
+
+

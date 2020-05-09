@@ -1,0 +1,42 @@
+resolving_link
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [замещаемая ссылка]
+        (* <- lang_ru;; *);
+    [resolving link]
+        (* <- lang_en;; *);
+=> nrel_idtf:
+    [ссылка, требующая замещения]
+        (* <- lang_ru;; *);;
+
+resolving_link
+<- rrel_key_sc_element:
+    .resolving_link_definition
+    (*
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content/resolving_link_definition.html"
+                    (*
+                        => nrel_format:
+                            format_html;;
+                    *);;
+            *);;
+    *);
+
+    .resolving_link_typical_instance
+    (*
+        <- description_of_a_typical_instance;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content/resolving_link_typical_instance.png"
+                    (*
+                        => nrel_format:
+                            format_png;;
+                    *);;
+            *);;
+    *);;

@@ -1,0 +1,186 @@
+agent_of_recommending_books
+=> nrel_main_idtf:
+	[агентная scp-программа нахождения книжных рекомендаций] 
+		(* <- lang_ru;; *);
+	[agent scp-program of recommending books]
+		(* <- lang_en;; *);
+<- agent_scp_program;;
+
+scp_program -> agent_of_recommending_books
+(*
+
+	-> rrel_params: .agent_of_recommending_books_operator_params
+	(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+	*);;
+
+	-> rrel_operators: .agent_of_recommending_books_operators_set
+	(*
+		-> rrel_init: .agent_of_recommending_books_operator1
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_recommending_books_operator2;;
+		*);;
+		
+
+		-> .agent_of_recommending_books_operator2
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_recommending_books;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_recommending_books_operator3;;
+			=> nrel_else: .agent_of_recommending_books_operator_return;;
+		*);;
+
+		-> .agent_of_recommending_books_operator3
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Агент рекомендации книг];;
+
+			=> nrel_goto: .agent_of_recommending_books_operator4;;
+   		*);;
+
+		-> .agent_of_recommending_books_operator4
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_to_author;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _author;;
+
+			=> nrel_then: .agent_of_recommending_books_operator5_5;;
+			=> nrel_else: .agent_of_recommending_books_operator_return;;
+		*);;
+		-> .agent_of_recommending_books_operator5_5
+		(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_recommending_books_operator_gen_recommended;;
+		*);;
+
+        -> .agent_of_recommending_books_operator_gen_recommended
+		(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _recommended_books;;
+
+			=> nrel_goto: .agent_of_recommending_books_operator_call_proc;;
+		*);;
+
+	-> .agent_of_recommending_books_operator_call_proc
+		(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_recommend_books;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+			(*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _author;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _recommended_books;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _agent_of_recommending_books_descriptor;;
+
+			=> nrel_goto: .agent_of_recommending_books_operator_wait_call;;
+		*);;
+
+		-> .agent_of_recommending_books_operator_wait_call
+		(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _agent_of_recommending_books_descriptor;;
+
+			=> nrel_goto: .agent_of_recommending_books_operator_check_recommended_books;;
+		*);;
+        
+        //Проверка: нашлись ли рекомендации
+        -> .agent_of_recommending_books_operator_check_recommended_books
+        (*
+             <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _recommended_books;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _similar_book_elem;;
+
+            => nrel_then: .agent_of_recommending_books_operator_add_to_answer_0;;
+            => nrel_else: .agent_of_recommending_books_operator_books_not_found;;
+        *);;
+
+        //Добавить сообщение о неудачном поиске в ответ
+        -> .agent_of_recommending_books_operator_books_not_found
+        (*
+             <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: [Рекомендации не найдены];;
+
+            => nrel_goto: .agent_of_recommending_books_operator7;;
+        *);;
+
+    
+       -> .agent_of_recommending_books_operator_add_to_answer_0
+        (*
+             <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _recommended_books;;
+
+            => nrel_goto: .agent_of_recommending_books_operator_add_to_answer_01;;
+        *);;
+        
+
+        -> .agent_of_recommending_books_operator_add_to_answer_01	
+        (*
+             <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _recommended_books;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _book_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _recommended_book_el;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+            => nrel_goto: .agent_of_recommending_books_operator_print_answer;;
+        *);;
+        
+        -> .agent_of_recommending_books_operator_print_answer
+        (*
+            <- printEl;;
+
+           -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+
+            => nrel_goto: .agent_of_recommending_books_operator7;;
+        *);;
+ 
+
+		-> .agent_of_recommending_books_operator7
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+			
+			=> nrel_goto: .agent_of_recommending_books_operator_return;;
+		*);;
+	
+		-> .agent_of_recommending_books_operator_return
+		(*
+			<- return;;
+		*);;
+	*);;
+*);;

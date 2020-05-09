@@ -1,0 +1,17 @@
+ui_menu_find_set_of_books_by_author  <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_set_of_books_by_author  => nrel_main_idtf: [Найти множество авторов по литературной эпохе] (* <- lang_ru;; *);;
+ui_menu_find_set_of_books_by_author  => nrel_main_idtf: [Find set of authors by literary era] (* <- lang_en;; *);;
+ui_menu_find_set_of_books_by_author  => ui_nrel_command_template:
+	[*
+		question_scp_find_set_of_books_by_author _-> ._question_scp_find_set_of_books_by_author_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;				
+			*);;
+		._question_scp_find_set_of_books_by_author_instance _<- question;;
+
+	*];;
+
+ui_menu_find_set_of_books_by_author  => ui_nrel_command_lang_template: [Найденное множество авторов] (* <- lang_ru;; *);;
+ui_menu_find_set_of_books_by_author  => ui_nrel_command_lang_template: [Set of authors] (* <- lang_en;; *);;
+

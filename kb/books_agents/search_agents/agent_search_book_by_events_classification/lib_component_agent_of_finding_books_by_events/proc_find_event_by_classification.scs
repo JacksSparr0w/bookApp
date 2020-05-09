@@ -1,0 +1,352 @@
+scp_program -> proc_find_event_by_classification
+	(*
+	-> rrel_params: ..proc_find_events_in_book_params
+		(*
+			-> rrel_1: rrel_in: _required_elements;;
+			-> rrel_2: rrel_in: _book;;
+			-> rrel_3: rrel_in: _is_current_book_need;; 
+		*);;
+
+	-> rrel_operators: ..proc_find_events_in_book_operators
+		(*
+		-> rrel_init: ..proc_find_plot_of_book
+			(*
+				<- searchElStr5;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _book;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _plot_of_book;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_plot;;
+
+				=> nrel_then: ..proc_find_all_events_from_plot;; 
+				=> nrel_else: ..proc_false;;
+			*);;
+
+
+		// создали множество событий			
+		-> ..proc_find_all_events_from_plot
+			(*
+				<- searchSetStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _plot_of_book;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _unknown_event;;
+
+				-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _unchecked_events;;
+
+				=> nrel_then: ..proc_get_event_class;; 
+				=> nrel_else: ..proc_false;;
+			*);;
+				
+
+
+//-------------------------------------   TEST    -----------------------------------------------
+ -> ..proc_get_event_class(* 
+	<- searchElStr5;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _required_elements;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _event_class;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: rrel_event_class_el;;
+
+				=> nrel_then: ..proc_get_role;; 
+				=> nrel_else: ..agent_print_no_class;;
+*);;
+
+////достаём роль
+-> ..proc_get_role(*
+               
+				<- searchElStr5;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _required_elements;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _person_role;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: rrel_person_role;;
+
+				=> nrel_then: ..proc_get_sex;; 
+				=> nrel_else: ..agent_print_no_role;;
+*);;
+
+////достаём пол
+-> ..proc_get_sex(*
+                
+                <- searchElStr5;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _required_elements;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _person_sex;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: rrel_person_sex;;
+
+				=> nrel_then: ..proc_find_book_characters;; 
+				=> nrel_else: ..agent_print_no_sex;;
+*);;
+
+
+-> ..proc_find_book_characters
+			(*
+				<- searchElStr5;;
+
+				-> rrel_1: rrel_assign: rrel_scp_var: _set_of_characters;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _book;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_characters;;
+
+				=> nrel_then: ..agent_of_taking_char_from_set;; 
+				=> nrel_else: ..agent_print_mist;;
+			*);;
+
+-> ..agent_print_mist (*
+<- printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [Cant find book characters] ;;
+=> nrel_goto: ..proc_gen_is_current_event_need;;
+*);;
+// достаём персонажей
+->	..agent_of_taking_char_from_set
+			(*
+				<- searchSetStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_characters;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _lit_pers;;
+
+				-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _unchecked_characters;;
+
+				=> nrel_then: ..proc_find_event_from__unchecked_characters;; 
+				=> nrel_else: ..agent_print_mist2;;
+			*);;
+-> ..agent_print_mist2 (*
+<- printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [smth wrong with _set_of_characters] ;;
+=> nrel_goto: ..proc_gen_is_current_event_need;;
+*);;
+
+// берём pers
+	-> ..proc_find_event_from__unchecked_characters
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _unchecked_characters;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _current_character;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _current_char;;
+
+				=> nrel_then: ..proc_find_lit_person_;; 
+				=> nrel_else: ..agent_print_mist3;;
+			*);;
+-> ..agent_print_mist3 (*
+<- printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [smth wrong with lit_person] ;;
+=> nrel_goto: ..proc_gen_is_current_event_need;;
+*);;
+
+
+-> ..proc_find_lit_person_
+			(*
+				  <- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_const: lit_person;;
+                -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+                -> rrel_3: rrel_fixed: rrel_scp_var: _current_char;;
+
+				=> nrel_then: ..agent_print_person;; 
+				=> nrel_else: ..agent_print_mist3;;//proc_false_sex
+			*);;
+-> ..agent_print_person (*
+<- printEl;;
+-> rrel_1: rrel_fixed: rrel_scp_var: _current_char;;
+=> nrel_goto: ..proc_find_lit_person_with_giving_sex;;
+*);;
+
+-> ..proc_find_lit_person_with_giving_sex 
+			(*
+				  <- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _person_sex;;
+                -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+                -> rrel_3: rrel_fixed: rrel_scp_var: _current_char;;
+
+				=> nrel_then: ..agent_print_yep_sex;; 
+				=> nrel_else: ..agent_print_no_sex;;//proc_false_sex
+			*);;
+
+-> ..agent_print_yep_sex (*
+<- printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [we found character's sex!!!] ;;
+=> nrel_goto: ..proc_find_lit_person_with_giving_role;;
+*);;
+
+
+-> ..agent_print_no_sex (*
+<- printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [ cant found character's sex((((] ;;
+=> nrel_goto: ..proc_gen_is_current_event_need;;
+*);;
+
+-> ..proc_find_lit_person_with_giving_role 
+		(*
+				<- searchElStr5;;
+
+				-> rrel_1: rrel_assign: rrel_scp_var: _node;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _current_char;;
+				-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _person_role;;
+
+				=> nrel_then: ..agent_print_yep_role;;
+				=> nrel_else: ..agent_print_no_role;;
+			*);;
+
+	-> ..agent_print_yep_role (*
+<- printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [ we found role!!!!!!] ;;
+=> nrel_goto: ..proc_gen_is_current_event_need;;
+*);;		
+
+	-> ..agent_print_no_role (*
+<- printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [ cant found character's role((((] ;;
+=> nrel_goto: ..proc_gen_is_current_event_need;;
+*);;
+
+//---------------------------------------------------------------------------------------------
+
+
+//подходит ли данное событие?
+-> ..proc_gen_is_current_event_need
+			(*
+				<- genEl;;
+
+				-> rrel_1: rrel_assign: rrel_node: rrel_link: rrel_scp_var: _is_current_event_need;;
+
+				=> nrel_goto: ..proc_find_event_from_unchecked_events;;
+			*);;
+
+// берём событие
+	-> ..proc_find_event_from_unchecked_events
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _unchecked_events;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_to_current_event;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _current_event;;
+
+				=> nrel_then: ..proc_null;; 
+				=> nrel_else: ..proc_false;;
+			*);;
+
+
+-> ..proc_null
+			(*
+				<- contAssign;;
+				-> rrel_1: rrel_fixed: rrel_link: rrel_scp_var: _is_current_event_need;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+				=> nrel_goto: ..proc_find_event_class;;
+			*);;
+
+-> ..proc_find_event_class
+			(*
+				<- searchElStr3;;
+
+				-> rrel_1: rrel_assign: rrel_scp_var: _event_class;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _current_event;;
+
+				=> nrel_then: ..agent_print_check;; 
+				=> nrel_else: ..proc_erase_event_from_unchecked_events;; // erase
+			*);;
+
+			-> ..agent_print_check (*
+<- printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [proc_find_event_by_classification: Check current event];;
+=> nrel_goto: ..proc_find_is_event_right;;
+*);;
+////проверяем событие на соответствие шаблону (set_of_required_elements)
+-> ..proc_find_is_event_right
+			(*
+				<- call;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_const: proc_find_params_of_event;;                           //!!! find events
+				-> rrel_2: rrel_fixed: rrel_scp_const: .proc_find_param_of_event_params
+					(*
+						-> rrel_1: rrel_fixed: rrel_scp_var: _current_event;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _required_elements;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _is_current_event_need;;
+					*);;
+				-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+				=> nrel_goto: ..proc_find_events_from_current_event_wait;; 
+			*);;
+
+// scp-оператор ожидания завершения выполнения подпрограммы
+-> ..proc_find_events_from_current_event_wait
+			(*
+				<- waitReturn;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+				=> nrel_goto: ..proc_is_need_add_current_event_to_result_set;; 
+			*);;
+
+//получили ответ.
+		-> ..proc_is_need_add_current_event_to_result_set 
+			(*
+				<- ifEq;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _is_current_event_need;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+				=> nrel_then: ..agent_print_true;;
+				=> nrel_else: ..agent_print_false;;
+			*);;
+-> ..agent_print_true (*
+<- printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [proc_find_event_by_classification: Current event is a right event, so we can add book to the result set];;
+=> nrel_goto: ..proc_true;;
+*);;
+        -> ..proc_true
+			(*
+				<- contAssign;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _is_current_book_need;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+				=> nrel_goto: ..agent_prinadd;;
+			*);;
+
+
+-> ..agent_prinadd (*
+<- printEl;;
+-> rrel_1: rrel_fixed: rrel_scp_var: _book;;
+=> nrel_goto: ..proc_find_events_in_book_return;;  // ТУТ МЫ ДОЛЖНЫ ВЫЙТИ ИЗ ПРОЦЕДУРЫ
+*);;
+
+-> ..agent_print_false (*
+<- printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [proc_find_event_by_classification: current event isnt right];;
+=> nrel_goto: ..proc_erase_event_from_unchecked_events;;//proc_erase_event_from_unchecked_events
+*);;
+
+		-> ..proc_false
+			(*
+				<- contAssign;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _is_current_book_need;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+				=> nrel_goto: ..proc_find_events_in_book_return;;//proc_find_events_in_book_return
+			*);;
+
+
+		-> ..proc_erase_event_from_unchecked_events
+			(*
+				<- eraseEl;;
+
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_to_current_event;;
+
+				=> nrel_goto: ..proc_find_event_from_unchecked_events;;
+			*);;
+
+		-> ..proc_find_events_in_book_return
+			(*
+				<- return;;
+			*);;
+		*);;
+	*);;

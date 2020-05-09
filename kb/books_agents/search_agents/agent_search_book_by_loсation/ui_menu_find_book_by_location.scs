@@ -1,0 +1,17 @@
+ui_menu_find_books_by_location  <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_books_by_location  => nrel_main_idtf: [Найти множество книг по локации] (* <- lang_ru;; *);;
+ui_menu_find_books_by_location  => nrel_main_idtf: [Find set of books by location] (* <- lang_en;; *);;
+ui_menu_find_books_by_location  => ui_nrel_command_template:
+	[*
+		question_scp_find_books_by_location _-> ._question_scp_find_books_by_location_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;				
+			*);;
+		._question_scp_find_books_by_location_instance _<- question;;
+
+	*];;
+
+ui_menu_find_books_by_location  => ui_nrel_command_lang_template: [Найденное множество книг] (* <- lang_ru;; *);;
+ui_menu_find_books_by_location  => ui_nrel_command_lang_template: [Set of books] (* <- lang_en;; *);;
+
