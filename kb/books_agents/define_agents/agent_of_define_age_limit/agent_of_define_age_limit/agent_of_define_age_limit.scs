@@ -1,0 +1,300 @@
+agent_of_define_age_limit 
+=> nrel_main_idtf: 
+	[агентная scp-программа определения возрастного ограничения книг]
+        (* <- lang_ru;;*);
+	 [agent scp-program of defining book age limit]
+        (* <- lang_ru;;*);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_define_age_limit
+	(*
+	-> rrel_params: .agent_of_define_age_limit_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_define_age_limit_operators
+		(*
+		-> rrel_init: .agent_of_define_age_limit_operator1A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_define_age_limit_operator1B;;
+			*);;
+
+		-> .agent_define_age_limit_operator1B
+            (*
+            <- searchElStr3;;
+                                                    
+            -> rrel_1: rrel_fixed: rrel_scp_const: action_of_define_age_limit;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+            => nrel_then: .agent_define_age_limit_operator2A ;;
+            => nrel_else: .agent_define_age_limit_operator_return;;
+            *);;
+
+        -> .agent_define_age_limit_operator2A   
+            (*
+                <- contAssign;;
+
+                -> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _age;;
+                -> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+                => nrel_goto: .agent_define_age_limit_operator1C;;
+            *);;
+
+        -> .agent_define_age_limit_operator1C
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+            => nrel_then: .proc_agent_define_age_limit_operator_search_plot43;;
+            => nrel_else: .agent_define_age_limit_operator_return;;
+            *);;
+
+         -> .proc_agent_define_age_limit_operator_search_plot43 //сюжет
+            (*
+                <- searchElStr5;;
+
+                -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+                -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+                -> rrel_3: rrel_assign: rrel_scp_var:  _plot;;
+                -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+                -> rrel_5: rrel_fixed: rrel_scp_const: nrel_plot;;
+
+                => nrel_then: .proc_agent_define_age_limit_operator_search_events;; 
+                => nrel_else: .proc_agent_define_age_limit_operator_return;;
+            *);;
+
+        
+        -> .proc_agent_define_age_limit_operator_search_events //много событий
+            (*
+                <- searchSetStr3;;
+
+                -> rrel_1: rrel_fixed: rrel_scp_var: _plot;;
+                -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+                -> rrel_3: rrel_assign: rrel_scp_var: _unknown_event;;
+            
+                -> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _set_of_events;;
+
+                => nrel_then: .proc_agent_define_age_limit_operator_current_event;;
+                => nrel_else: .proc_agent_define_age_limit_operator_return;;
+            *);;
+
+
+        -> .proc_agent_define_age_limit_operator_current_event //конкр событие 
+            (*
+                <- searchElStr3;;
+
+                -> rrel_1: rrel_fixed: rrel_scp_var: rrel_set: _set_of_events;;
+                -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_event_from_events;;
+                -> rrel_3: rrel_assign: rrel_scp_var: _current_event;;
+            
+                => nrel_then: .agent_define_age_limit_operator4_4;;
+                => nrel_else: .agent_define_age_limit_end_program;;  
+            *);;
+
+         -> .agent_define_age_limit_end_program
+            (*
+                <- printNl;;
+                -> rrel_1: rrel_fixed: rrel_scp_const: [END];; 
+
+                => nrel_goto: .agent_define_age_limit_gen_answer;;
+            *);;
+
+        -> .agent_define_age_limit_operator4_4
+            (*
+                <- searchSetStr3;;
+
+                -> rrel_1: rrel_assign: rrel_scp_var: _info;;
+                -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+                -> rrel_3: rrel_fixed: rrel_scp_var: _current_event;;
+
+                -> rrel_set_1: rrel_assign: rrel_scp_var: rrel_set: _current_event_info;;
+
+                => nrel_then: .agent_define_age_limit_operator4_5;; 
+            *);;
+
+        -> .agent_define_age_limit_operator4_5
+            (*
+                <- searchElStr3;;
+
+                -> rrel_1: rrel_fixed: rrel_scp_var: _current_event_info;;
+                -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_event_info;;
+                -> rrel_3: rrel_assign: rrel_scp_var: _event_class;;
+
+                => nrel_then: .agent_define_age_limit_operator4_6;; 
+                => nrel_else: .proc_agent_define_age_limit_deleteEvent;;
+            *);;
+
+        -> .agent_define_age_limit_operator4_6
+            (*
+                <- searchElStr3;;
+
+                -> rrel_1: rrel_fixed: rrel_scp_var: _current_event_info;;
+                -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_event_info;;
+                -> rrel_3: rrel_fixed: rrel_scp_var: _plot;;
+
+                => nrel_then: .agent_define_age_limit_operator4_7;; 
+                => nrel_else: .proc_agent_define_age_limit_operator_define_age;;
+            *);;
+    
+        -> .agent_define_age_limit_operator4_7
+            (*
+                <- eraseEl;;
+
+                -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_event_info;;
+
+                => nrel_goto: .agent_define_age_limit_operator4_5;;
+            *);;
+        
+         -> .proc_agent_define_age_limit_operator_define_age //возраст  
+            (*
+                <- searchElStr5;;
+
+                -> rrel_1: rrel_fixed : rrel_scp_var: _event_class;;
+                -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+                -> rrel_3: rrel_assign: rrel_scp_var:  _currentAge;;
+                -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+                -> rrel_5: rrel_fixed: rrel_scp_const: nrel_age_limit;;
+
+                => nrel_then: .proc_agent_define_age_limit_operators_isAgePresent;;
+            *);; 
+
+        -> .proc_agent_define_age_limit_operators_isAgePresent
+            (*
+                <- ifGr;;
+
+                -> rrel_1: rrel_fixed: rrel_scp_var: _currentAge;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: _age;;
+
+            
+                => nrel_then: .proc_agent_define_age_limit_generation_age_limit;;
+                => nrel_else: .proc_agent_define_age_limit_deleteEvent;;
+            *);;
+
+        -> .proc_agent_define_age_limit_generation_age_limit
+            (*
+                <- contAssign;;
+
+                -> rrel_1: rrel_fixed: rrel_scp_var: _age;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: _currentAge;;
+                
+                => nrel_goto: .proc_agent_define_age_limit_deleteEvent;;    
+            *);;
+
+        -> .proc_agent_define_age_limit_deleteEvent
+            (*
+                <- eraseEl;;
+
+                ->rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_event_from_events;;
+
+                 => nrel_goto: .proc_agent_define_age_limit_operator_current_event;;  
+            *);;
+
+            //---------------------------------------ФОРМИРОВАНИЕ ОТВЕТА----------------------------------------
+
+        -> .agent_define_age_limit_gen_answer
+             (*
+                 <- genEl;;
+
+                 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+             => nrel_goto: .agent_define_age_limit_books_found;;
+             *);;
+
+
+        -> .agent_define_age_limit_books_found
+        (*
+             <- genElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+            -> rrel_2: rrel_assign:  rrel_scp_var: rrel_const: _age_limit_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _age;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _rel_arc;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_age_limit;;
+
+            => nrel_goto: .agent_define_age_limit_operator_add_to_answer;;
+        *);;
+
+        //Добавление исходной книги в ответ
+        -> .agent_define_age_limit_operator_add_to_answer
+        (*
+             <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            => nrel_goto: .agent_define_age_limit_operator_add_to_answer_0;;
+        *);;
+        
+       -> .agent_define_age_limit_operator_add_to_answer_0
+        (*
+             <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _age;;
+
+            => nrel_goto: .agent_define_age_limit_operator_add_to_answer_02;;
+        *);;
+
+        -> .agent_define_age_limit_operator_add_to_answer_02
+        (*
+             <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _belonging_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: nrel_age_limit;;
+
+            => nrel_goto: .agent_define_age_limit_operator_add_to_answer_12;;
+        *);;
+
+        
+        -> .agent_define_age_limit_operator_add_to_answer_12
+        (*
+             <- searchSetStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+            -> rrel_2: rrel_assign: rrel_edge: rrel_scp_var: rrel_const: _similarity_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: rrel_link: _age;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _rel_arc;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_age_limit;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+            => nrel_then: .agent_define_age_limit_form_answer;;
+            => nrel_else: .agent_define_age_limit_operator_return;;
+        *);;
+
+        -> .agent_define_age_limit_form_answer
+        (*
+            <- genElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+            -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+            
+            => nrel_goto: .agent_define_age_limit_operator_return;;
+        *);;
+
+       
+		-> .agent_define_age_limit_operator_return
+			(*
+		      	<- return;;
+			*);;
+    *);;
+*);;

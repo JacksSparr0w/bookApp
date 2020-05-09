@@ -20,7 +20,7 @@ sc_agent_for_finding_the_best_work_of_the_author
 
 
 => nrel_inclusion: 
-	.platform_independent_realization_of_sc_agent_for_finding_the_best_work_of_the_author
+	.platform_independent_realization_of_sc_agent_for_finding_book_by_rating
 	(*
 	<- platform_independent_abstract_sc_agent;;
 	<= nrel_sc_agent_program: 
