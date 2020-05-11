@@ -1,0 +1,21 @@
+section_classification_of_lyric_poetry
+	=> nrel_main_idtf:
+		[Раздел. Классификация лирических произведений]
+			(* <- lang_ru;; *);;
+	
+section_classification_of_lyric_poetry =  [*^"file://section_classification_of_lyric_poetry.scsi"*];;
+
+section_classification_of_lyric_poetry	
+    -> rrel_key_sc_element:	
+        sonnet;
+        fable;
+        ode;
+        hymn;
+	monostich;
+	dithyramb;
+	elegy;
+	verse;
+        stanze;
+        romance;
+        genre_poem;; 
+

@@ -1,0 +1,66 @@
+to_kern
+    => nrel_main_idtf:
+        ["К***"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Pushkin_Aleksandr_Sergeevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        series;
+    => nrel_literature_problem:
+        problem_of_love;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1827;;
+
+
+to_kern
+    <= nrel_characters:
+        .to_kern
+        (*
+            -> rrel_main_character:
+                    char_kern;;
+        *);;
+
+
+char_kern
+        => nrel_main_idtf: 
+            [Анна Керн] (* <-lang_ru;; *);
+        <- lit_person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Анна Керн)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_kern.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+to_kern => nrel_text:
+    .to_kern_text
+    (*
+                => nrel_main_idtf: [Текст. "К***"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/to_kern.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_revelation;;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_kern;;
+                    *);;
+     
+   *);;
+
+ 

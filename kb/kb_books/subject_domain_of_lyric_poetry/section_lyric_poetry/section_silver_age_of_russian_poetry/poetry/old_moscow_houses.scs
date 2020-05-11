@@ -1,0 +1,65 @@
+old_moscow_houses
+    => nrel_main_idtf:
+        ["Домики старой Москвы"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Tsvetaeva_Marina_Ivanovna;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_historical_legacy;
+    => 	nrel_foot:
+        dactyl;
+    => nrel_publication_date:
+        year_1912;;
+
+
+old_moscow_houses
+    <= nrel_characters:
+        .old_moscow_houses
+        (*
+            -> rrel_main_character:
+                    char_houses;;
+        *);;
+
+
+char_houses
+        => nrel_main_idtf: 
+            [домики] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(домики)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_houses.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+old_moscow_houses => nrel_text:
+    .old_moscow_houses_text
+    (*
+                => nrel_main_idtf: [Текст. "Домики старой Москвы"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/old_moscow_houses.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_attachment;;
+		    <- event_comparison;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_houses;;
+                    *);;
+     
+   *);;
+
+ 

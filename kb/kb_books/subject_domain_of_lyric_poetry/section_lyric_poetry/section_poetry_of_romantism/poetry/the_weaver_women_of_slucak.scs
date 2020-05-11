@@ -1,0 +1,67 @@
+the_weaver_women_of_slucak
+    => nrel_main_idtf:
+        ["Слуцкие ткачихи"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Maksim_Bogdanovich;
+    => nrel_original_language:
+        lang_by;
+    => nrel_type_of_publication:
+        series;
+    => nrel_literature_problem:
+        problem_of_historical_legacy;
+	problem_of_art_power;
+	problem_of_human_and_government;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1911;;
+
+
+the_weaver_women_of_slucak
+    <= nrel_characters:
+        .the_weaver_women_of_slucak
+        (*
+            -> rrel_main_character:
+                    char_weaverer;;
+        *);;
+
+
+char_weaverer
+        => nrel_main_idtf: 
+            [ткачихи] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+	<- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(ткачихи)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_weaverer.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+the_weaver_women_of_slucak => nrel_text:
+    .the_weaver_women_of_slucak
+    (*
+                => nrel_main_idtf: [Текст. "Слуцкие ткачихи"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/the_weaver_women_of_slucak.html" (* <-lang_by;;*);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_weaverer;;
+                    *);;
+     
+   *);;
+
+ 

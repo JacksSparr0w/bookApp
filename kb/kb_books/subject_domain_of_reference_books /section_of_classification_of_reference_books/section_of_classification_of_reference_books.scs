@@ -1,0 +1,15 @@
+section_of_classification_of_reference_books
+	=> nrel_main_idtf:
+		[Раздел. Классификация справочной литературы]
+			(* <- lang_ru;; *);;
+	
+section_of_classification_of_reference_books =  [*^"file://section_of_classification_of_reference_books.scsi"*];;
+
+section_of_classification_of_reference_books	
+    -> rrel_key_sc_element:	
+        encyclopedia;
+        reference_work;
+        glossary;
+        encyclopedic_dictionary;
+	explanatory_dictionary;
+	reference_materials;;

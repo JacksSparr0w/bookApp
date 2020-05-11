@@ -1,0 +1,20 @@
+section_types_of_publications
+	=> nrel_main_idtf:
+		[Раздел. Виды изданий ]
+			(* <- lang_ru;; *);;
+
+	 section_types_of_publications =  [*^"file://section_types_of_publications.scsi"*];;
+
+section_types_of_publications
+	-> rrel_key_sc_element:	
+			brochure;
+			flyer;
+			monoedition;
+			single_book_edition;
+			multiedition;
+			collected_works;
+			selected_works;
+			collection;
+			series;
+			nrel_type_of_publication;;
+

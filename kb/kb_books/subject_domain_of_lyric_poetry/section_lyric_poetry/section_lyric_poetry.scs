@@ -1,0 +1,40 @@
+section_lyric_poetry
+	=> nrel_main_idtf:
+		[Раздел. Литературные направления лирических произвдеений]
+			(* <- lang_ru;; *);
+	
+	<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: "file://content/section_lyric_poetry.html" (* <-lang_ru;; *);;
+			*);
+	
+	<= nrel_section_decomposition:
+		{
+			section_poetry_of_renaissance
+			(*
+			=> nrel_section_base_order: 
+				section_golden_age_of_russian_poetry;;
+			*);
+			section_golden_age_of_russian_poetry
+			(*
+			=> nrel_section_base_order: 
+				section_poetry_of_romantism;;
+			*);
+			section_poetry_of_romantism
+			(*
+			=> nrel_section_base_order: 
+				section_poetry_of_realism;;
+			*);
+			section_poetry_of_realism
+			(*
+			=> nrel_section_base_order: 
+				section_silver_age_of_russian_poetry;;
+			*);
+			section_silver_age_of_russian_poetry
+			(*
+			=> nrel_section_base_order: 
+				section_poetry_of_postmodernism;;
+			*);
+                        section_poetry_of_postmodernism
+		};;

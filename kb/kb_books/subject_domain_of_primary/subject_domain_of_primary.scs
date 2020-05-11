@@ -1,0 +1,13 @@
+subject_domain_of_primary
+=> nrel_main_idtf:
+	[Предметная область исторических источников]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition:
+	{
+        section_of_classification_of_written_primary_source;
+        section_of_theory_of_primary_source
+
+	};;

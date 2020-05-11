@@ -1,0 +1,63 @@
+and_say_who_goes_there
+    => nrel_main_idtf:
+        ["А кто там идет"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Yanka_Kupala;
+    => nrel_original_language:
+        lang_by;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_human_and_government;
+    => 	nrel_foot:
+        logaed;
+    => nrel_publication_date:
+        year_1908;;
+
+
+and_say_who_goes_there
+    <= nrel_characters:
+        .and_say_who_goes_there
+        (*
+            -> rrel_main_character:
+                    char_the_belarussian;;
+        *);;
+
+
+char_the_belarussian
+        => nrel_main_idtf: 
+            [белорусы] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(белорусы)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_the_belarussian.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+and_say_who_goes_there => nrel_text:
+    .and_say_who_goes_there_text
+    (*
+                => nrel_main_idtf: [Текст. "А кто там идет"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/and_say_who_goes_there.html" (* <-lang_by;;*);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_the_belarussian;;
+                    *);;
+     
+   *);;
+
+ 

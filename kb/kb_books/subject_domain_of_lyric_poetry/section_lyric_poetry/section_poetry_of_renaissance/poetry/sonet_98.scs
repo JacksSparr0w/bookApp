@@ -1,0 +1,35 @@
+sonet_98
+    => nrel_main_idtf:
+        ["Сонет 98"]
+            (* <- lang_ru;; *);
+
+    <- sonnet;
+    => nrel_author:
+    person_William_Shakespeare;
+    => nrel_original_language:
+        lang_en;
+    => nrel_type_of_publication:
+        monoedition;
+    => nrel_literature_problem:
+        problem_of_nature_and_human;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1609;;
+
+
+
+sonet_98 => nrel_text:
+    .sonet_98_text
+    (*
+                => nrel_main_idtf: [Текст. "Сонет 98"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/sonet_98.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_breakup;; 
+     
+   *);;
+
+ 

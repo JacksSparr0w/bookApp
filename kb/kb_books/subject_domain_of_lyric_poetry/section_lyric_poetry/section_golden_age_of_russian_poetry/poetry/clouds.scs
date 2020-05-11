@@ -1,0 +1,62 @@
+clouds
+    => nrel_main_idtf:
+        ["Тучи"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+        person_Lermontov_Mikhail_Yuryevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_meaning_of_life;
+    => 	nrel_foot:
+        dactyl;
+    => nrel_publication_date:
+        year_1840;;
+
+
+clouds
+    <= nrel_characters:
+        ...
+        (*
+            -> rrel_main_character:
+                    char_clouds;;
+        *);;
+
+
+char_clouds
+        => nrel_main_idtf: 
+            [Тучи] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(тучи)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_clouds.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+clouds => nrel_text:
+    .clouds
+    (*
+                => nrel_main_idtf: [Текст. "Тучи"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/clouds.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                         ->  char_clouds;;
+                    *);;
+     
+   *);;
+
+ 

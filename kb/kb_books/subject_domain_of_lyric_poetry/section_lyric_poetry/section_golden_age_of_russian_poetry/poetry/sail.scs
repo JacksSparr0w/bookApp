@@ -1,0 +1,64 @@
+sail
+    => nrel_main_idtf:
+        ["Парус"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Lermontov_Mikhail_Yuryevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_meaning_of_life;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1841;;
+
+
+sail
+    <= nrel_characters:
+        .sail
+        (*
+            -> rrel_main_character:
+                    char_sail;;
+        *);;
+
+
+char_sail
+        => nrel_main_idtf: 
+            [парус] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(парус)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_sail.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+sail => nrel_text:
+    .sail_text
+    (*
+                => nrel_main_idtf: [Текст. "Парус"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/sail.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_battle;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_sail;;
+                    *);;
+     
+   *);;
+
+ 

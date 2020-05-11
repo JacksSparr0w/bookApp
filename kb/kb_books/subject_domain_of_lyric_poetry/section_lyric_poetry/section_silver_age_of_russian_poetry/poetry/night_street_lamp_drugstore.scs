@@ -1,0 +1,32 @@
+night_street_lamp_drugstore
+    => nrel_main_idtf:
+        ["Ночь, улица, фонарь, аптека..."]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+        person_Blok_Alexander_Alexandrovich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_meaning_of_life;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1912;;
+
+night_street_lamp_drugstore => nrel_text:
+    .night_street_lamp_drugstore
+    (*
+                => nrel_main_idtf: [Текст. "Ночь, улица, фонарь, аптека..."] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/night_street_lamp_drugstore.html" (* <-lang_ru;; *);;
+                    *);;
+     
+   *);;
+
+ 

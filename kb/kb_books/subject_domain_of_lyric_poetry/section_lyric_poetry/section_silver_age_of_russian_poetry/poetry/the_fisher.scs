@@ -1,0 +1,88 @@
+the_fisher
+    => nrel_main_idtf:
+        ["Рыбак"]
+            (* <- lang_ru;; *);
+
+    <- elegy;
+    => nrel_author:
+    person_Akhmatova_Anna;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_love;
+    => 	nrel_foot:
+        choree;
+    => nrel_publication_date:
+        year_1912;;
+
+
+the_fisher
+    <= nrel_characters:
+        .the_fisher
+        (*
+            -> rrel_main_character:
+		    char_fisher;
+                    char_girl;;
+        *);;
+
+
+char_fisher
+        => nrel_main_idtf: 
+            [рыбак] (* <-lang_ru;; *);
+        <- lit_person;
+	<- male;
+	<- person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(рыбак)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_fisher.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_girl
+        => nrel_main_idtf: 
+            [девочка] (* <-lang_ru;; *);
+        <- lit_person;
+	<- female;
+	<- person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(девочка)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_girl.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+the_fisher => nrel_text:
+    .the_fisher_text
+    (*
+                => nrel_main_idtf: [Текст. "Рыбак"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/the_fisher.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+		    <- event_attachment;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_fisher;   
+			char_girl;;
+                    *);;
+     
+   *);;
+
+ 

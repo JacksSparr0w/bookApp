@@ -1,0 +1,12 @@
+subject_domain_of_reference_books
+=> nrel_main_idtf:
+	[Предметная область справочной литературы]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition:
+	{
+        section_of_classification_of_reference_books
+	
+	};;

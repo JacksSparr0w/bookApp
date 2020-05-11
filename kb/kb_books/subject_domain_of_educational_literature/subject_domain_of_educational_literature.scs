@@ -1,0 +1,13 @@
+subject_domain_of_educational_literature
+ => nrel_main_idtf:
+  	[Предметная область обучающей литературы]
+   	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition:
+	{
+	section_of_classification_of_educational_literature
+ 
+	};;
+

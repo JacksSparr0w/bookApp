@@ -1,0 +1,218 @@
+encyclopedia 
+	<- sc_node_not_relation;
+        <- reference_materials;
+	=> nrel_main_idtf: 
+		[энциклопедия] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(энциклопедия)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/encyclopedia1.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+encyclopedia
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(энциклопедия)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/encyclopedia2.html";;
+        *);;
+    *);;
+
+
+reference_work 
+	<- sc_node_not_relation;
+        <- reference_materials;
+	=> nrel_main_idtf: 
+		[справочник] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(справочник)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/reference_work1.html" (* <-lang_ru;; *);;
+				*);;
+         <= nrel_using_constants:...
+        (*
+            -> publication;;
+        *);;
+		*);;
+reference_work
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(справочник)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/reference_work2.html";;
+        *);;
+    *);;
+
+
+
+glossary 
+	<- sc_node_not_relation;
+        <- reference_materials;
+	=> nrel_main_idtf: 
+		[глоссарий] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(глоссарий)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/glossary1.html" (* <-lang_ru;; *);;
+				*);;
+         <= nrel_using_constants:...
+        (*
+            -> encyclopedic_dictionary;
+		nrel_languages;;
+        *);;
+		*);;
+glossary
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(глоссарий)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/glossary2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> encyclopedic_dictionary;;
+        *);;
+     *);;
+
+
+
+encyclopedic_dictionary 
+	<- sc_node_not_relation;
+        <- reference_materials;
+	=> nrel_main_idtf: 
+		[энциклопедический словарь] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(энциклопедический словарь)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/encyclopedic_dictionary1.html" (* <-lang_ru;; *);;
+				*);;
+         <= nrel_using_constants:...
+        (*
+            ->  encyclopedia;
+		reference_materials;;
+        *);;
+		*);;
+encyclopedic_dictionary
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(энциклопедический словарь)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/encyclopedic_dictionary2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> encyclopedia;;
+        *);;
+    *);;
+
+
+
+explanatory_dictionary 
+	<- sc_node_not_relation;
+        <- reference_materials;
+	=> nrel_main_idtf: 
+		[толковый словарь] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(толковый словарь)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/explanatory_dictionary1.html" (* <-lang_ru;; *);;
+				*);;
+         <= nrel_using_constants:...
+        (*
+            ->  encyclopedic_dictionary;;
+        *);;
+		*);;
+explanatory_dictionary
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(толковый словарь)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/explanatory_dictionary2.html";;
+        *);;
+    *);;
+
+
+
+reference_materials 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[справочно-информационная литература] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(справочно-информационная литература)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/reference_materials1.html" (* <-lang_ru;; *);;
+				*);;
+         <= nrel_using_constants:...
+        (*
+            ->  encyclopedic_dictionary;;
+        *);;
+		*);;
+reference_materials
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(справочно-информационная литература)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/reference_materials2.html";;
+        *);;
+    *);;
+

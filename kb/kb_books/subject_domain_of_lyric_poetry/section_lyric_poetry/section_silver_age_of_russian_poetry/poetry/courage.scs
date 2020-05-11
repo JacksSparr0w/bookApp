@@ -1,0 +1,35 @@
+courage
+    => nrel_main_idtf:
+        ["Мужество"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Mayakovsky_Vladimir_Vladimirovich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        series;
+    => nrel_literature_problem:
+        problem_of_war;
+	problem_of_moral_choice;
+    => 	nrel_foot:
+        amphibrach;
+    => nrel_publication_date:
+        year_1942;;
+
+
+
+courage => nrel_text:
+    .courage
+    (*
+                => nrel_main_idtf: [Текст. "Мужество"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/courage.html" (* <-lang_ru;; *);;
+                    *);;
+     
+   *);;
+
+ 
