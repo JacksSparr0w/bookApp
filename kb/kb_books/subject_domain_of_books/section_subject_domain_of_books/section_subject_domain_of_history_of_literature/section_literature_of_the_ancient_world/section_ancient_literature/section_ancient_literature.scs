@@ -7,4 +7,9 @@ section_ancient_literature
 		...
 		(* 
 		-> rrel_example: "file://content/content_htmls/section_ancient_literature.html" (* <-lang_ru;; *);;
-		*);;
+		*);
+
+<= nrel_section_decomposition:
+	{
+		section_myths_of_ancient_Greece
+	};;

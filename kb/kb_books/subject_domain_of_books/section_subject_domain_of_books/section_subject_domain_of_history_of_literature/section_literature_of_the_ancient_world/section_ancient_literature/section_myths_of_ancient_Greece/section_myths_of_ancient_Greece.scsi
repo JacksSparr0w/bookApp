@@ -1,0 +1,1104 @@
+concept_Zeus
+	<- sc_node_not_relation;
+	<- concept_olimp_gods;
+	=> nrel_main_idtf:
+		[Зевс]
+		(* <- lang_ru;;	*);;
+
+concept_Zeus	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Зевс)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Zeus.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Zeus
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Зевс)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Zeus_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_olimp_gods;;
+			-> concept_Aid;;
+			-> concept_Demetra;;
+			-> concept_Poseidon;;
+        *);;
+    *);;
+
+concept_Zeus <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Зевс)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Zeus.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Zeus => nrel_son: concept_Ares;;
+concept_Zeus => nrel_son: concept_Gerakl;;
+concept_Zeus => nrel_son: concept_Persey;;
+concept_Zeus => nrel_daughter: concept_Afina;;
+concept_Zeus => nrel_daughter: concept_Persefona;;
+
+concept_Gera
+	<- sc_node_not_relation;
+	<- concept_olimp_gods;
+	=> nrel_main_idtf:
+		[Гера]
+		(* <- lang_ru;;	*);;
+
+concept_Gera	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Гера)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Gera.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Gera
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Гера)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Gera_stat.html";;
+        *);;
+        
+    *);;
+
+
+concept_Gera <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гера)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Gera.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Gera => nrel_son: concept_Gefest;;
+
+concept_Poseidon
+	<- sc_node_not_relation;
+	<- concept_olimp_gods;
+	=> nrel_main_idtf:
+		[Посейдон]
+		(* <- lang_ru;;	*);;
+
+concept_Poseidon	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Посейдон)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Poseidon.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+			-> concept_Zeus;;
+			-> concept_Aid;;
+			-> concept_olimp_gods;;
+        *);;
+*);;
+
+concept_Poseidon
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Посейдон)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Poseidon_stat.html";;
+        *);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_titans;;
+        *);;
+       
+    *);;
+
+concept_Poseidon <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Посейдон)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Poseidon.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Aid
+	<- sc_node_not_relation;
+	<- concept_god;
+	=> nrel_main_idtf:
+		[Аид]
+		(* <- lang_ru;;	*);;
+
+concept_Aid	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Аид)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Aid.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Aid
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Аид)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Aid_stat.html";;
+        *);;
+       
+    *);;
+
+
+concept_Aid <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Аид)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Aid.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+concept_Demetra
+	<- sc_node_not_relation;
+	<- concept_olimp_gods;
+	=> nrel_main_idtf:
+		[Деметра]
+		(* <- lang_ru;;	*);;
+
+concept_Demetra
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Деметра)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Demetra.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Demetra
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Деметра)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Demetra_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+    *);;
+
+concept_Demetra => nrel_daughter: concept_Persefona;;
+
+concept_Demetra <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Деметра)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Demetra.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;	
+
+concept_Persefona
+	<- sc_node_not_relation;
+	<- concept_god;
+	=> nrel_main_idtf:
+		[Персефона]
+		(* <- lang_ru;;	*);;
+
+concept_Persefona
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Персефона)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Persefona.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Persefona
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Персефона)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Persefona_stat.html";;
+        *);;
+       
+    *);;
+
+
+concept_Persefona <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Персефона)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Persefona.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Afina
+	<- sc_node_not_relation;
+	<- concept_olimp_gods;
+	=> nrel_main_idtf:
+		[Афина]
+		(* <- lang_ru;;	*);;
+
+
+concept_Afina
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Афина)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Afina.html" (* <- lang_ru;; *);;
+			*);;
+		 <= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Afina
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Афина)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Afina_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+    *);;
+
+
+concept_Afina <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Афина)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Afina.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Afrodita
+	<- sc_node_not_relation;
+	<- concept_olimp_gods;
+	=> nrel_main_idtf:
+		[Афродита]
+		(* <- lang_ru;;	*);;
+
+concept_Afrodita
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Афродита)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Afrodita.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Afrodita
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Афродита)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Afrodita_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+    *);;
+
+
+concept_Afrodita <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Афродита)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Afrodita.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Adonis
+	<- sc_node_not_relation;
+	<- concept_god;
+	=> nrel_main_idtf:
+		[Адонис]
+		(* <- lang_ru;;	*);;
+
+
+concept_Adonis
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Адонис)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Adonis.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_Adonis
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Адонис)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Adonis_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Afrodita;;
+        *);;
+    *);;
+
+
+concept_Adonis <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Адонис)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Adonis.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Ares
+	<- sc_node_not_relation;
+	<- concept_olimp_gods;
+	=> nrel_main_idtf:
+		[Арес]
+		(* <- lang_ru;;	*);;
+
+concept_Ares
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Арес)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Ares.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Ares
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Арес)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Ares_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Afina;;
+			-> concept_god;;
+        *);;
+    *);;
+
+concept_Ares <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Арес)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Ares.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;	
+
+concept_Gefest
+	<- sc_node_not_relation;
+	<- concept_olimp_gods;
+	=> nrel_main_idtf:
+		[Гефест]
+		(* <- lang_ru;;	*);;
+
+concept_Gefest
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Гефест)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Gefest.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+			-> concept_Olimp;;
+			-> concept_Zeus;;
+        *);;
+*);;
+
+concept_Gefest
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Гефест)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Gefest_stat.html";;
+        *);;
+       
+    *);;
+
+concept_Gefest <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гефест)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Gefest.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Apollon
+	<- sc_node_not_relation;
+	<- concept_olimp_gods;
+	=> nrel_main_idtf:
+		[Аполлон]
+		(* <- lang_ru;;	*);;
+
+concept_Apollon
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Аполлон)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Apollon.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Apollon
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Аполлон)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Apollon_stat.html";;
+        *);;
+       
+    *);;
+
+
+concept_Apollon <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Аполлон)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Apollon.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Artemida
+	<- sc_node_not_relation;
+	<- concept_olimp_gods;
+	=> nrel_main_idtf:
+		[Артемида]
+		(* <- lang_ru;;	*);;
+
+concept_Artemida
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Артемида)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Artemida.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Artemida
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Артемида)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Artemida_stat.html";;
+        *);;
+       
+    *);;
+
+
+concept_Artemida <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Артемида)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Artemida.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Gerakl
+	<- sc_node_not_relation;
+	<- concept_halfgod;
+	=> nrel_main_idtf:
+		[Геракл]
+		(* <- lang_ru;;	*);;
+
+concept_Gerakl
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Геракл)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Gerakl.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+			-> concept_Zeus;;
+        *);;
+*);;
+
+
+
+concept_Gerakl
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Геракл)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Gerakl_stat.html";;
+        *);;
+       
+    *);;
+
+
+concept_Gerakl <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Геракл)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Gerakl.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Persey
+	<- sc_node_not_relation;
+	<- concept_halfgod;
+	=> nrel_main_idtf:
+		[Персей]
+		(* <- lang_ru;;	*);;
+
+concept_Persey
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Персей)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Persey.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_Gerakl;;
+			-> concept_Zeus;;
+        *);;
+*);;
+
+concept_Persey
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Персей)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Persey_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;	
+
+
+concept_Persey <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Персей)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Persey.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Olimp
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Олимп]
+		(* <- lang_ru;;	*);;
+
+concept_Olimp
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Олимп)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Olimp.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+			-> concept_Zeus;;
+        *);;
+*);;
+
+concept_Olimp
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Олимп)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Olimp_stat.html";;
+        *);;
+       
+*);;
+
+
+concept_Olimp <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Олимп)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/Olimp.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_halfgod
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[полубог]
+		(* <- lang_ru;;	*);;
+
+concept_halfgod
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(полубог)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/halfgod.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_halfgod
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(полубог)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/halfgod_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_titans
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[титаны]
+		(* <- lang_ru;;	*);;
+
+concept_titans
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(титаны)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/titans.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_titans
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(титаны)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/titans_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_olimp_gods
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[олимпийские боги]
+		(* <- lang_ru;;	*);;
+
+concept_olimp_gods
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(олимпийские боги)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/olimp_gods.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+			-> concept_Olimp;;
+        *);;
+*);;
+
+concept_olimp_gods
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(олимпийские боги)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/olimp_gods_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_god;;
+			-> concept_titans;;
+        *);;
+*);;
+
+concept_god => nrel_inclusion: concept_olimp_gods;;
+
+concept_god
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[бог]
+		(* <- lang_ru;;	*);;
+
+concept_god
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(бог)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/god.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_god
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(бог)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/god_stat.html";;
+        *);;
+       
+*);;
+
+nrel_son 
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [сын*](*<- lang_ru;;*);;
+
+nrel_son
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(сын*)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/son.html" (* <- lang_ru;; *);;
+			*);;
+		 <= nrel_using_constants:...
+        (*
+            -> male;;
+		*);;
+*);;
+
+nrel_son
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(сын*)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/son_stat.html";;
+        *);;
+       
+*);;
+
+nrel_son => nrel_first_domain: person;;
+nrel_son => nrel_second_domain: male;;
+
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_son;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;
+
+antireflexive_relation -> nrel_son;;
+antitransitive_relation -> nrel_son;;
+antisymmetric_relation -> nrel_son;;
+
+oriented_relation -> nrel_son;;
+
+nrel_daughter 
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [дочь*](*<- lang_ru;;*);;
+
+nrel_daughter
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(дочь*)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/daughter.html" (* <- lang_ru;; *);;
+			*);;
+		 <= nrel_using_constants:...
+        (*
+            -> female;;
+		*);;
+*);;
+
+nrel_daughter
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(дочь*)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/daughter_stat.html";;
+        *);;
+		<= nrel_using_constants:...
+        (*
+            -> male;;
+		*);;
+       
+*);;
+
+nrel_daughter => nrel_first_domain: person;;
+nrel_daughter => nrel_second_domain: female;;
+
+antireflexive_relation -> nrel_daughter;;
+antitransitive_relation -> nrel_daughter;;
+antisymmetric_relation -> nrel_daughter;;
+
+oriented_relation -> nrel_daughter;;

@@ -1,3 +1,10 @@
+sentence
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Предложение](*<-lang_ru;;*);;
+
+list
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Список](*<-lang_ru;;*);;
 
 country_Russia
 <- sc_node_norole_relation;

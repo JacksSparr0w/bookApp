@@ -1,0 +1,853 @@
+concept_lyrics
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Лирика]
+		(* <- lang_ru;;	*);
+[lyrics](* <- lang_en;;*);;
+
+concept_lyrics	
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Лирика)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/lyrics.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> nrel_author;;
+        *);;
+*);;
+
+concept_lyrics
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Лирика)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/lyrics_stat.html";;
+        *);;
+         
+    *);;
+
+concept_lyrics => nrel_inclusion: concept_songs;;
+
+concept_songs
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Песни]
+		(* <- lang_ru;;	*);
+[songs](* <- lang_en;;*);;
+
+concept_songs	
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Песни)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/songs.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_songs
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Песни)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/songs_stat.html";;
+        *);;
+         
+    *);;
+
+concept_epic
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Эпос]
+		(* <- lang_ru;;	*);
+[epic](* <- lang_en;;*);;
+
+concept_epic
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Эпос)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/epic.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+
+concept_epic
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Эпос)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/epic_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> nrel_author;;
+        *);;
+    *);;
+
+concept_bylina
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Былина]
+		(* <- lang_ru;;	*);;
+
+concept_bylina
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Былина)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/bylina.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_songs;;
+        *);;
+*);;
+
+concept_bylina
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Былина)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/bylina_stat.html";;
+        *);;
+       
+    *);;
+
+concept_fairy_tale
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Сказка]
+		(* <- lang_ru;;	*);
+[fairy tale](* <- lang_en;;*);;
+
+concept_fairy_tale
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Сказка)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/fairy_tale.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+
+concept_fairy_tale
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Сказка)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/fairy_tale_stat.html";;
+        *);;
+         
+    *);;
+
+concept_fairy_tale <= nrel_subdiving:{concept_fairy_tale_animals; concept_magic_fairy_tale; concept_household_fairy_tales};;
+
+concept_fairy_tale_animals
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Сказки про животных]
+		(* <- lang_ru;;	*);;
+		
+concept_magic_fairy_tale
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Волшебные сказки]
+		(* <- lang_ru;;	*);;
+
+concept_household_fairy_tales
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Бытовые сказки]
+		(* <- lang_ru;;	*);;
+
+concept_tale
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Сказ]
+		(* <- lang_ru;;	*);
+[tale](* <- lang_en;;*);;
+
+concept_tale
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Сказ)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/tale.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_tale
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Сказ)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/tale_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> nrel_author;;
+        *);; 
+    *);;
+
+concept_true_story
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Быль]
+		(* <- lang_ru;;	*);
+[true story](* <- lang_en;;*);;
+
+concept_true_story
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Быль)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/true_story.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_fiction
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Небылица]
+		(* <- lang_ru;;	*);
+[fiction](* <- lang_en;;*);;
+
+concept_fiction
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Небылица)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/fiction.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+
+concept_fiction
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Небылица)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/fiction_stat.html";;
+        *);;
+        
+    *);;
+
+concept_bylichka
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Быличка]
+		(* <- lang_ru;;	*);;
+
+concept_bylichka
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Быличка)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/bylichka.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_bylichka
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Быличка)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/bylichka_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_fairy_tale;;
+			-> concept_former;;
+		*);;
+    *);;
+
+concept_former
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Бывальщина]
+		(* <- lang_ru;;	*);;
+
+concept_former
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Бывальщина)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/former.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_former
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Бывальщина)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/former_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_bylichka;;
+		*);;
+    *);;
+
+concept_proverb
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Пословица]
+		(* <- lang_ru;;	*);
+[proverb](* <- lang_en;;*);;
+
+concept_proverb
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Пословица)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/proverb.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_proverb
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Пословица)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/proverb_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_narrative;;
+			-> concept_motivation;;
+        *);;
+    *);;
+
+concept_saying
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Поговорка]
+		(* <- lang_ru;;	*);
+[saying](* <- lang_en;;*);;
+
+concept_saying
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Поговорка)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/saying.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_saying
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Поговорка)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/saying_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_proverb;;
+        *);;
+    *);;
+
+concept_narrative
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Повествование]
+		(* <- lang_ru;;	*);
+[narrative](* <- lang_en;;*);;
+
+concept_motivation
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Побуждение]
+		(* <- lang_ru;;	*);
+[motivation](* <- lang_en;;*);;
+
+concept_patter
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Скороговорка]
+		(* <- lang_ru;;	*);
+[patter](* <- lang_en;;*);;
+
+concept_patter
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Скороговорка)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/patter.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_patter
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Скороговорка)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/patter_stat.html";;
+        *);;
+    *);;
+
+concept_riddle
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Загадка]
+		(* <- lang_ru;;	*);
+[riddle](* <- lang_en;;*);;
+
+concept_riddle
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Загадка)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/riddle.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_riddle
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Загадка)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/riddle_stat.html";;
+        *);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_proverb;;
+        *);;
+    *);;
+
+concept_drama
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Драма]
+		(* <- lang_ru;;	*);
+[drama](* <- lang_en;;*);;
+
+concept_drama
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Драма)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/drama.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_drama
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Драма)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/drama_stat.html";;
+        *);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_lyrics;;
+			-> concept_epic;;
+        *);;
+    *);;
+
+concept_jest
+	<- sc_node_not_relation;
+	<- concept_epic;
+	=> nrel_main_idtf:
+		[Прибаутка]
+		(* <- lang_ru;;	*);
+[jest](* <- lang_en;;*);;
+
+concept_jest
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Прибаутка)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/jest.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_saying;;
+        *);;
+*);;
+
+concept_jest
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Прибаутка)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/jest_stat.html";;
+        *);;
+	*);;
+
+concept_Alesha_Popovich
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Алеша Попович]
+		(* <- lang_ru;;	*);;
+
+concept_Alesha_Popovich
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Алеша Попович)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Alesha_Popovich.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_epic;;
+        *);;
+*);;
+
+concept_Alesha_Popovich
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Алеша Попович)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Alesha_Popovich_stat.html";;
+        *);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_Nikitich;;
+			-> concept_Ilya_Muromets;;
+        *);;
+	*);;
+
+concept_Nikitich
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Добрыня Никитич]
+		(* <- lang_ru;;	*);;
+
+concept_Nikitich
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Добрыня Никитич)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Nikitich.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_Nikitich
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Добрыня Никитич)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Nikitich_stat.html";;
+        *);;
+		<= nrel_using_constants:...
+	(*
+		-> concept_Ilya_Muromets;;
+		-> concept_epic;;
+	*);;
+	*);;
+
+concept_Ilya_Muromets
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Илья Муромец]
+		(* <- lang_ru;;	*);;
+
+concept_Ilya_Muromets
+	<- rrel_key_sc_element:
+		... 
+		(*
+                <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Илья Муромец)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Ilya_Muromets.html" (* <- lang_ru;; *);;
+			*);;
+	
+*);;
+
+concept_Ilya_Muromets
+   <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Илья Муромец)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/Ilya_Muromets_stat.html";;
+        *);;
+	*);; 
+
+proverb_fish
+    <- concept_proverb;
+	=> nrel_main_idtf:
+        ["Без труда не выловишь и рыбку из пруда"]
+            (* <- lang_ru;; *);;
+
+proverb_fish
+<- rrel_key_sc_element:...
+(*
+	<- nrel_morality;;
+	=> nrel_main_idtf: [Мораль("Без труда не выловишь и рыбку из пруда)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://content/content_htmls/proverb_fish_moral.html" (* <-lang_ru;; *);; 
+		
+	*);;
+*);;
+
+nrel_guess
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[Отгадка*]
+	(* <- lang_ru;;	*);
+        [guess*]
+        (* <- lang_en;;*);
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=>nrel_first_domain: concept_riddle;
+=>nrel_second_domain: sentence;;
+ 
+nrel_guess
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Отгадка*)](* <-lang_ru;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:"file://content/content_htmls/guess.html" (* <-lang_ru;; *);; 
+		*);;
+		<=nrel_using_constants:...
+		(*
+			-> concept_riddle;;
+			-> sentence;;
+		*);;
+	*);;
+
+nrel_morality
+=> nrel_main_idtf:
+	[Мораль*]
+	(* <- lang_ru;;	*);
+        [morality*]
+        (* <- lang_en;;*);;
+
+
+nrel_morality
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_morality
+=>nrel_first_domain: concept_proverb;
+=>nrel_second_domain: sentence;
+=>nrel_definitional_domain:...
+(*
+    <= nrel_combination:...
+       (* -> concept_proverb; sentence;; *);;
+*);;
+ 
+nrel_morality
+<- rrel_key_sc_element:...
+(*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Опр.(Мораль*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://content/content_htmls/morality.html" (* <-lang_ru;; *);; 
+		
+	*);;
+	<=nrel_using_constants:...
+	(*
+		-> concept_proverb;;
+		-> sentence;;
+	*);;
+*);;
+

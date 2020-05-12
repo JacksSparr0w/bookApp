@@ -1,0 +1,36 @@
+section_folklore_genres
+=> nrel_main_idtf:
+	[Раздел. Фольклорные произведения]
+		(* <- lang_ru;; *);;
+
+section_folklore_genres =  [*^"file://section_folklore_genres.scsi"*];;
+
+section_folklore_genres
+-> rrel_key_sc_element:
+                concept_lyrics;
+                concept_songs;
+                concept_epic;
+                concept_bylina;
+                concept_fairy_tale;
+                concept_fairy_tale_animals;
+                concept_magic_fairy_tale;
+                concept_household_fairy_tales;
+                concept_tale;
+                concept_true_story;
+                concept_fiction;
+                concept_bylichka;
+                concept_former;
+                concept_proverb;
+                concept_saying;
+                concept_patter;
+                concept_riddle;
+                concept_drama;
+                concept_jest;
+                concept_Alesha_Popovich;
+                concept_Nikitich;
+                concept_Ilya_Muromets;
+                nrel_guess;
+                nrel_morality;
+		proverb_fish;;
+
+
