@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Kikimora;;
+slavonic_mythical_creatures -> concept_Kikimora;;
+
+concept_Kikimora
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Кикимора]
+	(* <- lang_ru;;	*);
+	[Kikimora]
+	(* <- lang_en;;	*);;
+
+concept_Kikimora
+        <- lit_person;
+        <- female;
+        <- fiction_person;;
+
+concept_Kikimora <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Кикимора)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Kikimora.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Kikimora <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Кикимора)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Kikimora.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

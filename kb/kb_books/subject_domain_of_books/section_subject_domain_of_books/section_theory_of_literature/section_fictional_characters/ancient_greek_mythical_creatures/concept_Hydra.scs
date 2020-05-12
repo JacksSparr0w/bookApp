@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Hydra;;
+ancient_greek_mythical_creatures -> concept_Hydra;;
+
+concept_Hydra
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Гидра]
+	(* <- lang_ru;;	*);
+	[Hydra]
+	(* <- lang_en;;	*);;
+
+concept_Hydra
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Hydra <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Гидра)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Hydra.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Hydra <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гидра)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Hydra.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

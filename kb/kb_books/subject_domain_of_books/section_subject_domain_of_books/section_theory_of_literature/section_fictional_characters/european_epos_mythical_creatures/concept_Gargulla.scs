@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Gargulla;;
+european_epos_mythical_creatures -> concept_Gargulla;;
+
+concept_Gargulla
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Гаргулья]
+	(* <- lang_ru;;	*);
+	[Gargulla]
+	(* <- lang_en;;	*);;
+
+concept_Gargulla
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Gargulla <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Гаргулья)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Gargulla.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Gargulla <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гаргулья)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Gargulla.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

@@ -1,0 +1,49 @@
+//-----------------------------------------------------------------//
+concept_library -> library_Yale_university_library;;
+concept_academic_library -> library_Yale_university_library;;
+
+library_Yale_university_library
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Библиотека Йельского университета]
+	(* <- lang_ru;;	*);
+	[Yale University Library]
+	(* <- lang_en;;	*);;
+	
+library_Yale_university_library <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Библиотека Йельского университета)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/library_Yale_university_library.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+library_Yale_university_library <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Библиотека Йельского университета)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/library_Yale_university_library.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+library_Yale_university_library
+=> nrel_location:
+    .library_Yale_university_library_location
+    (*
+	   -> country_USA;;
+    *);;
+
+library_Yale_university_library
+=> nrel_address:
+	.library_Yale_university_library_address
+	(*
+    	=> nrel_main_idtf: [New Haven, Connecticut, USA]
+    	(* <- lang_en;; *);;
+    *);;
+
+number -> 15200000;;
+library_Yale_university_library => nrel_library_fund_volume: 15200000;;

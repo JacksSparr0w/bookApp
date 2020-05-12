@@ -1,0 +1,10 @@
+section_personal_library
+	=> nrel_main_idtf:
+		[Раздел. Личные Библиотеки]
+			(* <- lang_ru;; *);;
+
+	 section_personal_library =  [*^"file://section_personal_library.scsi"*];;
+
+section_personal_library
+	-> rrel_key_sc_element:
+		concept_personal_library;;

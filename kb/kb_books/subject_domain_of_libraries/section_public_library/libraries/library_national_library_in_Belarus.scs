@@ -1,0 +1,50 @@
+//-----------------------------------------------------------------//
+concept_library -> library_national_library_in_Belarus;;
+concept_public_library -> library_national_library_in_Belarus;;
+
+library_national_library_in_Belarus
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Национальная библиотека в Беларуси]
+	(* <- lang_ru;;	*);
+	[National Library in Belarus]
+	(* <- lang_en;;	*);;
+	
+library_national_library_in_Belarus <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Национальная библиотека в Беларуси)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/library_national_library_in_Belarus.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+library_national_library_in_Belarus <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Национальная библиотека в Беларуси)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/library_national_library_in_Belarus.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+library_national_library_in_Belarus
+=> nrel_location:
+    .library_national_library_in_Belarus_location
+    (*
+       -> Minsk;;
+	   -> country_Belarus;;
+    *);;
+
+library_national_library_in_Belarus
+=> nrel_address:
+	.library_national_library_in_Belarus_address
+	(*
+    	=> nrel_main_idtf: [Беларусь, Минск, пр-т Независимости, 116]
+    	(* <- lang_ru;; *);;
+    *);;
+
+number -> 9800000;;
+library_national_library_in_Belarus => nrel_library_fund_volume: 9800000;;

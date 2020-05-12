@@ -1,0 +1,19 @@
+//-----------------------------------------------------------------//
+
+concept_public_library
+<- sc_node_not_relation;
+<- concept_library;
+=> nrel_main_idtf:
+    [Государственная библиотека]
+    (* <- lang_ru;; *);
+    [Public library]
+    (* <- lang_en;; *);;
+    
+concept_public_library <-rrel_key_sc_element:... (*
+    <-definition;;
+    =>nrel_main_idtf:
+        [Определение (Государственная библиотека)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...(*
+        ->rrel_example: "file://HTML/concept_public_library.html"(*<-lang_ru;;*);;
+    *);;
+*);;

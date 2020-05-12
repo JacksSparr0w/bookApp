@@ -1,0 +1,10 @@
+section_private_library
+	=> nrel_main_idtf:
+		[Раздел. Частные Библиотеки]
+			(* <- lang_ru;; *);;
+
+	 section_private_library =  [*^"file://section_private_library.scsi"*];;
+
+section_private_library
+	-> rrel_key_sc_element:
+		concept_private_library;;

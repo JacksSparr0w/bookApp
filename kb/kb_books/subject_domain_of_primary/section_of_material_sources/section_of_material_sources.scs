@@ -1,0 +1,19 @@
+section_of_material_sources
+	=> nrel_main_idtf:
+		[Раздел. Классификация вещественных источников]
+			(* <- lang_ru;; *);;
+	
+section_of_material_sources =  [*^"file://section_of_material_sources.scsi"*];;
+
+section_of_material_sources	
+    -> rrel_key_sc_element:	
+    	nrel_material_source;
+    	remaining_rocks;
+    	rock_inscription;
+    	fresco;
+    	tablet;
+    	clay_tablet;
+    	wax_tablet;
+    	parchment;
+    	papyrus;
+    	paper;;

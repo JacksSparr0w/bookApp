@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Urmalulu;;
+sumerian_mythical_creatures -> concept_Urmalulu;;
+
+concept_Urmalulu
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Урмалуллу]
+	(* <- lang_ru;;	*);
+	[Urmalulu]
+	(* <- lang_en;;	*);;
+
+concept_Urmalulu
+        <- lit_person;
+        <- male;
+        <- fiction_person;;
+
+concept_Urmalulu <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Урмалуллу)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Urmalulu.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Urmalulu <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Урмалуллу)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Urmalulu.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

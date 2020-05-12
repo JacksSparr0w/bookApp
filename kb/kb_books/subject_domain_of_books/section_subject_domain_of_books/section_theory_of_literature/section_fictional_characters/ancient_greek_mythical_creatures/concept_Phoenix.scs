@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Phoenix;;
+ancient_greek_mythical_creatures -> concept_Phoenix;;
+
+concept_Phoenix
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Феникс]
+	(* <- lang_ru;;	*);
+	[Phoenix]
+	(* <- lang_en;;	*);;
+
+concept_Phoenix
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Phoenix <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Феникс)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Phoenix.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Phoenix <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Феникс)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Phoenix.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

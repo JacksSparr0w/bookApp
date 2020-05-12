@@ -1,0 +1,19 @@
+//-----------------------------------------------------------------//
+
+concept_private_library
+<- sc_node_not_relation;
+<- concept_library;
+=> nrel_main_idtf:
+    [Частная библиотека]
+    (* <- lang_ru;; *);
+    [Private library]
+    (* <- lang_en;; *);;
+    
+concept_private_library <-rrel_key_sc_element:... (*
+    <-definition;;
+    =>nrel_main_idtf:
+        [Определение (Частная библиотека)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...(*
+        ->rrel_example: "file://HTML/concept_private_library.html"(*<-lang_ru;;*);;
+    *);;
+*);;
