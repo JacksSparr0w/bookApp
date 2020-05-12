@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Goblin;;
+european_epos_mythical_creatures -> concept_Goblin;;
+
+concept_Goblin
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Гоблин]
+	(* <- lang_ru;;	*);
+	[Goblin]
+	(* <- lang_en;;	*);;
+
+concept_Goblin
+        <- lit_person;
+        <- male;
+        <- fiction_person;;
+
+concept_Goblin <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Гоблин)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Goblin.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Goblin <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гоблин)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Goblin.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Banshee;;
+european_epos_mythical_creatures -> concept_Banshee;;
+
+concept_Banshee
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Банши]
+	(* <- lang_ru;;	*);
+	[Banshee]
+	(* <- lang_en;;	*);;
+
+concept_Banshee
+        <- lit_person;
+        <- female;
+        <- fiction_person;;
+
+concept_Banshee <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Банши)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Banshee.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Banshee <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Банши)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Banshee.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

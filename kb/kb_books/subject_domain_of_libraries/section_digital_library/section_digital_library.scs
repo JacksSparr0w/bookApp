@@ -1,0 +1,10 @@
+section_digital_library
+	=> nrel_main_idtf:
+		[Раздел. Электронные Библиотеки]
+			(* <- lang_ru;; *);;
+
+	 section_digital_library =  [*^"file://section_digital_library.scsi"*];;
+
+section_digital_library
+	-> rrel_key_sc_element:
+		concept_digital_library;;

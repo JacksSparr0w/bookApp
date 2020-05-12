@@ -1,0 +1,50 @@
+//-----------------------------------------------------------------//
+concept_library -> library_national_library_in_Paris;;
+concept_public_library -> library_national_library_in_Paris;;
+
+library_national_library_in_Paris
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Национальная библиотека в Париже]
+	(* <- lang_ru;;	*);
+	[National Library in Paris]
+	(* <- lang_en;;	*);;
+	
+library_national_library_in_Paris <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Национальная библиотека в Париже)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/library_national_library_in_Paris.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+library_national_library_in_Paris <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Национальная библиотека в Париже)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/library_national_library_in_Paris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+library_national_library_in_Paris
+=> nrel_location:
+    .library_national_library_in_Paris_location
+    (*
+       -> Paris;;
+	   -> country_France;;
+    *);;
+
+library_national_library_in_Paris
+=> nrel_address:
+	.library_national_library_in_Paris_address
+	(*
+    	=> nrel_main_idtf: [Quai Francois Mauriac, 75706 Paris, France]
+    	(* <- lang_en;; *);;
+    *);;
+
+number -> 31000000;;
+library_national_library_in_Paris => nrel_library_fund_volume: 31000000;;

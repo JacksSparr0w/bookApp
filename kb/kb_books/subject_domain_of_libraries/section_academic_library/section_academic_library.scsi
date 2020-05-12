@@ -1,0 +1,19 @@
+//-----------------------------------------------------------------//
+
+concept_academic_library
+<- sc_node_not_relation;
+<- concept_library;
+=> nrel_main_idtf:
+    [Учебная библиотека]
+    (* <- lang_ru;; *);
+    [Academic library]
+    (* <- lang_en;; *);;
+    
+concept_academic_library <-rrel_key_sc_element:... (*
+    <-definition;;
+    =>nrel_main_idtf:
+        [Определение (Учебная библиотека)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...(*
+        ->rrel_example: "file://HTML/concept_academic_library.html"(*<-lang_ru;;*);;
+    *);;
+*);;

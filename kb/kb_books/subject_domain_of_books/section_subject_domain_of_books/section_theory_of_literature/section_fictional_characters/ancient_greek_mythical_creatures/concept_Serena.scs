@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Serena;;
+ancient_greek_mythical_creatures -> concept_Serena;;
+
+concept_Serena
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Сирена]
+	(* <- lang_ru;;	*);
+	[Serena]
+	(* <- lang_en;;	*);;
+
+concept_Serena
+        <- lit_person;
+        <- female;
+        <- fiction_person;;
+
+concept_Serena <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Сирена)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Serena.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Serena <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Сирена)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Serena.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

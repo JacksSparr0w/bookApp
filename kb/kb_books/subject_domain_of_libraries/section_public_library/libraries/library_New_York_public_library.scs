@@ -1,0 +1,50 @@
+//-----------------------------------------------------------------//
+concept_library -> library_New_York_public_library;;
+concept_public_library -> library_New_York_public_library;;
+
+library_New_York_public_library
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Нью-Йоркская публичная библиотека]
+	(* <- lang_ru;;	*);
+	[New York Public Library]
+	(* <- lang_en;;	*);;
+	
+library_New_York_public_library <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Нью-Йоркская публичная библиотека)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/library_New_York_public_library.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+library_New_York_public_library <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Нью-Йоркская публичная библиотека)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/library_New_York_public_library.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+library_New_York_public_library
+=> nrel_location:
+    .library_New_York_public_library_location
+    (*
+       -> New_York;;
+	   -> country_USA;;
+    *);;
+
+library_New_York_public_library
+=> nrel_address:
+	.library_New_York_public_library_address
+	(*
+    	=> nrel_main_idtf: [476 5th Ave, New York, NY 10018, USA]
+    	(* <- lang_en;; *);;
+    *);;
+
+number -> 50000000;;
+library_New_York_public_library => nrel_library_fund_volume: 50000000;;

@@ -1,0 +1,10 @@
+section_municipal_library
+	=> nrel_main_idtf:
+		[Раздел. Муниципальные Библиотеки]
+			(* <- lang_ru;; *);;
+
+	 section_municipal_library =  [*^"file://section_municipal_library.scsi"*];;
+
+section_municipal_library
+	-> rrel_key_sc_element:
+		concept_municipal_library;;

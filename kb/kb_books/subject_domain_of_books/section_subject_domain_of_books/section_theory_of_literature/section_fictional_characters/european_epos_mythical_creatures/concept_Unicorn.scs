@@ -1,0 +1,56 @@
+concept_fictional_character -> concept_Unicorn;;
+european_epos_mythical_creatures -> concept_Unicorn;;
+
+concept_Unicorn
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Единорог]
+	(* <- lang_ru;;	*);
+	[Unicorn]
+	(* <- lang_en;;	*);;
+
+concept_Unicorn
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Unicorn <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Единорог)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Unicorn.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Unicorn <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Единорог)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Unicorn.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Unicorn <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. ("Дама с единорогом")](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Raffael.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Unicorn <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание картины:](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/Raffael.html"(* <-lang_ru;; *);;
+	*);;
+*);;

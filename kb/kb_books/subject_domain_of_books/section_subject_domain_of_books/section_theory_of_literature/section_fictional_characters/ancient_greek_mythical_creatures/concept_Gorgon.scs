@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Gorgon;;
+ancient_greek_mythical_creatures -> concept_Gorgon;;
+
+concept_Gorgon
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Горгона]
+	(* <- lang_ru;;	*);
+	[Gorgon]
+	(* <- lang_en;;	*);;
+
+concept_Gorgon
+        <- lit_person;
+        <- female;
+        <- fiction_person;;
+
+concept_Gorgon <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Горгона)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Gorgon.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Gorgon <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Горгона)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Gorgon.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

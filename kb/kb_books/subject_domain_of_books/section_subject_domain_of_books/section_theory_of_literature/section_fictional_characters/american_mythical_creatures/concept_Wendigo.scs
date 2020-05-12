@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Wendigo;;
+american_mythical_creatures -> concept_Wendigo;;
+
+concept_Wendigo
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Вендиго]
+	(* <- lang_ru;;	*);
+	[Wendigo]
+	(* <- lang_en;;	*);;
+
+concept_Wendigo
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Wendigo <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Вендиго)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Wendigo.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Wendigo <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Вендиго)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Wendigo.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

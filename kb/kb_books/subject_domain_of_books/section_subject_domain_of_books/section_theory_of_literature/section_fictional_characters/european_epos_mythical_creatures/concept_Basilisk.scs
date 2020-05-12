@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Basilisk;;
+european_epos_mythical_creatures -> concept_Basilisk;;
+
+concept_Basilisk
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Василиск]
+	(* <- lang_ru;;	*);
+	[Basilisk]
+	(* <- lang_en;;	*);;
+
+concept_Basilisk
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Basilisk <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Василиск)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Basilisk.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Basilisk <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Василиск)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Basilisk.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

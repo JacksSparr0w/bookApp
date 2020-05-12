@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Kraken;;
+european_epos_mythical_creatures -> concept_Kraken;;
+
+concept_Kraken
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Кракен]
+	(* <- lang_ru;;	*);
+	[Kraken]
+	(* <- lang_en;;	*);;
+
+concept_Kraken
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Kraken <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Кракен)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Kraken.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Kraken <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Кракен)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Kraken.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

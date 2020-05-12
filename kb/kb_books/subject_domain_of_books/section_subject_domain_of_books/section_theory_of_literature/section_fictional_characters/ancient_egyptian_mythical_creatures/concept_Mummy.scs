@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Mummy;;
+ancient_egyptian_mythical_creatures -> concept_Mummy;;
+
+concept_Mummy
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Мумия]
+	(* <- lang_ru;;	*);
+	[Mummy]
+	(* <- lang_en;;	*);;
+
+concept_Mummy
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Mummy <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Мумия)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Mummy.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Mummy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мумия)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Mummy.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

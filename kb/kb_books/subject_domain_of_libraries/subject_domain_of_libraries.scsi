@@ -1,0 +1,180 @@
+//-----------------------------------------------------------------//
+concept_library
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Библиотека]
+	(* <- lang_ru;;	*);
+	[Library]
+	(* <- lang_en;;	*);;
+	
+concept_library <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Определение (Библиотека)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/concept_library.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+//-----------------------------------------------------------------//
+
+concept_archive
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Архив]
+	(* <- lang_ru;;	*);
+	[Archive]
+	(* <- lang_en;;	*);;
+	
+concept_archive <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Определение (Архив)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/concept_archive.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+//-----------------------------------------------------------------//
+
+concept_library_card
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Библиотечный абонемент]
+	(* <- lang_ru;;	*);
+	[Library Card]
+	(* <- lang_en;;	*);;
+	
+concept_library_card <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Определение (Библиотечный абонемент)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/concept_library_card.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+//-----------------------------------------------------------------//
+
+concept_bookstore
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Книгохранилище]
+	(* <- lang_ru;;	*);
+	[Bookstore]
+	(* <- lang_en;;	*);;
+	
+concept_bookstore <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Определение (Книгохранилище)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/concept_bookstore.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+//-----------------------------------------------------------------//
+
+concept_reading_room
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Читальный зал]
+	(* <- lang_ru;;	*);
+	[Reading room]
+	(* <- lang_en;;	*);;
+	
+concept_reading_room <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Определение (Читальный зал)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/concept_reading_room.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+//-----------------------------------------------------------------//
+
+concept_special_storage
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Спецхран]
+	(* <- lang_ru;;	*);
+	[Special storage]
+	(* <- lang_en;;	*);;
+	
+concept_special_storage <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Определение (Спецхран)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/concept_special_storage.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+
+
+//-----------------------------------------------------------------//
+
+nrel_librarian
+<- sc_node_norole_relation;
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [Librarian*](*<- lang_en;;*);
+    [Библиотекарь*](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:... (*
+    <- definition;;
+    => nrel_main_idtf: 
+        [Опр. (Библиотекарь*)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: "file://HTML/nrel_librarian.html"(*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain: concept_library;
+=> nrel_second_domain: person;
+=> nrel_definitional_domain:...(*
+    <= nrel_combination: ...(* 
+        ->concept_library;;
+    *);;
+*);;
+
+//-----------------------------------------------------------------//
+
+nrel_library_fund_volume
+<- sc_node_norole_relation;
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [Library fund volume*](*<- lang_en;;*);
+    [Объем библиотечного фонда*](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:... (*
+    <- definition;;
+    => nrel_main_idtf: 
+        [Опр. (Объем библиотечного фонда*)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: "file://HTML/nrel_library_fund_volume.html"(*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain: number;
+=> nrel_second_domain: book;
+=> nrel_definitional_domain:...(*
+    <= nrel_combination: ...(* 
+        ->book;;
+    *);;
+*);;
+
+//-----------------------------------------------------------------//

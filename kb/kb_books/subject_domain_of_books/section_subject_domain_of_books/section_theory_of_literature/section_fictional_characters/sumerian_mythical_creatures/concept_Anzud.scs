@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Anzud;;
+sumerian_mythical_creatures -> concept_Anzud;;
+
+concept_Anzud
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Анзуд]
+	(* <- lang_ru;;	*);
+	[Anzud]
+	(* <- lang_en;;	*);;
+
+concept_Anzud
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Anzud <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Анзуд)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Anzud.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Anzud <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Анзуд)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Anzud.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
