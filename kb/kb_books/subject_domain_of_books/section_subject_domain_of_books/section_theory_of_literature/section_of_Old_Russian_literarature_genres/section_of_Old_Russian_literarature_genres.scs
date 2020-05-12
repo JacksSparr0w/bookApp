@@ -1,0 +1,18 @@
+section_of_Old_Russian_literarature_genres
+=> nrel_main_idtf:
+	[Раздел. Жанры Древнерусской литературы]
+		(* <- lang_ru;; *);;
+
+section_of_Old_Russian_literarature_genres =  [*^"file://section_of_Old_Russian_literarature_genres.scsi"*];;
+
+section_of_Old_Russian_literarature_genres
+-> rrel_key_sc_element: 
+Scriptural_monuments;
+Hymnographic_monuments;
+Doctrines_monuments;
+Preaching_monuments;
+Living_monuments;
+Canon_Law_monuments;
+Memorial_monuments;
+Scientific_monuments;
+Household_monuments;;
