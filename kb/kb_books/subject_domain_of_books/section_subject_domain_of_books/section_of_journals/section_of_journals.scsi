@@ -1,0 +1,408 @@
+journal
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[журнал] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(журнал)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal.html" (* <-lang_ru;; *);;
+				*);;
+			
+		*);;
+
+journal_LEF
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+	=> nrel_main_idtf: 
+		["ЛЕФ"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("ЛЕФ")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/LEF.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+					-> Mayakovsky;;
+-> journal;;
+
+				*);;
+
+			
+		*);;
+
+journal_Contemporary
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+	=> nrel_main_idtf: 
+		["Современник"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Современник")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Contemporar.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+										-> journal;;
+				*);;
+
+			
+		*);;
+
+
+journal_Domestic_notes
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+	=> nrel_main_idtf: 
+		["Отечественные записки"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Отечественные записки")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Domestic_notes.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+					
+					-> journal;;
+				*);;
+
+			
+		*);;
+
+
+journal_Little_world
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+	=> nrel_main_idtf: 
+		["Мирок"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Мирок")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Little_world.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+					
+					-> journal;;
+				*);;
+
+			
+		*);;
+
+journal_Fire
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+-> nrel_publisher:
+publishing_house_Zvyazda;;
+journal_Fire
+	=> nrel_main_idtf: 
+		["Пламя"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Пламя")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Fire.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+					-> publishing_house_Zvyazda;;
+					-> journal;;
+				*);;
+
+			
+		*);;
+
+
+
+
+journal_Alesya
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+-> nrel_publisher:
+publishing_house_Zvyazda;;
+journal_Alesya
+	=> nrel_main_idtf: 
+		["Алеся"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Алеся")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Alesya.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+					-> publishing_house_Zvyazda;;
+					-> journal;;
+				*);;
+
+			
+		*);;
+
+journal_Neman
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+-> nrel_publisher:
+publishing_house_Zvyazda;;
+journal_Neman
+	=> nrel_main_idtf: 
+		["Нёман"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Нёман")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Neman.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+					-> publishing_house_Zvyazda;;
+					-> journal;;
+				*);;
+
+			
+		*);;
+
+journal_Youth
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+-> nrel_publisher:
+publishing_house_Zvyazda;;
+journal_Youth
+	=> nrel_main_idtf: 
+		["Молодость"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Молодость")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Youth.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+					->publishing_house_Zvyazda;;
+					-> journal;;
+				*);;
+
+			
+		*);;
+
+
+
+journal_Hedgehog
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+-> nrel_publisher:
+publishing_house_Zvyazda;;
+journal_Hedgehog
+	=> nrel_main_idtf: 
+		["Ёжик"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Ёжик")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Hedgehog.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+					-> publishing_house_Zvyazda;;
+					-> journal;;
+				*);;
+
+			
+		*);;
+
+
+
+journal_Native_nature
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+-> nrel_publisher:
+publishing_house_Zvyazda;;
+journal_Native_nature
+	=> nrel_main_idtf: 
+		["Родная природа"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Родная природа")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Native_nature.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+					->publishing_house_Zvyazda ;;
+					-> journal;;
+				*);;
+*);;
+
+
+journal_Bulletin_of_Europe
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+	=> nrel_main_idtf: 
+		["Вестник Европы"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Вестник Европы")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Bulletin_of_Europe.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+
+-> Moscow;;					
+					-> journal;;
+				*);;
+*);;
+
+journal_Ministry_of_Education
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+	=> nrel_main_idtf: 
+		["Журнал Министерства народного просвещения"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Журнал Министерства народного просвещения")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Ministry_of_Education.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+
+-> country_Russia;;					
+					-> journal;;
+				*);;
+*);;
+
+
+
+journal_Gust
+<- sc_node_not_relation;
+<- literary_work;
+<- journal;
+	=> nrel_main_idtf: 
+		["Порыв"] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.("Порыв")] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/journal_Gust.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+
+   
+					-> journal;;
+				*);;
+*);;
+

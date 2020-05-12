@@ -1,0 +1,29 @@
+section_of_journals
+=> nrel_main_idtf:
+	[Раздел. Журналы]
+		(* <- lang_ru;; *);;
+
+section_of_journals =  [*^"file://section_of_journals.scsi"*];;
+section_of_journals
+-> rrel_key_sc_element: 
+journal;
+journal_LEF;
+journal_Contemporary;
+journal_Domestic_notes;
+journal_Little_world;
+journal_Fire;
+journal_Alesya;
+journal_Neman;
+journal_Youth;
+journal_Hedgehog;
+journal_Bulletin_of_Europe;
+journal_Ministry_of_Education;
+journal_Gust;
+journal_Native_nature;;
+
+
+
+
+
+
+
