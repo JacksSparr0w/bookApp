@@ -48,5 +48,11 @@ section_literary_events
 section_role_of_lit_person;;
 *);
 section_role_of_lit_person
+(*
+=> nrel_section_base_order:
+section_belarussian_literary_movements;;
+*);
+section_belarussian_literary_movements
+
 
 };;

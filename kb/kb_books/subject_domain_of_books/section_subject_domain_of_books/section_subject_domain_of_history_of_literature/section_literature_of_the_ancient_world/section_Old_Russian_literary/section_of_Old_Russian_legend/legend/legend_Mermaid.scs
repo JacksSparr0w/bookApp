@@ -1,0 +1,97 @@
+legend_Mermaid
+    => nrel_main_idtf:
+        ["Русалка"]
+            (* <- lang_ru;; *);
+    <- genre_legend;
+    <= nrel_original_language:
+        lang_ru;;
+
+legend_Mermaid
+    <= nrel_characters:
+        .legend_Mermaid_characters
+        (*
+            -> rrel_main_character:
+                    char_Mermaid;
+char_swans;;
+		
+                                    -> char_children;
+char_fisher;;
+                   *);;
+
+ char_Mermaid
+        => nrel_main_idtf: 
+            [Русалка] (* <-lang_ru;; *);
+        <- lit_person;
+	 <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Русалка)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Mermaid.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_fisher
+=> nrel_main_idtf: 
+            [Рыбаки] (* <-lang_ru;; *);
+        <- lit_person;;
+char_children
+=> nrel_main_idtf: 
+            [Дети] (* <-lang_ru;; *);
+        <- lit_person;;
+char_swans
+=> nrel_main_idtf: 
+            [Лебеди] (* <-lang_ru;; *);
+        <- lit_person;;
+
+
+
+legend_Mermaid=> nrel_plot: 
+    .legend_Mermaid_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Русалка"] (* <-lang_ru;; *);;
+       
+        -> .legend_Mermaid_event_1
+            (*
+                => nrel_main_idtf: [Событие №1.  Жадность Русалки] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Mermaid_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_dialog;;
+                    <= nrel_participants:... 
+                    (*
+                        ->   char_fisher;
+char_children;
+					char_Mermaid;;
+                                  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .legend_Mermaid_event_2;;      
+            *);;
+
+        -> .legend_Mermaid_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Наказание лебедей] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Mermaid_2.html" (* <-lang_ru;; *);;
+                    *);;
+                  
+				<- event_mischief;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Mermaid;
+char_swans;;
+                                     
+                    *);;         
+ 
+            *);;    
+
+  *);;

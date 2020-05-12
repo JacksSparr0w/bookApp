@@ -1,0 +1,188 @@
+legend_Bannik
+    => nrel_main_idtf:
+        ["Банник"]
+            (* <- lang_ru;; *);
+    <- genre_legend;
+    <= nrel_original_language:
+        lang_ru;;
+
+legend_Bannik
+    <= nrel_characters:
+        .legend_Bannik_characters
+        (*
+            -> rrel_main_character:
+                    char_Bannik;
+char_Potanka;;
+		
+                                    -> char_Linden;
+char_Brook;
+ char_Birch;;
+                   *);;
+
+char_Bannik
+        => nrel_main_idtf: 
+            [Банник] (* <-lang_ru;; *);
+        <- lit_person;
+	 <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Банник)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Bannik.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Birch
+        => nrel_main_idtf: 
+            [Береза] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Береза)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Birch.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Potanka
+        => nrel_main_idtf: 
+            [Потанька] (* <-lang_ru;; *);
+        <- lit_person;
+<-male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Потанька)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Potanka.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Linden
+        => nrel_main_idtf: 
+            [Липа] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Липа)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Linden.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Brook
+        => nrel_main_idtf: 
+            [Ручеек] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ручеек)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Brook.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+
+
+legend_Bannik=> nrel_plot: 
+    .legend_Bannik_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Банник"] (* <-lang_ru;; *);;
+       
+        -> .legend_Bannik_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Поход Потаньки в баньку] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Bannik_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_mischief;;
+                    <= nrel_participants:... 
+                    (*
+                        ->   char_Potanka;;
+                                  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .legend_Bannik_event_2;;      
+            *);;
+
+        -> .legend_Bannik_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Предупреждение Липы, Березы и Ручейка] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Bannik_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_dialog;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Potanka;
+char_Brook;
+char_Linden;
+                                      char_Birch;;
+                    *);;         
+    => nrel_plot_sequence: 
+                        .legend_Bannik_event_3;;      
+                  
+            *);;    
+ -> .legend_Bannik_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Наказание Банника] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Bannik_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_attempted_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Potanka;
+char_Bannik;;
+
+                    *);;         
+    => nrel_plot_sequence: 
+                        .legend_Bannik_event_4;;      
+                  
+            *);;    
+
+ -> .legend_Bannik_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Спасение Потаньки] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Bannik_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_rescue;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Potanka;;
+                    *);;          
+                  
+            *);;    
+
+
+        
+    *);;

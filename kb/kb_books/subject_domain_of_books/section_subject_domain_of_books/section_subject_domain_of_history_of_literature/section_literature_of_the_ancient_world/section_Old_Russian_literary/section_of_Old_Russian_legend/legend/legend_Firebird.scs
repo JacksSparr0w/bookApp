@@ -1,0 +1,97 @@
+legend_Firebird
+    => nrel_main_idtf:
+        ["Жар-птица"]
+            (* <- lang_ru;; *);
+    <- genre_legend;
+    <= nrel_original_language:
+        lang_ru;;
+
+
+legend_Firebird
+    <= nrel_characters:
+        .legend_Firebird_characters
+        (*
+            -> rrel_main_character:
+                    char_Firebird;
+                                      char_Birch;;
+                   *);;
+
+
+  char_Firebird
+        => nrel_main_idtf: 
+            [Жар-птица] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Жар-птица)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Firebird.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+ char_Birch
+        => nrel_main_idtf: 
+            [Береза] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Береза)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Birch.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+
+
+legend_Firebird=> nrel_plot: 
+    .legend_Firebird_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Жар-птица"] (* <-lang_ru;; *);;
+       
+        -> .legend_Firebird_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Разговор Жар-птицы и Березы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Firebird_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_dialog;;
+                    <= nrel_participants:... 
+                    (*
+                        ->   char_Firebird;
+                                      char_Birch;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .legend_Firebird_event_2;;      
+            *);;
+
+        -> .legend_Firebird_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Жар-птица улетает] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Firebird_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_breakup;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Firebird;
+                                      char_Birch;;
+                    *);;         
+                  
+            *);;    
+
+        
+    *);;

@@ -1,0 +1,246 @@
+Pre_Mongol_period_literature
+<- sc_node_not_relation;
+<- period;
+<- Old_Russian_literature;
+-> Kiev_period_literature;
+-> Russian_principalities_period_literature;
+	=> nrel_main_idtf: 
+		[Литература домонгольского периода] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Литература домонгольского периода)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Pre_Mongol_period_literature.html" (* <-lang_ru;; *);;
+				*);;
+					<= nrel_using_constants:...
+				(*
+					-> Kiev_period_literature;;
+-> period;;
+->Russian_principalities_period_literature;;			
+				*);;
+		*);;
+
+
+Kiev_period_literature
+<- sc_node_not_relation;
+<- period;
+<- Old_Russian_literature;
+<- Pre_Mongol_period_literature;
+	=> nrel_main_idtf: 
+		[Литература киевского периода] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Литература киевского периода)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Kiev_period_literature.html" (* <-lang_ru;; *);;
+				*);;
+					<= nrel_using_constants:...
+				(*
+					-> Pre_Mongol_period_literature;;
+-> period;;
+->XI_century;;
+->XII_century;;			
+				*);;
+		*);;
+
+
+
+Russian_principalities_period_literature
+<- sc_node_not_relation;
+<- period;
+<- Old_Russian_literature;
+<- Pre_Mongol_period_literature;
+	=> nrel_main_idtf: 
+		[Литература периода русских княжеств] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Литература периода русских княжеств)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Russian_principalities_period_literature.html" (* <-lang_ru;; *);;
+				*);;
+					<= nrel_using_constants:...
+				(*
+					-> Pre_Mongol_period_literature;;
+-> period;;
+->XII_century;;
+->XIII_century;;			
+				*);;
+		*);;
+
+Moscow_period_literature
+<- sc_node_not_relation;
+<- period;
+<- Old_Russian_literature;
+-> Literature_of_the_era_of_Orda_Iga;
+-> Literature_of_the_Russian_state;
+-> Transitional_literature;
+	=> nrel_main_idtf: 
+		[Литература московского периода] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Литература московского периода)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Moscow_period_literature.html" (* <-lang_ru;; *);;
+				*);;
+					<= nrel_using_constants:...
+				(*
+					->Literature_of_the_era_of_Orda_Iga;;
+-> period;;
+->Literature_of_the_Russian_state;;
+-> Transitional_literature;;			
+				*);;
+		*);;
+
+
+Literature_of_the_era_of_Orda_Iga
+<- sc_node_not_relation;
+<- period;
+<- Old_Russian_literature;
+<- Moscow_period_literature;
+	=> nrel_main_idtf: 
+		[Литература периода ордынского ига] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Литература периода ордынского ига)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Literature_of_the_era_of_Orda_Iga.html" (* <-lang_ru;; *);;
+				*);;
+					<= nrel_using_constants:...
+				(*
+					-> Moscow_period_literature;;
+-> period;;
+->XV_century;;
+->XIII_century;;			
+				*);;
+		*);;
+
+Literature_of_the_Russian_state
+<- sc_node_not_relation;
+<- period;
+<- Old_Russian_literature;
+<- Moscow_period_literature;
+	=> nrel_main_idtf: 
+		[Литература Русского государства] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Литература Русского государства)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Literature_of_the_Russian_state.html" (* <-lang_ru;; *);;
+				*);;
+					<= nrel_using_constants:...
+				(*
+					-> Moscow_period_literature;;
+-> period;;
+->XVI_century;;			
+				*);;
+		*);;
+
+Transitional_literature
+<- sc_node_not_relation;
+<- period;
+<- Old_Russian_literature;
+<- Moscow_period_literature;
+	=> nrel_main_idtf: 
+		[Переходная литература] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Переходная литература)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Transitional_literature.html" (* <-lang_ru;; *);;
+				*);;
+					<= nrel_using_constants:...
+				(*
+					-> Moscow_period_literature;;
+-> period;;
+->XVII_century;;			
+				*);;
+		*);;
+
+
+
+period
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[период] 
+			(* <-lang_ru;; *);;
+
+XI_century
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[XI век] 
+			(* <-lang_ru;; *);;
+
+XII_century
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[XII век] 
+			(* <-lang_ru;; *);;
+
+XIII_century
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[XIII век] 
+			(* <-lang_ru;; *);;
+
+
+XV_century
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[XV век] 
+			(* <-lang_ru;; *);;
+
+
+XVI_century
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[XVI век] 
+			(* <-lang_ru;; *);;
+
+
+XVII_century
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[XVII век] 
+			(* <-lang_ru;; *);;

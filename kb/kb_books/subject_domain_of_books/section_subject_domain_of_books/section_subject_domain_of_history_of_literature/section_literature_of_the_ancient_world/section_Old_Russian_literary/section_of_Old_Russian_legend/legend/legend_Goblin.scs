@@ -1,0 +1,8 @@
+legend_Goblin
+    => nrel_main_idtf:
+        ["Гоблин"]
+            (* <- lang_ru;; *);
+    <- genre_legend;
+    <= nrel_original_language:
+        lang_ru;;
+

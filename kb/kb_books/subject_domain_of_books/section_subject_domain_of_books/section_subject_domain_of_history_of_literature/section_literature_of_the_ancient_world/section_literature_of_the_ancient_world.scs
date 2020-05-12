@@ -11,5 +11,6 @@ section_literature_of_the_ancient_world
 
 <= nrel_section_decomposition:
 	{
-		section_ancient_literature
+		section_ancient_literature;
+section_of_Old_Russian_literature
 	};;

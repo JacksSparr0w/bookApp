@@ -1,0 +1,18 @@
+section_of_Old_Russian_literature
+=> nrel_main_idtf:
+	[Раздел. Древнерусская литература]
+		(* <- lang_ru;; *);
+
+<= nrel_section_decomposition:
+	{
+					section_of_Old_Russian_literarature_classification;
+					section_of_Old_Russian_legend
+	};;
+
+section_of_Old_Russian_literature =  [*^"file://section_Old_Russian_literature.scsi"*];;
+
+section_of_Old_Russian_literature
+-> rrel_key_sc_element: 
+Old_Russian_literature;
+legend;;
+
