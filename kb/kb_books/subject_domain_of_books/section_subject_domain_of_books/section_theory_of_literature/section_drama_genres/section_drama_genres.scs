@@ -1,0 +1,22 @@
+section_drama_genres
+=> nrel_main_idtf:
+	[Раздел. Драматические произведения]
+		(* <- lang_ru;; *);;
+
+section_drama_genres =  [*^"file://section_drama_genres.scsi"*];;
+
+section_drama_genres
+-> rrel_key_sc_element:
+                concept_comedy;
+                concept_tragedy;
+                concept_drama;
+                concept_melodrama;
+                concept_hierodrama;
+                concept_mystery;
+                concept_vaudeville;
+                concept_farce;
+                concept_zuju;
+                nrel_list_of_actors;
+                nrel_external_remarks;
+                nrel_replicas;
+                nrel_internal_remarks;;

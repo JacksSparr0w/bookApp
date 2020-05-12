@@ -12,8 +12,10 @@ subject_domain_of_theory_of_literature
 	section_types_of_publications;
 	section_classification_of_literature_types;
 	section_classification_of_literature_problems;
-section_of_Old_Russian_literarature_genres;
-	section_fictional_characters
+        section_of_Old_Russian_literarature_genres;
+	section_fictional_characters;
+        section_folklore_genres;
+        section_drama_genres
 	};;
 
 subject_domain_of_theory_of_literature =  [*^"file://section_theory_of_literature.scsi"*];;

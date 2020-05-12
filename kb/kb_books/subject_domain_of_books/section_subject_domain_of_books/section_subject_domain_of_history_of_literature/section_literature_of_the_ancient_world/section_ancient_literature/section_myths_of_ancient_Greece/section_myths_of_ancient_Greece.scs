@@ -1,0 +1,32 @@
+section_myths_of_ancient_Greece
+=> nrel_main_idtf:
+	[Раздел. Мифы Древней Греции]
+	(* <- lang_ru;; *);;
+
+section_myths_of_ancient_Greece = [*^"file://section_myths_of_ancient_Greece.scsi"*];;
+
+section_myths_of_ancient_Greece
+-> rrel_key_sc_element:
+                concept_Zeus;
+		        concept_Gera;
+		        concept_Poseidon;
+		        concept_Aid;
+		        concept_Demetra;
+		        concept_Persefona;        
+		        concept_Afina;
+		        concept_Afrodita;
+		        concept_Adonis;
+		        concept_Ares;
+				concept_Gefest;
+				concept_Apollon;
+				concept_Artemida;
+				concept_Gerakl;
+				concept_Persey;
+				concept_Olimp;
+				concept_halfgod;
+				nrel_son;
+				nrel_daughter;
+				concept_titans;
+				concept_olimp_gods;
+				concept_god;;
+	 
