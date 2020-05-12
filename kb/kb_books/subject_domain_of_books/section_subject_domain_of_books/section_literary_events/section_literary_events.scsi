@@ -25,6 +25,71 @@ literary_event
 		*);;
 
 
+event_dialog
+<- literary_event;
+	=> nrel_age_limit: [0];
+	=> nrel_main_idtf: 
+		[разговор] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[диалог] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(разговор)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_dialog.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+
+event_fishing
+<- literary_event;
+	=> nrel_age_limit: [0];
+	=> nrel_main_idtf: 
+		[рыбалка] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[ловля рыбы] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(рыбалка)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_fishing.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+event_rescue
+<- literary_event;
+	=> nrel_age_limit: [0];
+	=> nrel_main_idtf: 
+		[спасение] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(спасение)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_rescue.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+
 
 event_death
 	<- literary_event;

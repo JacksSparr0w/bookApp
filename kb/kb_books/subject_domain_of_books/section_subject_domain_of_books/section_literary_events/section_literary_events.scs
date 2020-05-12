@@ -53,6 +53,9 @@ section_literary_events
 		event_intelligence_service;
 		event_pregnancy;
 
+		event_dialog;
+		event_fishing;
+		event_rescue;
 		event_date;
 		event_labour;
 		event_divorce;
