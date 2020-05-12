@@ -1,0 +1,543 @@
+nrel_origin
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+            [происхождение*] (* <- lang_ru;; *);;
+
+nrel_edition
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+            [издание*] (* <- lang_ru;; *);;
+
+
+publishing_house_Aversav
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Аверсэв"] (* <- lang_ru;; *);;
+
+publishing_house_Aversav
+->nrel_origin:
+country_Belarus;;
+
+publishing_house_Aversav
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Аверсэв)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/aversav.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+
+        *);;
+    *);;
+
+publishing_house_Zvyazda
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Звезда"] (* <- lang_ru;; *);;
+
+
+publishing_house_Zvyazda
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Звезда)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Zvyazda.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+-> country_Belarus;;
+
+        *);;
+    *);;
+
+
+publishing_house_Zvayzda
+->nrel_edition:
+journal_Fire;
+journal_Alesya;
+journal_Neman;
+journal_Youth;
+journal_Hedgehog;
+journal_Native_nature;;
+
+publishing_house_Zvyazda
+->nrel_origin:
+country_Belarus;;
+
+
+
+
+Publishing_house_of_BSU
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Издательский центр БГУ"] (* <- lang_ru;; *);;
+
+Publishing_house_of_BSU
+->nrel_origin:
+country_Belarus;;
+
+Publishing_house_of_BSU
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Издательский центр БГУ)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/Publishing_house_of_BSU.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		-> BSU;;
+
+        *);;
+    *);;
+
+
+publishing_house_Belarus
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Белаурсь"] (* <- lang_ru;; *);;
+
+publishing_house_Belarus
+->nrel_origin:
+country_Belarus;;
+
+publishing_house_Belarus
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Беларусь)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/Belarus.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+-> country_Belarus;;
+
+        *);;
+    *);;
+
+publishing_house_White_wind
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Белый ветер"] (* <- lang_ru;; *);;
+
+publishing_house_White_wind
+->nrel_origin:
+country_Belarus;;
+
+publishing_house_White_wind
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Белый ветер)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_White_wind.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+
+        *);;
+    *);;
+
+publishing_house_Kavaler
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Кавалер"] (* <- lang_ru;; *);;
+publishing_house_Kavaler
+->nrel_origin:
+country_Belarus;;
+
+publishing_house_Kavaler
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Кавалер)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Kavaler.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		-> country_Belarus;;
+
+        *);;
+    *);;
+
+
+publishing_house_Unipress
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Юнипресс"] (* <- lang_ru;; *);;
+publishing_house_Unipress
+->nrel_origin:
+country_Belarus;;
+
+publishing_house_Unipress
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Юнипресс)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Unipress.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		
+        *);;
+    *);;
+
+publishing_house_Trivium
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Тривиум"] (* <- lang_ru;; *);;
+publishing_house_Trivium
+->nrel_origin:
+country_Belarus;;
+
+publishing_house_Trivium
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Тривиум)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Trivium.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		
+        *);;
+    *);;
+
+publishing_house_Quadrograph
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Квадрограф"] (* <- lang_ru;; *);;
+publishing_house_Quadrograph
+->nrel_origin:
+country_Belarus;;
+
+publishing_house_Quadrograph
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Квадрограф)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Quadrograph.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		
+        *);;
+    *);;
+
+publishing_house_Literature_and_art
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Литература и творчество"] (* <- lang_ru;; *);;
+publishing_house_Literature_and_art
+->nrel_origin:
+country_Belarus;;
+
+publishing_house_Literature_and_art
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Литература и творчество)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Literature_and_art.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		
+        *);;
+    *);;
+
+
+
+publishing_house_Folk_asvet
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Народная асвета"] (* <- lang_ru;; *);;
+publishing_house_Folk_asvet
+->nrel_origin:
+country_Belarus;;
+
+publishing_house_Folk_asvet
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Народная асвета)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Folk_asvet.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		
+        *);;
+    *);;
+
+publishing_house_EXMO
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["ЭКСМО"] (* <- lang_ru;; *);;
+publishing_house_EXMO
+->nrel_origin:
+country_Russia;;
+
+publishing_house_EXMO
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(ЭКСМО)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_EXMO.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		-> country_Russia;;
+		-> continent_Europe;;
+		
+        *);;
+    *);;
+
+
+
+
+publishing_house_Alph_book
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Альфа-книга"] (* <- lang_ru;; *);;
+publishing_house_Alph_book
+->nrel_origin:
+country_Russia;;
+
+publishing_house_Alph_book
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Альфа-книга)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Alph_book.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		->country_Russia;;
+        *);;
+    *);;
+
+
+
+
+publishing_house_Centerpolygraph
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Квадрограф"] (* <- lang_ru;; *);;
+publishing_house_Centerpolygraph
+->nrel_origin:
+country_Russia;;
+
+publishing_house_Centerpolygraph
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Квадрограф)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Centerpolygraph.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		->country_Russia;;
+        *);;
+    *);;
+
+
+publishing_house_AST
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["АСТ"] (* <- lang_ru;; *);;
+publishing_house_AST
+->nrel_origin:
+country_Russia;;
+
+publishing_house_AST
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(АСТ)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_AST.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		->country_Russia;;
+        *);;
+    *);;
+
+
+publishing_house_Zakharov
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Захаров"] (* <- lang_ru;; *);;
+publishing_house_Zakharov
+->nrel_origin:
+country_Russia;;
+
+publishing_house_Zakharov
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Захаров)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Zakharov.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		->country_Russia;;
+        *);;
+    *);;
+publishing_house_Evening
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Вече"] (* <- lang_ru;; *);;
+publishing_house_Evening
+->nrel_origin:
+country_Russia;;
+
+publishing_house_Evening
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Вече)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Evening.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		-> country_Russia;;
+        *);;
+    *);;
+
+
+
+publishing_house_Algorithm
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Алгоритм"] (* <- lang_ru;; *);;
+publishing_house_Algorithm
+->nrel_origin:
+country_Russia;;
+
+publishing_house_Algorithm
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Алгоритм)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Algorithm.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		->country_Russia;;
+        *);;
+    *);;
+
+publishing_house_ROSMEN
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["РОСМЭН"] (* <- lang_ru;; *);;
+publishing_house_ROSMEN
+->nrel_origin:
+country_Russia;;
+
+publishing_house_ROSMEN
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(РОСМЭН)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_ROSMEN.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		->country_Russia;;
+        *);;
+    *);;
+

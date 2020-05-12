@@ -1,0 +1,137 @@
+legend_Kikimorka
+    => nrel_main_idtf:
+        ["Кикиморка"]
+            (* <- lang_ru;; *);
+    <- genre_legend;
+    <= nrel_original_language:
+        lang_ru;;
+
+legend_Kikimorka
+    <= nrel_characters:
+        .legend_Kikimorka_characters
+        (*
+            -> rrel_main_character:
+                    char_Kikimorka;
+char_little_boy;;
+		
+                                    -> char_garden_scarecrow;
+char_garden_bed;
+char_Wattle;
+char_Apple_tree:
+char_Dogrose;
+char_Pot;;
+                   *);;
+
+ char_Kikimorka
+        => nrel_main_idtf: 
+            [Кикиморка] (* <-lang_ru;; *);
+        <- lit_person;
+	 <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кикиморка)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Kikimorka.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+ char_garden_scarecrow
+  => nrel_main_idtf: 
+            [Пугало огородное] (* <-lang_ru;; *);
+        <- lit_person;;
+
+char_garden_bed
+  => nrel_main_idtf: 
+            [Огородная грядка] (* <-lang_ru;; *);
+        <- lit_person;;
+
+char_Wattle 
+ => nrel_main_idtf: 
+            [Плетень] (* <-lang_ru;; *);
+        <- lit_person;;
+
+char_Apple_tree
+  => nrel_main_idtf: 
+            [Яблоня] (* <-lang_ru;; *);
+        <- lit_person;;
+
+char_Dogrose
+  => nrel_main_idtf: 
+            [Шиповник] (* <-lang_ru;; *);
+        <- lit_person;;
+
+char_Pot
+  => nrel_main_idtf: 
+            [Горшок] (* <-lang_ru;; *);
+        <- lit_person;;
+
+legend_Kikimorka=> nrel_plot: 
+    .legend_Kikimorka_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Кикиморка"] (* <-lang_ru;; *);;
+       
+        -> .legend_Kikimorka_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Предупреждение Мальчика об опасности] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Kikimorka_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_dialog;;
+                    <= nrel_participants:... 
+                    (*
+                        ->   char_garden_scarecrow;
+char_garden_bed;
+char_Wattle;
+char_little_boy;;
+                                  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .legend_Kikimorka_event_2;;      
+            *);;
+
+        -> .legend_Kikimorka_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Приход Кикиморки] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Kikimorka_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_mischief;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Kikimorka;
+char_Pot;
+char_Dogrose;
+char_Apple_tree;;
+                                     
+                    *);;         
+    => nrel_plot_sequence: 
+                        .legend_Kikimorka_event_3;;      
+                  
+            *);;    
+ -> .legend_Kikimorka_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Уход Кикиморки] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Kikimorka_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_breakup;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Kikimorka;;
+
+                    *);;         
+   
+            *);;    
+
+        
+    *);;

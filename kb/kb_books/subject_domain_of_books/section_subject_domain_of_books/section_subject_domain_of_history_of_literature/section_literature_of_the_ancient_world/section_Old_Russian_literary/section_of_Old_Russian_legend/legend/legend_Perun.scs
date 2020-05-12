@@ -1,0 +1,8 @@
+legend_Perun
+    => nrel_main_idtf:
+        ["Перун"]
+            (* <- lang_ru;; *);
+    <- genre_legend;
+    <= nrel_original_language:
+        lang_ru;;
+

@@ -1,0 +1,401 @@
+Scriptural_monuments
+<- sc_node_not_relation;
+<- genre;
+-> Apocrypha;
+-> Bible;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Скриптурные памятники] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Скриптурные памятники)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Scriptural_monuments.html" (* <-lang_ru;; *);;
+				*);;
+					<= nrel_using_constants:...
+				(*
+					-> Bible;;
+-> Apocrypha;;				
+				*);;
+		*);;
+
+
+Apocrypha
+<- sc_node_not_relation;
+-> nrel_genre:
+Scriptural_monuments;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Апокриф] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Апокриф)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Apocrypha.html" (* <-lang_ru;; *);;
+				*);;
+					
+		*);;
+
+
+Bible
+<- sc_node_not_relation;
+-> nrel_genre:
+Scriptural_monuments;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Библия] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Библия)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/BIble.html" (* <-lang_ru;; *);;
+				*);;
+					
+		*);;
+
+Hymnographic_monuments
+<- sc_node_not_relation;
+<- genre;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Гимнографические памятники] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Гимнографические памятники)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Hymnographic_monuments.html" (* <-lang_ru;; *);;
+				*);;
+					
+		*);;
+
+Doctrines_monuments
+<- sc_node_not_relation;
+<- genre;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Вероучительские памятники] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Вероучительские памятники)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Doctrines.html" (* <-lang_ru;; *);;
+				*);;
+					
+		*);;
+
+
+Preaching_monuments
+<- sc_node_not_relation;
+<- genre;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Проповеднические памятники] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Проповеднические памятники)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Preaching.html" (* <-lang_ru;; *);;
+				*);;
+	<= nrel_using_constants:
+				...
+				(*
+					-> gnosticism;;
+			*);;
+		*);;
+
+					
+
+Living_monuments
+<- sc_node_not_relation;
+<- genre;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Житийные памятники] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Житийные памятники)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Living_monuments.html" (* <-lang_ru;; *);;
+				*);;
+<= nrel_using_constants:
+				...
+				(*
+					-> Lives_of_the_saints;;
+			*);;
+					
+		*);;
+
+Canon_Law_monuments
+<- sc_node_not_relation;
+<- genre;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Канонико-юредические памятники] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Канонико-юредические памятники)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Canon_Law_monuments.html" (* <-lang_ru;; *);;
+				*);;
+
+<= nrel_using_constants:
+				...
+				(*
+					->helmsman_books;;				
+				*);;
+					
+					
+		*);;
+
+Memorial_monuments
+<- sc_node_not_relation;
+<- genre;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Мемориальные памятники] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Мемориальные памятники)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Memorial_monuments.html" (* <-lang_ru;; *);;
+				*);;
+
+
+<= nrel_using_constants:
+				...
+				(*
+					->genre;;				
+				*);;
+					
+					
+		*);;
+
+Scientific_monuments
+<- sc_node_not_relation;
+<- genre;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Научные памятники] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Научные памятники)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Scientific_monuments.html" (* <-lang_ru;; *);;
+				*);;
+					
+		*);;
+
+Household_monuments
+<- sc_node_not_relation;
+<- genre;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Бытовые памятники] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Бытовые памятники)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Household_monuments.html" (* <-lang_ru;; *);;
+				*);;
+
+
+<= nrel_using_constants:
+				...
+				(*
+					-> epigraphy;;				
+				*);;
+					
+		*);;
+
+
+epigraphy
+<- sc_node_not_relation;
+-> nrel_genre:
+Household_monuments;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Эпиграфика] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Эпиграфика)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/epigraphy.html" (* <-lang_ru;; *);;
+				*);;
+					
+		*);;
+
+gnosticism
+<- sc_node_not_relation;
+-> nrel_genre:
+Preaching_monuments;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Гностицизм] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Гностицизм)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/gnosticism.html" (* <-lang_ru;; *);;
+				*);;
+					
+		*);;
+
+Lives_of_the_saints
+<- sc_node_not_relation;
+-> nrel_genre:
+Living_monuments;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Житие] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Житие)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Lives_of_the_saints.html" (* <-lang_ru;; *);;
+				*);;
+
+<= nrel_using_constants:
+				...
+				(*
+					->genre;;				
+				*);;
+					
+					
+		*);;
+
+Chronograph
+<- sc_node_not_relation;
+-> nrel_genre:
+Memorial_monuments;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Хронограф] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Хронограф)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Chronograph.html" (* <-lang_ru;; *);;
+				*);;
+					<= nrel_using_constants:
+				...
+				(*
+					->Old_Russian_literature;;				
+				*);;
+		*);;
+
+helmsman_books
+<- sc_node_not_relation;
+-> nrel_genre:
+Canon_Law_monuments;
+<- Old_Russian_literature;
+	=> nrel_main_idtf: 
+		[Кормчие книги] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Кормчие книги)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/helmsman_books.html" (* <-lang_ru;; *);;
+				*);;
+					<= nrel_using_constants:
+				...
+				(*
+					->Old_Russian_literature;;				
+				*);;
+		*);;
+

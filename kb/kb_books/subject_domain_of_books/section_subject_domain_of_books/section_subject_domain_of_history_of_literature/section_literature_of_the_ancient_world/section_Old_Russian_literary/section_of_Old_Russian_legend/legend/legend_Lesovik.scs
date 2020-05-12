@@ -1,0 +1,130 @@
+legend_Lesovik
+    => nrel_main_idtf:
+        ["Лесовик"]
+            (* <- lang_ru;; *);
+    <- genre_legend;
+    <= nrel_original_language:
+        lang_ru;;
+
+legend_Lesovik
+    <= nrel_characters:
+        .legend_Lesovik_characters
+        (*
+            -> rrel_main_character:
+                    char_Lesovik;
+char_little_boy;;
+		
+                                    -> char_Boletus;
+char_Hedgehog;
+char_Squirrel;
+char_Crow;
+char_Bear;;
+                   *);;
+
+char_Lesovik
+        => nrel_main_idtf: 
+            [Лесовик] (* <-lang_ru;; *);
+        <- lit_person;
+	 <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Лесовик)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Lesovik.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Boletus 
+=> nrel_main_idtf: 
+            [Боровик] (* <-lang_ru;; *);
+        <- lit_person;;
+char_Hedgehog 
+=> nrel_main_idtf: 
+            [Ёжик] (* <-lang_ru;; *);
+        <- lit_person;;
+char_Squirrel 
+=> nrel_main_idtf: 
+            [Белка] (* <-lang_ru;; *);
+        <- lit_person;;
+char_Crow
+=> nrel_main_idtf: 
+            [Ворона] (* <-lang_ru;; *);
+        <- lit_person;;
+char_Bear
+  => nrel_main_idtf: 
+            [Медведь] (* <-lang_ru;; *);
+        <- lit_person;;
+
+
+legend_Lesovik=> nrel_plot: 
+    .legend_Lesovik_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Лесовик"] (* <-lang_ru;; *);;
+       
+        -> .legend_Lesovik_event_1
+            (*
+                => nrel_main_idtf: [Событие №1.  Наказание Лесовика] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Lesovik_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_dialog;;
+  <- event_mischief;;
+                    <= nrel_participants:... 
+                    (*
+                        ->   char_little_boy;
+					char_Lesovik;;
+                                  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .legend_Lesovik_event_2;;      
+            *);;
+
+        -> .legend_Lesovik_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Шалости зверей] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Lesovik_2.html" (* <-lang_ru;; *);;
+                    *);;
+                  
+				<- event_dialog;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Hedgehog;
+char_Crow;
+char_Squirrel;
+char_Bear;
+char_little_boy;;
+                                     
+                    *);;         
+       => nrel_plot_sequence: 
+                        .legend_Lesovik_event_3;;      
+            *);;    
+
+
+        -> .legend_Lesovik_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Спасение Мальчика] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Lesovik_3.html" (* <-lang_ru;; *);;
+                    *);;
+                  
+				<- event_dialog;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_little_boy;;           
+                    *);;         
+   
+            *);;    
+
+        
+    *);;

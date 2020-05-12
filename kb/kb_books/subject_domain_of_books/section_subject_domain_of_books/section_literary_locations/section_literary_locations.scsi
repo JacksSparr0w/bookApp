@@ -2283,3 +2283,287 @@ country_Denmark
 					continent_Europe;;
 				*);;
 		*);;
+
+
+
+
+
+Bagdati
+	<- literary_location;
+	<- continent_Europe;
+	<- continent_Asia;
+	<- country_Georgia;
+	=> nrel_main_idtf: 
+		[Багдати] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(Багдати)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/Bagdati.html" (* <-lang_ru;; *);;
+				*);;
+		<= nrel_using_constants:
+				...
+				(*
+					->  country_Georgia;
+						city;;
+					
+				*);;
+		*);;
+
+Kutaisi
+<- literary_location;
+	<- continent_Europe;
+	<- continent_Asia;
+	<- country_Georgia;
+	=> nrel_main_idtf: 
+		[Кутаиси] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(Кутаиси)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/Kutaisi.html" (* <-lang_ru;; *);;
+				*);;
+		<= nrel_using_constants:
+				...
+				(*
+					->  country_Georgia;
+						city;;
+					
+				*);;
+		*);;
+
+
+
+Nemirov
+<- literary_location;
+	<- continent_Europe;
+	<- country_Ukraine;
+	=> nrel_main_idtf: 
+		[Немиров] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(Немиров)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/Nemirov.html" (* <-lang_ru;; *);;
+				*);;
+		<= nrel_using_constants:
+				...
+				(*
+					-> country_Ukraine;
+						city;;
+					
+				*);;
+		*);;
+
+
+
+Podolsk_province
+<- literary_location;
+	<- continent_Europe;
+	<- continent_Asia;
+	<- country_Russian_empire;
+	=> nrel_main_idtf: 
+		[Подольская губерния] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(Подольская губерния)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/Podolsk_province.html" (* <-lang_ru;; *);;
+				*);;
+		<= nrel_using_constants:
+				...
+				(*
+					-> country_Russian_empire;
+						administrative_unit;;
+					
+				*);;
+		*);;
+
+
+
+Yaroslavl_province
+<- literary_location;
+	<- continent_Europe;
+	<- continent_Asia;
+	<- country_Russian_empire;
+	=> nrel_main_idtf: 
+		[Ярославская губерния] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(Ярославская губерния)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/Yaroslavl_province.html" (* <-lang_ru;; *);;
+				*);;
+		<= nrel_using_constants:
+				...
+				(*
+					-> country_Russian_empire;
+						administrative_unit;;
+					
+				*);;
+		*);;
+
+
+
+
+Orel
+
+<- literary_location;
+	<- continent_Europe;
+	<- country_Russia;
+	=> nrel_main_idtf: 
+		[Орел] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(Орел)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/Orel.html" (* <-lang_ru;; *);;
+				*);;
+		<= nrel_using_constants:
+				...
+				(*
+					-> country_Russia;
+						city;;
+					
+				*);;
+		*);;
+
+
+
+
+Konstantinovo
+
+<- literary_location;
+	<- continent_Europe;
+	<- country_Russia;
+	=> nrel_main_idtf: 
+		[Константиново] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(Константиново)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/Konstantinovo.html" (* <-lang_ru;; *);;
+				*);;
+		<= nrel_using_constants:
+				...
+				(*
+					-> country_Russia;
+Ryazan_province;
+						village;;
+					
+				*);;
+		*);;
+
+
+
+Ryazan_province
+<- literary_location;
+	<- continent_Europe;
+	<- continent_Asia;
+	<- country_Russian_empire;
+	=> nrel_main_idtf: 
+		[Рязанская губерния] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(Рязанская губерния)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/Ryazan_province.html" (* <-lang_ru;; *);;
+				*);;
+		<= nrel_using_constants:
+				...
+				(*
+					-> country_Russian_empire;
+						administrative_unit;;
+					
+				*);;
+		*);;
+
+village
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[деревня] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[село] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(деревня)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/village.html" (* <-lang_ru;; *);;
+				*);;
+			
+		*);;
+
+
+administrative_unit
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[административная единица] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(административная единица)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/administrative_unit.html" (* <-lang_ru;; *);;
+				*);;
+			
+		*);;

@@ -6,23 +6,53 @@ subject_domain_of_books
 <- not_enough_formed_structure;
 
 <= nrel_section_decomposition:
-	{
-	section_subject_domain_of_history_of_literature
-		(*
-			=> nrel_section_base_order: 
-					section_belarussian_literary_movements;;
-		*);
-		section_belarussian_literary_movements
-		(*
-			=> nrel_section_base_order: 
-					section_literary_movements;;
-		*);
-		section_literary_movements
-		(*
-			=> nrel_section_base_order: 
-					subject_domain_of_authors_of_literature;;
-		*);
-		
-		subject_domain_of_theory_of_literature;
-		subject_domain_of_authors_of_literature
-	};;
+{
+section_of_history_of_literature
+(*
+=> nrel_section_base_order:
+section_literary_movements;;
+*);
+section_literary_movements
+(*
+=> nrel_section_base_order:
+section_of_authors_of_literature;;
+*);
+section_of_authors_of_literature
+(*
+=> nrel_section_base_order:
+section_of_theory_of_literature;;
+*);
+section_of_theory_of_literature
+(*
+=> nrel_section_base_order:
+section_of_publishing_houses;;
+*);
+section_of_publishing_houses
+(*
+=> nrel_section_base_order:
+section_of_journals;;
+*);
+section_of_journals
+(*
+=> nrel_section_base_order:
+section_of_literary_locations;;
+*);
+section_of_literary_locations
+(*
+=> nrel_section_base_order:
+section_literary_events;;
+*);
+section_literary_events
+(*
+=> nrel_section_base_order:
+section_role_of_lit_person;;
+*);
+section_role_of_lit_person
+(*
+=> nrel_section_base_order:
+section_belarussian_literary_movements;;
+*);
+section_belarussian_literary_movements
+
+
+};;

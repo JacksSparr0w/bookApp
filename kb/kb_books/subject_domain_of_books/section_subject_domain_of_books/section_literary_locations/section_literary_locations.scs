@@ -2,7 +2,10 @@ section_literary_locations
 	=> nrel_main_idtf:
 		[Раздел. Литературные локации]
 			(* <- lang_ru;; *);;
-	
+	<= nrel_section_decomposition:
+{
+section_of_educational_institution
+};;
 section_literary_locations =  [*^"file://section_literary_locations.scsi"*];;
 
 section_literary_locations
@@ -51,6 +54,20 @@ section_literary_locations
 		Beijing;
 		Havana;
 		Amsterdam;
+
+
+		Bagdati;
+		Kutaisi;
+		Nemirov;
+		Podolsk_province;
+		Yaroslavl_province;
+		Orel;
+		Konstantinovo;
+		Ryazan_province;
+		administrative_unit;
+		village;
+
+		Russian_social_democratic_labor_party;
 
 		Paris;
 		Yekaterinburg;

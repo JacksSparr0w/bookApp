@@ -1,0 +1,30 @@
+section_of_publishing_houses
+=> nrel_main_idtf:
+[Раздел. Литературные издательства]
+(* <- lang_ru;; *);;
+
+section_of_publishing_houses = [*^"file://pb.scsi"*];;
+
+section_of_publishing_houses
+-> rrel_key_sc_element: 
+publishing_house_Aversav;
+publishing_house_Zvyazda;
+Publishing_house_of_BSU;
+publishing_house_Belarus;
+publishing_house_White_wind;
+publishing_house_Kavaler;
+publishing_house_Unipress;
+publishing_house_Trivium;
+publishing_house_Quadrograph;
+publishing_house_Literature_and_art;
+publishing_house_Folk_asvet;
+publishing_house_EXMO;
+publishing_house_Alph_book;
+publishing_house_Centerpolygraph;
+publishing_house_AST;
+publishing_house_Zakharov;
+publishing_house_Evening;
+publishing_house_Algorithm;
+publishing_house_ROSMEN;
+nrel_edition;
+nrel_origin;;

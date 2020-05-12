@@ -1,0 +1,16 @@
+section_of_Old_Russian_literarature_classification
+=> nrel_main_idtf:
+	[Раздел. Периодизация Древнерусской литературы]
+		(* <- lang_ru;; *);;
+
+section_of_Old_Russian_literarature_classification =  [*^"file://section_of_Old_Russian_literarature_classification.scsi"*];;
+
+section_of_Old_Russian_literarature_classification
+-> rrel_key_sc_element: 
+Pre_Mongol_period_literature;
+Kiev_period_literature;
+Russian_principalities_period_literature;
+Moscow_period_literature;
+Literature_of_the_era_of_Orda_Iga;
+Literature_of_the_Russian_state;
+Transitional_literature;;

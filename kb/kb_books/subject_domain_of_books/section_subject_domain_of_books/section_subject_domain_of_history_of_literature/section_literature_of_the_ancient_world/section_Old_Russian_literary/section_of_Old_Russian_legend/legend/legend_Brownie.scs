@@ -1,0 +1,106 @@
+legend_Brownie
+    => nrel_main_idtf:
+        ["Домовой"]
+            (* <- lang_ru;; *);
+    <- genre_legend;
+    <= nrel_original_language:
+        lang_ru;;
+
+legend_Brownie
+    <= nrel_characters:
+        .legend_Brownie_characters
+        (*
+            -> rrel_main_character:
+                    char_Brownie;
+char_girl;;
+		
+                                    -> char_moon;
+char_chimney;
+char_gate;;
+                   *);;
+
+ char_Brownie
+        => nrel_main_idtf: 
+            [Домовой] (* <-lang_ru;; *);
+        <- lit_person;
+	 <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Домовой)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_Brownie.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_girl
+  => nrel_main_idtf: 
+            [Девушка] (* <-lang_ru;; *);
+        <- lit_person;;
+
+char_moon
+  => nrel_main_idtf: 
+            [Месяц] (* <-lang_ru;; *);
+        <- lit_person;;
+
+char_chimney
+ => nrel_main_idtf: 
+            [Печная труба] (* <-lang_ru;; *);
+        <- lit_person;;
+
+char_gate
+  => nrel_main_idtf: 
+            [Ворота] (* <-lang_ru;; *);
+        <- lit_person;;
+
+
+legend_Brownie=> nrel_plot: 
+    .legend_Brownie_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Домовой"] (* <-lang_ru;; *);;
+       
+        -> .legend_Brownie_event_1
+            (*
+                => nrel_main_idtf: [Событие №1.  Поиск Башмака] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Brownie_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_dialog;;
+                    <= nrel_participants:... 
+                    (*
+                        ->   char_girl;
+					char_moon;
+char_chimney;
+char_gate;;
+                                  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .legend_Brownie_event_2;;      
+            *);;
+
+        -> .legend_Brownie_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Шалости Домового] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Brownie_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_mischief;;
+				<- event_dialog;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Brownie;
+char_girl;;
+                                     
+                    *);;         
+  
+            *);;    
+
+        
+    *);;

@@ -1,0 +1,153 @@
+legend_Vodyanoy
+    => nrel_main_idtf:
+        ["Водяной"]
+            (* <- lang_ru;; *);
+    <- genre_legend;
+    <= nrel_original_language:
+        lang_ru;;
+
+
+legend_Vodyanoy
+    <= nrel_characters:
+        .legend_Vodyanoy_characters
+        (*
+            -> rrel_main_character:
+                    char_Vodyanoy;
+                    char_little_boy;
+                    char_grandfather;;
+                   *);;
+
+
+ char_Vodyanoy
+        => nrel_main_idtf: 
+            [Водяной] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Водяной)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/vod.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+
+char_little_boy
+        => nrel_main_idtf: 
+            [Мальчик] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мальчик)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_little_boy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_grandfather
+        => nrel_main_idtf: 
+            [Дедушка] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Дедушка)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content_htmls/characters/char_grandfather.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+
+
+legend_Vodyanoy=> nrel_plot: 
+    .legend_Vodyanoy_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Водяной"] (* <-lang_ru;; *);;
+        -> .legend_Vodyanoy_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Разговор Дедушки и Мальчика] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Vodyanoy_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_dialog;;
+                    <= nrel_participants:... 
+                    (*
+                        ->    char_little_boy;
+                    char_grandfather;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .legend_Vodyanoy_event_2;;      
+            *);;
+
+        -> .legend_Vodyanoy_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Мальчик идет на рыбалку] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Vodyanoy_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_fishing;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_little_boy;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .legend_Vodyanoy_event_3;;      
+            *);;
+
+        -> .legend_Vodyanoy_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Попытка Водяного убить мальчика] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Vodyanoy_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_attempted_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Vodyanoy;
+                    char_little_boy;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .legend_Vodyanoy_event_4;;      
+            *);;    
+
+        -> .legend_Vodyanoy_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Спасение Мальчика] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content_htmls/events/legend_Vodyanoy_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_rescue;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_little_boy;;
+                    *);;               
+            *);;  
+
+      
+    *);;

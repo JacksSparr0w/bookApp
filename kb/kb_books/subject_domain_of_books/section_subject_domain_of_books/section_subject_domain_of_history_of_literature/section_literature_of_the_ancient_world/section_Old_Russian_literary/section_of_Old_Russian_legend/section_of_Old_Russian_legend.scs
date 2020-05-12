@@ -1,0 +1,17 @@
+section_of_Old_Russian_legend
+=> nrel_main_idtf:
+	[Раздел. Древнерусские легенды и былины]
+		(* <- lang_ru;; *);;
+
+section_of_Old_Russian_legend
+-> rrel_key_sc_element: 
+legend_Vodyanoy;
+legend_Bannik;
+legend_Firebird;
+legend_Kikimorka;
+legend_Brownie;
+legend_Lesovik;
+legend_Mermaid;
+legend_Goblin;
+legend_Yarilo;
+legend_Perun;;

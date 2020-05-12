@@ -18,6 +18,11 @@ subject_domain_of_authors_of_literature
 			section_russian_authors;;
 		*);
 		section_russian_authors
+(*
+		=> nrel_section_base_order: 
+			section_of_authors_biography;;
+		*);
+section_of_authors_biography
 	};;
 
 subject_domain_of_authors_of_literature =  [*^"file://section_authors_of_literature.scsi"*];;

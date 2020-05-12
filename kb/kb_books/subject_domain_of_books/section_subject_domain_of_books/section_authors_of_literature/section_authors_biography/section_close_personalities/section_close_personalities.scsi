@@ -1,0 +1,1262 @@
+Yesenin_Alexander_Nikitich
+<- rrel_father:
+person_Yesenin_Sergei_Alexandrovich;
+<- sc_node_not_relation;
+<- person;
+	=> nrel_main_idtf: 
+		[Есенин Александр Никитич] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Есенин Александр Никитич)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Yesenin_Alexander_Nikitich.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+Yesenin_Alexander_Nikitich
+-> nrel_date_of_birth:
+year_1873;
+-> nrel_date_of_death:
+year_1931;;
+
+
+Titova_Tatyana_Fedorovna
+<- rrel_mother:
+person_Yesenin_Sergei_Alexandrovich;
+<- sc_node_not_relation;
+<- person;
+	=> nrel_main_idtf: 
+		[Титова Татьяна Фёдоровна] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Титова Татьяна Фёдоровна)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Titova_Tatyana_Fedorovna.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+Titova_Tatyana_Fedorovna
+-> nrel_date_of_birth:
+year_1875;
+-> nrel_date_of_death:
+year_1955;;
+
+
+
+Yesenina_Catherine
+<- rrel_sister:
+person_Yesenin_Sergei_Alexandrovich;
+<- sc_node_not_relation;
+<- person;
+	=> nrel_main_idtf: 
+		[Есенина Екатерина] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Есенина Екатерина)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Yesenina_Catherine.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+Yesenina_Catherine
+-> nrel_date_of_birth:
+year_1905;
+-> nrel_date_of_death:
+year_1977;;
+
+
+Yesenina_Alexandra
+<- rrel_sister:
+person_Yesenin_Sergei_Alexandrovich;
+<- sc_node_not_relation;
+<- person;
+	=> nrel_main_idtf: 
+		[Есенина Александра] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Есенина Александра)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Yesenina_Alexandra.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+
+Yesenina_Alexandra
+-> nrel_date_of_birth:
+year_1911;
+-> nrel_date_of_death:
+year_1985;;
+
+Razgulyaev_Alexandr
+<- sc_node_not_relation;
+<- rrel_brother:
+person_Yesenin_Sergei_Alexandrovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Разгуляев Александр] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Разгуляев Александр)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Razgulyaev_Alexandr.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+
+Razgulyaev_Alexandr
+-> nrel_date_of_birth:
+year_1902;
+-> nrel_date_of_death:
+year_1961;;
+
+
+Yesenin_Uriy
+<- sc_node_not_relation;
+-> rrel_father:
+person_Yesenin_Sergei_Alexandrovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Есенин Юрий] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Есенин Юрий)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Yesenin_Uriy.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+
+Yesenin_Uriy
+-> nrel_date_of_birth:
+year_1914;
+-> nrel_date_of_death:
+year_1937;;
+
+
+Izryadnova_Anna_Romanovna
+<- sc_node_not_relation;
+<-rrel_wife:
+person_Yesenin_Sergei_Alexandrovich;
+-> rrel_mother:
+Yesenin_Uriy;
+<- person;
+	=> nrel_main_idtf: 
+		[Изряднова Анна Романовна] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Изряднова Анна Романовна)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Izryadnova_Anna_Romanovna.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+
+Izryadnova_Anna_Romanovna
+-> nrel_date_of_birth:
+year_1891;
+-> nrel_date_of_death:
+year_1946;;
+
+
+
+
+
+Tolstaya_Sofya_Andreevna
+<- sc_node_not_relation;
+<- rrel_wife:
+person_Yesenin_Sergei_Alexandrovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Толстая Софья Андреевна] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Толстая Софья Андреевна)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Tolstaya_Sofya_Andreevna.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+
+Tolstaya_Sofya_Andreevna
+-> nrel_date_of_birth:
+year_1900;
+-> nrel_date_of_death:
+year_1957;;
+
+
+
+Isadora_Duncan
+<- sc_node_not_relation;
+<- rrel_wife:
+person_Yesenin_Sergei_Alexandrovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Айседора Дункан] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Айседора Дункан)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Isadora_Duncan.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+
+Isadora_Duncan
+-> nrel_date_of_birth:
+year_1877;
+-> nrel_date_of_death:
+year_1927;;
+
+
+
+
+Catherine_Eiges
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Yesenin_Sergei_Alexandrovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Екатерина Эйгес] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Екатерина Эйгес)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Catherine_Eiges.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+
+Catherine_Eiges
+-> nrel_date_of_birth:
+year_1890;
+-> nrel_date_of_death:
+year_1958;;
+
+
+
+Pushkin_Sergey_Lvovich
+<- sc_node_not_relation;
+<- rrel_father:
+person_Pushkin_Aleksandr_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Пушкин Сергей Львович] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Пушкин Сергей Львович)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Pushkin_Sergey_Lvovich.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Pushkin_Aleksandr_Sergeevich;;
+				*);;
+			
+		*);;
+
+
+Pushkin_Sergey_Lvovich
+-> nrel_date_of_birth:
+year_1770;
+-> nrel_date_of_death:
+year_1848;;
+
+
+Nadezhda_Osipovna
+<- sc_node_not_relation;
+<- rrel_mother:
+person_Pushkin_Aleksandr_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Надежда Осиповна] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Надежда Осиповна)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Nadezhda_Osipovna.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Pushkin_Aleksandr_Sergeevich;;
+				*);;
+			
+		*);;
+
+
+Nadezhda_Osipovna
+-> nrel_date_of_birth:
+year_1775;
+-> nrel_date_of_death:
+year_1836;;
+
+
+
+Pushkin_Lev
+<- sc_node_not_relation;
+<- rrel_brother:
+person_Pushkin_Aleksandr_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Пушкин Лев] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Пушкин Лев)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Pushkin_Lev.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Pushkin_Aleksandr_Sergeevich;;
+				*);;
+			
+		*);;
+
+Pushkin_Lev
+-> nrel_date_of_birth:
+year_1805;
+-> nrel_date_of_death:
+year_1852;;
+
+
+
+
+Pushkina_Olga
+<- sc_node_not_relation;
+<- rrel_sister:
+person_Pushkin_Aleksandr_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Пушкина Ольга] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Пушкина Ольга)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Pushkina_Olga.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Pushkin_Aleksandr_Sergeevich;;
+				*);;
+			
+		*);;
+
+Pushkina_Olga
+-> nrel_date_of_birth:
+year_1798;
+-> nrel_date_of_death:
+year_1868;;
+
+
+
+Arina_Rodionovna
+<- sc_node_not_relation;
+<- rrel_nanny:
+person_Pushkin_Aleksandr_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Анна Радионовна] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Арина Радионовна)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Arina_Rodionovna.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Pushkin_Aleksandr_Sergeevich;;
+				*);;
+			
+		*);;
+
+Arina_Rodionovna
+-> nrel_date_of_birth:
+year_1758;
+-> nrel_date_of_death:
+year_1828;;
+
+
+
+Olga_Kalashnikova
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Pushkin_Aleksandr_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Ольга Калашникова] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Ольга Калашникова)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Olga_Kalashnikova.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Pushkin_Aleksandr_Sergeevich;;
+				*);;
+			
+		*);;
+
+Olga_Kalashnikova
+-> nrel_date_of_birth:
+year_1806;
+-> nrel_date_of_death:
+year_1840;;
+
+
+
+
+
+
+Dantes
+<- sc_node_not_relation;
+<- rrel_duel_partner:
+person_Pushkin_Aleksandr_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Дантес] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Дантес)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Dantes.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Pushkin_Aleksandr_Sergeevich;;
+				*);;
+			
+		*);;
+
+Dantes
+-> nrel_date_of_birth:
+year_1812;
+-> nrel_date_of_death:
+year_1895;;
+
+
+
+
+
+Goncharova_Natalya
+<- sc_node_not_relation;
+<- rrel_wife:
+person_Pushkin_Aleksandr_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Гончарова Наталья] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Гончарова Наталья)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Goncharova_Natalya.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Pushkin_Aleksandr_Sergeevich;;
+				*);;
+			
+		*);;
+
+Goncharova_Natalya
+-> nrel_date_of_birth:
+year_1812;
+-> nrel_date_of_death:
+year_1863;;
+
+
+Turgenev_Sergey_Nikolaevich
+<- sc_node_not_relation;
+<- rrel_father:
+person_Turgenev_Ivan_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Тургенев Сергей Николаевич] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Тургенев Сергей Николаевич)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Turgenev_Sergey.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Turgenev_Ivan_Sergeevich;;
+				*);;
+			
+		*);;
+
+Turgenev_Sergey_Nikolaevich
+-> nrel_date_of_birth:
+year_1793;
+-> nrel_date_of_death:
+year_1834;;
+
+
+Turgenev_Sergey
+<- sc_node_not_relation;
+<- rrel_brother:
+person_Turgenev_Ivan_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Тургенев Сергей] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Тургенев Сергей)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Turgenev_Sergey1.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Turgenev_Ivan_Sergeevich;;
+				*);;
+			
+		*);;
+
+
+
+
+Lutovinova_Varvara
+<- sc_node_not_relation;
+<- rrel_mother:
+person_Turgenev_Ivan_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Лутовинова Варвара] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Лутовинова Варвара)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Lutovinova_Varvara.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Turgenev_Ivan_Sergeevich;;
+				*);;
+			
+		*);;
+
+Lutovinova_Varvara
+-> nrel_date_of_birth:
+year_1787;
+-> nrel_date_of_death:
+year_1850;;
+
+
+
+
+Turgenev_Nikolay
+<- sc_node_not_relation;
+<- rrel_brother:
+person_Turgenev_Ivan_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Тургенев Николай] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Тургенев Николай)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Turgenev_Nikolay.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Turgenev_Ivan_Sergeevich;;
+				*);;
+			
+		*);;
+
+
+
+Shakhovskaya_Catherine
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Turgenev_Ivan_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Шаховская Екатерина] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Шаховская Екатерина)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Shakhovskaya_Catherine.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Turgenev_Ivan_Sergeevich;;
+				*);;
+			
+		*);;
+
+Shakhovskaya_Catherine
+-> nrel_date_of_birth:
+year_1815;
+-> nrel_date_of_death:
+year_1836;;
+
+
+Maria_Nikolaevna_Tolstaya
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Turgenev_Ivan_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Толстая Мария Николаевна] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Толстая Мария Николаевна)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Maria_Nikolaevna_Tolstaya.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Turgenev_Ivan_Sergeevich;;
+				-> person_Tolstoy_Lev_Nikolaevich;;
+				*);;
+			
+		*);;
+
+Maria_Nikolaevna_Tolstaya
+-> nrel_date_of_birth:
+year_1830;
+-> nrel_date_of_death:
+year_1912;;
+
+
+Pauline_Viardot
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Turgenev_Ivan_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Полина Виардо] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Полина Виардо)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Pauline_Viardot.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Turgenev_Ivan_Sergeevich;;
+								*);;
+			
+		*);;
+
+Pauline_Viardot
+-> nrel_date_of_birth:
+year_1821;
+-> nrel_date_of_death:
+year_1910;;
+
+
+Savina_Maria
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Turgenev_Ivan_Sergeevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Савина Мария] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Савина Мария)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Savina_Maria.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Turgenev_Ivan_Sergeevich;;
+								*);;
+			
+		*);;
+
+Savina_Maria
+-> nrel_date_of_birth:
+year_1821;
+-> nrel_date_of_death:
+year_1910;;
+
+
+
+
+
+
+Nekrasov_Alexey_Sergeevich
+<- sc_node_not_relation;
+<- rrel_father:
+person_Nekrasov_Nikolay_Alexeyevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Некрасов Алексей Сергеевич] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Некрасов Алексей Сергеевич)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Nekrasov_Alexey_Sergeevich.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Nekrasov_Nikolay_Alexeyevich;;
+								*);;
+			
+		*);;
+
+Nekrasov_Alexey_Sergeevich
+-> nrel_date_of_birth:
+year_1788;
+-> nrel_date_of_death:
+year_1862;;
+
+
+
+Zakrevskaya_Elena_Andreevna
+<- sc_node_not_relation;
+<- rrel_mother:
+person_Nekrasov_Nikolay_Alexeyevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Закревская Елена Андреевна] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Закревская Елена Андреевна)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Zakrevskaya_Elena_Andreevna.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Nekrasov_Nikolay_Alexeyevich;;
+								*);;
+			
+		*);;
+
+Zakrevskaya_Elena_Andreevna
+-> nrel_date_of_birth:
+year_1803;
+-> nrel_date_of_death:
+year_1841;;
+
+
+
+Avdotya_Panaeva
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Nekrasov_Nikolay_Alexeyevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Авдотья Панаева] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Авдотья Панаева)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Avdotya_Panaeva.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Nekrasov_Nikolay_Alexeyevich;;
+								*);;
+			
+		*);;
+
+Avdotya_Panaeva
+-> nrel_date_of_birth:
+year_1820;
+-> nrel_date_of_death:
+year_1893;;
+
+
+Viktorova_Fekla_Anisimovna
+<- sc_node_not_relation;
+<- rrel_wife:
+person_Nekrasov_Nikolay_Alexeyevich;
+<- person;
+	=> nrel_main_idtf: 
+		[Викторова Фёкла Анисимовна] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Викторова Фёкла Анисимовна)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Viktorova_Fekla_Anisimovna.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Nekrasov_Nikolay_Alexeyevich;;
+								*);;
+			
+		*);;
+
+
+
+Mayakovsky_Vladimir_Konstantinovich
+<- sc_node_not_relation;
+<- rrel_father:
+person_Mayakovsky_Vladimir_Vladimirovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Маяковский Владимир Константинович] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Маяковский Владимир Константинович)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Mayakovsky_Vladimir_Konstantinovich.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> perperson_Mayakovsky_Vladimir_Vladimirovich;;
+								*);;
+			
+		*);;
+
+Mayakovsky_Vladimir_Konstantinovich
+-> nrel_date_of_birth:
+year_1857;
+-> nrel_date_of_death:
+year_1906;;
+
+Mayakovskaya_Alexandra_Alekseevna
+<- sc_node_not_relation;
+<- rrel_mother:
+person_Mayakovsky_Vladimir_Vladimirovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Маяковская Александра Алексеевна] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Маяковская Александра Алексеевна)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Mayakovskaya_Alexandra_Alekseevna.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> perperson_Mayakovsky_Vladimir_Vladimirovich;;
+								*);;
+			
+		*);;
+
+Mayakovskaya_Alexandra_Alekseevna
+-> nrel_date_of_birth:
+year_1867;
+-> nrel_date_of_death:
+year_1954;;
+
+
+Lily_Brick
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Mayakovsky_Vladimir_Vladimirovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Лиля Брик] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Лиля Брик)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Lily_Brick.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> perperson_Mayakovsky_Vladimir_Vladimirovich;;
+								*);;
+			
+		*);;
+
+Lily_Lavinskaya
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Mayakovsky_Vladimir_Vladimirovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Лиля Лавинская] 
+			(* <-lang_ru;; *);;
+
+Ellie_Jones
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Mayakovsky_Vladimir_Vladimirovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Элли Джонс] 
+			(* <-lang_ru;; *);;
+Sophia_Shamardina
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Mayakovsky_Vladimir_Vladimirovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Софья Шамардина] 
+			(* <-lang_ru;; *);;
+Natalya_Bryukhanenko
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Mayakovsky_Vladimir_Vladimirovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Наталья Бруханенко] 
+			(* <-lang_ru;; *);;
+Tatyana_Yakovleva
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Mayakovsky_Vladimir_Vladimirovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Татьяна Яковлева] 
+			(* <-lang_ru;; *);;
+Veronika_Polonskaya
+<- sc_node_not_relation;
+<- rrel_beloved:
+person_Mayakovsky_Vladimir_Vladimirovich;
+<- person;
+	=> nrel_main_idtf: 
+		[Вероника Полонская] 
+			(* <-lang_ru;; *);;
+
+
+rrel_duel_partner
+<- sc_node_role_relation;
+	=> nrel_main_idtf: 
+		[партнер по дуэли'] 
+			(* <-lang_ru;; *);;
+
+
+
+
+
+rrel_nanny
+<- sc_node_role_relation;
+	=> nrel_main_idtf: 
+		[няня'] 
+			(* <-lang_ru;; *);;
+
+
+
+rrel_beloved
+<- sc_node_role_relation;
+	=> nrel_main_idtf: 
+		[возлюбленная'] 
+			(* <-lang_ru;; *);;
+
+
+
+
+rrel_wife
+<- sc_node_role_relation;
+	=> nrel_main_idtf: 
+		[жена'] 
+			(* <-lang_ru;; *);;
+
+
+
+rrel_mother
+<- sc_node_role_relation;
+	=> nrel_main_idtf: 
+		[мать'] 
+			(* <-lang_ru;; *);;
+
+rrel_father
+<- sc_node_role_relation;
+	=> nrel_main_idtf: 
+		[отец'] 
+			(* <-lang_ru;; *);;
+
+rrel_sister
+<- sc_node_role_relation;
+	=> nrel_main_idtf: 
+		[сестра'] 
+			(* <-lang_ru;; *);;
+
+rrel_brother
+<- sc_node_role_relation;
+	=> nrel_main_idtf: 
+		[брат'] 
+			(* <-lang_ru;; *);;
+
+nrel_editor
+<- sc_node_norole_relation;
+	=> nrel_main_idtf: 
+		[редактор*] 
+			(* <-lang_ru;; *);;
+
+nrel_publication
+<- sc_node_norole_relation;
+	=> nrel_main_idtf: 
+		[публикация*] 
+			(* <-lang_ru;; *);;
+
+
