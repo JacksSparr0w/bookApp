@@ -1,0 +1,41 @@
+book_Carrie
+    => nrel_main_idtf:
+        ["Кэрри"]
+            (* <- lang_ru;; *);
+    <- concept_book;
+    => nrel_author:
+        person_Stephen_Edwin_King;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1974;;
+book_Carrie
+    <= nrel_characters:
+        .book_Carrie_characters
+        (*
+            -> rrel_main_character:
+                    char_Margaret_Brigham;
+                    char_Raulf_White;
+                    char_Carrie;;
+        *);;
+
+char_Margaret_Brigham
+        => nrel_main_idtf: 
+            [Маргарет Бригхэм] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;;
+
+char_Raulf_White
+        => nrel_main_idtf: 
+            [Ральф Уайт] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;;
+
+char_Carrie
+        => nrel_main_idtf: 
+            [Кэрри] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;;

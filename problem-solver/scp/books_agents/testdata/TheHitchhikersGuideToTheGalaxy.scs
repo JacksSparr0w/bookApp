@@ -1,0 +1,41 @@
+book_The_Hitchhikers_Guide_To_The_Galaxy
+    => nrel_main_idtf:
+        ["Автостопом по Галактике"]
+            (* <- lang_ru;; *);
+    <- concept_book;
+    => nrel_author:
+        person_Douglas_Adams;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1979;;
+book_The_Hitchhikers_Guide_To_The_Galaxy
+    <= nrel_characters:
+        .book_The_Hitchhikers_Guide_To_The_Galaxy_characters
+        (*
+            -> rrel_main_character:
+                    char_Arthur_Dent;
+                    char_Thrillian;
+                    char_Robot_Marvin;;
+        *);;
+
+char_Arthur_Dent
+        => nrel_main_idtf: 
+            [Артур Дент] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;;
+
+char_Thrillian
+        => nrel_main_idtf: 
+            [Триллиан] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;;
+
+char_Robot_Marvin
+        => nrel_main_idtf: 
+            [Робот Марвин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;;

@@ -1,0 +1,33 @@
+book_Dandelion_Wine
+    => nrel_main_idtf:
+        ["Вино из одуванчиков"]
+            (* <- lang_ru;; *);
+    <- concept_book;
+    => nrel_author:
+        person_Ray_Douglas_Bradbury;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1957;;
+book_Dandelion_Wine
+    <= nrel_characters:
+        .book_Dandelion_Wine_characters
+        (*
+            -> rrel_main_character:
+                    char_Douglas_Spolding;
+                    char_Tom_Spolding;;	
+        *);;
+
+char_Douglas_Spolding
+        => nrel_main_idtf: 
+            [Дуглас Сполдинг] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;;
+
+char_Tom_Spolding
+        => nrel_main_idtf: 
+            [Том Сполдинг] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;;

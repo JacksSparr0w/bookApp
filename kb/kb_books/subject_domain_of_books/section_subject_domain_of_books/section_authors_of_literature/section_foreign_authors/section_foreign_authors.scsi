@@ -43,6 +43,49 @@ person_Arthur_Conan_Doyle
             -> concept_historical_novel;;
         *);;
 
+person_Douglas_Adams
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Дуглас Адамс]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_11_03_1952
+            (*
+                => nrel_main_idtf:
+                    [11 марта 1952 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_date_of_death:
+        date_11_05_2001
+            (*
+                => nrel_main_idtf:
+                    [11 мая 2001 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_USA;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_fantasy;;
+	    -> concept_comedy;;
+            -> genre_satire;;
+        *);;
 
 person_Chuck_Palahniuk
     <- person;
