@@ -1,0 +1,5 @@
+*.scs -> copy ->ostis/kb
+gruntfile.js -> copy -> ostis/sc-web (replace)
+components.html -> copy ->ostis/sc-web/client/templates (replace)
+
+../find_best_book -> copy -> ostis/sc-web/components (add new)

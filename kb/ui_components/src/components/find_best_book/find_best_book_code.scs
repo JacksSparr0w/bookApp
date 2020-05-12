@@ -1,0 +1,5 @@
+best_book
+=> nrel_main_idtf: 
+	[Лучшие книги] (* <-lang_ru;; *) ;
+	[Best books] (* <-lang_en;; *) ;
+ <- ui_external_languages;;

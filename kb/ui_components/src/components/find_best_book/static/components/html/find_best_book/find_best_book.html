@@ -1,0 +1,33 @@
+	<div class="panel-primary">
+		<style type="text/css">
+		   .block { 
+		    margin: 1rem;
+		   }
+  		</style>
+
+		<div class="form-group block" style="width: 50%">
+				<h4 id="title">Поиск лучшей книги по автору и жанру</h2>
+			<div class="block">
+				<input type="text" id="author" class="form-control" placeholder="Автор" aria-label="Username" aria-describedby="basic-addon1" list="authorList">
+				<datalist id="authorList">
+				</datalist> 
+			</div>
+			
+			<div class="block">
+				<input type="text" id="genre" class="form-control" placeholder="Жанр" aria-label="Username" aria-describedby="basic-addon1" list="genreList">
+				<datalist id="genreList">
+				</datalist> 
+			</div>
+			
+			  	
+			<div class="block">
+				<text id="labelProcessing" type="text"></text>
+				<div class="block" id="results">
+					 <span id="labelAnswer" type="text">Результат:</span>
+					 <br>
+				</div>
+			</div>
+				<button id="buttonFind" type="button" class="btn btn-success">Найти</button>
+		</div>	
+			
+</div>

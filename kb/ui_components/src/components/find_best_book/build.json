@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/example2-common.js",
+        "src/example2-paintPanel.js"
+    ],
+
+    "component": "src/example2-component.js",
+
+    "target": "static/components/js/example2/example2.js"
+}

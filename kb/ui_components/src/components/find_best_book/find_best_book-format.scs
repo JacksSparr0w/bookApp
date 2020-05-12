@@ -1,0 +1,15 @@
+best_book_format
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf: 
+	[формат компонента ПИ лучших книг] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[format of UI component best books] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;
