@@ -1,0 +1,27 @@
+section_of_literary_genres
+	=> nrel_main_idtf:
+		[Раздел. Литературные жанры ]
+			(* <- lang_ru;; *);;
+
+	 section_of_literary_genres =  [*^"file://section_of_literary_genres.scsi"*];;
+
+section_of_literary_genres
+	-> rrel_key_sc_element:	
+		nrel_genre_work;
+		genre_biography;
+		genre_article;
+		genre_dystopia;
+		genre_feuilleton;
+		genre_miniature;
+		genre_speculative_fiction;
+		genre_horror;
+		genre_play;
+		genre_docudrama;
+		genre_romantic_prose;
+		genre_fantasy;
+		genre_thriller;
+		genre_gotic;
+		genre_postapokalipsis;
+		genre_science_fiction;
+		genre_military;
+		genre_criminal_prose;;
