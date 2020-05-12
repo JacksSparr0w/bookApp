@@ -1,0 +1,65 @@
+to_my_nanny
+    => nrel_main_idtf:
+        ["Няне"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+        person_Pushkin_Aleksandr_Sergeevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_maternal_love;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1837;;
+
+
+to_my_nanny
+    <= nrel_characters:
+        ...
+        (*
+            -> rrel_main_character:
+                    char_nanny;;
+        *);;
+
+
+char_nanny
+        => nrel_main_idtf: 
+            [Няня] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(няня)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_nanny.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+to_my_nanny => nrel_text:
+    .to_my_nanny
+    (*
+                => nrel_main_idtf: [Текст. "Няне"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/to_my_nanny.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                         ->  char_nanny;;
+                    *);;
+     
+   *);;
+
+ 

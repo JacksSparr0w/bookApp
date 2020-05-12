@@ -1,0 +1,36 @@
+listen
+    => nrel_main_idtf:
+        ["Послушайте!"]
+            (* <- lang_ru;; *);
+
+    <- elegy;
+    => nrel_author:
+    person_Mayakovsky_Vladimir_Vladimirovich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_meaning_of_life;
+        problem_of_art_power;
+    => 	nrel_foot:
+        free_verse;
+    => nrel_publication_date:
+        year_1914;;
+
+
+
+listen => nrel_text:
+    .listen_text
+    (*
+                => nrel_main_idtf: [Текст. "Послушайте!"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/listen.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_revelation;;
+     
+   *);;
+
+ 

@@ -1,0 +1,77 @@
+saint
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+ 	    [святой]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Святой)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+        	    lit_person
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "saint">Святой</sc_element> - <sc_element sys_idtf = "lit_person">личность</sc_element>, особенно чтимая в различных религиях за святость, благочестие, праведность, стойкое исповедание веры, в теистических религиях — за ходатайство перед Богом за людей.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Святой)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Понятие <sc_element sys_idtf = "saint">"святой"</sc_element> используется не только для определения представителя Бога, но и в других религиях, в частности, для выражения высокой степени духовного совершенства аскетов и монахов. .](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+
+
+nrel_chronicler
+=> nrel_main_idtf:
+	[летописец*]
+	(* <- lang_ru;;	*);
+        [chronicler*]
+        (* <- lang_en;;*);;
+
+
+nrel_chronicler
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_chronicler
+=> nrel_first_domain: person;
+=> nrel_second_domain: chronicle;
+=>nrel_definitional_domain:...
+(*
+    <= nrel_combination:...
+       (* -> person ; chronicle;; *);;
+*);;
+
+nrel_chronicler 
+<- rrel_key_sc_element:...
+(*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Опр.(Летописец*)](* <-lang_ru;;*);;
+            => nrel_using_constants: {
+        	    chronicle;
+  	            literary_event
+            };;
+	<=nrel_sc_text_translation:...
+	(*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "nrel_chronicler">Летописец</sc_element> - составитель <sc_element sys_idtf = "chronicle">летописи</sc_element>, ведёт регулярное описание каких-либо <sc_element sys_idtf = "literary_event">событий</sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+		
+	*);;
+*);;
+
+

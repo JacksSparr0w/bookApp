@@ -1,0 +1,12 @@
+section_poetry_of_romantism
+	=> nrel_main_idtf:
+		[Раздел. Поэзия романтизма]
+		(* <- lang_ru;; *);
+
+	-> rrel_key_sc_element:
+		the_weaver_women_of_slucak;
+		raven;
+		swan_pike_and_crawfish;
+                cant_understand_russia;
+		spring_thunder;
+		venus_the_star;;

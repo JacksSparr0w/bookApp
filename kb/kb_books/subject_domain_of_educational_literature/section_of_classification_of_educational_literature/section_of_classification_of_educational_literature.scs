@@ -1,0 +1,15 @@
+section_of_classification_of_educational_literature
+	=> nrel_main_idtf:
+		[Раздел. Классификация учебной литературы]
+			(* <- lang_ru;; *);;
+	
+section_of_classification_of_educational_literature =  [*^"file://section_of_classification_of_educational_literature.scsi"*];;
+
+section_of_classification_of_educational_literature	
+    -> rrel_key_sc_element:	
+        toolkit;
+        textbook;
+        teaching_aid;
+        chrestomathy;
+	tutorial;
+        educational_literature;;

@@ -1,0 +1,85 @@
+shagane
+    => nrel_main_idtf:
+        ["Шаганэ"]
+            (* <- lang_ru;; *);
+
+    <- elegy;
+    => nrel_author:
+        person_Yesenin_Sergei_Alexandrovich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        series;
+    => nrel_literature_problem:
+        problem_of_love;
+    => 	nrel_foot:
+        anapaest;
+    => nrel_publication_date:
+        year_1924;;
+
+
+shagane
+    <= nrel_characters:
+        ...
+        (*
+            -> rrel_main_character:
+                    char_shagane;
+		    char_northern_girl;;
+        *);;
+
+
+char_shagane
+        => nrel_main_idtf: 
+            [Шаганэ Тальян] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Шаганэ Тальян)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_shagane.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_northern_girl
+        => nrel_main_idtf: 
+            [Девушка с севера] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Девушка с севера)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_northern_girl.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+shagane => nrel_text:
+    .shagane
+    (*
+                => nrel_main_idtf: [Текст. "Шаганэ"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/shagane.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                         ->  char_shagane;;
+                         ->  char_northern_girl;;
+                    *);;
+     
+   *);;
+
+ 

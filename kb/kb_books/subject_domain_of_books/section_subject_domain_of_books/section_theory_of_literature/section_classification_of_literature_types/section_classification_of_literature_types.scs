@@ -1,0 +1,31 @@
+section_classification_of_literature_types
+	=> nrel_main_idtf:
+		[Раздел. Литературные типы]
+			(* <- lang_ru;; *);;
+
+	 section_classification_of_literature_types =  [*^"file://section_classification_of_literature_types.scsi"*];;
+
+section_classification_of_literature_types
+	-> rrel_key_sc_element:	
+			byronic_hero;
+			superfluous_man;
+			little_man;
+			new_man;
+			lowlife;
+			despot;
+			resoner;
+			mad_doctor;
+			outlaw;
+			damsel_in_distress;
+			turgenev_girl;
+			balzac_woman;
+			pushkin_beauty;
+			milk_and_water_girl;
+			nekrasov_woman;
+			mary_sue;
+			prince_charming;
+			wise_old_man;
+			antihero;
+			tragic_hero;
+			romantic_hero;
+			nrel_literature_type;;

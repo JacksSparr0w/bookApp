@@ -1,0 +1,63 @@
+spring_thunder
+    => nrel_main_idtf:
+        ["Весенняя гроза"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Tyutchev_Fyodor_Ivanovich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_nature_and_human;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1854;;
+
+
+spring_thunder
+    <= nrel_characters:
+        .spring_thunder
+        (*
+            -> rrel_main_character:
+                    char_thunder;;
+        *);;
+
+
+char_thunder
+        => nrel_main_idtf: 
+            [гроза] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(гроза)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_thunder.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+spring_thunder => nrel_text:
+    .spring_thunder_text
+    (*
+                => nrel_main_idtf: [Текст. "Весенняя гроза"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/spring_thunder.html" (* <-lang_ru;;*);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_thunder;;
+                    *);;
+     
+   *);;
+
+ 

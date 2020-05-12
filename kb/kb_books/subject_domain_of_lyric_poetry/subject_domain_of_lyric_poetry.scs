@@ -1,0 +1,28 @@
+subject_domain_of_lyric_poetry
+=> nrel_main_idtf:
+	[Предметная область лирических произведений]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition:
+	{
+	section_classification_of_foots
+		(*
+			=> nrel_section_base_order: 
+					section_classification_of_lyric_poetry;;
+		*);
+		section_classification_of_lyric_poetry
+		(*
+			=> nrel_section_base_order: 
+					section_classification_of_tropes;;
+		*);
+		section_classification_of_tropes
+		(*
+			=> nrel_section_base_order: 
+					section_lyric_poetry;;
+		*);
+		section_lyric_poetry
+
+
+	};;

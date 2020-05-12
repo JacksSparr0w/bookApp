@@ -1,0 +1,68 @@
+to_love_some_is_a_heavy_cross
+    => nrel_main_idtf:
+        ["Любить иных - тяжелый крест"]
+            (* <- lang_ru;; *);
+
+    <- elegy;
+    => nrel_author:
+    person_Pasternak_Boris_Leonidovich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collected_works;
+    => nrel_literature_problem:
+        problem_of_love;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1931;;
+
+
+to_love_some_is_a_heavy_cross
+    <= nrel_characters:
+        .to_love_someone_is_a_heavy_cross
+        (*
+            -> rrel_main_character:
+		    char_woman;;
+        *);;
+
+
+char_woman
+        => nrel_main_idtf: 
+            [женщина] (* <-lang_ru;; *);
+        <- lit_person;
+	<- female;
+	<- person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(женщина)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_woman.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+
+to_love_some_is_a_heavy_cross => nrel_text:
+    .to_love_some_is_a_heavy_cross_text
+    (*
+                => nrel_main_idtf: [Текст. "Любить иных - тяжелый крест"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/to_love_some_is_a_heavy_cross.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+		    <- event_attachment;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_woman;;
+                    *);;
+     
+   *);;
+
+ 

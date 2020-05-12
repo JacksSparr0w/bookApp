@@ -1,0 +1,67 @@
+once_during_an_ice_cold_winter_time
+    => nrel_main_idtf:
+        ["Мужичок с ноготок"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Nekrasov_Nikolay_Alexeyevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        monoedition;
+    => nrel_literature_problem:
+        problem_of_childhood_role;
+    => 	nrel_foot:
+        amphibrach;
+    => nrel_publication_date:
+        year_1861;;
+
+
+once_during_an_ice_cold_winter_time
+    <= nrel_characters:
+        .once_during_an_ice_cold_winter_time_characters
+        (*
+            -> rrel_main_character:
+                    char_boy;;
+        *);;
+
+
+char_boy
+        => nrel_main_idtf: 
+            [мальчик] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+    <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(мальчик)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_boy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+once_during_an_ice_cold_winter_time => nrel_text:
+    .once_during_an_ice_cold_winter_time_text
+    (*
+                => nrel_main_idtf: [Текст. "Мужичок с ноготок"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/once_during_an_ice_cold_winter_time.html" (* <-lang_ru;;*);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_meeting;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_boy;;
+                    *);;
+     
+   *);;
+
+ 

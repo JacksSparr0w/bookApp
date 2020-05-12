@@ -1,0 +1,31 @@
+section_classification_of_tropes
+	=> nrel_main_idtf:
+		[Раздел. Классификация тропов]
+			(* <- lang_ru;; *);;
+	
+section_classification_of_tropes =  [*^"file://section_classification_of_tropes.scsi"*];;
+
+section_classification_of_tropes
+	-> rrel_key_sc_element:	
+		litotes;
+                metaphor;
+		epithet;
+                parallelism;
+                allegory;
+                irony;
+                simile;
+                personification;
+		hyperbole;
+                circumlocution;
+                oxymoron;
+                reiteration;
+                parallel_structure;
+                inversion;
+                pathos;
+                euphemism;
+                synecdoche; 
+                dysphemism;
+                metonymy;
+                sarcasm;
+                pun;
+                trope;;

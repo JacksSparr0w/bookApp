@@ -1,0 +1,29 @@
+i_go_out_towards_the_road
+    => nrel_main_idtf:
+        ["Выхожу один я на дорогу…"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+        person_Lermontov_Mikhail_Yuryevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_meaning_of_life;
+    => 	nrel_foot:
+        choree;
+    => nrel_publication_date:
+        year_1843;;
+
+i_go_out_towards_the_road => nrel_text:
+    .i_go_out_towards_the_road
+    (*
+                => nrel_main_idtf: [Текст. "Выхожу один я на дорогу…"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/i_go_out_towards_the_road.html" (* <-lang_ru;; *);;
+                    *);;
+   *);;

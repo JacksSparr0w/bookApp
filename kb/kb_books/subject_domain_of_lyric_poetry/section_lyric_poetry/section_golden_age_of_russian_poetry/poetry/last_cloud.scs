@@ -1,0 +1,63 @@
+last_cloud
+    => nrel_main_idtf:
+        ["Последняя туча"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+        person_Pushkin_Aleksandr_Sergeevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_meaning_of_life;
+    => 	nrel_foot:
+        amphibrach;
+    => nrel_publication_date:
+        year_1835;;
+
+
+last_cloud
+    <= nrel_characters:
+        ...
+        (*
+            -> rrel_main_character:
+                    char_cloud;;
+        *);;
+
+
+char_cloud
+        => nrel_main_idtf: 
+            [туча] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(туча)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_cloud.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+last_cloud => nrel_text:
+    .last_cloud_text
+    (*
+                => nrel_main_idtf: [Текст. "Последняя туча"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/last_cloud.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrest;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_cloud;;
+                    *);;
+     
+   *);;
+ 

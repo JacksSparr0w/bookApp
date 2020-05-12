@@ -1,0 +1,35 @@
+and_could_you
+    => nrel_main_idtf:
+        ["А вы могли бы?"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Mayakovsky_Vladimir_Vladimirovich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        multiedition;
+    => nrel_literature_problem:
+        problem_of_art_and_human;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1913;;
+
+
+
+and_could_you => nrel_text:
+    .and_could_you_text
+    (*
+                => nrel_main_idtf: [Текст. "А вы могли бы?"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/and_could_you.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_revelation;;
+     
+   *);;
+
+ 

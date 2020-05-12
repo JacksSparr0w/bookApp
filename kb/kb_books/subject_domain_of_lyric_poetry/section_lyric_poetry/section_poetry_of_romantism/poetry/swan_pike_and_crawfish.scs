@@ -1,0 +1,103 @@
+swan_pike_and_crawfish
+    => nrel_main_idtf:
+        ["Лебедь, рак и щука"]
+            (* <- lang_ru;; *);
+
+    <- fable;
+    => nrel_author:
+    person_Krylov_Ivan_Andreyevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+	problem_of_friendship;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1814;;
+
+
+swan_pike_and_crawfish
+    <= nrel_characters:
+        .swan_pike_and_crawfish_characters
+        (*
+            -> rrel_main_character:
+		    char_swan;
+            char_pike;
+            char_crawfish;;
+        *);;
+
+
+char_swan
+        => nrel_main_idtf: 
+            [лебедь] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(лебедь)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_swan.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_pike
+        => nrel_main_idtf: 
+            [рак] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(рак)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_pike.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_crawfish
+        => nrel_main_idtf: 
+            [щука] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(щука)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_crawfish.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;            
+
+
+
+
+swan_pike_and_crawfish => nrel_text:
+    .swan_pike_and_crawfish_text
+    (*
+                => nrel_main_idtf: [Текст. "Лебедь, рак и щука"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/swan_pike_and_crawfish.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_performance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_crawfish;
+                            char_swan;
+                            char_pike;;
+                    *);;
+     
+   *);;
+
+ 

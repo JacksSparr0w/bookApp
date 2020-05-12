@@ -1,0 +1,305 @@
+nrel_primary_source
+    <-sc_node_norole_relation;
+    => nrel_main_idtf: 
+ 	    [исторический источник*]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Исторический источник*)] (* <- lang_ru;; *);; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "nrel_primary_source">Исторический источник</sc_element> — документ или предмет материальной культуры, непосредственно отразивший исторический процесс и запечатлевший отдельные факты и свершившиеся <sc_element sys_idtf = "literary_event">события</sc_element>, на основании которого воссоздается представление о той или иной исторической эпохе.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(исторический источник*)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Изучением <sc_element sys_idtf = "nrel_primary_source">исторических источников</sc_element> занимается источниковедение..](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+    <- quasybinary_relation;
+    <= nrel_first_domain:
+        literary_work;
+    <= nrel_second_domain:
+        ..second_domain_of_nrel_theses
+		(*
+			<- set;;
+			<= nrel_boolean: literary_work;;
+		*);
+	=>nrel_definitional_domain: 
+		...
+		(*
+			<= nrel_combination:
+				...
+				(*
+					-> literary_work;;
+					-> ..set_primary_sources;;
+				*);;
+		*);
+    => nrel_inclusion: 
+        oriented_relation;
+        nonbinary_relation;;
+
+
+
+
+sc_node_role_relation -> rrel_written_sources;;
+rrel_written_sources 
+	=> nrel_main_idtf:
+		[письменный исторический источник'] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		.definition_of_rrel_written_sources
+		(* 
+			<- definition;;
+			=> nrel_main_idtf:
+				[Опр.(письменный исторический источник')]
+					(* <- lang_ru;;	*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: 
+                        [<sc_element sys_idtf = "rrel_written_sources">Письменный исторический источник</sc_element> - любой документ или текст, существующие в письменной форме](*<-lang_ru;; => nrel_format: format_html;;*);;
+				*);;
+		*);
+	<= nrel_first_domain:
+        literary_work;
+    <= nrel_second_domain:
+        ..second_domain_of_rrel_introduction
+		(*
+			<- set;;
+			<= nrel_boolean: literary_work;;
+            <= nrel_definitional_domain: rrel_written_sources;;
+		*);
+	<- role_relation;;
+
+birch_bark_manuscriptsit
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+ 	    [берестяная грамота]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Берестяная грамота)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+        	    event_telegram
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "birch_bark_manuscriptsit">Берестяная грамота</sc_element> - <sc_element sys_idtf = "event_telegram">письмо</sc_element> или запись на коре берёзы, памятники письменности Древней Руси.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(берестяная грамота)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "birch_bark_manuscriptsit">Берестяная письменность</sc_element> известна также ряду других культур народов мира.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+
+
+gospel
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+ 	    [Евангелие]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Евангелие)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+        	    event_labour;
+		    event_death
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "gospel">Евангелие</sc_element> - повествования о <sc_element sys_idtf = "event_labour">рождении</sc_element>, земном служении, чудесах, крестной <sc_element sys_idtf = "event_death">смерти</sc_element>, воскресении и вознесении Иисуса Христа.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Евангение)] (* <- lang_ru;; *);;
+            => nrel_using_constants: {
+        	    section_literature_of_the_modernism;
+		    nrel_genre_work;
+	            religious_text
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [В эпоху <sc_element sys_idtf = "section_literature_of_the_modernism">модернизма</sc_element> появляются <sc_element sys_idtf = "gospel">евангелия</sc_element> как <sc_element sys_idtf = "nrel_genre_work">жанр</sc_element> художественной, а не <sc_element sys_idtf = "religious_text">религиозной</sc_element> литературы.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+
+chronicle
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+ 	    [летопись]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Летопись)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+        	    nrel_genre_work;
+		    literary_event
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "chronicle">Летопись</sc_element> - исторический <sc_element sys_idtf = "nrel_genre_work">жанр</sc_element>, представляющий собой погодовую, более или менее подробную запись исторических <sc_element sys_idtf = "literary_event">событий</sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Летопись)] (* <- lang_ru;; *);;
+            => nrel_using_constants: {
+        	    nrel_chronicler
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Характерной чертой <sc_element sys_idtf = "chronicle">летописи</sc_element> является вера <sc_element sys_idtf = "nrel_chronicler">летописцев</sc_element> во вмешательство божественных сил.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+
+
+manuscript
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+ 	    [манускрипт]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Манускрипт)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+        	    section_literature_of_the_middle_ages;
+		    section_literature_of_the_ancient_world
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "manuscript">Манускрипт</sc_element> - <sc_element sys_idtf = "section_literature_of_the_ancient_world">древний</sc_element> или <sc_element sys_idtf = "section_literature_of_the_middle_ages">средневековый</sc_element> рукописный свиток.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Манускрипт)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "manuscript">Манускрипты</sc_element> часто имеют формат свитков, что позволяет им гораздо лучше сохраняться на долгие века.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+
+
+memoir
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+ 	    [мемуар]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Мемуар)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+        	    literary_event;
+		    nrel_author;
+                    lit_person
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "memoir">Мемуар</sc_element> — записка современника, повествующая о <sc_element sys_idtf = "literary_event">событиях</sc_element>, в которых <sc_element sys_idtf = "nrel_author">автор</sc_element> записки принимал участие или которые известны ему от очевидцев, и о <sc_element sys_idtf = "lit_person">людях</sc_element>, с которыми автор был знаком.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Мемуар)] (* <- lang_ru;; *);;
+            => nrel_using_constants: {
+        	    genre_autobiography;
+		    chronicle
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "memoir">Мемуары</sc_element> не тождественны <sc_element sys_idtf = "genre_autobiography">автобиографии</sc_element> и <sc_element sys_idtf = "chronicle">хронике событий</sc_element>, хотя в обиходе эти понятия могут использоваться как синонимы.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+
+statute
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+ 	    [статут]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Статут)] (* <- lang_ru;; *);; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "statute">Статут</sc_element> - правовой акт, устанавливающий либо фиксирующий правовое положение отдельных городов, сословий или объединений.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Статут)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<sc_element sys_idtf = "statute">Статут</sc_element> регламентирует вопросы гражданского, уголовного, социально-экономического, политического и процессуального права.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;

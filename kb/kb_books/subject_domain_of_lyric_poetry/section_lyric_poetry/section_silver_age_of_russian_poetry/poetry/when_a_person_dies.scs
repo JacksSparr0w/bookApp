@@ -1,0 +1,35 @@
+when_a_person_dies
+    => nrel_main_idtf:
+        ["Когда человек умирает"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Akhmatova_Anna;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        multiedition;
+    => nrel_literature_problem:
+        problem_of_meaning_of_life;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1940;;
+
+
+when_a_person_dies => nrel_text:
+    .when_a_person_dies_text
+    (*
+                => nrel_main_idtf: [Текст. "Когда человек умирает"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/when_a_person_dies.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death;;
+
+     
+   *);;
+
+ 

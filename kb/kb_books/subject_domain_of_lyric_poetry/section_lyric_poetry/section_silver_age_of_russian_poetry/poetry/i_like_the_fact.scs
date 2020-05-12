@@ -1,0 +1,64 @@
+i_like_the_fact
+    => nrel_main_idtf:
+        ["Мне нравится, что вы больны"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Tsvetaeva_Marina_Ivanovna;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_love;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1915;;
+
+
+i_like_the_fact
+    <= nrel_characters:
+        ...
+	(*
+            -> rrel_main_character:
+                    char_man;;
+        *);;
+
+
+char_man
+        => nrel_main_idtf: 
+            [мужчина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(мужчина)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_man.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+i_like_the_fact => nrel_text:
+    .i_like_the_fact
+    (*
+                => nrel_main_idtf: [Текст. "Мне нравится, что вы больны"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/i_like_the_fact.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_man;;
+                    *);;
+     
+   *);;
+
+ 

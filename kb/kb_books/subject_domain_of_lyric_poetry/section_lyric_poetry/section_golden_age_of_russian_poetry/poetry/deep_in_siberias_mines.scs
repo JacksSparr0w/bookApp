@@ -1,0 +1,65 @@
+deep_in_siberias_mines
+    => nrel_main_idtf:
+        ["Во глубине сибирских руд..."]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+        person_Pushkin_Aleksandr_Sergeevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_human_and_government;
+    => 	nrel_foot:
+        choree;
+    => nrel_publication_date:
+        year_1856;;
+
+
+deep_in_siberias_mines
+    <= nrel_characters:
+        .deep_in_siberias_mines_characters
+        (*
+            -> rrel_main_character:
+                    char_decembrist;;
+        *);;
+
+
+char_decembrist
+        => nrel_main_idtf: 
+            [декабрист] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(декабрист)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_decembrist.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+deep_in_siberias_mines => nrel_text:
+    .deep_in_siberias_mines_text
+    (*
+                => nrel_main_idtf: [Текст. "Во глубине сибирских руд..."] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/deep_in_siberias_mines.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrest;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_decembrist;;
+                    *);;
+     
+   *);;
+ 

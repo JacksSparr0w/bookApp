@@ -1,0 +1,109 @@
+the_gray_eyed_king 
+    => nrel_main_idtf:
+        ["Сероглазый король"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Akhmatova_Anna;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_love;
+    => 	nrel_foot:
+        dactyl;
+    => nrel_publication_date:
+        year_1912;;
+
+
+the_gray_eyed_king
+    <= nrel_characters:
+        .the_gray_eyed_king
+        (*
+            -> rrel_main_character:
+		    char_gray_eyed_king;
+		    char_husband;
+                    char_daughter;;
+        *);;
+
+
+char_gray_eyed_king
+        => nrel_main_idtf: 
+            [король] (* <-lang_ru;; *);
+        <- lit_person;
+	<- male;
+	<- person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(король)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_gray_eyed_king.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_daughter
+        => nrel_main_idtf: 
+            [дочь] (* <-lang_ru;; *);
+        <- lit_person;
+	<- female;
+	<- person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(дочь)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_daughter.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_husband
+        => nrel_main_idtf: 
+            [муж] (* <-lang_ru;; *);
+        <- lit_person;
+	<- male;
+	<- person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(муж)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_husband.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+the_gray_eyed_king => nrel_text:
+    .the_gray_eyed_king_text
+    (*
+                => nrel_main_idtf: [Текст. "Сероглазый король"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/the_gray_eyed_king.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death;;
+		    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_gray_eyed_king;   
+			char_husband;
+			char_daughter;;
+                    *);;
+     
+   *);;
+
+ 

@@ -1,0 +1,360 @@
+iamb 
+	<-metre;
+	=> nrel_main_idtf: 
+		[ямб] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(ямб)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/iamb.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+iamb
+	<= nrel_using_constants:...
+        	(*
+       	     		-> nrel_foot;;
+      	  	*);;
+
+iamb
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/iamb.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+choree 
+	<-metre;
+	=> nrel_main_idtf: 
+		[хорей] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(хорей)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/choree.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+choree
+	<= nrel_using_constants:...
+        	(*
+			-> nrel_foot;;
+			-> metre;;
+      	  	*);;
+
+choree
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/choree.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+amphibrach 
+	<-metre;
+	=> nrel_main_idtf: 
+		[амфибрахий] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(амфибрахий)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/amphibrach.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+amphibrach
+	<= nrel_using_constants:...
+        	(*
+			-> nrel_foot;;
+			-> metre;;
+      	  	*);;	
+amphibrach
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/amphibrach.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+anapaest 
+	<-metre;
+	=> nrel_main_idtf: 
+		[анапест] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(анапест)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/anapaest.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+anapaest
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/anapaest.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+dactyl 
+	<-metre;
+	=> nrel_main_idtf: 
+		[дактиль] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(дактиль)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/dactyl.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+dactyl
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/dactyl.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+tetrameter 
+	<-metre;
+	=> nrel_main_idtf: 
+		[четырехсложный размер] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(четырехсложный размер)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/tetrameter.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+tetrameter
+	<= nrel_using_constants:...
+        	(*
+       	     		-> nrel_foot;;
+      	  	*);;
+tetrameter
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/tetrameter.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+pentameter 
+	<-metre;
+	=> nrel_main_idtf: 
+		[пятисложный размер] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(пятисложный размер)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/pentameter.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+pentameter
+	<= nrel_using_constants:...
+        	(*
+       	     		-> nrel_foot;;
+      	  	*);;
+pentameter
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/pentameter.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+accentual_verse 
+	<-metre;
+	=> nrel_main_idtf: 
+		[акцентный размер] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(акцентный размер)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/accentual_verse.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+accentual_verse
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/accentual_verse.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+metre 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[метр] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(метр)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/metre.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+nrel_foot
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [размер стихосложения*] (* <- lang_ru;; *);
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_foot
+=> nrel_first_domain: verse;
+=>nrel_second_domain: metre;
+=>nrel_definitional_domain:...
+(*
+    <= nrel_combination:...
+       (* -> verse; metre;; *);;
+*);;
+
+nrel_foot
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(размер стихосложения*)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/nrel_foot.html";;
+        *);;
+    *);;
+
+logaed 
+	<-metre;
+	=> nrel_main_idtf: 
+		[логаэд] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(логаэд)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/logaed.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+logaed
+	<= nrel_using_constants:...
+        	(*
+       	     		-> iamb;;
+       	     		-> anapaest;;
+       	     		-> dactyl;;
+       	     		-> verse;;
+       	     		-> choree;;
+      	  	*);;
+logaed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/logaed.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+free_verse 
+	<-metre;
+	=> nrel_main_idtf: 
+		[свободный стих] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(свободный стих)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/free_verse.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+free_verse
+	<= nrel_using_constants:...
+        	(*
+       	     		-> verse;;
+      	  	*);;
+free_verse
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/free_verse.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+

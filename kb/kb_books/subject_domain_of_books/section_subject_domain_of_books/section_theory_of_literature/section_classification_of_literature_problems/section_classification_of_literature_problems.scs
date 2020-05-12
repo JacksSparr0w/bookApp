@@ -1,0 +1,31 @@
+section_classification_of_literature_problems
+	=> nrel_main_idtf:
+		[Раздел. Литературные проблемы]
+			(* <- lang_ru;; *);;
+
+	 section_classification_of_literature_problems =  [*^"file://section_classification_of_literature_problems.scsi"*];;
+
+section_classification_of_literature_problems
+	-> rrel_key_sc_element:	
+			problem_of_historical_legacy;
+			problem_of_nature_and_human;
+			problem_of_moral_choice;
+			problem_of_love;
+			problem_of_art_power;
+			problem_of_dignity;
+			problem_of_meaning_of_life;
+			problem_of_goals_and_it_achieving;
+			problem_of_fear_towards_reality;
+			problem_of_art_and_human;
+			problem_of_maternal_love;
+			problem_of_spiritual_impoverishment;
+			problem_of_childhood_role;
+			problem_of_war;
+			problem_of_fathers_and_sons;
+			problem_of_friendship;
+			problem_of_faith;
+			problem_of_science_development;
+			problem_of_human_and_government;
+			problem_of_money_influence_human;
+			philosophical_question;
+			nrel_literature_problem;;

@@ -1,0 +1,63 @@
+winter_morning
+    => nrel_main_idtf:
+        ["Зимнее утро"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+        person_Pushkin_Aleksandr_Sergeevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_nature_and_human;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1829;;
+
+winter_morning
+    <= nrel_characters:
+        ...
+        (*
+            -> rrel_main_character:
+                    char_beloved;;
+        *);;
+
+
+char_beloved
+        => nrel_main_idtf: 
+            [Возлюбленная] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Возлюбленная)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_beloved.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+winter_morning => nrel_text:
+    .winter_morning
+    (*
+                => nrel_main_idtf: [Текст. "Зимнее утро"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/winter_morning.html" (* <-lang_ru;; *);;
+                    *);;
+		<= nrel_participants:... 
+                    (*
+                         ->  char_beloved;;
+                    *);;
+   *);;
+
+ 

@@ -18,6 +18,10 @@ books_knowledge_base
 
 <= nrel_section_decomposition:
 	{
-        subject_domain_of_books;
-		subject_domain_of_article
+		subject_domain_of_books;
+		subject_domain_of_article;
+		subject_domain_of_primary;
+		subject_domain_of_educational_literature;
+		subject_domain_of_reference_books;
+		subject_domain_of_lyric_poetry
 	};;

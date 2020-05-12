@@ -1,0 +1,177 @@
+toolkit
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [Методическое пособие] (* <- lang_ru;; *);;
+
+toolkit
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Методическое пособие)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/toolkit1.html";;
+        *);;
+    *);;
+
+toolkit
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Методическое пособие)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/toolkit2.html";;
+        *);;
+    *);;
+
+textbook
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [Учебник] (* <- lang_ru;; *);;
+
+textbook
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Учебник)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/textbook1.html";;
+        *);;
+    *);;
+
+textbook
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Учебник)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/textbook2.html";;
+        *);;
+    *);;
+
+teaching_aid
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [Учебно-методическое пособие] (* <- lang_ru;; *);;
+
+teaching_aid
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Учебно-методическое пособие)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/teaching_aid1.html";;
+        *);;
+    *);;
+
+teaching_aid
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Учебно-методическое пособие)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/teaching_aid2.html";;
+        *);;
+    *);;
+
+chrestomathy
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [Хрестоматия] (* <- lang_ru;; *);;
+
+chrestomathy
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Хрестоматия)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/chrestomathy1.html";;
+        *);;
+    *);;
+
+chrestomathy
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Хрестоматия)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/chrestomathy2.html";;
+        *);;
+    *);;
+
+tutorial
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [Учебное пособие] (* <- lang_ru;; *);;
+
+tutorial
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Учебное пособие)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/tutorial1.html";;
+        *);;
+	<= nrel_using_constants:...
+        (*
+            -> textbook;;
+        *);;
+    *);;
+
+tutorial
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Учебное пособие)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/tutorial2.html";;
+        *);;
+    *);;
+
+educational_literature
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [Учебная литература] (* <- lang_ru;; *);;
+
+educational_literature
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Учебная литература)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/educational_literature1.html";;
+        *);;
+    *);;
+
+educational_literature
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Учебная литература)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/educational_literature2.html";;
+        *);;
+    *);;

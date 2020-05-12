@@ -1,0 +1,85 @@
+the_captive
+    => nrel_main_idtf:
+        ["Узник"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+        person_Pushkin_Aleksandr_Sergeevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collected_works;
+    => nrel_literature_problem:
+        problem_of_human_and_government;
+    => 	nrel_foot:
+        amphibrach;
+    => nrel_publication_date:
+        year_1822;;
+
+
+the_captive
+    <= nrel_characters:
+        .the_captive
+        (*
+            -> rrel_main_character:
+		    char_eagle;
+                    char_captive;;
+        *);;
+
+
+char_captive
+        => nrel_main_idtf: 
+            [узник] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(узник)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_captive.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_eagle
+        => nrel_main_idtf: 
+            [орёл] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(орёл)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_eagle.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+the_captive => nrel_text:
+    .the_captive_text
+    (*
+                => nrel_main_idtf: [Текст. "Узник"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/the_captive.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrest;;
+                    <= nrel_participants:... 
+                    (*
+			->  char_eagle;;
+                         ->  char_captive;;
+                    *);;
+     
+   *);;
+
+ 

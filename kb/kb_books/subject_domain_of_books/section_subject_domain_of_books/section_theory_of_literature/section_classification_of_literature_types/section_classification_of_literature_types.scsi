@@ -1,0 +1,1099 @@
+nrel_literature_type
+=> nrel_main_idtf:
+	[Литературный тип*]
+	(* <- lang_ru;;	*);
+        [literature_type*]
+        (* <- lang_en;;*);;
+
+
+nrel_literature_type
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_literature_type
+=> nrel_first_domain: person;
+=> nrel_second_domain: lit_person;
+=>nrel_definitional_domain:...
+(*
+    <= nrel_combination:...
+       (* -> lit_person ; person;; *);;
+*);;
+
+nrel_literature_type
+<- rrel_key_sc_element:...
+(*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Опр.(Литературный тип*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://content/literature_type.html" (* <-lang_en;; *);; 
+		
+	*);;
+*);;
+
+
+
+byronic_hero 
+	<- sc_node_not_relation;
+	<-lit_person;
+	=> nrel_author:
+	person_George_Gordon_Byron;
+	=> nrel_main_idtf: 
+		[байронический герой] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(байронический герой)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/byronic_hero.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+byronic_hero
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/byronic_hero.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+byronic_hero
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты байронического героя)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/byronic_hero_treats.html";;
+ 	*);;
+    *);;
+
+
+
+
+superfluous_man 
+	<- sc_node_not_relation;
+	<-lit_person;
+=> nrel_author:
+    person_Turgenev_Ivan_Sergeevich;
+	=> nrel_main_idtf: 
+		[лишний человек] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(лишний человек)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/superfluous_man.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Turgenev_Ivan_Sergeevich;
+						Russian_empire;
+						genre_short_novel;;
+				*);;
+		*);;
+superfluous_man 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/superfluous_man.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+superfluous_man
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты лишнего человека)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/superfluous_man_treats.html";;
+        *);;
+   
+    *);;
+
+
+
+
+little_man 
+	<- sc_node_not_relation;
+	<-lit_person;
+=> nrel_author:
+    person_Pushkin_Aleksandr_Sergeevich;
+	=> nrel_main_idtf: 
+		[маленький человек] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(маленький человек)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/little_man.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Pushkin_Aleksandr_Sergeevich;
+						genre_short_novel;;
+				*);;
+		*);;
+little_man 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/little_man.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+little_man
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты маленького человека)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/little_man_treats.html";;
+        *);;
+	<= nrel_using_constants:
+		...
+		(*
+		->problem_of_fear_towards_reality ;;
+				*);;
+   
+    *);;
+
+
+
+new_man 
+	<- sc_node_not_relation;
+	<-lit_person;
+	=> nrel_main_idtf: 
+		[новый человек] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(новый человек)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/new_man.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+new_man
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/new_man.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+new_man
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты нового человека)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/new_man_treats.html";;
+        *);;
+   
+    *);;
+
+
+
+lowlife 
+	<- sc_node_not_relation;
+	<-lit_person;
+=> nrel_author:
+    person_Maxim_Gorky;
+	=> nrel_main_idtf: 
+		[босяк] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(босяк)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/lowlife.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Maxim_Gorky;
+						literary_work;;
+				*);;
+		*);;
+lowlife
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/lowlife.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+lowlife
+       <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты босяка)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/lowlife_treats.html";;
+        *);;
+   
+    *);;
+
+
+
+
+despot 
+	<- sc_node_not_relation;
+	<-lit_person;
+=> nrel_author:
+    person_Ostrovsky_Alexander_Nikolayevich;
+	=> nrel_main_idtf: 
+		[самодур] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(самодур)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/despot.html" (* <-lang_ru;; *);;
+				*);;
+
+		*);;
+despot
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/despot.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+despot
+       <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты самодура)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/despot_treats.html";;
+        *);;
+   
+    *);;
+
+
+mad_doctor 
+	<- sc_node_not_relation;
+	<-lit_person;
+=> nrel_author:
+    person_Mary_Shelley;
+	=> nrel_main_idtf: 
+		[безумный ученый] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(безумный ученый)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/mad_doctor.html" (* <-lang_ru;; *);;
+				*);;
+
+		*);;
+mad_doctor
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/mad_doctor.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+mad_doctor
+       <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты безумного ученого)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/mad_doctor_treats.html";;
+        *);;
+   
+    *);;
+
+
+outlaw 
+	<- sc_node_not_relation;
+	<-lit_person;
+	=> nrel_main_idtf: 
+		[благородный разбойник] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(благородный разбойник)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/outlaw.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;
+						problem_of_dignity;
+						literary_work;;
+				*);;
+
+		*);;
+outlaw
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/outlaw.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+outlaw
+       <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты благородного разбойника)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/outlaw_treats.html";;
+        *);;
+   
+    *);;
+tragic_hero 
+	<- sc_node_not_relation;
+	<-lit_person;
+	=> nrel_main_idtf: 
+		[трагический герой] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(трагический герой)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/tragic_hero.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> rrel_main_character;
+						literary_work;
+						genre_work;
+						event_scare;;
+				*);;
+		*);;
+tragic_hero 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/tragic_hero.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+tragic_hero
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты трагического героя)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/tragic_hero_treats.html";;
+        *);;
+   
+    *);;
+
+
+
+romantic_hero 
+	<- sc_node_not_relation;
+	<-lit_person;
+        => nrel_author:
+	person_Johann_Wolfgang_von_Goethe;
+	=> nrel_main_idtf: 
+		[романтический герой] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(романтический герой)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/romantic_hero.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> imagery;
+						lit_person;
+						section_literature_of_the_romanticism;
+						event_scare;;
+				*);;
+		*);;
+romantic_hero 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/romantic_hero.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+romantic_hero
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты романтического героя)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/romantic_hero_treats.html";;
+        *);;
+   
+    *);;
+
+
+turgenev_girl 
+	<- sc_node_not_relation;
+	<-lit_person;
+	<-female;
+        => nrel_author:
+	person_Turgenev_Ivan_Sergeevich;
+	=> nrel_main_idtf: 
+		[тургеневская девушка] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(тургеневская девушка)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/turgenev_girl.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> imagery;
+						female;
+						lit_person;
+						literary_work;
+						person_Turgenev_Ivan_Sergeevich;;
+				*);;
+		*);;
+turgenev_girl 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/turgenev_girl.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+turgenev_girl
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты тургеневской девушки)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/turgenev_girl_treats.html";;
+        *);;
+   
+    *);;
+
+
+
+balzac_woman 
+	<- sc_node_not_relation;
+	<-lit_person;
+	<-female;
+        => nrel_author:
+	person_Honore_de_Balzac;
+	=> nrel_main_idtf: 
+		[бальзаковская женщина] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(бальзаковская женщина)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/balzac_woman.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> nrel_literature_type;
+						female;
+						genre_novel;
+						person_Honore_de_Balzac;;
+				*);;
+		*);;
+balzac_woman 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/balzac_woman.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+balzac_woman
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты бальзаковской женщины)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/balzac_woman_treats.html";;
+        *);;
+   
+    *);;
+
+
+
+pushkin_beauty 
+	<- sc_node_not_relation;
+	<-lit_person;
+	<-female;
+        => nrel_author:
+	person_Pushkin_Aleksandr_Sergeevich;
+	=> nrel_main_idtf: 
+		[пушкинская красотка] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(пушкинская красотка)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/pushkin_beauty.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> imagery;
+						female;
+						person_Pushkin_Aleksandr_Sergeevich;;
+				*);;
+		*);;
+pushkin_beauty 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/pushkin_beauty.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+pushkin_beauty
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты пушкинской красотки)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/pushkin_beauty_treats.html";;
+        *);;
+   
+    *);;
+
+
+nekrasov_woman 
+	<- sc_node_not_relation;
+	<-lit_person;
+	<-female;
+        => nrel_author:
+	person_Nekrasov_Nikolay_Alexeyevich;
+	=> nrel_main_idtf: 
+		[некрасовская женщина] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(некрасовская женщина)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/nekrasov_woman.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> female;
+						genre_poem;
+						person_Nekrasov_Nikolay_Alexeyevich;;
+				*);;
+		*);;
+nekrasov_woman 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/nekrasov_woman.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+nekrasov_woman
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты некрасовской женщины)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/nekrasov_woman_treats.html";;
+        *);;
+   
+    *);;
+
+
+
+milk_and_water_girl 
+	<- sc_node_not_relation;
+	<-lit_person;
+	<-female;
+        => nrel_author:
+	person_Pomyalovsky_Nikolai_Gerasimovich;
+	=> nrel_main_idtf: 
+		[кисейная барышня] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(кисейная барышня)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/milk_and_water_girl.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->      nrel_literature_type;
+                                                genre_short_novel;
+						female;
+						person_Pomyalovsky_Nikolai_Gerasimovich;;
+				*);;
+		*);;
+milk_and_water_girl 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/milk_and_water_girl.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+milk_and_water_girl
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты кисейной барышни)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/milk_and_water_girl_treats.html";;
+        *);;
+   
+    *);;
+
+
+prince_charming 
+	<- sc_node_not_relation;
+	<-lit_person;
+	<-male;
+	=> nrel_main_idtf: 
+		[прекрасный принц] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(прекрасный принц)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/prince_charming.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->      event_witchcraft;
+                                                event_rescue;
+						damsel_in_distress;
+						hero;;
+				*);;
+		*);;
+prince_charming 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/prince_charming.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+prince_charming
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты прекрасного принца)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/prince_charming_treats.html";;
+        *);;
+   
+    *);;
+
+
+wise_old_man 
+	<- sc_node_not_relation;
+	<-lit_person;
+	=> nrel_main_idtf: 
+		[мудрец] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(мудрец)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/wise_old_man.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->      lit_person;
+                                                personification;;
+				*);;
+		*);;
+wise_old_man 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/wise_old_man.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+wise_old_man
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты мудреца)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/wise_old_man_treats.html";;
+        *);;
+   	<= nrel_using_constants:
+		...
+		(*
+		->  event_witchcraft;;
+		*);;
+    *);;
+
+
+
+damsel_in_distress 
+	<- sc_node_not_relation;
+	<-lit_person;
+	<-female;
+	=> nrel_main_idtf: 
+		[дама в беде] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(дама в беде)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/damsel_in_distress.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->      imagery;
+						hero;
+						female;
+						prince_charming;
+                                                event_rescue;;
+				*);;
+		*);;
+damsel_in_distress 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/damsel_in_distress.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+damsel_in_distress
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты дамы в беде)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/damsel_in_distress_treats.html";;
+        *);;
+   	<= nrel_using_constants:
+		...
+		(*
+		->  prince_charming;;
+		*);;
+    *);;
+
+
+antihero 
+	<- sc_node_not_relation;
+	<-lit_person;
+        => nrel_author:
+	person_Dostoevsky_Fyodor_Mikhailovich;
+	=> nrel_main_idtf: 
+		[антигерой] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(антигерой)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/antihero.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->      literary_work;
+						lit_person;
+						rrel_main_character;;
+				*);;
+		*);;
+antihero 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/antihero.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+antihero
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты антигероя)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/antihero_treats.html";;
+        *);;
+   	<= nrel_using_constants:
+		...
+		(*
+		->   superfluous_man;
+		     byronic_hero;;
+		*);;
+    *);;
+
+
+mary_sue 
+	<- sc_node_not_relation;
+	<-lit_person;
+	=> nrel_main_idtf: 
+		[мэри сью] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(мэри сью)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/mary_sue.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->      imagery;
+						lit_person;
+						nrel_author;;
+				*);;
+		*);;
+mary_sue 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/mary_sue.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+mary_sue
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты мэри сью)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/mary_sue_treats.html";;
+        *);;
+   	<= nrel_using_constants:
+		...
+		(*
+		->   problem_of_fathers_and_sons;;
+		*);;
+    *);;
+
+
+resoner 
+	<- sc_node_not_relation;
+	<-lit_person;
+	=> nrel_main_idtf: 
+		[резонёр] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(резонёр)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/resoner.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->      lit_person;
+						hero;
+						nrel_author;
+						event_exposure;
+						play;;
+				*);;
+		*);;
+resoner 
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/resoner.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+resoner
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(черты резонёра)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/resoner_treats.html";;
+        *);;
+   	<= nrel_using_constants:
+		...
+		(*
+		->   nrel_author;;
+		*);;
+    *);;
+
+

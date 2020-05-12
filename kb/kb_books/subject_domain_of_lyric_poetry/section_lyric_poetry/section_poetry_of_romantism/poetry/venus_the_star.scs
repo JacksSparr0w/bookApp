@@ -1,0 +1,67 @@
+venus_the_star
+    => nrel_main_idtf:
+        ["Романс"]
+            (* <- lang_ru;; *);
+
+    <- romance;
+    => nrel_author:
+    person_Maksim_Bogdanovich;
+    => nrel_original_language:
+        lang_by;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_love;
+    => 	nrel_foot:
+        dactyl;
+    => nrel_publication_date:
+        year_1912;;
+
+
+venus_the_star
+    <= nrel_characters:
+        .venus_the_star
+        (*
+            -> rrel_main_character:
+                    char_lover_girl;;
+        *);;
+
+
+char_lover_girl
+        => nrel_main_idtf: 
+            [возлюбленная] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+    <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(возлюбленная)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_lover_girl.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+venus_the_star => nrel_text:
+    .venus_the_star_text
+    (*
+                => nrel_main_idtf: [Текст. "Романс"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/venus_the_star.html" (* <-lang_by;;*);;
+                    *);;
+                    <- event_breakup;;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_lover_girl;;
+                    *);;
+     
+   *);;
+
+ 

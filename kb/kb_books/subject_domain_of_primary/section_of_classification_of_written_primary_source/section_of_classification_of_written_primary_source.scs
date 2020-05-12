@@ -1,0 +1,17 @@
+section_of_classification_of_written_primary_source
+	=> nrel_main_idtf:
+		[Раздел. Классификация письменных исторических источников]
+			(* <- lang_ru;; *);;
+	
+section_of_classification_of_written_primary_source =  [*^"file://section_of_classification_of_written_primary_source.scsi"*];;
+
+section_of_classification_of_written_primary_source	
+    -> rrel_key_sc_element:	
+        birch_bark_manuscriptsit;
+        chronicle;
+        gospel;
+        manuscript;
+	memoir;
+	rrel_written_sources;
+	statute;
+        nrel_primary_source;; 

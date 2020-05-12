@@ -1,0 +1,8 @@
+section_poetry_of_realism
+	=> nrel_main_idtf:
+		[Раздел. Поэзия реализма]
+		(* <- lang_ru;; *);
+
+	-> rrel_key_sc_element:
+		once_during_an_ice_cold_winter_time;
+		and_say_who_goes_there;;

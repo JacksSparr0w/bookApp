@@ -1,0 +1,17 @@
+section_golden_age_of_russian_poetry
+	=> nrel_main_idtf:
+		[Раздел. Золотой век русской поэзии]
+		(* <- lang_ru;; *);
+	
+	-> rrel_key_sc_element:
+		the_captive;
+		deep_in_siberias_mines;
+		sail;
+		i_loved_you;
+		to_my_nanny;
+		clouds;
+		last_cloud;
+		i_go_out_towards_the_road;
+		winter_morning;
+		to_kern;
+		the_prophet;;

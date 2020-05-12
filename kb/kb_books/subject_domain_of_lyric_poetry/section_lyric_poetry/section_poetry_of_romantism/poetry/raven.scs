@@ -1,0 +1,110 @@
+raven 
+    => nrel_main_idtf:
+        ["Ворон"]
+            (* <- lang_ru;; *);
+
+    <- genre_poem;
+    => nrel_author:
+        person_Edgar_Allan_Poe;
+    => nrel_original_language:
+        lang_en;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_love;
+    => 	nrel_foot:
+        choree;
+    => nrel_publication_date:
+        year_1845;;
+
+
+raven
+    <= nrel_characters:
+        .raven
+        (*
+            -> rrel_main_character:
+                    char_raven;
+                    char_narrator;
+                    char_Lenore;;
+        *);;
+
+
+char_raven
+	=> nrel_literature_type:
+        romantic_hero;
+        => nrel_main_idtf: 
+            [ворон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(ворон)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_raven.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_narrator
+	=> nrel_literature_type:
+        romantic_hero;
+        => nrel_main_idtf: 
+            [рассказчик] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(рассказчик)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_narrator.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Lenore
+        => nrel_main_idtf: 
+            [Ленор] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ленор)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_Lenore.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+raven => nrel_text:
+    .raven_text
+    (*
+                => nrel_main_idtf: [Текст. "Ворон"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/raven.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death;;
+                    <- event_love;;
+		            <- event_meeting;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Lenore;
+                           char_narrator;
+                           char_raven;;
+                    *);;
+     
+   *);;
+
+ 

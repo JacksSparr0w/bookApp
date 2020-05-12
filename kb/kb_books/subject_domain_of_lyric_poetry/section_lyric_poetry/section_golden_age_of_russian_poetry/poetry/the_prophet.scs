@@ -1,0 +1,64 @@
+the_prophet
+    => nrel_main_idtf:
+        ["Пророк"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+        person_Pushkin_Aleksandr_Sergeevich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_art_power;
+	problem_of_art_and_human;
+    => 	nrel_foot:
+        iamb;
+    => nrel_publication_date:
+        year_1828;;
+
+the_prophet
+    <= nrel_characters:
+        ...
+        (*
+            -> rrel_main_character:
+                    char_prophet;;
+        *);;
+
+
+char_prophet
+        => nrel_main_idtf: 
+            [Пророк] (* <-lang_ru;; *);
+        <- lit_person;
+	<- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Пророк)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_prophet.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+the_prophet => nrel_text:
+    .the_prophet
+    (*
+                => nrel_main_idtf: [Текст. "Пророк"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/the_prophet.html" (* <-lang_ru;; *);;
+                    *);;
+		<= nrel_participants:... 
+                    (*
+                         ->  char_prophet;;
+                    *);;
+   *);;
+
+ 

@@ -1,0 +1,34 @@
+golden_leaves_start_to_whirl
+    => nrel_main_idtf:
+        ["Закружилась листва золотая"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Yesenin_Sergei_Alexandrovich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        collection;
+    => nrel_literature_problem:
+        problem_of_nature_and_human;
+    => 	nrel_foot:
+        anapaest;
+    => nrel_publication_date:
+        year_1918;;
+
+
+golden_leaves_start_to_whirl => nrel_text:
+    .golden_leaves_start_to_whirl_text
+    (*
+                => nrel_main_idtf: [Текст. "Закружилась листва золотая"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/golden_leaves_start_to_whirl.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+     
+   *);;
+
+ 

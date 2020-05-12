@@ -1,0 +1,70 @@
+hamlet
+    => nrel_main_idtf:
+        ["Гамлет"]
+            (* <- lang_ru;; *);
+
+    <- verse;
+    => nrel_author:
+    person_Pasternak_Boris_Leonidovich;
+    => nrel_original_language:
+        lang_ru;
+    => nrel_type_of_publication:
+        monoedition;
+    => nrel_literature_problem:
+        problem_of_human_and_government;
+	problem_of_meaning_of_life;
+	problem_of_art_power;
+        problem_of_art_and_human;
+    => 	nrel_foot:
+        choree;
+    => nrel_publication_date:
+        year_1946;;
+
+
+hamlet
+    <= nrel_characters:
+        .hamlet
+        (*
+            -> rrel_main_character:
+		    char_hamlet;;
+        *);;
+
+
+char_hamlet
+        => nrel_main_idtf: 
+            [актер, играющий Гамлета] (* <-lang_ru;; *);
+        <- lit_person;
+	<- male;
+	<- person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(актер, играющий Гамлета)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://characters/char_hamlet.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+
+hamlet => nrel_text:
+    .hamlet_text
+    (*
+                => nrel_main_idtf: [Текст. "Гамлет"] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/hamlet.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_performance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_hamlet;;
+                    *);;
+     
+   *);;
+
+ 

@@ -1,0 +1,19 @@
+section_silver_age_of_russian_poetry
+	=> nrel_main_idtf:
+		[Раздел. Серебряный век русской поэзии]
+		(* <- lang_ru;; *);
+
+	-> rrel_key_sc_element:
+		and_could_you;
+		listen;
+		i_like_the_fact;
+		courage;
+		shagane;
+		night_street_lamp_drugstore;
+		golden_leaves_start_to_whirl;
+		hamlet;
+		old_moscow_houses;
+		the_fisher;
+		the_gray_eyed_king;
+		to_love_some_is_a_heavy_cross;
+		when_a_person_dies;;
