@@ -1,0 +1,23 @@
+section_of_authors_biography
+=> nrel_main_idtf:
+	[Раздел.  Биографии авторов]
+		(* <- lang_ru;; *);
+
+
+<- not_enough_formed_structure;
+<= nrel_section_decomposition:
+	{
+	section_of_close_personalities
+		
+};;
+
+section_of_authors_biography =  [*^"file://section_authors_biography.scsi"*];;
+
+section_of_authors_biography
+-> rrel_key_sc_element:
+biography;
+biography_of_Yesenin_Sergey;
+biography_of_Alexander_Pushkin;
+biography_of_Ivan_Turgenev;
+biography_of_Nikolai_Nekrasov;
+biography_of_Vladimir_Mayakovsky;;

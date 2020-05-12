@@ -1,0 +1,233 @@
+Yesenin_Alexander_Nikitich
+<- rrel_father:
+person_Yesenin_Sergei_Alexandrovich;
+<- sc_node_not_relation;
+<- person;
+	=> nrel_main_idtf: 
+		[Есенин Александр Никитич] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Есенин Александр Никитич)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Yesenin_Alexander_Nikitich.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+Yesenin_Alexander_Nikitich
+-> nrel_date_of_birth:
+year_1873;
+-> nrel_date_of_death:
+year_1931;;
+
+
+Titova_Tatyana_Fedorovna
+<- rrel_mother:
+person_Yesenin_Sergei_Alexandrovich;
+<- sc_node_not_relation;
+<- person;
+	=> nrel_main_idtf: 
+		[Титова Татьяна Фёдоровна] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Титова Татьяна Фёдоровна)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Titova_Tatyana_Fedorovna.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+Titova_Tatyana_Fedorovna
+-> nrel_date_of_birth:
+year_1875;
+-> nrel_date_of_death:
+year_1955;;
+
+
+
+Yesenina_Catherine
+<- rrel_sister:
+person_Yesenin_Sergei_Alexandrovich;
+<- sc_node_not_relation;
+<- person;
+	=> nrel_main_idtf: 
+		[Есенина Екатерина] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Есенина Екатерина)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Yesenina_Catherine.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+Yesenina_Catherine
+-> nrel_date_of_birth:
+year_1905;
+-> nrel_date_of_death:
+year_1977;;
+
+
+Yesenina_Alexandra
+<- rrel_sister:
+person_Yesenin_Sergei_Alexandrovich;
+<- sc_node_not_relation;
+<- person;
+	=> nrel_main_idtf: 
+		[Есенина Александра] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Есенина Александра)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Yesenina_Alexandra.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+
+Yesenina_Alexandra
+-> nrel_date_of_birth:
+year_1911;
+-> nrel_date_of_death:
+year_1985;;
+
+Razgulyaev_Alexandr
+<- rrel_brother:
+person_Yesenin_Sergei_Alexandrovich;
+<- sc_node_not_relation;
+<- person;
+	=> nrel_main_idtf: 
+		[Разгуляев Александр] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Разгуляев Александр)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Razgulyaev_Alexandr.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Yesenin_Sergei_Alexandrovich;;
+				*);;
+			
+		*);;
+
+
+Razgulyaev_Alexandr
+-> nrel_date_of_birth:
+year_1902;
+-> nrel_date_of_death:
+year_1961;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rrel_mother
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[мать*] 
+			(* <-lang_ru;; *);;
+
+rrel_father
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[отец*] 
+			(* <-lang_ru;; *);;
+
+rrel_sister
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[сестра*] 
+			(* <-lang_ru;; *);;
+
+rrel_brother
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[брат*] 
+			(* <-lang_ru;; *);;
+
+rrel_family
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[семья*]
+			(* <-lang_ru;; *);;
+

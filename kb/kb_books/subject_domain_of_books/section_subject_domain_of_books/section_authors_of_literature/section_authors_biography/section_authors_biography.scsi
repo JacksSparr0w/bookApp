@@ -1,0 +1,394 @@
+biography_of_Yesenin_Sergey
+<- biography;
+<- person_Yesenin_Sergei_Alexandrovich;
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[Биография Сергея Есенина] 
+			(* <-lang_ru;; *);;
+
+
+
+biography_of_Alexander_Pushkin
+<- sc_node_not_relation;
+<- person_Pushkin_Aleksandr_Sergeevich;
+<- biography;
+	=> nrel_main_idtf: 
+		[Биография Александра Пушкина] 
+			(* <-lang_ru;; *);;
+
+
+biography_of_Ivan_Turgenev
+<- sc_node_not_relation;
+<- person_Turgenev_Ivan_Sergeevich;
+<- biography;
+	=> nrel_main_idtf: 
+		[Биография Ивана Тургенева] 
+			(* <-lang_ru;; *);;
+
+
+biography_of_Nikolai_Nekrasov
+<- sc_node_not_relation;
+<- person_Nekrasov_Nikolay_Alexeyevich;
+<- biography;
+	=> nrel_main_idtf: 
+		[Биография Николая Некрасова] 
+			(* <-lang_ru;; *);;
+
+
+biography_of_Vladimir_Mayakovsky
+<- sc_node_not_relation;
+<- person_Mayakovsky_Vladimir_Vladimirovich;
+<- biography;
+	=> nrel_main_idtf: 
+		[Биография Владимира Маяковского] 
+			(* <-lang_ru;; *);;
+
+biography
+<- sc_node_not_relation;
+=> nrel_main_idtf: 
+		[Биография] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Биография)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/biography.html" (* <-lang_ru;; *);;
+				*);;
+			
+		*);;
+
+
+biography_of_Yesenin_Sergey = [*
+
+person_Yesenin_Sergei_Alexandrovich 
+-> rrel_father:
+Yesenin_Alexander_Nikitich;
+
+-> rrel_mother:
+Titova_Tatyana_Fedorovna;
+
+-> rrel_sister:
+Yesenina_Catherine;
+Yesenina_Alexandra;
+
+-> rrel_brother:
+Razgulyaev_Alexandr;;
+
+person_Yesenin_Sergei_Alexandrovich 
+->nrel_education:
+Konstantinovsky_Zemstvo_school;
+Parish_school;
+Shanyavsky_peoples_university;
+
+-> nrel_date_of_birth:
+date_21_09_1895;
+
+-> nrel_date_of_death:
+date_28_12_1925;
+
+-> nrel_place_of_birth:
+Konstantinovo;
+
+-> nrel_place_of_death:
+St._Petersburg;;
+
+
+person_Yesenin_Sergei_Alexandrovich 
+-> nrel_reason_of_death:
+event_suicide;
+event_murder;
+
+-> nrel_first_publication:
+journal_Little_world;
+
+-> nrel_date_of_start_of_military_service:
+year_1916;
+
+
+<-rrel_father:
+Yesenin_Uriy;
+
+-> rrel_wife:
+Izryadnova_Anna_Romanovna;
+Tolstaya_Sofya_Andreevna;
+Isadora_Duncan;
+
+-> rrel_beloved:
+Catherine_Eiges;;
+
+
+*];;
+
+
+
+biography_of_Alexander_Pushkin = [*
+
+person_Pushkin_Aleksandr_Sergeevich
+-> rrel_father:
+Pushkin_Sergey_Lvovich;
+
+-> rrel_mother:
+Nadezhda_Osipovna;
+
+-> rrel_sister:
+Pushkina_Olga;
+
+-> rrel_nanny:
+Arina_Rodionovna;
+
+-> rrel_brother:
+Pushkin_Lev;;
+
+person_Pushkin_Aleksandr_Sergeevich
+->nrel_education:
+Tsarskoye_selo_lyceum;
+
+-> nrel_date_of_birth:
+date_26_03_1799;
+
+-> nrel_date_of_death:
+date_29_01_1837;
+
+-> nrel_place_of_birth:
+Moscow;
+
+-> nrel_place_of_death:
+St._Petersburg;;
+
+person_Pushkin_Aleksandr_Sergeevich
+-> nrel_reason_of_death:
+event_duel;
+
+-> nrel_first_publication:
+journal_Bulletin_of_Europe;
+
+->nrel_publication:
+journal_Contemporary;
+
+-> rrel_duel_partner:
+Dantes;
+
+-> rrel_wife:
+Goncharova_Natalya;
+
+-> rrel_beloved:
+Olga_Kalashnikova;;
+
+
+*];;
+
+biography_of_Ivan_Turgenev = [*
+
+person_Turgenev_Ivan_Sergeevich
+-> rrel_father:
+Turgenev_Sergey_Nikolaevich;
+
+-> rrel_mother:
+Lutovinova_Varvara;
+
+-> rrel_brother:
+Turgenev_Nikolay;
+Turgenev_Sergey;;
+
+person_Turgenev_Ivan_Sergeevich
+->nrel_education:
+Weidenhammer_boarding_house;
+Lazarevsky_Institute_Krause;
+Imperial_University_of_Moscow;
+SPSU;
+
+-> nrel_date_of_birth:
+date_28_10_1818;
+
+-> nrel_date_of_death:
+date_22_08_1883;
+
+-> nrel_place_of_birth:
+Orel;
+
+-> nrel_place_of_death:
+Bougival;;
+
+person_Turgenev_Ivan_Sergeevich
+-> nrel_reason_of_death:
+angina_pectoris;
+
+-> nrel_first_publication:
+journal_Ministry_of_Education;
+
+-> rrel_beloved:
+Maria_Nikolaevna_Tolstaya;
+Pauline_Viardot;
+Savina_Maria;
+Shakhovskaya_Catherine;
+
+
+->nrel_publication:
+journal_Contemporary;;
+
+
+
+*];;
+
+
+
+
+biography_of_Nikolai_Nekrasov = [*
+
+person_Nekrasov_Nikolay_Alexeyevich
+-> rrel_father:
+Nekrasov_Alexey_Sergeevich;
+
+-> rrel_mother:
+Zakrevskaya_Elena_Andreevna;;
+
+
+person_Nekrasov_Nikolay_Alexeyevich
+->nrel_education:
+SPSU;
+
+-> nrel_date_of_birth:
+date_28_11_1821;
+
+-> nrel_date_of_death:
+date_27_12_1877;
+
+-> nrel_place_of_birth:
+Nemirov;
+
+-> nrel_place_of_death:
+St._Petersburg;;
+
+person_Nekrasov_Nikolay_Alexeyevich
+-> nrel_reason_of_death:
+bowel_cancer;
+
+
+-> rrel_beloved:
+Avdotya_Panaeva;
+
+
+-> rrel_wife:
+Viktorova_Fekla_Anisimovna;
+
+<- nrel_editor:
+journal_Contemporary;
+journal_Domestic_notes;;
+
+
+*];;
+
+
+
+
+biography_of_Vladimir_Mayakovsky = [*
+
+person_Mayakovsky_Vladimir_Vladimirovich
+-> rrel_father:
+Mayakovsky_Vladimir_Konstantinovich;
+
+-> rrel_mother:
+Mayakovskaya_Alexandra_Alekseevna;;
+
+
+person_Mayakovsky_Vladimir_Vladimirovich
+->nrel_education:
+Kutaisi;
+
+-> nrel_date_of_birth:
+date_07_07_1893;
+
+-> nrel_date_of_death:
+date_14_04_1930;
+
+-> nrel_place_of_birth:
+Bagdati;
+
+-> nrel_place_of_death:
+Moscow;;
+
+person_Mayakovsky_Vladimir_Vladimirovich
+-> nrel_reason_of_death:
+event_suicide;
+
+
+-> rrel_beloved:
+Lily_Brick;
+Ellie_Jones;
+Sophia_Shamardina;
+Natalya_Bryukhanenko;
+Tatyana_Yakovleva;
+Veronika_Polonskaya;
+Lily_Lavinskaya;
+
+
+->nrel_first_publication:
+journal_Gust;
+
+<- nrel_editor:
+journal_LEF;;
+
+*];;
+
+
+
+
+
+
+
+
+
+
+
+
+nrel_reason_of_death
+<- sc_node_norole_relation;
+	=> nrel_main_idtf: 
+		[причина смерти*] 
+			(* <-lang_ru;; *);;
+
+nrel_first_publication
+<- sc_node_norole_relation;
+	=> nrel_main_idtf: 
+		[первая публикация*] 
+			(* <-lang_ru;; *);;
+
+
+
+nrel_publication
+<- sc_node_norole_relation;
+	=> nrel_main_idtf: 
+		[публикация*] 
+			(* <-lang_ru;; *);;
+
+nrel_date_of_start_of_military_service
+<- sc_node_norole_relation;
+	=> nrel_main_idtf: 
+		[дата начала службы в армии*] 
+			(* <-lang_ru;; *);;
+
+
+Bougival
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[Буживаль] 
+			(* <-lang_ru;; *);;
+
+angina_pectoris
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[грудная жаба] 
+			(* <-lang_ru;; *);;
+
+bowel_cancer
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[рак кишечника] 
+			(* <-lang_ru;; *);;
+
+
