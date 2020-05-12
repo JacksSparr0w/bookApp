@@ -1,0 +1,30 @@
+subject_domain_of_libraries
+=> nrel_main_idtf:
+	[Предметная область библиотек]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition:
+	{
+	section_public_library;
+	section_budget_library;
+	section_municipal_library;
+	section_private_library;
+	section_personal_library;
+	section_academic_library;
+	section_digital_library
+	};;
+
+	subject_domain_of_libraries =  [*^"file://subject_domain_of_libraries.scsi"*];;
+
+subject_domain_of_libraries
+	-> rrel_key_sc_element:
+		concept_library;
+		concept_archive;
+		concept_library_card;
+		concept_bookstore;
+		concept_reading_room;
+		concept_special_storage;
+		nrel_librarian;
+		nrel_library_fund_volume;;

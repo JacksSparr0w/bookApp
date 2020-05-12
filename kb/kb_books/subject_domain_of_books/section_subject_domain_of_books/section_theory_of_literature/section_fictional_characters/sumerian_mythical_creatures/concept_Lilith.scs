@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Lilith;;
+sumerian_mythical_creatures -> concept_Lilith;;
+
+concept_Lilith
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Лилит]
+	(* <- lang_ru;;	*);
+	[Lilith]
+	(* <- lang_en;;	*);;
+
+concept_Lilith
+        <- lit_person;
+        <- female;
+        <- fiction_person;;
+
+concept_Lilith <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Лилит)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Lilith.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Lilith <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Лилит)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Lilith.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Pegasus;;
+ancient_greek_mythical_creatures -> concept_Pegasus;;
+
+concept_Pegasus
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Пегас]
+	(* <- lang_ru;;	*);
+	[Pegasus]
+	(* <- lang_en;;	*);;
+
+concept_Pegasus
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Pegasus <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Пегас)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Pegasus.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Pegasus <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Пегас)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Pegasus.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

@@ -1,0 +1,51 @@
+//-----------------------------------------------------------------//
+concept_library -> library_and_archives_of_Canada;;
+concept_public_library -> library_and_archives_of_Canada;;
+concept_archive -> library_and_archives_of_Canada;;
+
+library_and_archives_of_Canada
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Библиотека и Архив Канады]
+	(* <- lang_ru;;	*);
+	[Library and Archives of Canada]
+	(* <- lang_en;;	*);;
+	
+library_and_archives_of_Canada <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Библиотека и Архив Канады)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/library_and_archives_of_Canada.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+library_and_archives_of_Canada <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Библиотека и Архив Канады)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/library_and_archives_of_Canada.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+library_and_archives_of_Canada
+=> nrel_location:
+    .library_and_archives_of_Canada_location
+    (*
+       -> Ottawa;;
+	   -> country_Canada;;
+    *);;
+
+library_and_archives_of_Canada
+=> nrel_address:
+	.library_and_archives_of_Canada_address
+	(*
+    	=> nrel_main_idtf: [395 Wellington St, Ottawa, ON K1A 0N4, Canada]
+    	(* <- lang_en;; *);;
+    *);;
+
+number -> 20000000;;
+library_and_archives_of_Canada => nrel_library_fund_volume: 20000000;;

@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Baba_Yaga;;
+slavonic_mythical_creatures -> concept_Baba_Yaga;;
+
+concept_Baba_Yaga
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Баба-Яга]
+	(* <- lang_ru;;	*);
+	[Baba-Yaga]
+	(* <- lang_en;;	*);;
+
+concept_Baba_Yaga
+        <- lit_person;
+        <- female;
+        <- fiction_person;;
+
+concept_Baba_Yaga <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Баба-Яга)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Baba_Yaga.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Baba_Yaga <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Баба-Яга)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Baba_Yaga.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

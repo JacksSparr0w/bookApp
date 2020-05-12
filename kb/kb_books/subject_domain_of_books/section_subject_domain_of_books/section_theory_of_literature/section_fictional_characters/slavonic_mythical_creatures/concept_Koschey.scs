@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Koschey;;
+slavonic_mythical_creatures -> concept_Koschey;;
+
+concept_Koschey
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Кощей]
+	(* <- lang_ru;;	*);
+	[Koschey]
+	(* <- lang_en;;	*);;
+
+concept_Koschey
+        <- lit_person;
+        <- male;
+        <- fiction_person;;
+
+concept_Koschey <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Кощей)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Koschey.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Koschey <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Кощей)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Koschey.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

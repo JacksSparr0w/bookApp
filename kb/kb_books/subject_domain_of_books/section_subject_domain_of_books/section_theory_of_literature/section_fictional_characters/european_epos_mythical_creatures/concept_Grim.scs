@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Grim;;
+european_epos_mythical_creatures -> concept_Grim;;
+
+concept_Grim
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Грим]
+	(* <- lang_ru;;	*);
+	[Grim]
+	(* <- lang_en;;	*);;
+
+concept_Grim
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Grim <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Грим)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Grim.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Grim <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Грим)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Grim.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

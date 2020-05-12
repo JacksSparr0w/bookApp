@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Cyclops;;
+ancient_greek_mythical_creatures -> concept_Cyclops;;
+
+concept_Cyclops
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Циклоп]
+	(* <- lang_ru;;	*);
+	[Cyclops]
+	(* <- lang_en;;	*);;
+
+concept_Cyclops
+        <- lit_person;
+        <- male;
+        <- fiction_person;;
+
+concept_Cyclops <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Циклоп)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Cyclops.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Cyclops <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Циклоп)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Cyclops.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Cerberus;;
+ancient_greek_mythical_creatures -> concept_Cerberus;;
+
+concept_Cerberus
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Цербер]
+	(* <- lang_ru;;	*);
+	[Cerberus]
+	(* <- lang_en;;	*);;
+
+concept_Cerberus
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Cerberus <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Цербер)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Cerberus.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Cerberus <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Цербер)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Cerberus.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
