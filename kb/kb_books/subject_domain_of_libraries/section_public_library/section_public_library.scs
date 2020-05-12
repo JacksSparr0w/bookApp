@@ -1,0 +1,10 @@
+section_public_library
+	=> nrel_main_idtf:
+		[Раздел. Государственные Библиотеки]
+			(* <- lang_ru;; *);;
+
+	 section_public_library =  [*^"file://section_public_library.scsi"*];;
+
+section_public_library
+	-> rrel_key_sc_element:
+		concept_public_library;;

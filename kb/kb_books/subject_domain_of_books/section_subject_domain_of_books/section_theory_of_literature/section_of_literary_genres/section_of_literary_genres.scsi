@@ -1,0 +1,478 @@
+sc_node_not_relation -> genre_play;;
+genre -> genre_play;;
+
+genre_play => nrel_main_idtf:
+        [пьеса](*<-lang_ru;;*);;
+
+nrel_genre_work
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[ жанр произведения* ] (* <-lang_ru;; *);
+
+<- binary_relation;
+<- oriented_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: literary_work;
+=> nrel_second_domain: genre;;
+
+nrel_genre_work
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf: [(Опр.(жанр произведения*)] (* <- lang_ru ;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls//nrel_genre_work.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept;;
+            -> literary_work;;
+        *);;
+    *);;
+
+genre_biography
+<- genre;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [биография] (* <- lang_ru;; *);;
+
+genre_biography
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(биография)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/genre_biography1.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> person;;
+            -> genre;;
+            -> fiction;;
+            -> prose;;
+        *);;
+    *);;
+
+genre_biography
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(биография)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_defining_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/genre_biography2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> person;;
+        
+        *);;
+        
+    *);;
+
+genre_article
+<- genre;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [статья] (* <- lang_ru;; *);;
+
+genre_article
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(статья)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/genre_article1.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> genre;;
+            -> nrel_author;;
+        *);;
+    *);;
+genre_article
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(статья, газета, журнал)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/genre_article2.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> newspaper;;
+            -> magazine;;
+        *);;
+        
+    *);;
+
+genre_dystopia
+<- genre;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [антиутопия] (* <- lang_ru;; *);;
+
+genre_dystopia
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(антиутопия)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/genre_dystopia1.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> genre;;
+            -> fiction;;
+        *);;
+    *);;
+genre_dystopia
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(антиутопия)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/genre_dystopia2.html";;
+        *);;
+        
+    *);;
+
+genre_feuilleton
+<- genre;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [фельетон] (* <- lang_ru;; *);;
+
+genre_feuilleton
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(фельетон)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/genre_feuilleton.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> newspaper;;
+            -> magazine;;
+        *);;
+    *);;
+
+genre_miniature
+<- genre;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [миниатюра] (* <- lang_ru;; *);;
+
+genre_miniature
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(миниатюра)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/genre_miniature.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> genre;;
+            -> genre_narrative;;
+            -> genre_play;;
+            -> genre_vaudeville;;
+            -> genre_intermedia;;
+        *);;
+    *);;
+
+genre_speculative_fiction
+<- genre;
+=> nrel_main_idtf:
+            [фантастика] (* <- lang_ru;; *);;
+
+genre_speculative_fiction
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(фантастика)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/genre_speculative_fiction.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> genre;;
+            -> iction;;
+        *);;
+    *);;
+
+sc_node_not_relation -> genre_criminal_prose;;
+genre -> genre_criminal_prose;;
+
+genre_criminal_prose => nrel_main_idtf:
+        [криминальная проза](*<-lang_ru;;*);;
+
+Definition_genre_criminal_prose
+    => nrel_main_idtf:
+        [Опр.(криминальная проза)]  (* <- lang_ru;; *);;
+
+genre_criminal_prose <- rrel_key_sc_element: Definition_genre_criminal_prose
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_criminal_prose.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		*);;
+	*);;
+
+sc_node_not_relation -> genre_docudrama;;
+genre -> genre_docudrama;;
+
+genre_docudrama => nrel_main_idtf:
+        [документальный проза](*<-lang_ru;;*);;
+
+Definition_genre_docudrama
+    => nrel_main_idtf:
+        [Опр.(документальный проза)]  (* <- lang_ru;; *);;
+
+genre_docudrama <- rrel_key_sc_element: Definition_genre_docudrama
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_docudrama.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		-> nrel_plot;;
+		-> act_fiction;;
+		*);;
+	*);;
+
+sc_node_not_relation -> genre_fantasy;;
+genre -> genre_fantasy;;
+
+genre_fantasy => nrel_main_idtf:
+        [фэнтези](*<-lang_ru;;*);;
+
+Definition_genre_fantasy
+    => nrel_main_idtf:
+        [Опр.(фэнтези)]  (* <- lang_ru;; *);;
+
+genre_fantasy <- rrel_key_sc_element: Definition_genre_fantasy
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_fantasy.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		*);;
+	*);;
+
+
+sc_node_not_relation -> genre_gotic;;
+genre -> genre_gotic;;
+
+genre_gotic => nrel_main_idtf:
+        [готическая литература](*<-lang_ru;;*);;
+
+Definition_genre_gotic
+    => nrel_main_idtf:
+        [Опр.(готическая литература)]  (* <- lang_ru;; *);;
+
+genre_gotic <- rrel_key_sc_element: Definition_genre_gotic
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_gotic.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+        -> reader;;
+		*);;
+	*);;
+
+sc_node_not_relation -> genre_horror;;
+genre -> genre_horror;;
+
+genre_horror => nrel_main_idtf:
+        [ужас](*<-lang_ru;;*);;
+
+Definition_genre_horror
+    => nrel_main_idtf:
+        [Опр.(ужас)]  (* <- lang_ru;; *);;
+
+genre_horror <- rrel_key_sc_element: Definition_genre_horror
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_horror.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+        -> literary_work;;
+        -> reader;;
+        *);;
+	*);;
+
+sc_node_not_relation -> genre_military;;
+genre -> genre_military;;
+
+genre_military => nrel_main_idtf:
+        [военная проза](*<-lang_ru;;*);;
+
+Definition_genre_military
+    => nrel_main_idtf:
+        [Опр.(военная проза)]  (* <- lang_ru;; *);;
+
+genre_military <- rrel_key_sc_element: Definition_genre_military
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_military.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+        -> literary_event;;
+		*);;
+	*);;
+
+sc_node_not_relation -> genre_postapokalipsis;;
+genre -> genre_postapokalipsis;;
+
+genre_postapokalipsis => nrel_main_idtf:
+        [постапокалипсис](*<-lang_ru;;*);;
+
+Definition_genre_postapokalipsis
+    => nrel_main_idtf:
+        [Опр.(постапокалипсис)]  (* <- lang_ru;; *);;
+
+genre_postapokalipsis <- rrel_key_sc_element: Definition_genre_postapokalipsis
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_postapokalipsis.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> literary_event;;
+        -> genre_of_literature;;
+		*);;
+	*);;
+
+sc_node_not_relation -> genre_romantic_prose;;
+genre -> genre_romantic_prose;;
+
+genre_romantic_prose => nrel_main_idtf:
+        [любовная проза](*<-lang_ru;;*);;
+
+Definition_genre_romantic_prose
+    => nrel_main_idtf:
+        [Опр.(любовная проза)]  (* <- lang_ru;; *);;
+
+genre_romantic_prose <- rrel_key_sc_element: Definition_genre_romantic_prose
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_romantic_prose.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> hero;;
+        -> genre_of_literature;;
+		*);;
+	*);;
+
+sc_node_not_relation -> genre_science_fiction;;
+genre -> genre_science_fiction;;
+
+genre_science_fiction => nrel_main_idtf:
+        [научная фантастика](*<-lang_ru;;*);;
+
+Definition_genre_science_fiction
+    => nrel_main_idtf:
+        [Опр.(научная фантастика)]  (* <- lang_ru;; *);;
+
+genre_science_fiction <- rrel_key_sc_element: Definition_genre_science_fiction
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_science_fiction.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		*);;
+	*);;
+
+
+sc_node_not_relation -> genre_thriller;;
+genre -> genre_thriller;;
+
+genre_thriller => nrel_main_idtf:
+        [триллер](*<-lang_ru;;*);;
+
+Definition_genre_thriller
+    => nrel_main_idtf:
+        [Опр.(триллер)]  (* <- lang_ru;; *);;
+
+genre_thriller <- rrel_key_sc_element: Definition_genre_thriller
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_thriller.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+        -> literary_work;;
+        -> reader;;
+		*);;
+	*);;

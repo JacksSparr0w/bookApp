@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Centaur;;
+ancient_greek_mythical_creatures -> concept_Centaur;;
+
+concept_Centaur
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Кентавр]
+	(* <- lang_ru;;	*);
+	[Centaur]
+	(* <- lang_en;;	*);;
+
+concept_Centaur
+        <- lit_person;
+        <- male;
+        <- fiction_person;;
+
+concept_Centaur <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Кентавр)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Centaur.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Centaur <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Кентавр)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Centaur.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

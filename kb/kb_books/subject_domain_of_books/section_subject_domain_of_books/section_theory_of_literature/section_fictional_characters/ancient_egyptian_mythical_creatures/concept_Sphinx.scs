@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Sphinx;;
+ancient_egyptian_mythical_creatures -> concept_Sphinx;;
+
+concept_Sphinx
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Сфинкс]
+	(* <- lang_ru;;	*);
+	[Sphinx]
+	(* <- lang_en;;	*);;
+
+concept_Sphinx
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Sphinx <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Сфинкс)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Sphinx.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Sphinx <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Сфинкс)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Sphinx.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

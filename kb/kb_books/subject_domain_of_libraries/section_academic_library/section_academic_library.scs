@@ -1,0 +1,10 @@
+section_academic_library
+	=> nrel_main_idtf:
+		[Раздел. Учебные Библиотеки]
+			(* <- lang_ru;; *);;
+
+	 section_academic_library =  [*^"file://section_academic_library.scsi"*];;
+
+section_academic_library
+	-> rrel_key_sc_element:
+		concept_academic_library;;

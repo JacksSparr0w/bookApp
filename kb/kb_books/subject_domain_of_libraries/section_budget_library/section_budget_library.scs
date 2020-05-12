@@ -1,0 +1,10 @@
+section_budget_library
+	=> nrel_main_idtf:
+		[Раздел. Бюджетные Библиотеки]
+			(* <- lang_ru;; *);;
+
+	 section_budget_library =  [*^"file://section_budget_library.scsi"*];;
+
+section_budget_library
+	-> rrel_key_sc_element:
+		concept_budget_library;;

@@ -23,5 +23,6 @@ books_knowledge_base
 		subject_domain_of_primary;
 		subject_domain_of_educational_literature;
 		subject_domain_of_reference_books;
-		subject_domain_of_lyric_poetry
+		subject_domain_of_lyric_poetry;
+		subject_domain_of_libraries
 	};;

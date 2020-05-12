@@ -1,0 +1,36 @@
+concept_fictional_character -> concept_Fairy;;
+european_epos_mythical_creatures -> concept_Fairy;;
+
+concept_Fairy
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Фея]
+	(* <- lang_ru;;	*);
+	[Fairy]
+	(* <- lang_en;;	*);;
+
+concept_Fairy
+        <- lit_person;
+        <- female;
+        <- fiction_person;;
+
+concept_Fairy <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Фея)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Fairy.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Fairy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Фея)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Fairy.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

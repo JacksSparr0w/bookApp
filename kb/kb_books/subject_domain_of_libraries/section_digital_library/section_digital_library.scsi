@@ -1,0 +1,19 @@
+//-----------------------------------------------------------------//
+
+concept_digital_library
+<- sc_node_not_relation;
+<- concept_library;
+=> nrel_main_idtf:
+    [Электронная библиотека]
+    (* <- lang_ru;; *);
+    [Digital library]
+    (* <- lang_en;; *);;
+    
+concept_digital_library <-rrel_key_sc_element:... (*
+    <-definition;;
+    =>nrel_main_idtf:
+        [Определение (Электронная библиотека)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...(*
+        ->rrel_example: "file://HTML/concept_digital_library.html"(*<-lang_ru;;*);;
+    *);;
+*);;

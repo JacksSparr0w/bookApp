@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Harpy;;
+ancient_greek_mythical_creatures -> concept_Harpy;;
+
+concept_Harpy
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Гарпия]
+	(* <- lang_ru;;	*);
+	[Harpy]
+	(* <- lang_en;;	*);;
+
+concept_Harpy
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Harpy <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Гарпия)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Harpy.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Harpy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гарпия)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Harpy.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

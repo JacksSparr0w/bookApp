@@ -1,0 +1,353 @@
+nrel_material_source
+    <-sc_node_norole_relation;
+    => nrel_main_idtf: 
+        [Вещественный источник*]
+            (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Вещественный источник*)] (* <- lang_ru;; *);; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "nrel_material_source">Вещественный источник*</sc_element></b> --- вещь, выступающая в качестве источника информа­ции о других вещах и явлениях, прежде всего — о культуре, к которой эта вещь принадлежала или принадлежит, и о <sc_element sys_idtf = "literary_event">событиях</sc_element>, в которые она была включена. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Вещественный источник*)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Значительное своеобразие <b><sc_element sys_idtf = "nrel_material_source">вещественных источников</sc_element></b> вызвало необходимость изучения их специалистами-археологами, которые производят раскопки археологических памятников, исследуют и публикуют находки и результаты раскопок и восстанавливают по этим данным историческое прошлое человечества.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+    <- quasybinary_relation;
+    <= nrel_first_domain:
+        literary_work;
+    <= nrel_second_domain:
+        ..second_domain_of_nrel_theses
+        (*
+            <- set;;
+            <= nrel_boolean: literary_work;;
+        *);
+    =>nrel_definitional_domain: 
+        ...
+        (*
+            <= nrel_combination:
+                ...
+                (*
+                    -> literary_work;;
+                    -> ..set_primary_sources;;
+                *);;
+        *);
+    => nrel_inclusion: 
+        oriented_relation;
+        nonbinary_relation;;
+
+remaining_rocks
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+ 	    [Остальные камни]
+		    (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Остальные камни)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+        	    literary_event
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "remaining_rocks">Остальные камни</sc_element></b> --- высеченная на камне надпись, повествующая о <b><sc_element sys_idtf = "literary_event">событиях</sc_element></b> в древности.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Остальные камни)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "remaining_rocks">Камни</sc_element></b> были ранее священными камнями на капищах у язычников, а крест и надписи вытёсывались на них при христианизации населения.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+rock_inscription
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+        [Наскальная надпись]
+            (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Наскальная надпись)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+                lit_person
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "rock_inscription">Наскальная надпись</sc_element></b> --- изображения в пещерах, выполненные <b><sc_element sys_idtf = "lit_person">людьми</sc_element></b> эпохи палеолита.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Наскальная надпись)] (* <- lang_ru;; *);;
+             => nrel_using_constants: {
+                lit_person;
+                nrel_author
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "rock_inscription">Наскальные надписи</sc_element></b> также позволяют прослеживать распространение первобытных <b><sc_element sys_idtf = "lit_person">людей</sc_element></b> по Земле и, совместно с другими артефактами, дают представление о быте и культуре их <b><sc_element sys_idtf = "nrel_author">авторов</sc_element></b>, а также об их эволюции. Так, с помощью изучения наскальной живописи возможно проследить процесс одомашнивания животных и изменения состава фауны в близлежащей местности.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+fresco
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+        [Фреска]
+            (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Фреска)] (* <- lang_ru;; *);; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "fresco">Фреска</sc_element></b> --- живопись по сырой штукатурке, одна из техник стенных росписей. При высыхании содержащаяся в штукатурке известь образует тонкую прозрачную кальцитную плёнку, делающую фреску долговечной.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Фреска)] (* <- lang_ru;; *);;
+             => nrel_using_constants: {
+                lit_person
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [В Помпеях найдено более чем 2600 <b><sc_element sys_idtf = "fresco">фресок</sc_element></b>, содержащих в той или иной форме призыв голосовать за конкретного <b><sc_element sys_idtf = "lit_person">человека</sc_element></b>, а вот на стенах Геркуланума таких объявлений нет.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+tablet
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+        [Скрижаль]
+            (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Скрижаль)] (* <- lang_ru;; *);; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "tablet">Скрижаль</sc_element></b> --- доска или таблица с написанным на ней текстом (преимущ. священным, культовым).] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Скрижаль)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [По библейскому сказанию, 10 заповедей Моисея были записаны на <b><sc_element sys_idtf = "tablet">каменных табличках</sc_element></b> с горы Синай.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+clay_tablet
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+        [Глиняная табличка]
+            (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Глиняная табличка)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+                book
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "clay_tablet">Глиняная табличка</sc_element></b> --- это одна из первых материальных основ для <b><sc_element sys_idtf = "book">книги</sc_element></b>, появившаяся около 3500 лет до н. э. в Месопотамии. Глина и её производные (черепки, керамика) была, вероятно наиболее древним материалом для книг. Ещё шумеры и аккадцы лепили плоские кирпичики-таблички и писали на них трёхгранными палочками, выдавливая клинообразные знаки.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Глиняная табличка)] (* <- lang_ru;; *);;
+             => nrel_using_constants: {
+                book
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "clay_tablet">Таблички высушивались</sc_element></b>  на солнце или обжигались в огне. Затем готовые таблички одного содержания укладывались в определенном порядке в деревянный ящик — получалась глиняная клинописная <b><sc_element sys_idtf = "book">книга</sc_element></b>. Её достоинствами были дешевизна, простота, доступность.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+wax_tablet
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+        [Восковая дощечка]
+            (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Восковая дощечка)] (* <- lang_ru;; *);; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "wax_tablet">Восковая дощечка</sc_element></b> --- дощечка из твёрдого материала (самшит, бук, кость) с выдолбленным углублением, куда заливался тёмный воск. На дощечке писали, нанося на воск знаки острой металлической, деревянной либо костяной палочкой.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Восковая дощечка)] (* <- lang_ru;; *);;
+             => nrel_using_constants: {
+                papyrus;
+                parchment
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "wax_tablet">Восковые таблички</sc_element></b> служили для ежедневных записей, напоминали о делах, о долгах и обязательствах, служили черновиком текстов, которые затем переносились на <b><sc_element sys_idtf = "papyrus">папирус</sc_element></b> и <b><sc_element sys_idtf = "parchment">пергамент</sc_element></b>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+parchment
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+        [Пергамент]
+            (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Пергамент)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+                paper
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "parchment">Пергамент</sc_element></b> --- писчий материал из телячьей кожи, использовавшийся до изобретения <b><sc_element sys_idtf = "paper">бумаги</sc_element></b>, а также рукопись на таком материале.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Пергамент)] (* <- lang_ru;; *);;
+             => nrel_using_constants: {
+                section_literature_of_the_middle_ages
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [Бурный рост книгопечатания в <b><sc_element sys_idtf = "section_literature_of_the_middle_ages">Средние века</sc_element></b> привел к сокращению использования <b><sc_element sys_idtf = "parchment">пергамента</sc_element></b>, так как его цена и сложность изготовления, а также объём производства уже не удовлетворяли потребностей издателей. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+papyrus
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+        [Папирус]
+            (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Папирус)] (* <- lang_ru;; *);; 
+            => nrel_using_constants: {
+                section_literature_of_the_ancient_world
+            };;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "papyrus">Папирус</sc_element></b> --- материал для письма, выработанный из тропического травянистого растения у <b><sc_element sys_idtf = "section_literature_of_the_ancient_world">древних</sc_element></b> народов, а также рукопись на этом материале.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Папирус)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [В существующей исторической и археологической литературе встречаются противоположные мнения по вопросу о технических свойствах и сохранности <b><sc_element sys_idtf = "papyrus">папируса</sc_element></b> как письменного материала. Современные археологи отмечают, что некоторые образцы папирусов сохраняли изначальные свойства даже после очень длительного срока.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;
+
+paper
+    <- sc_node_not_relation;
+    => nrel_main_idtf: 
+        [Бумага]
+            (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр. (Бумага)] (* <- lang_ru;; *);; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "paper">Бумага</sc_element></b> --- материал для письма, а также для других целей, изготовляемый из древесной или тряпичной массы.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+            => nrel_main_idtf:
+                [Утв.(Бумага)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example:
+                        [<b><sc_element sys_idtf = "paper">Бумага</sc_element></b> не растворяется в воде, но легко намокает и при намокании многократно теряет прочность. После намокания и последующего высушивания бумажный лист также теряет форму, неравномерно уменьшаясь в размере в месте намокания.](*<-lang_ru;; => nrel_format: format_html;;*);;
+                *);;
+        *);;

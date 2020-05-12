@@ -1,0 +1,35 @@
+concept_fictional_character -> concept_Vampire;;
+european_epos_mythical_creatures -> concept_Vampire;;
+
+concept_Vampire
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Вампир]
+	(* <- lang_ru;;	*);
+	[Vampire]
+	(* <- lang_en;;	*);;
+
+concept_Vampire
+        <- lit_person;
+        <- fiction_person;;
+
+concept_Vampire <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Вампир)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/concept_Vampire.html"(* <-lang_ru;; *);;
+	*);;
+*);;
+
+concept_Vampire <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Вампир)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Vampire.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

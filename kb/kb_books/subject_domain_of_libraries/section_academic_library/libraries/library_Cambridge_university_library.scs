@@ -1,0 +1,49 @@
+//-----------------------------------------------------------------//
+concept_library -> library_Cambridge_university_library;;
+concept_academic_library -> library_Cambridge_university_library;;
+
+library_Cambridge_university_library
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Кембриджская университетская библиотека]
+	(* <- lang_ru;;	*);
+	[Cambridge University Library]
+	(* <- lang_en;;	*);;
+	
+library_Cambridge_university_library <-rrel_key_sc_element:... (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Кембриджская университетская библиотека)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://HTML/library_Cambridge_university_library.html"(*<-lang_ru;;*);;
+	*);;
+*);;
+
+library_Cambridge_university_library <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Кембриджская университетская библиотека)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/library_Cambridge_university_library.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+library_Cambridge_university_library
+=> nrel_location:
+    .library_Cambridge_university_library_location
+    (*
+	   -> country_Great_Britain;;
+    *);;
+
+library_Cambridge_university_library
+=> nrel_address:
+	.library_Cambridge_university_library_address
+	(*
+    	=> nrel_main_idtf: [West Rd, Cambridge CB3 9DR, UK]
+    	(* <- lang_en;; *);;
+    *);;
+
+number -> 8000000;;
+library_Cambridge_university_library => nrel_library_fund_volume: 8000000;;

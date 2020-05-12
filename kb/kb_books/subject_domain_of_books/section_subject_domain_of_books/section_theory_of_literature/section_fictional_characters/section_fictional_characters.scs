@@ -1,0 +1,18 @@
+section_fictional_characters
+	=> nrel_main_idtf:
+		[Раздел. Вымышленные персонажи]
+			(* <- lang_ru;; *);;
+
+	 section_fictional_characters =  [*^"file://section_fictional_characters.scsi"*];;
+
+section_fictional_characters
+	-> rrel_key_sc_element:	
+		concept_fictional_character;
+		nrel_mythical_creature;
+		ancient_greek_mythical_creatures;
+		sumerian_mythical_creatures;
+		ancient_egyptian_mythical_creatures;
+		slavonic_mythical_creatures;
+		european_epos_mythical_creatures;
+		asian_mythical_creatures;
+		american_mythical_creatures;;
