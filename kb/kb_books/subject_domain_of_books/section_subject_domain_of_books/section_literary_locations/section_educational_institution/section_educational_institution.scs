@@ -1,0 +1,30 @@
+section_of_educational_institution
+=> nrel_main_idtf:
+	[Раздел. Учреждения образования]
+		(* <- lang_ru;; *);;
+
+
+section_of_educational_institution =  [*^"file://section_educational_institution.scsi"*];;
+
+section_of_educational_institution
+-> rrel_key_sc_element: 
+specialized_school;
+Moscow_school_of_painting;
+Imperial_University_of_Moscow;
+Tsarskoye_selo_lyceum;
+Konstantinovsky_Zemstvo_school;
+university;
+educational_institution;
+Shanyavsky_peoples_university;
+Weidenhammer_boarding_house;
+Lazarevsky_Institute_Krause;
+Parish_school;
+school;
+nrel_education;
+BSU;
+BSUIR;
+BNTU;
+MSU;
+SPSU;
+BSEU;
+lyceum;;

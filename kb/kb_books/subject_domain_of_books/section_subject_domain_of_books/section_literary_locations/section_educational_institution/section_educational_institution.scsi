@@ -1,0 +1,512 @@
+lyceum
+<- sc_node_not_relation;
+<- educational_institution;
+	=> nrel_main_idtf: 
+		[лицей] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(лицей)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/lyceum.html" (* <-lang_ru;; *);;
+				*);;
+			
+		*);;
+
+specialized_school
+<- sc_node_not_relation;
+<- educational_institution;
+	=> nrel_main_idtf: 
+		[училище] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(училище)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/school.html" (* <-lang_ru;; *);;
+				*);;
+			
+		*);;
+
+Moscow_school_of_painting
+<- sc_node_not_relation;
+<- educational_institution;
+<- specialized_school;
+<- literary_location;
+<-  country_Russian_empire;
+<- Moscow;
+	=> nrel_main_idtf: 
+		[Московское училище живописи] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Московское училище живописи)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Moscow_school_of_painting.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> country_Russian_empire;;
+				*);;
+			
+		*);;
+
+university
+<- sc_node_not_relation;
+<- educational_institution;
+	=> nrel_main_idtf: 
+		[университет] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(университет)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/university.html" (* <-lang_ru;; *);;
+				*);;
+			
+		*);;
+
+educational_institution
+<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[Учрежждение образования] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Учреждение образования)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/educational_institution.html" (* <-lang_ru;; *);;
+				*);;
+			
+			
+		*);;
+
+
+Imperial_University_of_Moscow
+<- sc_node_not_relation;
+<- educational_institution;
+<- university;
+<- literary_location;
+<-  country_Russian_empire;
+<- Moscow;
+	=> nrel_main_idtf: 
+		[Императорский Московский университет] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Императорский Московский университет)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Imperial_University_of_Moscow.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> country_Russian_empire;;
+		->university;;
+				*);;
+			
+		*);;
+
+Tsarskoye_selo_lyceum
+<- sc_node_not_relation;
+<- educational_institution;
+<- lyceum;
+<- literary_location;
+<-  country_Russian_empire;
+<- Moscow;
+	=> nrel_main_idtf: 
+		[Царскосельский лицей] 
+			(* <-lang_ru;; *);
+
+=> nrel_idtf: 
+		[Александровский лицей] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Царскосельский лицей)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Tsarskoye_selo_lyceum.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> country_Russian_empire;;
+				*);;
+			
+		*);;
+
+Shanyavsky_peoples_university
+<- sc_node_not_relation;
+<- educational_institution;
+<- university;
+<- literary_location;
+<-  country_Russian_empire;
+<- Moscow;
+	=> nrel_main_idtf: 
+		[Народный университет Шанявского] 
+			(* <-lang_ru;; *);
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(ЦНародный университет Шанявского)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Shanyavsky_peoples_university.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> country_Russian_empire;;
+					-> Moscow;;
+				*);;
+			
+		*);;
+
+BSU
+<- sc_node_not_relation;
+<- educational_institution;
+<- university;
+<- literary_location;
+<- country_Belarus;
+-> Publishing_house_of_BSU;
+<- Minsk;
+	=> nrel_main_idtf: 
+		[Белорусский государственный университет] 
+			(* <-lang_ru;; *);
+=> nrel_idtf: 
+		[БГУ] 
+			(* <-lang_ru;; *);
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Белорусский государственный университет)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/BSU.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> country_Belarus;;
+					-> Minsk;;
+				*);;
+			
+		*);;
+
+
+BSUIR
+<- sc_node_not_relation;
+<- educational_institution;
+<- university;
+<- literary_location;
+<- country_Belarus;
+<- Minsk;
+	=> nrel_main_idtf: 
+		[Белорусский государственный университет информатики и радиоэлектроники] 
+			(* <-lang_ru;; *);
+=> nrel_idtf: 
+		[БГУИР] 
+			(* <-lang_ru;; *);
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Белорусский государственный университет информатики и радиоэлектроники)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/BSUIR.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> country_Belarus;;
+				
+				*);;
+			
+		*);;
+
+
+BNTU
+<- sc_node_not_relation;
+<- educational_institution;
+<- university;
+<- literary_location;
+<- country_Belarus;
+<- Minsk;
+	=> nrel_main_idtf: 
+		[Белорусский национальный технический университет] 
+			(* <-lang_ru;; *);
+=> nrel_idtf: 
+		[БНТУ] 
+			(* <-lang_ru;; *);
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Белорусский национальный технический университет)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/BNTU.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> country_Belarus;;
+									*);;
+			
+		*);;
+
+
+
+MSU
+<- sc_node_not_relation;
+<- educational_institution;
+<- university;
+<- literary_location;
+<- country_Russia;
+-> Imperial_University_of_Moscow;
+<- Moscow;
+	=> nrel_main_idtf: 
+		[Московский государственный университет] 
+			(* <-lang_ru;; *);
+=> nrel_idtf: 
+		[МГУ] 
+			(* <-lang_ru;; *);
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Московский государсвтенный университет)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/MSU.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> country_Russia;;
+			-> Imperial_University_of_Moscow;;
+				->university;;
+				
+				*);;
+			
+		*);;
+
+
+
+
+SPSU
+<- sc_node_not_relation;
+<- educational_institution;
+<- university;
+<- literary_location;
+<- country_Russia;
+<- St._Petersburg;
+	=> nrel_main_idtf: 
+		[Санкт-Петербургский государственный университет] 
+			(* <-lang_ru;; *);
+=> nrel_idtf: 
+		[СПГУ] 
+			(* <-lang_ru;; *);
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Санкт-Петербургский государственный университет)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/SPSU.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> country_Russia;;
+					->university;;
+				
+				*);;
+			
+		*);;
+
+
+
+
+BSEU
+<- sc_node_not_relation;
+<- educational_institution;
+<- university;
+<- literary_location;
+<- country_Belarus;
+<- Minsk;
+	=> nrel_main_idtf: 
+		[Белорусский государственный экономический университет] 
+			(* <-lang_ru;; *);
+=> nrel_idtf: 
+		[БГЭУ] 
+			(* <-lang_ru;; *);
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Белорусский государственный экономический университет)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/BSEU.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> country_Belarus;;
+				
+				*);;
+			
+		*);;
+
+Konstantinovsky_Zemstvo_school
+<- sc_node_not_relation;
+<- educational_institution;
+<- specialized_school;
+<- literary_location;
+<-  country_Russian_empire;
+<- Konstantinovo;
+	=> nrel_main_idtf: 
+		[Константиновское земское училище] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(МоКонстантиновское земское училище)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/Konstantinovsky_Zemstvo_school.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> Konstantinovo;;
+				*);;
+			
+		*);;
+
+Parish_school
+<- sc_node_not_relation;
+<- educational_institution;
+<- school;
+<- literary_location;
+<-  country_Russian_empire;
+	=> nrel_main_idtf: 
+		[Церковно-приходская школа] 
+			(* <-lang_ru;; *);;
+
+school
+<- sc_node_not_relation;
+<- educational_institution;
+=> nrel_main_idtf: 
+		[школа] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(школа)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://htmls/school1.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> educational_institution;;
+				*);;
+			
+		*);;
+
+
+nrel_education
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+		[образование*] 
+			(* <-lang_ru;; *);;
+
+
+
+
+Weidenhammer_boarding_house
+<- sc_node_not_relation;
+=> nrel_main_idtf: 
+		[Пансион Вейденгаммера] 
+			(* <-lang_ru;; *);;
+
+Lazarevsky_Institute_Krause
+<- sc_node_not_relation;
+=> nrel_main_idtf: 
+		[Лазаревский институт Краузе] 
+			(* <-lang_ru;; *);;
+
+
+
+
+
