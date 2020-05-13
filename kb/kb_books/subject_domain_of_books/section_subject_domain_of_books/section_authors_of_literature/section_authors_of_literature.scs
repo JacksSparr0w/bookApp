@@ -1,6 +1,6 @@
-subject_domain_of_authors_of_literature
+section_of_authors_of_literature
 => nrel_main_idtf:
-	[Предметная область писателей]
+	[Раздел. Писатели]
 		(* <- lang_ru;; *);
 
 
@@ -25,9 +25,9 @@ subject_domain_of_authors_of_literature
 section_of_authors_biography
 	};;
 
-subject_domain_of_authors_of_literature =  [*^"file://section_authors_of_literature.scsi"*];;
+section_of_authors_of_literature =  [*^"file://section_authors_of_literature.scsi"*];;
 
-subject_domain_of_authors_of_literature
+section_of_authors_of_literature
 -> rrel_key_sc_element: 
 	playwright;
 	literary_critic;

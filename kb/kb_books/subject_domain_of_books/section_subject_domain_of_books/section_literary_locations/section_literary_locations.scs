@@ -2,6 +2,9 @@ section_literary_locations
 	=> nrel_main_idtf:
 		[Раздел. Литературные локации]
 			(* <- lang_ru;; *);;
+
+
+section_literary_locations
 	<= nrel_section_decomposition:
 {
 section_of_educational_institution
