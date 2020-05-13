@@ -1,6 +1,6 @@
 section_role_of_lit_person
 	=> nrel_main_idtf:
-		[Раздел. Литературных персонажей]
+		[Раздел. Литературные персонажи]
 			(* <- lang_ru;; *);;
 	
 section_role_of_lit_person =  [*^"file://section_role_of_lit_person.scsi"*];;

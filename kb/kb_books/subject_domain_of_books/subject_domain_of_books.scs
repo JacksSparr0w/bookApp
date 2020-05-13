@@ -35,9 +35,9 @@ section_of_journals;;
 section_of_journals
 (*
 => nrel_section_base_order:
-section_of_literary_locations;;
+section_literary_locations;;
 *);
-section_of_literary_locations
+section_literary_locations
 (*
 => nrel_section_base_order:
 section_literary_events;;
