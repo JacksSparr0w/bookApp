@@ -79,7 +79,9 @@ BestBooks.PaintPanel.prototype = {
                         window.scHelper.getAnswer(result.question).done(function (addr) {                       
                                 window.scHelper.getSetElements(addr).done(function(set) {
                                     SCWeb.core.Server.resolveIdentifiers(set, function(idtfs){
-                                    	let item = Object.entries(idtfs)[0];
+                                    	let item;
+					Object.entries(idtfs).forEach(el=>{if (el[1]  != "средняя оценка*"){
+					item =el;}});
                                         $(results).append('<div class="scs-scn-keyword"><a href="#" class="scs-scn-element scs-scn-field scs-scn-highlighted" sc_addr=' + item[0] + '>' + item[1] + '</a></div>');
                                         console.log("item", item);
                                     });
