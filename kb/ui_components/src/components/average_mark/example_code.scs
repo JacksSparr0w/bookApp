@@ -1,0 +1,5 @@
+average_mark
+=> nrel_main_idtf: 
+	[Средняя оценка книги] (* <-lang_ru;; *) ;
+	[Average mark] (* <-lang_en;; *) ;
+ <- ui_external_languages;;

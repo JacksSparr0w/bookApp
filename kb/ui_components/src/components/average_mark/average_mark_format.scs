@@ -1,0 +1,15 @@
+average_mark_format
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf: 
+	[формат компонента ПИ средней оценки] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[format of UI component average mark] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;
