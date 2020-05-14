@@ -48,7 +48,7 @@ char_shagane
 
 char_northern_girl
         => nrel_main_idtf: 
-            [Девушка с севера] (* <-lang_ru;; *);
+            [девушка с севера] (* <-lang_ru;; *);
         <- lit_person;
 	<- person;
         <- female;
@@ -56,7 +56,7 @@ char_northern_girl
             ...
             (*
                 => nrel_main_idtf:
-                    [Описание персонажа(Девушка с севера)] (* <-lang_ru;; *);;
+                    [Описание персонажа(девушка с севера)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: 
                     ...
                     (*
