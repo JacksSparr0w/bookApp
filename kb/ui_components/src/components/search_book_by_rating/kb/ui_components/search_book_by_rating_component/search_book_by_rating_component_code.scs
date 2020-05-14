@@ -1,0 +1,27 @@
+format_search_book_by_rating_json
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf:
+	[формат book search (json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[format book search (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;
+
+search_book_by_rating_code <- ui_external_languages;
+=> nrel_main_idtf: 
+	[Поиск книг по оценке]
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[Find books by rating] 
+	(* 
+	<- lang_en;;
+	*);;
