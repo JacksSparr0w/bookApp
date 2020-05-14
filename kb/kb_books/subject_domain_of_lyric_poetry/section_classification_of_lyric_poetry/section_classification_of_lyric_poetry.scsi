@@ -1,13 +1,13 @@
 sonnet 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Cонет] 
+		[сонет] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Cонет)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(сонет)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -18,13 +18,13 @@ sonnet
 fable 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Басня] 
+		[басня] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Басня)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(басня)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -35,13 +35,13 @@ fable
 ode 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Ода] 
+		[ода] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Ода)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(ода)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -60,13 +60,13 @@ ode
 hymn 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Гимн] 
+		[гимн] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Гимн)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(гимн)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -77,13 +77,13 @@ hymn
 monostich 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Моностих] 
+		[моностих] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Моностих)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(моностих)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -100,13 +100,13 @@ monostich
 dithyramb 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Дифирамб] 
+		[дифирамб] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Дифирамб)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(дифирамб)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -123,13 +123,13 @@ dithyramb
 elegy 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Элегия] 
+		[элегия] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Элегия)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(элегия)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -140,13 +140,13 @@ elegy
 verse 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Стих] 
+		[стих] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Стих)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(стих)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -163,13 +163,13 @@ verse
 stanze 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Стансы] 
+		[стансы] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Стансы)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(стансы)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -180,13 +180,13 @@ stanze
 romance 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Романс] 
+		[романс] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Романс)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(романс)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -203,13 +203,13 @@ romance
 genre_poem 
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: 
-		[Поэма] 
+		[поэма] 
 			(* <-lang_ru;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
 			<- definition;;
-			=> nrel_main_idtf: [Опр.(Поэма)] (* <-lang_ru;; *);;
+			=> nrel_main_idtf: [Опр.(поэма)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 

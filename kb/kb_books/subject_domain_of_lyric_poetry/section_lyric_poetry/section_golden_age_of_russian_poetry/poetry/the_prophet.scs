@@ -29,7 +29,7 @@ the_prophet
 
 char_prophet
         => nrel_main_idtf: 
-            [Пророк] (* <-lang_ru;; *);
+            [пророк] (* <-lang_ru;; *);
         <- lit_person;
 	<- person;
         <- male;
@@ -37,7 +37,7 @@ char_prophet
             ...
             (*
                 => nrel_main_idtf:
-                    [Описание персонажа(Пророк)] (* <-lang_ru;; *);;
+                    [Описание персонажа(пророк)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: 
                     ...
                     (*

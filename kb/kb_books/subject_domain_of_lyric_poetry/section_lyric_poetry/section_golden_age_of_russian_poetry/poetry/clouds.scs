@@ -29,7 +29,7 @@ clouds
 
 char_clouds
         => nrel_main_idtf: 
-            [Тучи] (* <-lang_ru;; *);
+            [тучи] (* <-lang_ru;; *);
         <- lit_person;
         <- rrel_key_sc_element:
             ...

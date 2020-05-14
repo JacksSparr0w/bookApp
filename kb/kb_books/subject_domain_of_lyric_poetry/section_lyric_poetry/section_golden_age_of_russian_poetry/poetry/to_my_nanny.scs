@@ -29,7 +29,7 @@ to_my_nanny
 
 char_nanny
         => nrel_main_idtf: 
-            [Няня] (* <-lang_ru;; *);
+            [няня] (* <-lang_ru;; *);
         <- lit_person;
 	<- person;
         <- female;
