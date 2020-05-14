@@ -29,7 +29,7 @@ i_loved_you
 
 char_woman_lover
         => nrel_main_idtf: 
-            [Женщина] (* <-lang_ru;; *);
+            [женщина] (* <-lang_ru;; *);
         <- lit_person;
 	<- person;
         <- female;

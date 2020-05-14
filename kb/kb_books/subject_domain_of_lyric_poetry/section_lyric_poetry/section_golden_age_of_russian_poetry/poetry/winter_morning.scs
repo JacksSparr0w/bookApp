@@ -28,7 +28,7 @@ winter_morning
 
 char_beloved
         => nrel_main_idtf: 
-            [Возлюбленная] (* <-lang_ru;; *);
+            [возлюбленная] (* <-lang_ru;; *);
         <- lit_person;
 	<- person;
         <- female;
@@ -36,7 +36,7 @@ char_beloved
             ...
             (*
                 => nrel_main_idtf:
-                    [Описание персонажа(Возлюбленная)] (* <-lang_ru;; *);;
+                    [Описание персонажа(возлюбленная)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: 
                     ...
                     (*
