@@ -1,0 +1,2424 @@
+concept_ancient_Egypt 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Древний Египет]
+		(* <- lang_ru;;	*);;
+
+concept_ancient_Egypt
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Древний Египет)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_ancient_Egypt.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_ancient_world;;
+            -> concept_Africa;;
+            -> concept_culture;;
+            -> concept_river_Nile;;
+        *);;
+*);;
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+concept_Aker
+	<- sc_node_not_relation;
+	<- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Акер]
+		(* <- lang_ru;;	*);;
+
+concept_Aker	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Акер)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Aker.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_element_earth;;
+            
+        *);;
+*);;
+
+concept_Aker
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Акер)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Aker_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Geb;;
+        *);;
+    *);;
+
+concept_Aker <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Акер)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Aker.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+concept_Amun
+	<- sc_node_not_relation;
+	<- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Амун]
+		(* <- lang_ru;;	*);;
+
+
+concept_Amun	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Амун)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Amun.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_element_air;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Amun <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Амун)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Amun.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+concept_Amun => rrel_husband: concept_Mut;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+concept_Anhur
+	<- sc_node_not_relation;
+	<- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Онурис]
+		(* <- lang_ru;;	*);;
+
+
+concept_Anhur	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Онурис)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Anhur.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_ancient_Egypt;;
+            -> concept_god;;
+            -> concept_hunting;;
+            -> concept_war;;
+        *);;
+*);;
+
+concept_Anhur
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Онурис)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Anhur_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Ra;;
+			-> concept_Set;;
+			-> concept_Horus;;
+			-> concept_Apep;;
+        *);;
+    *);;
+
+concept_Anhur <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Онурис)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Anhur.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+concept_Atum
+	<- sc_node_not_relation;
+	<- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Атум]
+		(* <- lang_ru;;	*);;
+
+
+concept_Atum	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Атум)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Atum.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+        *);;
+*);;
+
+concept_Atum
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Атум)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Atum_stat.html";;
+        *);;
+    *);;
+
+concept_Atum <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Атен)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Atum.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+concept_Bennu
+	<- sc_node_not_relation;
+	<- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Бенну]
+		(* <- lang_ru;;	*);;
+
+
+concept_Bennu	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Бенну)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Bennu.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+
+concept_Bennu <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Бенну)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Bennu.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+concept_Geb
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Геб]
+		(* <- lang_ru;;	*);;
+
+
+concept_Geb	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Геб)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Geb.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Geb
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Геб)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Geb_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Nut;;
+			-> concept_Osiris;;
+			-> concept_Isis;;
+			-> concept_Nephthys;;
+            -> concept_Set;;
+            -> concept_Tefinut;;
+            -> concept_Shu;;
+        *);;
+    *);;
+
+concept_Geb <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Геб)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Geb.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Shu => nrel_son: concept_Geb;;
+concept_Tefinut => nrel_son: concept_Geb;;
+concept_Geb -> rrel_husband: concept_Nut;;
+concept_Geb -> rrel_brother: concept_Nut;;
+concept_Geb => nrel_son: concept_Osiris;;
+concept_Geb => nrel_son: concept_Set;;
+concept_Geb => nrel_daughter: concept_Isis;;
+concept_Geb => nrel_daughter: concept_Nephthys;;
+
+
+
+
+
+concept_Set ->rrel_brother: concept_Osiris;;
+concept_Set ->rrel_sister: concept_Isis;;
+concept_Set ->rrel_sister: concept_Nephthys;;
+
+
+concept_Isis ->rrel_brother: concept_Osiris;;
+concept_Isis ->rrel_brother: concept_Set;;
+concept_Isis ->rrel_sister: concept_Nephthys;;
+
+
+concept_Nephthys ->rrel_brother: concept_Osiris;;
+concept_Nephthys ->rrel_brother: concept_Set;;
+concept_Nephthys ->rrel_sister: concept_Isis;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+concept_Hapi
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Хапи]
+		(* <- lang_ru;;	*);;
+
+
+concept_Hapi	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Хапи)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Hapi.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_river_Nile;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Hapi
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Хапи)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Hapi_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_river_Nile;;
+        *);;
+    *);;
+
+concept_Hapi <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Хапи)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Hapi.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+concept_Horus
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Хорус]
+		(* <- lang_ru;;	*);;
+
+
+concept_Horus	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Хорус)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Horus.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Horus
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Хорус)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Horus_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Osiris;;
+			-> concept_Isis;;
+			-> concept_Set;;
+        *);;
+    *);;
+
+concept_Horus <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Хорус)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Horus.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+
+concept_Osiris => nrel_son: concept_Horus;;
+concept_Isis => nrel_son: concept_Horus;;
+concept_Horus => nrel_enemy: concept_Set;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+concept_Khnum
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Хнум]
+		(* <- lang_ru;;	*);;
+
+
+concept_Khnum	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Хнум)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Khnum.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_river_Nile;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Khnum
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Хнум)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Khnum_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_river_Nile;;
+        *);;
+    *);;
+
+concept_Khnum <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Хнум)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Khnum.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+concept_Khonsu
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Хонсу]
+		(* <- lang_ru;;	*);;
+
+
+concept_Khonsu	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Хонсу)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Khonsu.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+            -> concept_moon;;
+            -> concept_sky;;
+        *);;
+*);;
+
+concept_Khonsu
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Хонсу)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Khonsu_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+			-> concept_Amun;;
+			-> concept_Mut;;
+			-> concept_Nut;;
+        *);;
+    *);;
+
+concept_Khonsu <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Хонсу)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Khonsu.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Amun => nrel_son: concept_Khonsu;;
+concept_Mut => nrel_son: concept_Khonsu;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+concept_Maahes
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Маахес]
+		(* <- lang_ru;;	*);;
+
+
+concept_Maahes	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Маахес)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Maahes.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+            -> concept_war;;
+        *);;
+*);;
+
+concept_Maahes
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Маахес)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Maahes_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+			-> concept_Bastet;;
+        *);;
+    *);;
+
+concept_Maahes <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Маахес)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Maahes.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+concept_Bastet => nrel_son: concept_Maahes;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+concept_Montu
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Монту]
+		(* <- lang_ru;;	*);;
+
+
+concept_Montu	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Монту)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Montu.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Montu
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Монту)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Montu_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Ra;;
+        *);;
+    *);;
+
+concept_Montu <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Монту)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Montu.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+concept_Ra => nrel_son: concept_Montu;;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+concept_Nefertum
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Нефертум]
+		(* <- lang_ru;;	*);;
+
+
+concept_Nefertum	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Нефертум)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Nefertum.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Nefertum
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Нефертум)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Nefertum_stat.html";;
+        *);;
+    *);;
+
+concept_Nefertum <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Нефертум)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Nefertum.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+concept_Osiris
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Осисрис]
+		(* <- lang_ru;;	*);;
+
+
+concept_Osiris	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Осисрис)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Osiris.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_river_Nile;;
+            -> concept_Isis;;
+            -> concept_Horus;;
+        *);;
+*);;
+
+concept_Osiris
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Осисрис)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Osiris_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Set;;
+			-> concept_Isis;;
+        *);;
+    *);;
+
+concept_Osiris <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Осисрис)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Osiris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Osiris ->rrel_brother: concept_Set;;
+concept_Osiris -> rrel_husband: concept_Isis;;
+concept_Osiris ->rrel_sister: concept_Isis;;
+concept_Osiris ->rrel_sister: concept_Nephthys;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+concept_Ptah
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Птах]
+		(* <- lang_ru;;	*);;
+
+
+concept_Ptah	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Птах)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Ptah.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_Isis;;
+        *);;
+*);;
+
+concept_Ptah
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Птах)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Ptah_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Sekhmet;;
+			-> concept_Nefertum;;
+			-> concept_triad_of_Memphis;;
+        *);;
+    *);;
+
+concept_Ptah <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Птах)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Ptah.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Ptah -> rrel_husband: concept_Sekhmet;;
+concept_Ptah => nrel_son: concept_Nefertum;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+concept_Ra
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Ра]
+		(* <- lang_ru;;	*);;
+
+
+concept_Ra	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Ра)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Ra.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Ra
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Ра)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Ra_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_sky;;
+            -> concept_earth;;
+            -> concept_underworld;;       
+        *);;
+    *);;
+
+concept_Ra <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ра)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Ra.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+concept_Set
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Сет]
+		(* <- lang_ru;;	*);;
+
+
+concept_Set	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Сет)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Set.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Set
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Сет)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Set_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Osiris;;
+            -> concept_Isis;;
+            -> concept_Horus;;
+            -> concept_Nephthys;;
+            -> concept_ancient_Egypt;;
+        *);;
+    *);;
+
+concept_Set <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Сет)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Set.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+concept_Shu
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Шу]
+		(* <- lang_ru;;	*);;
+
+
+concept_Shu	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Шу)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Shu.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+            -> concept_Tefinut;;
+        *);;
+*);;
+
+concept_Shu
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Шу)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Shu_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_element_air;;
+            -> concept_element_earth;;
+        *);;
+    *);;
+
+concept_Shu <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Шу)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Shu.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+concept_Sobek
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Собек]
+		(* <- lang_ru;;	*);;
+
+
+concept_Sobek	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Собек)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Sobek.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+            -> concept_river_Nile;;
+        *);;
+*);;
+
+concept_Sobek
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Собек)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Sobek_stat.html";;
+        *);;
+    *);;
+
+concept_Sobek <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Собек)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Sobek.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+concept_Thoth
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Тот]
+		(* <- lang_ru;;	*);;
+
+
+concept_Thoth	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Тот)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Thoth.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+            -> concept_Maat;;
+        *);;
+*);;
+
+concept_Thoth
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Тот)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Thoth_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_moon;;
+        *);;
+    *);;
+
+concept_Thoth <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Тот)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Thoth.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+
+concept_Thoth -> rrel_husband: concept_Maat;;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+concept_Anuket
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Анукет]
+		(* <- lang_ru;;	*);;
+
+
+concept_Anuket	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Анукет)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Anuket.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+            -> concept_river_Nile;;
+        *);;
+*);;
+
+concept_Anuket
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Анукет)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Anuket_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Ra;;
+			-> concept_Satet;;
+        *);;
+    *);;
+
+concept_Anuket <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Анукет)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Anuket.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+concept_Anuket => nrel_daughter: concept_Ra;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+concept_Bastet
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Бастет]
+		(* <- lang_ru;;	*);;
+
+
+concept_Bastet	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Бастет)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Bastet.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Bastet
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Бастет)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Bastet_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Ra;;
+            -> concept_Apep;;
+        *);;
+    *);;
+
+concept_Bastet <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Бастет)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Bastet.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+concept_Bastet => nrel_enemy: concept_Apep;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+concept_Hathor
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Хатор]
+		(* <- lang_ru;;	*);;
+
+
+concept_Hathor	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Хатор)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Hathor.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+            -> concept_Ra;;
+        *);;
+*);;
+
+concept_Hathor
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Хатор)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Hathor_stat.html";;
+        *);;
+    *);;
+
+concept_Hathor <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Хатор)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Hathor.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+concept_Hathor => nrel_daughter: concept_Ra;;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+concept_Isis
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Исис]
+		(* <- lang_ru;;	*);;
+
+
+concept_Isis	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Исис)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Isis.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+            -> concept_moon;;
+        *);;
+*);;
+
+concept_Isis
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Исис)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Isis_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Osiris;;
+			-> concept_Horus;;
+        *);;
+    *);;
+
+concept_Isis <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Исис)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Isis.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+concept_Isis => rrel_wife: concept_Osiris;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+concept_Maat
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Ма'ат]
+		(* <- lang_ru;;	*);;
+
+
+concept_Maat	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Ма'ат)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Maat.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Maat
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Ма'ат)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Maat_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Thoth;;
+			-> concept_justice;;
+        *);;
+    *);;
+
+concept_Maat <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ма'ат)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Maat.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Maat => rrel_wife: concept_Thoth;;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+concept_Mut
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Мут]
+		(* <- lang_ru;;	*);;
+
+
+concept_Mut	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Мут)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Mut.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Mut
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Мут)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Mut_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_cobra;;
+			-> concept_cat;;
+			-> concept_lioness;;
+            -> concept_cow;;
+			-> concept_vulture;;
+        *);;
+    *);;
+
+concept_Mut <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мут)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Mut.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Mut => rrel_wife: concept_Amun;;
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+concept_Neith
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Неит]
+		(* <- lang_ru;;	*);;
+
+
+concept_Neith	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Неит)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Neith.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+            -> concept_city_Sais;;
+            -> concept_river_Nile;;
+        *);;
+*);;
+
+concept_Neith
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Неит)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Neith_stat.html";;
+        *);;
+    *);;
+
+concept_Neith <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Неит)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Neith.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+concept_Nekhbet
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Нехбет]
+		(* <- lang_ru;;	*);;
+
+
+concept_Nekhbet	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Нехбет)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Nekhbet.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Nekhbet
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Нехбет)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Nekhbet_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_city;;
+            -> concept_upper_Egypt;;
+        *);;
+    *);;
+
+concept_Nekhbet <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Нехбет)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Nekhbet.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+concept_Nephthys
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Нефтида]
+		(* <- lang_ru;;	*);;
+
+
+concept_Nephthys	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Нефтида)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Nekhbet.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Nephthys
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Нефтида)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Nekhbet_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Geb;;
+			-> concept_Nut;;
+			-> concept_Isis;;
+			-> concept_Osiris;;
+			-> concept_Set;;
+			-> concept_Anubis;;
+        *);;
+    *);;
+
+concept_Nephthys <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Нефтида)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Nekhbet.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Nephthys => rrel_wife: concept_Set;;
+concept_Anubis => nrel_son: concept_Nephthys;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+concept_Nut
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Нут]
+		(* <- lang_ru;;	*);;
+
+
+concept_Nut	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Нут)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Nut.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Nut
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Нут)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Nut_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Ra;;
+        *);;
+    *);;
+
+concept_Nut <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Нут)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Nut.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_Nut -> rrel_wife: concept_Geb;;
+concept_Nut => nrel_son: concept_Osiris;;
+concept_Nut => nrel_son: concept_Set;;
+concept_Nut => nrel_daughter: concept_Isis;;
+concept_Nut => nrel_daughter: concept_Nephthys;;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+concept_Pakhet
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Пахет]
+		(* <- lang_ru;;	*);;
+
+
+concept_Pakhet	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Пахет)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Pakhet.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+
+concept_Pakhet <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Пахет)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Pakhet.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+concept_Renenutet
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Рененутет]
+		(* <- lang_ru;;	*);;
+
+
+concept_Renenutet	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Рененутет)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Renenutet.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Renenutet <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Рененутет)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Renenutet.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+concept_Satet
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Статет]
+		(* <- lang_ru;;	*);;
+
+
+concept_Satet	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Статет)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Satet.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Satet <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Статет)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Satet.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+concept_Satet ->rrel_wife: concept_Ptah;;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+concept_Sekhmet
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Сехмет]
+		(* <- lang_ru;;	*);;
+
+
+concept_Sekhmet	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Сехмет)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Sekhmet.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Sekhmet
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Сехмет)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Sekhmet_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Ptah;;
+            -> concept_desert;;
+        *);;
+    *);;
+
+concept_Sekhmet <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Сехмет)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Sekhmet.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+concept_Tefinut
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Тефинут]
+		(* <- lang_ru;;	*);;
+
+
+concept_Tefinut	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Тефинут)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Tefinut.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Tefinut
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Тефинут)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Tefinut_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Nut;;
+			-> concept_Geb;;
+        *);;
+    *);;
+
+concept_Tefinut <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Тефинут)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Tefinut.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+concept_Wadjet
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Ваджет]
+		(* <- lang_ru;;	*);;
+
+
+concept_Wadjet	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Ваджет)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Wadjet.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+
+concept_Wadjet <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ваджет)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Wadjet.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+concept_Anubis
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Анубис]
+		(* <- lang_ru;;	*);;
+
+
+concept_Anubis	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Анубис)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Anubis.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Anubis
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Анубис)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Anubis_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_human;;
+            -> concept_jackal;;
+        *);;
+    *);;
+
+concept_Anubis <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Анубис)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Anubis.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+concept_Apep
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[Апеп]
+		(* <- lang_ru;;	*);;
+
+
+concept_Apep	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Апеп)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_Apep.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_god;;
+            -> concept_ancient_Egypt;;
+        *);;
+*);;
+
+concept_Apep
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(Апеп)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://content/content_htmls/concept_Apep_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_Ra;;
+        *);;
+    *);;
+
+concept_Apep <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Апеп)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_Apep.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+concept_river_Nile
+	<- sc_node_not_relation;
+    <- concept_ancient_Egypt;
+	=> nrel_main_idtf:
+		[река Нил]
+		(* <- lang_ru;;	*);;
+
+
+concept_river_Nile	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(река Нил)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/concept_river_Nile.html" (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:...
+        (*
+            -> concept_Africa;;
+            -> concept_river;;
+        *);;
+*);;
+concept_river_Nile <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (река Нил)](*<-lang_ru;;*);;	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://content/content_imgs/concept_river_Nile.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+nrel_enemy 
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [враг*](*<- lang_ru;;*);;
+
+nrel_enemy
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(враг*)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/enemy.html" (* <- lang_ru;; *);;
+			*);;
+		 <= nrel_using_constants:...
+        (*
+            -> person;;
+		*);;
+*);;
+
+nrel_enemy => nrel_first_domain:creature;;
+nrel_enemy => nrel_second_domain:creature;;
+
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_enemy;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;
+
+antireflexive_relation -> nrel_enemy;;
+antitransitive_relation -> nrel_enemy;;
+antisymmetric_relation -> nrel_enemy;;
+
+oriented_relation -> nrel_enemy;;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
