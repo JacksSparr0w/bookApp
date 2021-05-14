@@ -1,0 +1,55 @@
+section_myths_of_ancient_Egypt
+=> nrel_main_idtf:
+	[Раздел. Мифы Древнего Египта]
+	(* <- lang_ru;; *);;
+
+section_myths_of_ancient_Egypt = [*^"file://section_myths_of_ancient_Egypt.scsi"*];;
+
+section_myths_of_ancient_Egypt
+-> rrel_key_sc_element:
+                concept_ancient_Egypt;
+                concept_god;
+                concept_halfgod;
+				nrel_son;
+				nrel_daughter;
+                nrel_enemy;
+                concept_Aker;
+                concept_Amun;
+                concept_Anhur;
+                concept_Atum;
+                concept_Bennu;
+                concept_Geb;
+                concept_Hapi;
+                concept_Horus;
+                concept_Khnum;
+                concept_Khonsu;
+                concept_Maahes;
+                concept_Montu;
+                concept_Nefertum;
+                concept_Osiris;
+                concept_Ptah;
+                concept_Ra;
+                concept_Set;
+                concept_Shu;
+                concept_Sobek;
+                concept_Thoth;
+                concept_Anuket;
+                concept_Bastet;
+                concept_Hathor;
+                concept_Isis;
+                concept_Maat;
+                concept_Mut;
+                concept_Neith;
+                concept_Nekhbet;
+                concept_Nephthys;
+                concept_Nut;
+                concept_Pakhet;
+                concept_Renenutet;
+                concept_Satet;
+                concept_Sekhmet;
+                concept_Tefinut;
+                concept_Wadjet;
+                concept_Anubis;
+                concept_river_Nile;
+                concept_Apep;;
+	 

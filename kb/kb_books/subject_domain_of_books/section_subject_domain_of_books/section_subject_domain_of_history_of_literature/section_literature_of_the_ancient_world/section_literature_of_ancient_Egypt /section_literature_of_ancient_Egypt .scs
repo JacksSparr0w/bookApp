@@ -1,0 +1,21 @@
+section_literature_of_ancient_Egypt 
+=> nrel_main_idtf:
+	[Раздел. Литература Древнего Египта]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Literature of Ancient Egypt]
+	(* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_literature_of_ancient_Egypt.html" (* <-lang_ru;; *);;
+		*);
+
+<= nrel_section_decomposition:
+	{
+		section_myths_of_ancient_Egypt
+	};;
+
+
+
+
