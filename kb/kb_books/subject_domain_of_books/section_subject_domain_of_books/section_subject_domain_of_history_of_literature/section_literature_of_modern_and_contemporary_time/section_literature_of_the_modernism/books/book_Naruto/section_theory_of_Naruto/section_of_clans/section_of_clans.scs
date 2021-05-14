@@ -1,0 +1,11 @@
+section_of_clans
+=> nrel_main_idtf:
+	[Раздел. Кланы]
+		(* <- lang_ru;; *);
+-> rrel_key_sc_element:
+    Uchiha;
+    Senju;
+    Uzumaki;;
+
+section_of_clans = [*^"file://section_of_clans.scsi"*];;
+

@@ -1,0 +1,11 @@
+section_of_doujutsu
+=> nrel_main_idtf:
+	[Раздел. Доуджутсу]
+		(* <- lang_ru;; *);
+-> rrel_key_sc_element:
+    byakugan;
+    rinnegan;
+    sharingan;;
+
+section_of_doujutsu = [*^"file://section_of_doujutsu.scsi"*];;
+

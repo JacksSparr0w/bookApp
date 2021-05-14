@@ -1,0 +1,37 @@
+section_of_theory_of_Naruto
+=> nrel_main_idtf:
+	[Раздел. Теория Манги Наруто]
+		(* <- lang_ru;; *);
+
+
+<- not_enough_formed_structure;
+<= nrel_section_decomposition:
+	{
+    section_of_shinobi;
+	section_of_hidden_villages;
+	section_of_tailed_animals;
+	section_of_doujutsu;
+section_of_theory_of_Naruto
+	};;
+
+section_of_theory_of_Naruto =  [*^"file://section_theory_of_Naruto.scsi"*];;
+
+section_of_theory_of_Naruto
+-> rrel_key_sc_element:
+    concept_chakra; 
+    concept_hidden_village;
+    concept_shinobi;
+    concept_tailed_animal;
+    concept_doujutsu;
+	concept_hokage;
+    concept_clan;
+    nrel_owner;
+    nrel_jinchuriki;
+    nrel_leader;
+    concept_hidden_organization;
+    concept_technique;
+    concept_element;
+    concept_kunai;
+    concept_shuriken;
+    concept_seal;
+    concept_akatsuke;;

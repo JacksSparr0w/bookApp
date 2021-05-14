@@ -1,0 +1,28 @@
+section_of_akatsuke
+=> nrel_main_idtf:
+	[Раздел. Акацуки]
+		(* <- lang_ru;; *);
+-> rrel_key_sc_element:
+    char_Uchiha_Itachi;
+    char_Kisame_Hosigaki;
+    char_Zetsu;
+    char_Konan;
+    char_Nagato;
+	char_Uchiha_Obito;
+    char_Deidara;
+	char_Sasori;
+    char_Hidan;
+    char_Kakuzu;;
+
+section_of_akatsuke =  [*^"file://section_of_akatsuke.scsi"*];;
+
+
+
+	
+
+
+
+
+
+
+

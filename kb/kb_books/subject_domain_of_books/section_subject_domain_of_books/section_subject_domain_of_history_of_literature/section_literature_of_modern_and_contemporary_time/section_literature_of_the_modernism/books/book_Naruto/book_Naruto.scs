@@ -1,0 +1,118 @@
+book_Naruto
+    => nrel_main_idtf:
+        ["Наруто"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_manga;
+    => nrel_author:
+        person_Masashi_Kishimoto;
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_1999;;
+
+book_Naruto
+=> nrel_location:
+    .book_Naruto
+    (*
+        -> country_Japan;;
+    *);;
+
+
+book_Naruto
+    <= nrel_characters:
+        .book_Naruto_characters
+        (*
+            -> rrel_main_character:
+            		char_Namikaze_Minato;
+                    char_Uzumaki_Naruto;
+                    nine_tailed;
+                    char_Uchiha_Sasuke;
+                    char_Hatake_Kakashi;
+                    char_Sakura_Haruno;;
+
+            -> char_Gaara;
+               char_Orochimaru;
+               char_Jiraiya;
+               char_Hiruzen_Sarutobi;
+               char_Uchiha_Itachi;
+               char_Kaguya;
+	           char_Uchiha_Obito;
+               char_Zetsu;
+               char_Kabuto;;
+        *);;
+
+
+book_Naruto => nrel_plot: 
+    .book_Naruto_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Наруто"] (* <-lang_ru;; *);;
+        -> .book_Naruto_prehistory
+            (*
+                => nrel_main_idtf: [Предыстория] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Naruto_prehistory.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_memories;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Namikaze_Minato;
+                            char_Uzumaki_Naruto;
+                            nine_tailed;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Naruto_part_1;;      
+            *);;
+
+        -> .book_Naruto_part_1
+            (*
+                => nrel_main_idtf: [Часть 1] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Naruto_part_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Uchiha_Sasuke;
+                            char_Sakura_Haruno;
+                            char_Hatake_Kakashi;
+                            char_Orochimaru;
+                            char_Jiraiya;
+                            char_Hiruzen_Sarutobi;
+                            char_Uchiha_Itachi;
+                            char_Uzumaki_Naruto;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Naruto_part_2;;      
+            *);;
+
+        -> .book_Naruto_part_2
+            (*
+                => nrel_main_idtf: [Часть 2] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Naruto_part_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Uchiha_Sasuke;
+                            char_Sakura_Haruno;
+                            char_Hatake_Kakashi;
+                            char_Gaara;
+                            char_Jiraiya;
+                            char_Zetsu;
+                            char_Kabuto;
+                            char_Kaguya;
+                            char_Uchiha_Obito;
+                            char_Uzumaki_Naruto;;
+
+                    *);;            
+            *);;      
+   
+    *);;

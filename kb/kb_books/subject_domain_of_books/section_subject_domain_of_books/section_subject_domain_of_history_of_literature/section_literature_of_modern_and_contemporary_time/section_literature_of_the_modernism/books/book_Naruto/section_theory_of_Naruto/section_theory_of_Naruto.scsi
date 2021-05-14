@@ -1,0 +1,545 @@
+concept_hidden_village
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [скрытая деревня] (* <- lang_ru;; *);;
+
+concept_hidden_village
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(скрытая деревня)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_hidden_village.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_shinobi;;
+        *);;
+    *);;
+
+concept_hidden_organization
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [скрытая организация] (* <- lang_ru;; *);;
+
+concept_hidden_organization
+    -> concept_akatsuke;
+    -> concept_hidden_village;
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(скрытая организация)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_hidden_organization.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_shinobi;;
+        *);;
+    *);;
+
+concept_chakra
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [чакра] (* <- lang_ru;; *);;
+
+concept_chakra
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(чакра)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_chakra.html";;
+        *);;
+    *);;
+
+concept_chakra
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(чакра)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_chakra_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_tailed_animal;;
+        *);; 
+    *);;
+
+concept_chakra
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/chakra.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+concept_doujutsu
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [доуджуцу] (* <- lang_ru;; *);;
+
+concept_doujutsu
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(доуджуцу)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_doujutsu.html";;
+        *);;
+    *);;
+
+
+concept_hokage
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [хокаге] (* <- lang_ru;; *);;
+
+concept_hokage
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(хокаге)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_hokage.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> concept_shinobi;;
+           
+        *);;
+    *);;
+
+concept_hokage
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/hokage.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+concept_shinobi
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [шиноби] (* <- lang_ru;; *);;
+
+concept_shinobi
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(шиноби)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_shinobi.html";;
+        *);;
+        
+    *);;
+concept_shinobi
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(шиноби)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_shinobi_stat.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_hokage;;
+        *);; 
+    *);;
+
+concept_akatsuke
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [акацуки] (* <- lang_ru;; *);;
+
+concept_akatsuke
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(акацуки)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_akatsuke.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_shinobi;;
+            -> concept_hidden_village;;
+        *);;
+        
+    *);;
+
+concept_akatsuke
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/akatsuke.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+concept_tailed_animal
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [хвостатый] (* <- lang_ru;; *);;
+
+concept_tailed_animal
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(хвостатый)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_tailed_animal.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> concept_chakra;;      
+        *);;
+    *);;
+
+concept_clan
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [клан] (* <- lang_ru;; *);;
+
+concept_clan
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(клан)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_clan.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> concept_shinobi;;      
+        *);;
+    *);;
+
+sc_node_norole_relation->nrel_owner;;
+
+nrel_owner=>nrel_main_idtf:
+[владелец*](*<-lang_ru;;*);;
+
+
+Definition_nrel_owner 
+    => nrel_main_idtf:
+        [Опр.(владелец*)]  (* <- lang_ru;; *);;
+
+nrel_owner 
+    => nrel_first_domain: 
+        concept_doujutsu;
+    => nrel_second_domain: 
+        concept_shinobi;
+
+<- rrel_key_sc_element: Definition_nrel_owner 
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//nrel_owner.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		    -> concept_doujutsu;;
+		    -> concept_shinobi;;
+		*);;
+	*);;
+
+
+nrel_owner <- binary_relation;;
+nrel_owner <- oriented_relation;;
+nrel_owner <- antisymmetric_relation;;
+nrel_owner <- transitive_relation;;
+nrel_owner <- antireflexive_relation;;
+
+nrel_owner => nrel_definitional_domain:
+    ... (* <= nrel_combination:...
+    (*
+        -> concept_shinobi;;
+        -> concept_doujutsu;;
+	*);;
+   		 *);;
+
+
+sc_node_norole_relation->nrel_jinchuriki;;
+
+nrel_jinchuriki=>nrel_main_idtf:
+[джинчурики*](*<-lang_ru;;*);;
+
+
+Definition_nrel_jinchuriki 
+    => nrel_main_idtf:
+        [Опр.(джинчурики*)]  (* <- lang_ru;; *);;
+
+nrel_jinchuriki 
+    => nrel_first_domain: 
+        concept_tailed_animal;
+    => nrel_second_domain: 
+        concept_shinobi;
+
+<- rrel_key_sc_element: Definition_nrel_jinchuriki 
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//nrel_jinchuriki.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		    -> concept_shinobi;;
+		    -> concept_tailed_animal;;
+		*);;
+	*);;
+
+
+nrel_jinchuriki <- binary_relation;;
+nrel_jinchuriki <- oriented_relation;;
+nrel_jinchuriki <- antisymmetric_relation;;
+nrel_jinchuriki <- antitransitive_relation;;
+nrel_jinchuriki <- antireflexive_relation;;
+
+nrel_jinchuriki => nrel_definitional_domain:
+    ... (* <= nrel_combination:...
+    (*
+        -> concept_tailed_animal;;
+        -> concept_shinobi;;
+	*);;
+   		 *);;
+
+
+sc_node_norole_relation->nrel_leader;;
+
+nrel_leader=>nrel_main_idtf:
+[лидер*](*<-lang_ru;;*);;
+
+
+Definition_nrel_leader 
+    => nrel_main_idtf:
+        [Опр.(лидер*)]  (* <- lang_ru;; *);;
+
+nrel_leader
+    => nrel_first_domain: 
+        concept_hidden_organization;
+    => nrel_second_domain: 
+        concept_shinobi;
+
+<- rrel_key_sc_element: Definition_nrel_leader
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//nrel_leader.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> concept_shinobi;;
+		-> concept_hidden_organization;;
+		*);;
+	*);;
+
+
+nrel_leader <- binary_relation;;
+nrel_leader <- oriented_relation;;
+nrel_leader <- antisymmetric_relation;;
+nrel_leader <- transitive_relation;;
+nrel_leader <- antireflexive_relation;;
+
+nrel_leader => nrel_definitional_domain:
+    ... (* <= nrel_combination:...
+    (*
+        -> concept_hidden_organization;;
+        -> concept_shinobi;;
+	*);;
+   		 *);;
+
+
+concept_kunai
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [кунай] (* <- lang_ru;; *);;
+
+concept_kunai
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(кунай)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_kunai.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_shinobi;;
+        *);;
+        
+    *);;
+
+concept_kunai
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/kunai.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+concept_shuriken
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [сюрикен] (* <- lang_ru;; *);;
+
+concept_shuriken
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(сюрикен)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_shuriken.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_shinobi;;
+        *);;
+        
+    *);;
+
+concept_shuriken
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/shuriken.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+concept_seal
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [ручная печать] (* <- lang_ru;; *);;
+
+concept_seal
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(ручная печать)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_seal.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_chakra;;
+            -> concept_technique;;
+            -> concept_shinobi;;
+        *);;
+        
+    *);;
+
+concept_seal
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/seal.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+concept_technique
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [техника] (* <- lang_ru;; *);;
+
+concept_technique
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(техника)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_technique.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> concept_seal;;
+            -> concept_shinobi;;
+        *);;
+        
+    *);;
+
+
+concept_element
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [стихия] (* <- lang_ru;; *);;
+
+concept_element
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(стихия)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_element.html";;
+        *);;
+        
+    *);;

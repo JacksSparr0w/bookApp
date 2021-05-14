@@ -1,0 +1,37 @@
+person_Masashi_Kishimoto
+    <- person;
+    <- writer;
+    <- mangaka;
+
+    => nrel_main_idtf:
+            [Маса́си Кисимо́то ] (* <- lang_ru;;*); 
+
+    => nrel_date_of_birth:
+            date_8_11_1974
+            (*
+                => nrel_main_idtf:
+                [8 ноября 1974](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Japan;
+    <= nrel_genre_work:...
+    (*
+        -> genre_comic;;
+        -> genre_manga;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        -> lang_jp;;
+    *);;
+
+person_Masashi_Kishimoto
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Masashi_Kishimoto.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

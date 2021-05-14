@@ -1,0 +1,8 @@
+section_mangaka
+=> nrel_main_idtf:
+	[Раздел. Мангака.]
+		(* <- lang_ru;; *);
+-> rrel_key_sc_element:
+	person_Masashi_Kishimoto;;
+
+section_mangaka = [*^"file://section_mangaka.scsi"*];;

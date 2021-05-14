@@ -1,0 +1,266 @@
+char_Orochimaru
+        => nrel_main_idtf: 
+            [Орочимару] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Орочимару)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Orochimaru.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Orochimaru
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Orochimaru.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Uchiha_Sasuke
+        => nrel_main_idtf: 
+            [Учиха Саске] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- Uchiha;
+        <- concept_shinobi;
+        <= nrel_owner:
+            ...
+            (*
+                -> rinnegan;;
+                -> sharingan;;      
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Учиха Саске)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Uchiha_Sasuke.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Uchiha_Sasuke
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Uchiha_Sasuke.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Sakura_Haruno
+        => nrel_main_idtf: 
+            [Сакура Харуно] (* <-lang_ru;; *);
+        <- lit_person;
+        <- female;
+        <- concept_shinobi;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сакура Харуно)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sakura_Haruno.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Sakura_Haruno
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Sakura_Haruno.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Jiraiya
+        => nrel_main_idtf: 
+            [Джирайя] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- Uzumaki;
+        <- concept_shinobi;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джирайя)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Jiraiya.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Jiraiya
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Jiraiya.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;                                    
+
+char_Uzumaki_Kushina
+        => nrel_main_idtf: 
+            [Узумаки Кушина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- female;
+        <- Uzumaki;
+        <- concept_shinobi;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Узумаки Кушина)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Uzumaki_Kushina.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Uzumaki_Kushina
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Uzumaki_Kushina.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Kaguya
+        => nrel_main_idtf: 
+            [Кагуя] (* <-lang_ru;; *);
+        <- lit_person;
+        <- female;
+        <= nrel_jinchuriki:
+            ...
+            (*
+                -> ten_tailed;;      
+            *);
+        <= nrel_owner:
+            ...
+            (*
+                -> rinnegan;;
+                -> sharingan;;    
+                -> byakugan;;
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кагуя)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Kaguya.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Kaguya
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Kaguya.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Gaara
+        => nrel_main_idtf: 
+            [Гаара] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <= nrel_jinchuriki:
+            ...
+            (*
+                -> one_tailed;;      
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гаара)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Gaara.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;   
+
+char_Gaara
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Gaara.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+char_Kabuto
+        => nrel_main_idtf: 
+            [Кабуто] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кабуто)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Kabuto.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;   
+
+char_Kabuto
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Kabuto.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+

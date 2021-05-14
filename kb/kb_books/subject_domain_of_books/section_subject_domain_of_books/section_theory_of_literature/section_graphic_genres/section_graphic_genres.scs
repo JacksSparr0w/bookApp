@@ -1,0 +1,17 @@
+section_graphic_genres
+=> nrel_main_idtf:
+	[Раздел. Графические произведения]
+		(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+<= nrel_section_decomposition:
+	{
+		section_comic_genres;
+section_graphic_genres
+    };;
+
+section_graphic_genres =  [*^"file://section_graphic_genres.scsi"*];;
+
+section_graphic_genres
+-> rrel_key_sc_element:
+                genre_comic;;

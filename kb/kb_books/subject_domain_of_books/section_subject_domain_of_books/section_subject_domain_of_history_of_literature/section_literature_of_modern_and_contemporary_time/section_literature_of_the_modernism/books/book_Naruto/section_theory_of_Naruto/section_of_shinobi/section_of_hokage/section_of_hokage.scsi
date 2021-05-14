@@ -1,0 +1,273 @@
+char_Uzumaki_Naruto
+        => nrel_main_idtf: 
+            [Узумаки Наруто] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- Uzumaki;
+        <- concept_shinobi;
+        <- concept_hokage;
+        <= nrel_jinchuriki:
+            ...
+            (*
+                -> nine_tailed;;      
+            *);
+        <= nrel_leader:
+            ...
+            (*
+                -> hidden_leaf;;      
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Узумаки Наруто)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/7.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Uzumaki_Naruto
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/7.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Uzumaki_Naruto 
+-> rrel_father:
+char_Namikaze_Minato;
+
+-> rrel_mother:
+char_Uzumaki_Kushina;;
+
+char_Namikaze_Minato
+        => nrel_main_idtf: 
+            [Минато Намикадзе] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- Uzumaki;
+        <- concept_shinobi;
+        <- concept_hokage;
+        <= nrel_leader:
+            ...
+            (*
+                -> hidden_leaf;;      
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Минато Намикадзе)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/4.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Namikaze_Minato
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/4.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Namikaze_Minato
+-> nrel_son:
+char_Uzumaki_Naruto;;
+
+char_Hatake_Kakashi
+        => nrel_main_idtf: 
+            [Хатаке Какаши] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- concept_hokage;
+        <= nrel_leader:
+            ...
+            (*
+                -> hidden_leaf;;      
+            *);
+        <= nrel_owner:
+            ...
+            (*
+                -> sharingan;;
+            *);      
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хатаке Какаши)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/6.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Hatake_Kakashi
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/6.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Hiruzen_Sarutobi
+        => nrel_main_idtf: 
+            [Хирузен Сарутоби] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- concept_hokage;
+        <= nrel_leader:
+            ...
+            (*
+                -> hidden_leaf;;      
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хирузен Сарутоби)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/3.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Hiruzen_Sarutobi
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/3.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;                                    
+
+char_Hashirama_Senju
+        => nrel_main_idtf: 
+            [Хашира Сенджу] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- Senju;
+        <- concept_shinobi;
+        <- concept_hokage;
+        <= nrel_leader:
+            ...
+            (*
+                -> hidden_leaf;;      
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хашира Сенджу)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/1.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Hashirama_Senju
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/1.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Tobirama_Senju
+        => nrel_main_idtf: 
+            [Тобирама Сенджу] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- Senju;
+        <- concept_shinobi;
+        <- concept_hokage;
+        <= nrel_leader:
+            ...
+            (*
+                -> hidden_leaf;;      
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Тобирама Сенджу)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/2.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Tobirama_Senju
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/2.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Tsunade
+        => nrel_main_idtf: 
+            [Цунаде] (* <-lang_ru;; *);
+        <- lit_person;
+        <- female;
+        <- Senju;
+        <- concept_shinobi;
+        <- concept_hokage;
+        <= nrel_leader:
+            ...
+            (*
+                -> hidden_leaf;;      
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Цунаде)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/5.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;   
+
+char_Tsunade
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/5.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
