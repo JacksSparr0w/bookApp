@@ -1,0 +1,38 @@
+genre_manga
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Манга]
+		(* <- lang_ru;;	*);
+[manga](* <- lang_en;;*);;
+
+genre_manga	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Манга)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/manga.html" (* <- lang_ru;; *);;
+			*);;
+*);;
+
+genre_manga
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	<- sc_common_type_statement;;
+	=> nrel_main_idtf: [Утв.(Манга)](* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			"file://content/content_htmls/manga_stat.html"(* <-lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+        (*
+            -> country_Japan;;
+        *);;
+*);;

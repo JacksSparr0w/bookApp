@@ -1,0 +1,336 @@
+char_Uchiha_Itachi
+        => nrel_main_idtf: 
+            [Учиха Итачи] (* <-lang_ru;; *);
+        <= nrel_owner:
+            ...
+            (*
+                -> sharingan;;      
+            *);
+        <- lit_person;
+        <- male;
+        <- Uchiha;
+        <- concept_shinobi;
+        <- concept_akatsuke;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Учиха Итачи)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Uchiha_Itachi.html" (* <-lang_ru;; *);;
+                    *);;
+
+
+            *);;
+
+char_Uchiha_Itachi
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Uchiha_Itachi.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Kisame_Hosigaki
+        => nrel_main_idtf: 
+            [Кисаме Хосигаки] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- concept_akatsuke;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кисаме Хосигаки)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Kisame_Hosigaki.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Kisame_Hosigaki
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Kisame_Hosigaki.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+char_Zetsu
+        => nrel_main_idtf: 
+            [Зецу] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- concept_akatsuke;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Зецу)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Zetsu.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Zetsu
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Zetsu.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+char_Konan
+        => nrel_main_idtf: 
+            [Конан] (* <-lang_ru;; *);
+        <- lit_person;
+        <- female;
+        <- concept_shinobi;
+        <- concept_akatsuke;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Конан)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Konan.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Konan
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Konan.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Nagato
+        => nrel_main_idtf: 
+            [Нагато] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- concept_akatsuke;
+        <= nrel_owner:
+            ...
+            (*
+                -> rinnegan;;      
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Нагато)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Nagato.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Nagato
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Nagato.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;                                    
+
+char_Uchiha_Obito
+        => nrel_main_idtf: 
+            [Учиха Обито] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- Uchiha;
+        <- concept_shinobi;
+        <- concept_akatsuke;
+        <= nrel_leader:
+            ...
+            (*
+                -> akatsuke;;      
+            *);
+        <= nrel_owner:
+            ...
+            (*
+                -> rinnegan;;
+                -> sharingan;;      
+            *);
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Учиха Обито)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Uchiha_Obito.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+char_Uchiha_Obito
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Uchiha_Obito.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Deidara
+        => nrel_main_idtf: 
+            [Дейдара] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- concept_akatsuke;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Дейдара)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Deidara.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;
+
+
+char_Deidara
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Deidara.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Sasori
+        => nrel_main_idtf: 
+            [Сасори] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- concept_akatsuke;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сасори)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sasori.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;   
+
+char_Sasori
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Sasori.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Hidan
+        => nrel_main_idtf: 
+            [Хидан] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- concept_akatsuke;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хидан)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Hidan.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;   
+
+char_Hidan
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Hidan.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+char_Kakuzu
+        => nrel_main_idtf: 
+            [Какузу] (* <-lang_ru;; *);
+        <- lit_person;
+        <- male;
+        <- concept_shinobi;
+        <- concept_akatsuke;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Какузу)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Kakuzu.html" (* <-lang_ru;; *);;
+                    *);;
+
+            *);;   
+
+char_Kakuzu
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/char_Kakuzu.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

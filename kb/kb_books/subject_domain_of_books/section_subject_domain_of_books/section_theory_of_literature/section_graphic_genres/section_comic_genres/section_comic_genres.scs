@@ -1,0 +1,10 @@
+section_comic_genres
+=> nrel_main_idtf:
+	[Раздел. Комиксы.]
+		(* <- lang_ru;; *);;
+
+section_comic_genres =  [*^"file://section_comic_genres.scsi"*];;
+
+section_comic_genres
+-> rrel_key_sc_element:
+                genre_manga;;

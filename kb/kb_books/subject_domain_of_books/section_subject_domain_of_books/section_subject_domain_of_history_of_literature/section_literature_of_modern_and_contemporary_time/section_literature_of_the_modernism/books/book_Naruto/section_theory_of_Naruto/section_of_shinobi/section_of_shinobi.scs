@@ -1,0 +1,37 @@
+section_of_shinobi
+=> nrel_main_idtf:
+	[Раздел. Шиноби]
+		(* <- lang_ru;; *);
+
+
+<- not_enough_formed_structure;
+<= nrel_section_decomposition:
+	{
+    section_of_hokage;
+	section_of_akatsuke;
+section_of_shinobi
+	};;
+
+section_of_shinobi =  [*^"file://section_of_shinobi.scsi"*];;
+
+section_of_shinobi
+-> rrel_key_sc_element:
+    char_Orochimaru;
+    char_Uchiha_Sasuke;
+    char_Sakura_Haruno;
+    char_Jiraiya;
+    char_Uzumaki_Kushina;
+	char_Kaguya;
+    char_Gaara;
+    char_Kabuto;;
+
+
+
+	
+
+
+
+
+
+
+

@@ -1,0 +1,214 @@
+hidden_leaf
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[скрытый лист]
+		(* <- lang_ru;;	*);
+[hidden_leaf](* <- lang_en;;*);;
+
+hidden_leaf	
+    <- concept_hidden_village;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(скрытый лист)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/hidden_leaf.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+hidden_leaf
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/hidden_leaf.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+hidden_rain
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[скрытый дождь]
+		(* <- lang_ru;;	*);
+[hidden_rain](* <- lang_en;;*);;
+
+hidden_rain	
+    <- concept_hidden_village;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(скрытый дождь)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/hidden_rain.html" (* <- lang_ru;; *);;
+			*);;
+
+
+*);;
+
+hidden_rain
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/hidden_rain.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+hidden_sand
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[скрытый песок]
+		(* <- lang_ru;;	*);
+[hidden_sand](* <- lang_en;;*);;
+
+hidden_sand	
+    <- concept_hidden_village;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(скрытый песок)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/hidden_sand.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+hidden_sand
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/hidden_sand.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+hidden_hot_spring
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[скрытый горячий источник]
+		(* <- lang_ru;;	*);
+[hidden_hot_spring](* <- lang_en;;*);;
+
+hidden_hot_spring	
+    <- concept_hidden_village;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(скрытый горячий источник)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/hidden_hot_spring.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+hidden_hot_spring
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/hidden_hot_spring.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+hidden_fog
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[скрытый туман]
+		(* <- lang_ru;;	*);
+[hidden_fog](* <- lang_en;;*);;
+
+hidden_fog	
+    <- concept_hidden_village;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(скрытый туман)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/hidden_fog.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+hidden_fog
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/hidden_fog.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+hidden_waterfall
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[скрытый водопад]
+		(* <- lang_ru;;	*);
+[hidden_waterfall](* <- lang_en;;*);;
+
+hidden_waterfall	
+    <- concept_hidden_village;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(скрытый водопад)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/hidden_waterfall.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+hidden_waterfall
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/hidden_waterfall.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

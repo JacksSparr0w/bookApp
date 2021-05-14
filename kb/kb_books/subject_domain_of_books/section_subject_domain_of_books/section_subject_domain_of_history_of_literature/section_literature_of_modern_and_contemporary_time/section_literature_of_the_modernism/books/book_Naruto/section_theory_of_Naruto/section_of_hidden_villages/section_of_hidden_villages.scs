@@ -1,0 +1,19 @@
+section_of_hidden_villages
+=> nrel_main_idtf:
+	[Раздел. Скрытые деревни]
+		(* <- lang_ru;; *);
+-> rrel_key_sc_element:
+        hidden_leaf;
+        hidden_rain;
+        hidden_sand;
+        hidden_hot_spring;
+	    hidden_fog;
+        hidden_waterfall;;
+
+section_of_hidden_villages =  [*^"file://section_of_hidden_villages.scsi"*];;
+
+
+
+
+
+

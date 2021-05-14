@@ -1,0 +1,21 @@
+genre_comic
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Комикс]
+		(* <- lang_ru;;	*);
+[comic](* <- lang_en;;*);;
+
+genre_comic	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Комикс)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/comic.html" (* <- lang_ru;; *);;
+			*);;
+*);;

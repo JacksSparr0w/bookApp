@@ -1,0 +1,23 @@
+section_of_tailed_animals
+=> nrel_main_idtf:
+	[Раздел. Хвостатые]
+		(* <- lang_ru;; *);
+-> rrel_key_sc_element:
+        ten_tailed;
+        nine_tailed;
+        eight_tailed;
+        seven_tailed;
+        six_tailed;
+	    five_tailed;
+        four_tailed;
+        three_tailed;
+	    two_tailed;
+        one_tailed;;
+
+section_of_tailed_animals =  [*^"file://section_of_tailed_animals.scsi"*];;
+
+
+
+
+
+

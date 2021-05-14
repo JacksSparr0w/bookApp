@@ -1,0 +1,106 @@
+Uchiha
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Учиха]
+		(* <- lang_ru;;	*);
+
+[Uchiha](* <- lang_en;;*);;
+
+Uchiha
+    <- concept_clan;	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Учиха)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Uchiha.html" (* <- lang_ru;; *);;
+			*);;
+*);;
+
+Uchiha
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Uchiha.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+Senju
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Сенджу]
+		(* <- lang_ru;;	*);
+[Senju](* <- lang_en;;*);;
+
+Senju	
+    <- concept_clan;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Сенджу)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Senju.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+Senju
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Senju.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+Uzumaki
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Узумаки]
+		(* <- lang_ru;;	*);
+[Uzumaki](* <- lang_en;;*);;
+
+Uzumaki	
+    <- concept_clan;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Узумаки)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/Uzumaki.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+Uzumaki
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Uzumaki.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

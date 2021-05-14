@@ -1,0 +1,106 @@
+byakugan
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[бьякуган]
+		(* <- lang_ru;;	*);
+
+[byakugan](* <- lang_en;;*);;
+
+byakugan
+    <- concept_doujutsu;	
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(бьякуган)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/byakugan.html" (* <- lang_ru;; *);;
+			*);;
+*);;
+
+byakugan
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/byakugan.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+rinnegan
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[риннеган]
+		(* <- lang_ru;;	*);
+[rinnegan](* <- lang_en;;*);;
+
+rinnegan	
+    <- concept_doujutsu;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(риннеган)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/rinnegan.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+rinnegan
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/rinnegan.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+sharingan
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[шаринган]
+		(* <- lang_ru;;	*);
+[sharingan](* <- lang_en;;*);;
+
+sharingan	
+    <- concept_doujutsu;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(шаринган)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/sharingan.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+sharingan
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/sharingan.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

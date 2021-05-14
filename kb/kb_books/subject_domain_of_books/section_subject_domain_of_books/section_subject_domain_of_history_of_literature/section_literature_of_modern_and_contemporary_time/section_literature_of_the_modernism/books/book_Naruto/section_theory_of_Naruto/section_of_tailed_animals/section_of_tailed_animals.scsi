@@ -1,0 +1,355 @@
+one_tailed
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Однохвостый]
+		(* <- lang_ru;;	*);
+[one_tailed](* <- lang_en;;*);;
+
+one_tailed	
+    <- concept_tailed_animal;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Однохвостый)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/1.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+one_tailed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/1.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+two_tailed
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Двухвостый]
+		(* <- lang_ru;;	*);
+[two_tailed](* <- lang_en;;*);;
+
+two_tailed	
+    <- concept_tailed_animal;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Двухвостый)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/2.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+two_tailed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/2.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+three_tailed
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Трёххвостый]
+		(* <- lang_ru;;	*);
+[three_tailed](* <- lang_en;;*);;
+
+three_tailed	
+    <- concept_tailed_animal;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Трёххвостый)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/3.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+three_tailed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/3.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+four_tailed
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Четырёххвостый]
+		(* <- lang_ru;;	*);
+[four_tailed](* <- lang_en;;*);;
+
+four_tailed	
+    <- concept_tailed_animal;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Четырёххвостый)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/4.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+four_tailed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/4.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+five_tailed
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Пятихвостый]
+		(* <- lang_ru;;	*);
+[five_tailed](* <- lang_en;;*);;
+
+five_tailed	
+    <- concept_tailed_animal;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Пятихвостый)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/5.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+five_tailed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/5.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+six_tailed
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Шестихвостый]
+		(* <- lang_ru;;	*);
+[six_tailed](* <- lang_en;;*);;
+
+six_tailed	
+    <- concept_tailed_animal;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Шестихвостый)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/6.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+six_tailed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/6.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+seven_tailed
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Семихвостый]
+		(* <- lang_ru;;	*);
+[seven_tailed](* <- lang_en;;*);;
+
+seven_tailed	
+    <- concept_tailed_animal;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Семихвостый)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/7.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+seven_tailed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/7.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+eight_tailed
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Восьмихвостый]
+		(* <- lang_ru;;	*);
+[eight_tailed](* <- lang_en;;*);;
+
+eight_tailed	
+    <- concept_tailed_animal;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Восьмихвостый)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/8.html" (* <- lang_ru;; *);;
+			*);;
+
+*);;
+
+eight_tailed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/8.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+nine_tailed
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Девятихвостый]
+		(* <- lang_ru;;	*);
+[nine_tailed](* <- lang_en;;*);;
+
+nine_tailed	
+    <- concept_tailed_animal;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Девятихвостый)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/9.html" (* <- lang_ru;; *);;
+			*);;
+
+        *);;
+
+nine_tailed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/9.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+ten_tailed
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Деcятихвостый]
+		(* <- lang_ru;;	*);
+[ten_tailed](* <- lang_en;;*);;
+
+ten_tailed	
+    <- concept_tailed_animal;
+	<- rrel_key_sc_element:
+		... 
+		(*
+        <- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Деcятихвостый)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/10.html" (* <- lang_ru;; *);;
+			*);;
+
+        *);;
+
+ten_tailed
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/10.png"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

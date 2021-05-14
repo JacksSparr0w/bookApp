@@ -1,0 +1,25 @@
+section_of_hokage
+=> nrel_main_idtf:
+	[Раздел. Хокаге]
+		(* <- lang_ru;; *);
+-> rrel_key_sc_element:
+    char_Uzumaki_Naruto;
+    char_Namikaze_Minato;
+    char_Hatake_Kakashi;
+    char_Hiruzen_Sarutobi;
+    char_Hashirama_Senju;
+	char_Tobirama_Senju;
+    char_Tsunade;;
+
+section_of_hokage =  [*^"file://section_of_hokage.scsi"*];;
+
+
+
+	
+
+
+
+
+
+
+
